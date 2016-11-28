@@ -1150,7 +1150,7 @@
       </symbol>
       <SnapLine y1="0" x1="0" y2="914" x2="0"/>
       <SnapLine y1="0" x1="0" y2="914" x2="0"/>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="65.0528" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="17.2645" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="65.0528" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="17.2645" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="114.75" page="1" id="" lastValidViewScaleFactor="3.43631" positionMode="0" positionLock="false" x="227.474" y="114.75" visibility="1" zValue="12" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="65.0528" outlineWidth="0.3" excludeFromExports="0" uuid="{6ff40824-9bb7-4700-bcd2-d9a7063e092c}" height="20.5" itemRotation="0" frame="false" pagex="227.474">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -13529,7 +13529,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerShape>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="81.5248" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="21.6361" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="81.5248" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="21.6361" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="113.464" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="19.5928" y="113.464" visibility="1" zValue="16" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="89.3023" outlineWidth="0.3" excludeFromExports="0" uuid="{a38ee953-069b-4cfd-90c8-e5067416ce0b}" height="21.6361" itemRotation="0" frame="false" pagex="19.5928">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -13881,7 +13881,7 @@ def my_form_open(dialog, layer, feature):
           </effect>
         </layer>
       </symbol>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/symbols/wind_rose.svg" northOffset="0" pictureHeight="35" mapId="0" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./symbols/wind_rose.svg" northOffset="0" pictureHeight="35" mapId="0" anchorPoint="0">
         <ComposerItem pagey="228.277" page="1" id="" lastValidViewScaleFactor="2.7764" positionMode="0" positionLock="false" x="164.306" y="228.277" visibility="1" zValue="15" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="35" outlineWidth="0.3" excludeFromExports="0" uuid="{973785d9-e3b3-427b-ba56-be9de77460fb}" height="35" itemRotation="0" frame="false" pagex="164.306">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -13985,7 +13985,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="75.36" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="20" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="75.36" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="20" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="5.67" page="1" id="" lastValidViewScaleFactor="3.73602" positionMode="0" positionLock="false" x="12.0224" y="5.67" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="85.9551" outlineWidth="0.3" excludeFromExports="0" uuid="{b6be99f3-75c7-4fac-b431-f87a8cf27e55}" height="20" itemRotation="0" frame="false" pagex="12.0224">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -14157,7 +14157,7 @@ def my_form_open(dialog, layer, feature):
           </effect>
         </layer>
       </symbol>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="349" pictureWidth="29.8524" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/symbols/wind_rose.svg" northOffset="0" pictureHeight="29.8524" mapId="0" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="349" pictureWidth="29.8524" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./symbols/wind_rose.svg" northOffset="0" pictureHeight="29.8524" mapId="0" anchorPoint="0">
         <ComposerItem pagey="22.5" page="1" id="" lastValidViewScaleFactor="2.27094" positionMode="0" positionLock="false" x="248.711" y="22.5" visibility="1" zValue="15" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="35" outlineWidth="0.3" excludeFromExports="0" uuid="{8d3ba240-9cfb-4183-815f-a851393125db}" height="35" itemRotation="0" frame="false" pagex="248.711">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -14261,7 +14261,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="75.36" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="20" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="75.36" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="20" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="5.67" page="1" id="" lastValidViewScaleFactor="4.93952" positionMode="0" positionLock="false" x="9.7453" y="5.67" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="90.5094" outlineWidth="0.3" excludeFromExports="0" uuid="{4bf8c0c9-7ad1-4b72-a195-f79e0048f573}" height="20" itemRotation="0" frame="false" pagex="9.7453">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -14448,7 +14448,7 @@ def my_form_open(dialog, layer, feature):
           </effect>
         </layer>
       </symbol>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/symbols/wind_rose.svg" northOffset="0" pictureHeight="35" mapId="0" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./symbols/wind_rose.svg" northOffset="0" pictureHeight="35" mapId="0" anchorPoint="0">
         <ComposerItem pagey="353.045" page="1" id="" lastValidViewScaleFactor="2.22011" positionMode="0" positionLock="false" x="250.338" y="353.045" visibility="1" zValue="15" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="35" outlineWidth="0.3" excludeFromExports="0" uuid="{11f7444e-daed-4c7b-9666-3c634c3844b3}" height="35" itemRotation="0" frame="false" pagex="250.338">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -14552,7 +14552,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="78.2614" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="20.77" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="78.2614" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="20.77" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="6.2771" page="1" id="" lastValidViewScaleFactor="3.4999" positionMode="0" positionLock="false" x="12.4716" y="6.2771" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="85.0567" outlineWidth="0.3" excludeFromExports="0" uuid="{4e3f39cf-2b41-4a58-970c-31f7f923057e}" height="20.77" itemRotation="0" frame="false" pagex="12.4716">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -27385,7 +27385,7 @@ def my_form_open(dialog, layer, feature):
           </effect>
         </layer>
       </symbol>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="81.5248" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="21.6361" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="81.5248" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="21.6361" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="8.36388" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="9.49283" y="8.36388" visibility="1" zValue="15" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="89.3023" outlineWidth="0.3" excludeFromExports="0" uuid="{fa31ca13-d3c6-4c1b-92e7-d5ced89ab5f9}" height="21.6361" itemRotation="0" frame="false" pagex="9.49283">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -27393,7 +27393,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/symbols/wind_rose.svg" northOffset="0" pictureHeight="35" mapId="0" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="35" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./symbols/wind_rose.svg" northOffset="0" pictureHeight="35" mapId="0" anchorPoint="0">
         <ComposerItem pagey="250.766" page="1" id="" lastValidViewScaleFactor="1.90655" positionMode="0" positionLock="false" x="372.549" y="250.766" visibility="1" zValue="14" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="35" outlineWidth="0.3" excludeFromExports="0" uuid="{02f4883c-455f-48d7-a2ee-d28d29160034}" height="35" itemRotation="0" frame="false" pagex="372.549">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -27754,7 +27754,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="698.12" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="1170.85" y="698.12" visibility="1" zValue="6" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.7993" outlineWidth="0.3" excludeFromExports="0" uuid="{4e1fd0dd-1b97-43a0-a225-c0f3faa4f226}" height="23.6348" itemRotation="0" frame="false" pagex="1170.85">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -27762,7 +27762,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="739.672" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1161.05" y="739.672" visibility="1" zValue="5" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.2" excludeFromExports="0" uuid="{b98632f4-f6dc-4a60-96f0-c0c00d118b15}" height="70.378" itemRotation="0" frame="true" pagex="1161.05">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -28714,7 +28714,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="0" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="0" anchorPoint="0">
         <ComposerItem pagey="15.2496" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="24.8959" y="15.2496" visibility="1" zValue="8" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.7993" outlineWidth="0.3" excludeFromExports="0" uuid="{ff62870f-a4d9-4e78-a925-22804ae64970}" height="23.6348" itemRotation="0" frame="false" pagex="24.8959">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -28722,7 +28722,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="0" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="0" anchorPoint="0">
         <ComposerItem pagey="56.8021" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="15.1" y="56.8021" visibility="1" zValue="7" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.2" excludeFromExports="0" uuid="{7901b3da-37f1-48f0-a191-429bd98c6e8e}" height="70.378" itemRotation="0" frame="true" pagex="15.1">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -29669,7 +29669,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="718.12" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="1409.85" y="718.12" visibility="1" zValue="23" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.7993" outlineWidth="0.3" excludeFromExports="0" uuid="{476a1feb-ffa5-49ca-ad79-4b5482db805e}" height="23.6348" itemRotation="0" frame="false" pagex="1409.85">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -29677,7 +29677,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="759.672" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1400.05" y="759.672" visibility="1" zValue="22" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.2" excludeFromExports="0" uuid="{2db8e7fe-9f76-46aa-a6a2-11bd784bb322}" height="70.378" itemRotation="0" frame="true" pagex="1400.05">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -30849,7 +30849,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerArrow>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="718.12" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="1489.85" y="718.12" visibility="1" zValue="9" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.7993" outlineWidth="0.3" excludeFromExports="0" uuid="{57bd79b7-7d1f-47e1-afda-b65f4e388948}" height="23.6348" itemRotation="0" frame="false" pagex="1489.85">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -30857,7 +30857,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="759.672" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1480.05" y="759.672" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.2" excludeFromExports="0" uuid="{ce5fb0e7-2cb2-4071-96a8-e05ddc4f424c}" height="70.378" itemRotation="0" frame="true" pagex="1480.05">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -31273,7 +31273,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="718.12" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="1489.85" y="718.12" visibility="1" zValue="14" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.7993" outlineWidth="0.3" excludeFromExports="0" uuid="{5ca9fa41-96bf-4cd9-be73-3e5aa9bbe873}" height="23.6348" itemRotation="0" frame="false" pagex="1489.85">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -31281,7 +31281,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="759.672" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1480.05" y="759.672" visibility="1" zValue="13" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.2" excludeFromExports="0" uuid="{db1c2329-1b18-4517-a505-ded5cec73a05}" height="70.378" itemRotation="0" frame="true" pagex="1480.05">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -31925,7 +31925,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="89.0559" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="23.6348" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="33.1" page="1" id="" lastValidViewScaleFactor="5.15342" positionMode="0" positionLock="false" x="1009.85" y="33.1" visibility="1" zValue="5" background="false" transparency="0" frameJoinStyle="miter" blendMode="0" width="93.7993" outlineWidth="0.3" excludeFromExports="0" uuid="{b37c1361-4d09-4442-9b22-13a9cf01493b}" height="23.6348" itemRotation="0" frame="false" pagex="1009.85">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -31933,7 +31933,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerPicture>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="185.022" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/schematic_legend.svg" northOffset="0" pictureHeight="70.378" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="74.652" page="1" id="" lastValidViewScaleFactor="-1" positionMode="0" positionLock="false" x="1000.05" y="74.652" visibility="1" zValue="4" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="210" outlineWidth="0.2" excludeFromExports="0" uuid="{1d76ccd6-ec53-4682-972c-05c7bf1cdbb4}" height="70.378" itemRotation="0" frame="true" pagex="1000.05">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -32198,7 +32198,7 @@ def my_form_open(dialog, layer, feature):
           <customproperties/>
         </ComposerItem>
       </ComposerLabel>
-      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="45.4477" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="../qwat/qgis-project/composer/logo_sige_2.png" northOffset="0" pictureHeight="12.0615" mapId="-1" anchorPoint="0">
+      <ComposerPicture resizeMode="0" svgBorderWidth="0.2" pictureRotation="0" pictureWidth="45.4477" svgFillColor="255,255,255,255" svgBorderColor="0,0,0,255" northMode="0" file="./composer/logo_sige_2.png" northOffset="0" pictureHeight="12.0615" mapId="-1" anchorPoint="0">
         <ComposerItem pagey="7.43848" page="1" id="" lastValidViewScaleFactor="3.73602" positionMode="0" positionLock="false" x="153.263" y="7.43848" visibility="1" zValue="2" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="51.8375" outlineWidth="0.3" excludeFromExports="0" uuid="{4dc416a9-6ef2-47c0-87eb-b8c323a8e832}" height="12.0615" itemRotation="0" frame="false" pagex="153.263">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
@@ -32544,7 +32544,7 @@ def my_form_open(dialog, layer, feature):
       <editform>../../data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -32673,7 +32673,7 @@ def my_form_open(dialog, layer, feature):
       <editform>../../data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -32918,7 +32918,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases/>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -32926,10 +32926,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -33169,7 +33169,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="remarque" index="1" name=""/>
@@ -33182,10 +33182,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -33499,7 +33499,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="camac" index="1" name=""/>
@@ -33517,10 +33517,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>uifilelayout</editorlayout>
@@ -34182,7 +34182,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="identifiant" index="1" name=""/>
@@ -34196,10 +34196,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -37516,7 +37516,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="1" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="0"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_parent" index="1" name="Parent"/>
@@ -37668,10 +37668,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/pipe.ui</editform>
+      <editform>./ui_forms/pipe.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -37998,7 +37998,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="altitude" index="1" name=""/>
@@ -38015,10 +38015,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>1</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -38268,7 +38268,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="observation" index="1" name=""/>
@@ -38283,10 +38283,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -38338,7 +38338,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="name" index="1" name=""/>
@@ -38351,10 +38351,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -38647,7 +38647,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="name" index="1" name=""/>
@@ -38675,10 +38675,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -38966,7 +38966,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="identification" index="1" name=""/>
@@ -38981,10 +38981,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -39300,7 +39300,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/hydrant.svg"/>
+              <prop k="name" v="./symbols/hydrant.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -39548,7 +39548,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -39691,10 +39691,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/hydrant.ui</editform>
+      <editform>./ui_forms/hydrant.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -39800,7 +39800,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -39821,10 +39821,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -39911,7 +39911,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -39931,10 +39931,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -40021,7 +40021,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -40041,10 +40041,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -40131,7 +40131,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -40151,10 +40151,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -40242,7 +40242,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -40264,10 +40264,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -40909,7 +40909,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -41052,10 +41052,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/hydrant.ui</editform>
+      <editform>./ui_forms/hydrant.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -41450,7 +41450,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_cause" index="1" name="Cause"/>
@@ -41483,10 +41483,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/leak.ui</editform>
+      <editform>./ui_forms/leak.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -41593,7 +41593,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -41613,10 +41613,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -41733,7 +41733,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/three.svg"/>
+              <prop k="name" v="./symbols/nodes/three.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -41765,7 +41765,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/diff_material.svg"/>
+              <prop k="name" v="./symbols/nodes/diff_material.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -41797,7 +41797,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/diff_year.svg"/>
+              <prop k="name" v="./symbols/nodes/diff_year.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -41829,7 +41829,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/diff_diameter_material.svg"/>
+              <prop k="name" v="./symbols/nodes/diff_diameter_material.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -41861,7 +41861,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/diff_diameter.svg"/>
+              <prop k="name" v="./symbols/nodes/diff_diameter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -42106,7 +42106,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -42131,10 +42131,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -42458,7 +42458,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="text" index="1" name=""/>
@@ -42469,10 +42469,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -42574,7 +42574,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -42594,10 +42594,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -42857,7 +42857,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="labelvisible" index="1" name=""/>
@@ -42875,10 +42875,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -43140,7 +43140,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="text_size" index="1" name=""/>
@@ -43157,10 +43157,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -43530,7 +43530,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="identification" index="1" name=""/>
@@ -43562,10 +43562,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/cover.ui</editform>
+      <editform>./ui_forms/cover.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>uifilelayout</editorlayout>
@@ -43957,7 +43957,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="disabled" index="1" name=""/>
@@ -43977,10 +43977,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -44218,7 +44218,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="observation" index="1" name=""/>
@@ -44232,10 +44232,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -44685,7 +44685,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name="Commune"/>
@@ -44736,10 +44736,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/meter.ui</editform>
+      <editform>./ui_forms/meter.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>uifilelayout</editorlayout>
@@ -45022,7 +45022,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_meter" index="1" name=""/>
@@ -45037,10 +45037,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -45350,7 +45350,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -45375,10 +45375,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -45612,7 +45612,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/subscriber_meter.svg"/>
+              <prop k="name" v="./symbols/nodes/subscriber_meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -45644,7 +45644,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/cap.svg"/>
+              <prop k="name" v="./symbols/nodes/cap.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -45676,7 +45676,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/nodes/watering_output.svg"/>
+              <prop k="name" v="./symbols/nodes/watering_output.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -45977,7 +45977,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -46028,10 +46028,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/part.ui</editform>
+      <editform>./ui_forms/part.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -46456,7 +46456,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_distributor" index="1" name=""/>
@@ -46495,10 +46495,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -46797,7 +46797,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_subscriber" index="1" name=""/>
@@ -46812,10 +46812,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -48372,7 +48372,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48396,7 +48396,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48416,7 +48416,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48436,7 +48436,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48456,7 +48456,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48476,7 +48476,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48500,7 +48500,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48524,7 +48524,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48544,7 +48544,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48568,7 +48568,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48592,7 +48592,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48634,7 +48634,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48658,7 +48658,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48682,7 +48682,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48702,7 +48702,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48722,7 +48722,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48742,7 +48742,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48766,7 +48766,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48786,7 +48786,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48806,7 +48806,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48826,7 +48826,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48868,7 +48868,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48888,7 +48888,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48908,7 +48908,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48928,7 +48928,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48948,7 +48948,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48972,7 +48972,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -48996,7 +48996,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49016,7 +49016,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49040,7 +49040,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49064,7 +49064,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49106,7 +49106,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49130,7 +49130,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49150,7 +49150,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49170,7 +49170,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49190,7 +49190,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -49450,7 +49450,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -49663,10 +49663,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="status_functional"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/installation.ui</editform>
+      <editform>./ui_forms/installation.ui</editform>
       <editforminit>formOpen</editforminit>
       <editforminitcodesource>1</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project/python/installation_form.py</editforminitfilepath>
+      <editforminitfilepath>./python/installation_form.py</editforminitfilepath>
       <editforminitcode><![CDATA[from python.installation_form import formOpen
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
@@ -49721,7 +49721,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="nom" index="1" name=""/>
@@ -49734,10 +49734,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -50022,7 +50022,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="child" index="0" name=""/>
         <alias field="parent" index="1" name=""/>
@@ -50035,10 +50035,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -50124,7 +50124,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -50146,10 +50146,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -50639,7 +50639,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_distributor" index="1" name=""/>
@@ -50675,10 +50675,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -51158,7 +51158,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="name" index="1" name="Folio"/>
@@ -51241,10 +51241,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -51391,7 +51391,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_type" index="1" name=""/>
@@ -51408,10 +51408,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -51498,7 +51498,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -51518,10 +51518,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -51611,7 +51611,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -51632,10 +51632,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -51723,7 +51723,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -51745,10 +51745,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -52184,7 +52184,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="id_commune" index="1" name=""/>
@@ -52214,10 +52214,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -52589,7 +52589,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="id_commune" index="1" name=""/>
@@ -52619,10 +52619,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -52672,7 +52672,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="etat" index="1" name=""/>
@@ -52685,10 +52685,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -52952,7 +52952,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="id_commune" index="1" name=""/>
@@ -52983,10 +52983,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -53036,7 +53036,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="statut" index="1" name=""/>
@@ -53049,10 +53049,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -53102,7 +53102,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="type" index="1" name=""/>
@@ -53115,10 +53115,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -53824,7 +53824,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name="Commune"/>
@@ -53934,10 +53934,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/subscriber.ui</editform>
+      <editform>./ui_forms/subscriber.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -54191,7 +54191,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="identification" index="1" name=""/>
@@ -54204,10 +54204,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -54611,7 +54611,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_distributor" index="1" name=""/>
@@ -54650,10 +54650,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -56067,7 +56067,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/vidange.svg"/>
+              <prop k="name" v="./symbols/vidange.svg"/>
               <prop k="offset" v="0,-2"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -56223,7 +56223,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/vidange_subscriber.svg"/>
+              <prop k="name" v="./symbols/vidange_subscriber.svg"/>
               <prop k="offset" v="0,-2"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -56487,7 +56487,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name="commune"/>
@@ -56658,10 +56658,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="status_functional"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/valve.ui</editform>
+      <editform>./ui_forms/valve.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -56767,7 +56767,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -56788,10 +56788,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -57188,7 +57188,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/valve/schematic_valve_closed.svg"/>
+              <prop k="name" v="./symbols/valve/schematic_valve_closed.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -57208,7 +57208,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/valve/schematic_valve_1_4_turn.svg"/>
+              <prop k="name" v="./symbols/valve/schematic_valve_1_4_turn.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -57232,7 +57232,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/valve/schematic_valve_discharge.svg"/>
+              <prop k="name" v="./symbols/valve/schematic_valve_discharge.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -57260,7 +57260,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/valve/schematic_valve_vaccuum.svg"/>
+              <prop k="name" v="./symbols/valve/schematic_valve_vaccuum.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -57280,7 +57280,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/valve/schematic_valve.svg"/>
+              <prop k="name" v="./symbols/valve/schematic_valve.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -57555,7 +57555,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name="commune"/>
@@ -57726,10 +57726,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="valve_actuation_schema_visible"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/valve.ui</editform>
+      <editform>./ui_forms/valve.ui</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -57831,7 +57831,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -57853,10 +57853,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -57944,7 +57944,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -57966,10 +57966,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58055,7 +58055,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58077,10 +58077,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58166,7 +58166,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58188,10 +58188,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58279,7 +58279,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58301,10 +58301,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58390,7 +58390,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58412,10 +58412,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58515,7 +58515,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58540,10 +58540,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58631,7 +58631,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58653,10 +58653,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58792,7 +58792,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58826,10 +58826,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -58917,7 +58917,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -58939,10 +58939,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59034,7 +59034,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59057,10 +59057,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59150,7 +59150,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59173,10 +59173,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59266,7 +59266,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59289,10 +59289,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59382,7 +59382,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59405,10 +59405,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59498,7 +59498,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59521,10 +59521,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59628,7 +59628,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59654,10 +59654,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59746,7 +59746,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59768,10 +59768,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59859,7 +59859,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59881,10 +59881,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -59976,7 +59976,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -59999,10 +59999,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -60094,7 +60094,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -60117,10 +60117,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -60208,7 +60208,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -60230,10 +60230,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -60329,7 +60329,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -60353,10 +60353,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -60446,7 +60446,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="vl_active" index="1" name=""/>
@@ -60469,10 +60469,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -60896,7 +60896,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="name" index="1" name=""/>
@@ -60911,10 +60911,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -61162,7 +61162,7 @@ def my_form_open(dialog, layer, feature):
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -61209,10 +61209,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
@@ -61773,7 +61773,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61797,7 +61797,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61817,7 +61817,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61837,7 +61837,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61857,7 +61857,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61877,7 +61877,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61901,7 +61901,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61925,7 +61925,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61945,7 +61945,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61969,7 +61969,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -61993,7 +61993,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62035,7 +62035,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62055,7 +62055,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62075,7 +62075,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62095,7 +62095,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62115,7 +62115,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62139,7 +62139,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62163,7 +62163,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62183,7 +62183,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62207,7 +62207,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62231,7 +62231,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62273,7 +62273,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62293,7 +62293,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/meter.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62313,7 +62313,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/chamber.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62333,7 +62333,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/reduction.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62353,7 +62353,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="227,26,28,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62377,7 +62377,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62401,7 +62401,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62421,7 +62421,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62445,7 +62445,7 @@ END
               <prop k="fill_dd_field" v=""/>
               <prop k="fill_dd_useexpr" v="1"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62469,7 +62469,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="40,180,16,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62511,7 +62511,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/gathering.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62535,7 +62535,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/pump.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62555,7 +62555,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/source.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62575,7 +62575,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/tank.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62595,7 +62595,7 @@ END
               <prop k="angle" v="0"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="../qwat/qgis-project/symbols/installations/param_svg/treatment.svg"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -62858,7 +62858,7 @@ END
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_district" index="1" name=""/>
@@ -63073,10 +63073,10 @@ END
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project/ui_forms/installation.ui</editform>
+      <editform>./ui_forms/installation.ui</editform>
       <editforminit>formOpen</editforminit>
       <editforminitcodesource>1</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project/python/installation_form.py</editforminitfilepath>
+      <editforminitfilepath>./python/installation_form.py</editforminitfilepath>
       <editforminitcode><![CDATA[from python.installation_form import formOpen
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
@@ -63706,7 +63706,7 @@ END
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_function" index="1" name=""/>
@@ -63817,10 +63817,10 @@ END
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -64353,7 +64353,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="fk_parent" index="1" name=""/>
@@ -64395,10 +64395,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -64699,7 +64699,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../qwat/qgis-project</annotationform>
+      <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="nom" index="1" name=""/>
@@ -64710,10 +64710,10 @@ def my_form_open(dialog, layer, feature):
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns/>
       </attributetableconfig>
-      <editform>../qwat/qgis-project</editform>
+      <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../qwat/qgis-project</editforminitfilepath>
+      <editforminitfilepath>.</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
