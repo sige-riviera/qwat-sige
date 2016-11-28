@@ -1,0 +1,7 @@
+*Thumbs.db
+tmp/*
+*.qgs~
+*.qfts
+*.pyc
+*.orig
+
