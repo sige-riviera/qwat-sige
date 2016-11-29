@@ -33,7 +33,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Réseau">
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Réseau">
         <customproperties/>
         <layer-tree-layer expanded="0" checked="Qt::Checked" id="conduites_copy20130709141244955" name="conduites">
           <customproperties>
@@ -77,7 +77,7 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Schématique">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Schématique">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="impression">
         <customproperties/>
@@ -402,10 +402,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>554660.40291049517691135</xmin>
-      <ymin>136448.95834201917750761</ymin>
-      <xmax>554845.3466606829315424</xmax>
-      <ymax>136585.7525176812778227</ymax>
+      <xmin>556505.52620522317010909</xmin>
+      <ymin>141860.52602126673446037</ymin>
+      <xmax>562423.72621123131830245</xmax>
+      <ymax>146237.93964245394454338</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -672,7 +672,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
+      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Réseau">
         <legendlayer drawingOrder="14" open="false" checked="Qt::Checked" name="conduites" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="conduites_copy20130709141244955" visible="1"/>
@@ -732,7 +732,7 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::Unchecked" name="Schématique">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Schématique">
       <legendgroup open="false" checked="Qt::Unchecked" name="impression">
         <legendlayer drawingOrder="98" open="false" checked="Qt::Unchecked" name="hydrantes 5000 (pression)" showFeatureCount="0">
           <filegroup open="false" hidden="false">
@@ -27948,7 +27948,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="1" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061086327769" xmin="560672.80429450585506856" ymax="141434.6536971858877223" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061092148535" xmin="560672.80429450585506856" ymax="141434.65369718594592996" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28077,7 +28077,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705792036839" xmin="559224.55663845222443342" ymax="143160.60991081068641506" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705794947222" xmin="559224.55663845222443342" ymax="143160.60991081071551889" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28251,7 +28251,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208481332287" xmin="556387.41481285262852907" ymax="141145.24451662378851324" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208478421904" xmin="556387.41481285262852907" ymax="141145.24451662375940941" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28399,7 +28399,7 @@ def my_form_open(dialog, layer, feature):
         </layer>
       </symbol>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="148940.92140768174431287" xmin="555084.52102199767250568" ymax="148994.92140773680876009" xmax="555138.52102205285336822"/>
+        <Extent ymin="148940.92140768180252053" xmin="555084.52102199767250568" ymax="148994.92140773686696775" xmax="555138.52102205285336822"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{22202fc4-88f8-489a-842f-ca5a18a9f7bf}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28548,7 +28548,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208460959606" xmin="556387.41481285262852907" ymax="141145.24451662358478643" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208458049223" xmin="556387.41481285262852907" ymax="141145.2445166235556826" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28827,7 +28827,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerShape>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208420214243" xmin="556387.41481285262852907" ymax="141145.2445166231773328" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.2445120841730386" xmin="556387.41481285262852907" ymax="141145.24451662314822897" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28977,7 +28977,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.5553608444170095" xmin="555146.75582698069047183" ymax="145729.55536095559364185" xmax="555294.75582713156472892"/>
+        <Extent ymin="145620.55536084438790567" xmin="555146.75582698069047183" ymax="145729.55536095556453802" xmax="555294.75582713156472892"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29097,7 +29097,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926986170001" xmin="555352.02931586769409478" ymax="145918.49579549671034329" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926983259618" xmin="555352.02931586769409478" ymax="145918.49579549668123946" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29187,7 +29187,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282041243277" xmin="554414.48823976842686534" ymax="147098.40062013242277317" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282044153661" xmin="554414.48823976842686534" ymax="147098.400620132451877" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29277,7 +29277,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998504971154" xmin="554434.94899998628534377" ymax="146543.49708991611259989" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998502060771" xmin="554434.94899998628534377" ymax="146543.49708991608349606" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29435,7 +29435,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208364916965" xmin="556387.41481285262852907" ymax="141145.24451662262436002" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208362006582" xmin="556387.41481285262852907" ymax="141145.24451662259525619" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29827,7 +29827,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994318233803" xmin="555146.75599992461502552" ymax="145729.55500005435897037" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.5549999431532342" xmin="555146.75599992461502552" ymax="145729.55500005432986654" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29947,7 +29947,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926945424639" xmin="555352.02931586769409478" ymax="145918.49579549630288966" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926942514256" xmin="555352.02931586769409478" ymax="145918.49579549627378583" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30037,7 +30037,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282076167874" xmin="554414.48823976842686534" ymax="147098.40062013277201913" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282079078257" xmin="554414.48823976842686534" ymax="147098.40062013280112296" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30127,7 +30127,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998472956941" xmin="554434.94899998628534377" ymax="146543.49708991579245776" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998470046557" xmin="554434.94899998628534377" ymax="146543.49708991576335393" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30562,7 +30562,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994294950739" xmin="555146.75599992461502552" ymax="145729.55500005412613973" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994292040356" xmin="555146.75599992461502552" ymax="145729.5550000540970359" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30660,7 +30660,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282084899023" xmin="554414.48823976842686534" ymax="147098.40062013285933062" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282087809406" xmin="554414.48823976842686534" ymax="147098.40062013288843445" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30720,7 +30720,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926916320808" xmin="555352.02931586769409478" ymax="145918.49579549601185136" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926913410425" xmin="555352.02931586769409478" ymax="145918.49579549598274752" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30932,7 +30932,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998446763493" xmin="554434.94899998628534377" ymax="146543.49708991553052329" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.1159999844385311" xmin="554434.94899998628534377" ymax="146543.49708991550141945" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -31353,7 +31353,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061092148535" xmin="560672.80429450585506856" ymax="141434.65369718594592996" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061097969301" xmin="560672.80429450585506856" ymax="141434.65369718600413762" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -31482,7 +31482,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705815319903" xmin="559224.55663845222443342" ymax="143160.60991081091924571" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705818230286" xmin="559224.55663845222443342" ymax="143160.60991081094834954" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -38472,26 +38472,22 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
-              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="color" v="178,209,146,255"/>
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="5;4"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="offset" v="0,0"/>
+              <prop k="line_color" v="0,0,0,255"/>
+              <prop k="line_style" v="dash"/>
+              <prop k="line_width" v="1.1"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,0,0,255"/>
-              <prop k="outline_style" v="dash"/>
-              <prop k="outline_width" v="0.4"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="style" v="no"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
+              <prop k="use_custom_dash" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
             </layer>
           </symbol>
         </symbols>
@@ -54940,7 +54936,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>152017.31419999999343418</ymax>
       </extent>
       <id>valve20130304110011497</id>
-      <datasource>service='qwat' sslmode=allow key='id' srid=21781 type=PointZ table="qwat_od"."vw_element_valve" (geometry) sql=</datasource>
+      <datasource>service='qwat' sslmode=allow key='id' srid=21781 type=PointZ table="qwat_od"."valve" (geometry) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -54983,43 +54979,6 @@ def my_form_open(dialog, layer, feature):
       <expressionfields/>
       <defaults>
         <default field="id" expression=""/>
-        <default field="fk_district" expression=""/>
-        <default field="fk_pressurezone" expression=""/>
-        <default field="fk_printmap" expression=""/>
-        <default field="_printmaps" expression=""/>
-        <default field="_geometry_alt1_used" expression=""/>
-        <default field="_geometry_alt2_used" expression=""/>
-        <default field="_pipe_node_type" expression=""/>
-        <default field="_pipe_orientation" expression=""/>
-        <default field="_pipe_schema_visible" expression=""/>
-        <default field="geometry_alt1" expression=""/>
-        <default field="geometry_alt2" expression=""/>
-        <default field="update_geometry_alt1" expression=""/>
-        <default field="update_geometry_alt2" expression=""/>
-        <default field="identification" expression=""/>
-        <default field="fk_distributor" expression=""/>
-        <default field="fk_status" expression=""/>
-        <default field="fk_folder" expression=""/>
-        <default field="fk_locationtype" expression=""/>
-        <default field="year" expression=""/>
-        <default field="year_end" expression=""/>
-        <default field="remark" expression=""/>
-        <default field="schema_force_visible" expression=""/>
-        <default field="label_1_visible" expression=""/>
-        <default field="label_1_x" expression=""/>
-        <default field="label_1_y" expression=""/>
-        <default field="label_1_rotation" expression=""/>
-        <default field="label_1_text" expression=""/>
-        <default field="label_2_visible" expression=""/>
-        <default field="label_2_x" expression=""/>
-        <default field="label_2_y" expression=""/>
-        <default field="label_2_rotation" expression=""/>
-        <default field="label_2_text" expression=""/>
-        <default field="fk_precision" expression=""/>
-        <default field="fk_precisionalti" expression=""/>
-        <default field="fk_object_reference" expression=""/>
-        <default field="altitude" expression=""/>
-        <default field="orientation" expression=""/>
         <default field="fk_valve_type" expression=""/>
         <default field="fk_valve_function" expression=""/>
         <default field="fk_valve_actuation" expression=""/>
@@ -55032,6 +54991,33 @@ def my_form_open(dialog, layer, feature):
         <default field="networkseparation" expression=""/>
         <default field="handle_altitude" expression=""/>
         <default field="handle_geometry" expression=""/>
+        <default field="fk_district" expression=""/>
+        <default field="fk_pressurezone" expression=""/>
+        <default field="fk_distributor" expression=""/>
+        <default field="fk_precision" expression=""/>
+        <default field="fk_precisionalti" expression=""/>
+        <default field="fk_status" expression=""/>
+        <default field="fk_object_reference" expression=""/>
+        <default field="fk_folder" expression=""/>
+        <default field="year" expression=""/>
+        <default field="year_end" expression=""/>
+        <default field="altitude" expression=""/>
+        <default field="orientation" expression=""/>
+        <default field="fk_locationtype" expression=""/>
+        <default field="identification" expression=""/>
+        <default field="remark" expression=""/>
+        <default field="fk_printmap" expression=""/>
+        <default field="_geometry_alt1_used" expression=""/>
+        <default field="_geometry_alt2_used" expression=""/>
+        <default field="_pipe_node_type" expression=""/>
+        <default field="_pipe_orientation" expression=""/>
+        <default field="_pipe_schema_visible" expression=""/>
+        <default field="_printmaps" expression=""/>
+        <default field="geometry_alt1" expression=""/>
+        <default field="geometry_alt2" expression=""/>
+        <default field="update_geometry_alt1" expression=""/>
+        <default field="update_geometry_alt2" expression=""/>
+        <default field="schema_force_visible" expression=""/>
         <default field="valve_function_vl_active" expression=""/>
         <default field="valve_function_short_fr" expression=""/>
         <default field="valve_function_short_en" expression=""/>
@@ -55913,117 +55899,6 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="id">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_district">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_pressurezone">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurezone20130417133612105" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_printmap">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_printmaps">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt1_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt2_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_pipe_node_type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_pipe_orientation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_pipe_schema_visible">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="geometry_alt1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="geometry_alt2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="update_geometry_alt1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="update_geometry_alt2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="identification">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_distributor">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_status">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="RelationReference" name="fk_folder">
-          <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_vanne_folder" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_locationtype">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="year">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="year_end">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="remark">
-          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="schema_force_visible">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="label_1_visible">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_x">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_y">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_rotation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_text">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="label_2_visible">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_x">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_y">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_rotation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_text">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_precision">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_precisionalti">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precisionalti20131211161429510" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_object_reference">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="object_reference20150922083109152" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="altitude">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="orientation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_valve_type">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_valve_type20130304110011685" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
@@ -56059,6 +55934,87 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="TextEdit" name="handle_geometry">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_district">
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_pressurezone">
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurezone20130417133612105" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_distributor">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_precision">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_precisionalti">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precisionalti20131211161429510" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_status">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_object_reference">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="object_reference20150922083109152" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="RelationReference" name="fk_folder">
+          <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_vanne_folder" ReadOnly="0" constraint="" MapIdentification="0" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="year">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="year_end">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="altitude">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="orientation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_locationtype">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="identification">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="remark">
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_printmap">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_geometry_alt1_used">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_geometry_alt2_used">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_pipe_node_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_pipe_orientation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_pipe_schema_visible">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_printmaps">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geometry_alt1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geometry_alt2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="update_geometry_alt1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="update_geometry_alt2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="schema_force_visible">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="valve_function_vl_active">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -56743,84 +56699,74 @@ def my_form_open(dialog, layer, feature):
       <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
-        <alias field="fk_district" index="1" name="commune"/>
-        <alias field="fk_pressurezone" index="2" name="zone de pression"/>
-        <alias field="fk_printmap" index="3" name="folio"/>
-        <alias field="_printmaps" index="4" name="folios"/>
-        <alias field="_geometry_alt1_used" index="5" name=""/>
-        <alias field="_geometry_alt2_used" index="6" name=""/>
-        <alias field="_pipe_node_type" index="7" name=""/>
-        <alias field="_pipe_orientation" index="8" name=""/>
-        <alias field="_pipe_schema_visible" index="9" name=""/>
-        <alias field="geometry_alt1" index="10" name=""/>
-        <alias field="geometry_alt2" index="11" name=""/>
-        <alias field="update_geometry_alt1" index="12" name=""/>
-        <alias field="update_geometry_alt2" index="13" name=""/>
-        <alias field="identification" index="14" name=""/>
+        <alias field="fk_valve_type" index="1" name=""/>
+        <alias field="fk_valve_function" index="2" name=""/>
+        <alias field="fk_valve_actuation" index="3" name=""/>
+        <alias field="fk_pipe" index="4" name="ID conduite"/>
+        <alias field="fk_handle_precision" index="5" name="précision de la position de la tige"/>
+        <alias field="fk_handle_precisionalti" index="6" name="précision de l'altitude de la tige"/>
+        <alias field="fk_maintenance" index="7" name="entretien"/>
+        <alias field="diameter_nominal" index="8" name="diamètre nominal"/>
+        <alias field="closed" index="9" name="fermée"/>
+        <alias field="networkseparation" index="10" name=""/>
+        <alias field="handle_altitude" index="11" name=""/>
+        <alias field="handle_geometry" index="12" name=""/>
+        <alias field="fk_district" index="13" name="commune"/>
+        <alias field="fk_pressurezone" index="14" name="zone de pression"/>
         <alias field="fk_distributor" index="15" name=""/>
-        <alias field="fk_status" index="16" name=""/>
-        <alias field="fk_folder" index="17" name=""/>
-        <alias field="fk_locationtype" index="18" name=""/>
-        <alias field="year" index="19" name="année"/>
-        <alias field="year_end" index="20" name=""/>
-        <alias field="remark" index="21" name="remarques"/>
-        <alias field="schema_force_visible" index="22" name="visibilité schéma"/>
-        <alias field="label_1_visible" index="23" name=""/>
-        <alias field="label_1_x" index="24" name=""/>
-        <alias field="label_1_y" index="25" name=""/>
-        <alias field="label_1_rotation" index="26" name=""/>
-        <alias field="label_1_text" index="27" name=""/>
-        <alias field="label_2_visible" index="28" name=""/>
-        <alias field="label_2_x" index="29" name=""/>
-        <alias field="label_2_y" index="30" name=""/>
-        <alias field="label_2_rotation" index="31" name=""/>
-        <alias field="label_2_text" index="32" name=""/>
-        <alias field="fk_precision" index="33" name=""/>
-        <alias field="fk_precisionalti" index="34" name=""/>
-        <alias field="fk_object_reference" index="35" name=""/>
-        <alias field="altitude" index="36" name=""/>
-        <alias field="orientation" index="37" name=""/>
-        <alias field="fk_valve_type" index="38" name=""/>
-        <alias field="fk_valve_function" index="39" name=""/>
-        <alias field="fk_valve_actuation" index="40" name=""/>
-        <alias field="fk_pipe" index="41" name="ID conduite"/>
-        <alias field="fk_handle_precision" index="42" name="précision de la position de la tige"/>
-        <alias field="fk_handle_precisionalti" index="43" name="précision de l'altitude de la tige"/>
-        <alias field="fk_maintenance" index="44" name="entretien"/>
-        <alias field="diameter_nominal" index="45" name="diamètre nominal"/>
-        <alias field="closed" index="46" name="fermée"/>
-        <alias field="networkseparation" index="47" name=""/>
-        <alias field="handle_altitude" index="48" name=""/>
-        <alias field="handle_geometry" index="49" name=""/>
-        <alias field="valve_function_vl_active" index="50" name=""/>
-        <alias field="valve_function_short_fr" index="51" name=""/>
-        <alias field="valve_function_short_en" index="52" name=""/>
-        <alias field="valve_function_short_ro" index="53" name=""/>
-        <alias field="valve_function_value_fr" index="54" name=""/>
-        <alias field="valve_function_value_en" index="55" name=""/>
-        <alias field="valve_function_value_ro" index="56" name=""/>
-        <alias field="valve_function_description_fr" index="57" name=""/>
-        <alias field="valve_function_description_en" index="58" name=""/>
-        <alias field="valve_function_description_ro" index="59" name=""/>
-        <alias field="valve_function_schema_visible" index="60" name=""/>
-        <alias field="valve_type_vl_active" index="61" name=""/>
-        <alias field="valve_type_short_fr" index="62" name=""/>
-        <alias field="valve_type_short_en" index="63" name=""/>
-        <alias field="valve_type_short_ro" index="64" name=""/>
-        <alias field="valve_type_value_fr" index="65" name=""/>
-        <alias field="valve_type_value_en" index="66" name=""/>
-        <alias field="valve_type_value_ro" index="67" name=""/>
-        <alias field="valve_type_description_fr" index="68" name=""/>
-        <alias field="valve_type_description_en" index="69" name=""/>
-        <alias field="valve_type_description_ro" index="70" name=""/>
-        <alias field="valve_actuation_id" index="71" name=""/>
-        <alias field="valve_actuation_vl_active" index="72" name=""/>
-        <alias field="valve_actuation_short_fr" index="73" name=""/>
-        <alias field="valve_actuation_value_fr" index="74" name=""/>
-        <alias field="valve_actuation_description_fr" index="75" name=""/>
-        <alias field="valve_actuation_schema_visible" index="76" name=""/>
-        <alias field="status_active" index="77" name=""/>
-        <alias field="status_functional" index="78" name=""/>
+        <alias field="fk_precision" index="16" name=""/>
+        <alias field="fk_precisionalti" index="17" name=""/>
+        <alias field="fk_status" index="18" name=""/>
+        <alias field="fk_object_reference" index="19" name=""/>
+        <alias field="fk_folder" index="20" name=""/>
+        <alias field="year" index="21" name="année"/>
+        <alias field="year_end" index="22" name=""/>
+        <alias field="altitude" index="23" name=""/>
+        <alias field="orientation" index="24" name=""/>
+        <alias field="fk_locationtype" index="25" name=""/>
+        <alias field="identification" index="26" name=""/>
+        <alias field="remark" index="27" name="remarques"/>
+        <alias field="fk_printmap" index="28" name="folio"/>
+        <alias field="_geometry_alt1_used" index="29" name=""/>
+        <alias field="_geometry_alt2_used" index="30" name=""/>
+        <alias field="_pipe_node_type" index="31" name=""/>
+        <alias field="_pipe_orientation" index="32" name=""/>
+        <alias field="_pipe_schema_visible" index="33" name=""/>
+        <alias field="_printmaps" index="34" name="folios"/>
+        <alias field="geometry_alt1" index="35" name=""/>
+        <alias field="geometry_alt2" index="36" name=""/>
+        <alias field="update_geometry_alt1" index="37" name=""/>
+        <alias field="update_geometry_alt2" index="38" name=""/>
+        <alias field="schema_force_visible" index="39" name="visibilité schéma"/>
+        <alias field="valve_function_vl_active" index="40" name=""/>
+        <alias field="valve_function_short_fr" index="41" name=""/>
+        <alias field="valve_function_short_en" index="42" name=""/>
+        <alias field="valve_function_short_ro" index="43" name=""/>
+        <alias field="valve_function_value_fr" index="44" name=""/>
+        <alias field="valve_function_value_en" index="45" name=""/>
+        <alias field="valve_function_value_ro" index="46" name=""/>
+        <alias field="valve_function_description_fr" index="47" name=""/>
+        <alias field="valve_function_description_en" index="48" name=""/>
+        <alias field="valve_function_description_ro" index="49" name=""/>
+        <alias field="valve_function_schema_visible" index="50" name=""/>
+        <alias field="valve_type_vl_active" index="51" name=""/>
+        <alias field="valve_type_short_fr" index="52" name=""/>
+        <alias field="valve_type_short_en" index="53" name=""/>
+        <alias field="valve_type_short_ro" index="54" name=""/>
+        <alias field="valve_type_value_fr" index="55" name=""/>
+        <alias field="valve_type_value_en" index="56" name=""/>
+        <alias field="valve_type_value_ro" index="57" name=""/>
+        <alias field="valve_type_description_fr" index="58" name=""/>
+        <alias field="valve_type_description_en" index="59" name=""/>
+        <alias field="valve_type_description_ro" index="60" name=""/>
+        <alias field="valve_actuation_id" index="61" name=""/>
+        <alias field="valve_actuation_vl_active" index="62" name=""/>
+        <alias field="valve_actuation_short_fr" index="63" name=""/>
+        <alias field="valve_actuation_value_fr" index="64" name=""/>
+        <alias field="valve_actuation_description_fr" index="65" name=""/>
+        <alias field="valve_actuation_schema_visible" index="66" name=""/>
+        <alias field="status_active" index="67" name=""/>
+        <alias field="status_functional" index="68" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -57056,7 +57002,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" readOnly="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>vannes_copy20141127160745910</id>
-      <datasource>service='qwat' sslmode=allow key='id' srid=21781 type=PointZ table="qwat_od"."vw_element_valve" (geometry_alt2) sql=</datasource>
+      <datasource>service='qwat' sslmode=allow key='id' srid=21781 type=PointZ table="qwat_od"."valve" (geometry_alt2) sql=</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -57099,43 +57045,6 @@ def my_form_open(dialog, layer, feature):
       <expressionfields/>
       <defaults>
         <default field="id" expression=""/>
-        <default field="fk_district" expression=""/>
-        <default field="fk_pressurezone" expression=""/>
-        <default field="fk_printmap" expression=""/>
-        <default field="_printmaps" expression=""/>
-        <default field="_geometry_alt1_used" expression=""/>
-        <default field="_geometry_alt2_used" expression=""/>
-        <default field="_pipe_node_type" expression=""/>
-        <default field="_pipe_orientation" expression=""/>
-        <default field="_pipe_schema_visible" expression=""/>
-        <default field="geometry" expression=""/>
-        <default field="geometry_alt1" expression=""/>
-        <default field="update_geometry_alt1" expression=""/>
-        <default field="update_geometry_alt2" expression=""/>
-        <default field="identification" expression=""/>
-        <default field="fk_distributor" expression=""/>
-        <default field="fk_status" expression=""/>
-        <default field="fk_folder" expression=""/>
-        <default field="fk_locationtype" expression=""/>
-        <default field="year" expression=""/>
-        <default field="year_end" expression=""/>
-        <default field="remark" expression=""/>
-        <default field="schema_force_visible" expression=""/>
-        <default field="label_1_visible" expression=""/>
-        <default field="label_1_x" expression=""/>
-        <default field="label_1_y" expression=""/>
-        <default field="label_1_rotation" expression=""/>
-        <default field="label_1_text" expression=""/>
-        <default field="label_2_visible" expression=""/>
-        <default field="label_2_x" expression=""/>
-        <default field="label_2_y" expression=""/>
-        <default field="label_2_rotation" expression=""/>
-        <default field="label_2_text" expression=""/>
-        <default field="fk_precision" expression=""/>
-        <default field="fk_precisionalti" expression=""/>
-        <default field="fk_object_reference" expression=""/>
-        <default field="altitude" expression=""/>
-        <default field="orientation" expression=""/>
         <default field="fk_valve_type" expression=""/>
         <default field="fk_valve_function" expression=""/>
         <default field="fk_valve_actuation" expression=""/>
@@ -57148,6 +57057,33 @@ def my_form_open(dialog, layer, feature):
         <default field="networkseparation" expression=""/>
         <default field="handle_altitude" expression=""/>
         <default field="handle_geometry" expression=""/>
+        <default field="fk_district" expression=""/>
+        <default field="fk_pressurezone" expression=""/>
+        <default field="fk_distributor" expression=""/>
+        <default field="fk_precision" expression=""/>
+        <default field="fk_precisionalti" expression=""/>
+        <default field="fk_status" expression=""/>
+        <default field="fk_object_reference" expression=""/>
+        <default field="fk_folder" expression=""/>
+        <default field="year" expression=""/>
+        <default field="year_end" expression=""/>
+        <default field="altitude" expression=""/>
+        <default field="orientation" expression=""/>
+        <default field="fk_locationtype" expression=""/>
+        <default field="identification" expression=""/>
+        <default field="remark" expression=""/>
+        <default field="fk_printmap" expression=""/>
+        <default field="_geometry_alt1_used" expression=""/>
+        <default field="_geometry_alt2_used" expression=""/>
+        <default field="_pipe_node_type" expression=""/>
+        <default field="_pipe_orientation" expression=""/>
+        <default field="_pipe_schema_visible" expression=""/>
+        <default field="_printmaps" expression=""/>
+        <default field="geometry" expression=""/>
+        <default field="geometry_alt1" expression=""/>
+        <default field="update_geometry_alt1" expression=""/>
+        <default field="update_geometry_alt2" expression=""/>
+        <default field="schema_force_visible" expression=""/>
         <default field="pipe_schema_force_visible" expression=""/>
         <default field="pipe_pipe_function_schema_visible" expression=""/>
         <default field="valve_function_vl_active" expression=""/>
@@ -57185,117 +57121,6 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="id">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_district">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_pressurezone">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurezone20130417133612105" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_printmap">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_printmaps">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt1_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt2_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_pipe_node_type">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_pipe_orientation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="_pipe_schema_visible">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="geometry">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="geometry_alt1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="update_geometry_alt1">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="update_geometry_alt2">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="identification">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_distributor">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_status">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_folder">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_locationtype">
-          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="locationtype20150922082741813" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="1" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="year">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="year_end">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="remark">
-          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="schema_force_visible">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="label_1_visible">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_x">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_y">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_rotation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_1_text">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="label_2_visible">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_x">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_y">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_rotation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="label_2_text">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_precision">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="fk_precisionalti">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="ValueRelation" name="fk_object_reference">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="object_reference20150922083109152" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="altitude">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="orientation">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_valve_type">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_valve_type20130304110011685" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
@@ -57331,6 +57156,87 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="TextEdit" name="handle_geometry">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_district">
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_pressurezone">
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurezone20130417133612105" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_distributor">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_precision">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_precisionalti">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_status">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_object_reference">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="object_reference20150922083109152" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_folder">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="year">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="year_end">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="altitude">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="orientation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="fk_locationtype">
+          <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="locationtype20150922082741813" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="1" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="identification">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="remark">
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="fk_printmap">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_geometry_alt1_used">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_geometry_alt2_used">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_pipe_node_type">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_pipe_orientation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_pipe_schema_visible">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="_printmaps">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geometry">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="geometry_alt1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="update_geometry_alt1">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="update_geometry_alt2">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="schema_force_visible">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="pipe_schema_force_visible">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -57811,84 +57717,74 @@ def my_form_open(dialog, layer, feature):
       <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
-        <alias field="fk_district" index="1" name="commune"/>
-        <alias field="fk_pressurezone" index="2" name="zone de pression"/>
-        <alias field="fk_printmap" index="3" name="folio"/>
-        <alias field="_printmaps" index="4" name="folios"/>
-        <alias field="_geometry_alt1_used" index="5" name=""/>
-        <alias field="_geometry_alt2_used" index="6" name=""/>
-        <alias field="_pipe_node_type" index="7" name=""/>
-        <alias field="_pipe_orientation" index="8" name=""/>
-        <alias field="_pipe_schema_visible" index="9" name=""/>
-        <alias field="geometry" index="10" name=""/>
-        <alias field="geometry_alt1" index="11" name=""/>
-        <alias field="update_geometry_alt1" index="12" name=""/>
-        <alias field="update_geometry_alt2" index="13" name=""/>
-        <alias field="identification" index="14" name=""/>
+        <alias field="fk_valve_type" index="1" name=""/>
+        <alias field="fk_valve_function" index="2" name=""/>
+        <alias field="fk_valve_actuation" index="3" name=""/>
+        <alias field="fk_pipe" index="4" name="ID conduite"/>
+        <alias field="fk_handle_precision" index="5" name=""/>
+        <alias field="fk_handle_precisionalti" index="6" name=""/>
+        <alias field="fk_maintenance" index="7" name="entretien"/>
+        <alias field="diameter_nominal" index="8" name="diamètre nominal"/>
+        <alias field="closed" index="9" name="fermée"/>
+        <alias field="networkseparation" index="10" name=""/>
+        <alias field="handle_altitude" index="11" name=""/>
+        <alias field="handle_geometry" index="12" name=""/>
+        <alias field="fk_district" index="13" name="commune"/>
+        <alias field="fk_pressurezone" index="14" name="zone de pression"/>
         <alias field="fk_distributor" index="15" name=""/>
-        <alias field="fk_status" index="16" name=""/>
-        <alias field="fk_folder" index="17" name=""/>
-        <alias field="fk_locationtype" index="18" name=""/>
-        <alias field="year" index="19" name="année"/>
-        <alias field="year_end" index="20" name=""/>
-        <alias field="remark" index="21" name="remarques"/>
-        <alias field="schema_force_visible" index="22" name="visibilité schéma"/>
-        <alias field="label_1_visible" index="23" name=""/>
-        <alias field="label_1_x" index="24" name=""/>
-        <alias field="label_1_y" index="25" name=""/>
-        <alias field="label_1_rotation" index="26" name=""/>
-        <alias field="label_1_text" index="27" name=""/>
-        <alias field="label_2_visible" index="28" name=""/>
-        <alias field="label_2_x" index="29" name=""/>
-        <alias field="label_2_y" index="30" name=""/>
-        <alias field="label_2_rotation" index="31" name=""/>
-        <alias field="label_2_text" index="32" name=""/>
-        <alias field="fk_precision" index="33" name=""/>
-        <alias field="fk_precisionalti" index="34" name=""/>
-        <alias field="fk_object_reference" index="35" name=""/>
-        <alias field="altitude" index="36" name=""/>
-        <alias field="orientation" index="37" name=""/>
-        <alias field="fk_valve_type" index="38" name=""/>
-        <alias field="fk_valve_function" index="39" name=""/>
-        <alias field="fk_valve_actuation" index="40" name=""/>
-        <alias field="fk_pipe" index="41" name="ID conduite"/>
-        <alias field="fk_handle_precision" index="42" name=""/>
-        <alias field="fk_handle_precisionalti" index="43" name=""/>
-        <alias field="fk_maintenance" index="44" name="entretien"/>
-        <alias field="diameter_nominal" index="45" name="diamètre nominal"/>
-        <alias field="closed" index="46" name="fermée"/>
-        <alias field="networkseparation" index="47" name=""/>
-        <alias field="handle_altitude" index="48" name=""/>
-        <alias field="handle_geometry" index="49" name=""/>
-        <alias field="pipe_schema_force_visible" index="50" name="Visiblité schématique"/>
-        <alias field="pipe_pipe_function_schema_visible" index="51" name=""/>
-        <alias field="valve_function_vl_active" index="52" name=""/>
-        <alias field="valve_function_short_fr" index="53" name=""/>
-        <alias field="valve_function_short_en" index="54" name=""/>
-        <alias field="valve_function_short_ro" index="55" name=""/>
-        <alias field="valve_function_value_fr" index="56" name=""/>
-        <alias field="valve_function_value_en" index="57" name=""/>
-        <alias field="valve_function_value_ro" index="58" name=""/>
-        <alias field="valve_function_description_fr" index="59" name=""/>
-        <alias field="valve_function_description_en" index="60" name=""/>
-        <alias field="valve_function_description_ro" index="61" name=""/>
-        <alias field="valve_function_schema_visible" index="62" name=""/>
-        <alias field="valve_type_vl_active" index="63" name=""/>
-        <alias field="valve_type_short_fr" index="64" name=""/>
-        <alias field="valve_type_short_en" index="65" name=""/>
-        <alias field="valve_type_short_ro" index="66" name=""/>
-        <alias field="valve_type_value_fr" index="67" name=""/>
-        <alias field="valve_type_value_en" index="68" name=""/>
-        <alias field="valve_type_value_ro" index="69" name=""/>
-        <alias field="valve_type_description_fr" index="70" name=""/>
-        <alias field="valve_type_description_en" index="71" name=""/>
-        <alias field="valve_type_description_ro" index="72" name=""/>
-        <alias field="valve_actuation_id" index="73" name=""/>
-        <alias field="valve_actuation_vl_active" index="74" name=""/>
-        <alias field="valve_actuation_short_fr" index="75" name=""/>
-        <alias field="valve_actuation_value_fr" index="76" name=""/>
-        <alias field="valve_actuation_description_fr" index="77" name=""/>
-        <alias field="valve_actuation_schema_visible" index="78" name=""/>
+        <alias field="fk_precision" index="16" name=""/>
+        <alias field="fk_precisionalti" index="17" name=""/>
+        <alias field="fk_status" index="18" name=""/>
+        <alias field="fk_object_reference" index="19" name=""/>
+        <alias field="fk_folder" index="20" name=""/>
+        <alias field="year" index="21" name="année"/>
+        <alias field="year_end" index="22" name=""/>
+        <alias field="altitude" index="23" name=""/>
+        <alias field="orientation" index="24" name=""/>
+        <alias field="fk_locationtype" index="25" name=""/>
+        <alias field="identification" index="26" name=""/>
+        <alias field="remark" index="27" name="remarques"/>
+        <alias field="fk_printmap" index="28" name="folio"/>
+        <alias field="_geometry_alt1_used" index="29" name=""/>
+        <alias field="_geometry_alt2_used" index="30" name=""/>
+        <alias field="_pipe_node_type" index="31" name=""/>
+        <alias field="_pipe_orientation" index="32" name=""/>
+        <alias field="_pipe_schema_visible" index="33" name=""/>
+        <alias field="_printmaps" index="34" name="folios"/>
+        <alias field="geometry" index="35" name=""/>
+        <alias field="geometry_alt1" index="36" name=""/>
+        <alias field="update_geometry_alt1" index="37" name=""/>
+        <alias field="update_geometry_alt2" index="38" name=""/>
+        <alias field="schema_force_visible" index="39" name="visibilité schéma"/>
+        <alias field="pipe_schema_force_visible" index="40" name="Visiblité schématique"/>
+        <alias field="pipe_pipe_function_schema_visible" index="41" name=""/>
+        <alias field="valve_function_vl_active" index="42" name=""/>
+        <alias field="valve_function_short_fr" index="43" name=""/>
+        <alias field="valve_function_short_en" index="44" name=""/>
+        <alias field="valve_function_short_ro" index="45" name=""/>
+        <alias field="valve_function_value_fr" index="46" name=""/>
+        <alias field="valve_function_value_en" index="47" name=""/>
+        <alias field="valve_function_value_ro" index="48" name=""/>
+        <alias field="valve_function_description_fr" index="49" name=""/>
+        <alias field="valve_function_description_en" index="50" name=""/>
+        <alias field="valve_function_description_ro" index="51" name=""/>
+        <alias field="valve_function_schema_visible" index="52" name=""/>
+        <alias field="valve_type_vl_active" index="53" name=""/>
+        <alias field="valve_type_short_fr" index="54" name=""/>
+        <alias field="valve_type_short_en" index="55" name=""/>
+        <alias field="valve_type_short_ro" index="56" name=""/>
+        <alias field="valve_type_value_fr" index="57" name=""/>
+        <alias field="valve_type_value_en" index="58" name=""/>
+        <alias field="valve_type_value_ro" index="59" name=""/>
+        <alias field="valve_type_description_fr" index="60" name=""/>
+        <alias field="valve_type_description_en" index="61" name=""/>
+        <alias field="valve_type_description_ro" index="62" name=""/>
+        <alias field="valve_actuation_id" index="63" name=""/>
+        <alias field="valve_actuation_vl_active" index="64" name=""/>
+        <alias field="valve_actuation_short_fr" index="65" name=""/>
+        <alias field="valve_actuation_value_fr" index="66" name=""/>
+        <alias field="valve_actuation_description_fr" index="67" name=""/>
+        <alias field="valve_actuation_schema_visible" index="68" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -66463,13 +66359,13 @@ def closeProject():
         <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
         <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
         <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
+        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
+        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
         <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
@@ -66504,8 +66400,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
+        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -66517,8 +66413,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
+        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -66529,8 +66425,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
+        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
