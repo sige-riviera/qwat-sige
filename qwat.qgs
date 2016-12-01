@@ -33,7 +33,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Réseau">
+      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Réseau">
         <customproperties/>
         <layer-tree-layer expanded="0" checked="Qt::Checked" id="conduites_copy20130709141244955" name="conduites">
           <customproperties>
@@ -672,7 +672,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Réseau">
+      <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
         <legendlayer drawingOrder="14" open="false" checked="Qt::Checked" name="conduites" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="conduites_copy20130709141244955" visible="1"/>
@@ -27948,7 +27948,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="1" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061092148535" xmin="560672.80429450585506856" ymax="141434.65369718594592996" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061097969301" xmin="560672.80429450585506856" ymax="141434.65369718600413762" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28077,7 +28077,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705794947222" xmin="559224.55663845222443342" ymax="143160.60991081071551889" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705797857605" xmin="559224.55663845222443342" ymax="143160.60991081074462272" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28251,7 +28251,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208478421904" xmin="556387.41481285262852907" ymax="141145.24451662375940941" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208475511521" xmin="556387.41481285262852907" ymax="141145.24451662373030558" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28399,7 +28399,7 @@ def my_form_open(dialog, layer, feature):
         </layer>
       </symbol>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="148940.92140768180252053" xmin="555084.52102199767250568" ymax="148994.92140773686696775" xmax="555138.52102205285336822"/>
+        <Extent ymin="148940.92140768186072819" xmin="555084.52102199767250568" ymax="148994.92140773692517541" xmax="555138.52102205285336822"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{22202fc4-88f8-489a-842f-ca5a18a9f7bf}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28548,7 +28548,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208458049223" xmin="556387.41481285262852907" ymax="141145.2445166235556826" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.2445120845513884" xmin="556387.41481285262852907" ymax="141145.24451662352657877" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28827,7 +28827,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerShape>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.2445120841730386" xmin="556387.41481285262852907" ymax="141145.24451662314822897" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208414393477" xmin="556387.41481285262852907" ymax="141145.24451662311912514" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28977,7 +28977,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55536084438790567" xmin="555146.75582698069047183" ymax="145729.55536095556453802" xmax="555294.75582713156472892"/>
+        <Extent ymin="145620.55536084435880184" xmin="555146.75582698069047183" ymax="145729.55536095553543419" xmax="555294.75582713156472892"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29097,7 +29097,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926983259618" xmin="555352.02931586769409478" ymax="145918.49579549668123946" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926980349235" xmin="555352.02931586769409478" ymax="145918.49579549665213563" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29187,7 +29187,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282044153661" xmin="554414.48823976842686534" ymax="147098.400620132451877" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282047064044" xmin="554414.48823976842686534" ymax="147098.40062013248098083" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29277,7 +29277,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998502060771" xmin="554434.94899998628534377" ymax="146543.49708991608349606" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998499150388" xmin="554434.94899998628534377" ymax="146543.49708991605439223" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29435,7 +29435,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208362006582" xmin="556387.41481285262852907" ymax="141145.24451662259525619" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208359096199" xmin="556387.41481285262852907" ymax="141145.24451662256615236" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29827,7 +29827,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.5549999431532342" xmin="555146.75599992461502552" ymax="145729.55500005432986654" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994312413037" xmin="555146.75599992461502552" ymax="145729.55500005430076271" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -29947,7 +29947,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926942514256" xmin="555352.02931586769409478" ymax="145918.49579549627378583" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926939603873" xmin="555352.02931586769409478" ymax="145918.495795496244682" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30037,7 +30037,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282079078257" xmin="554414.48823976842686534" ymax="147098.40062013280112296" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.5552928208198864" xmin="554414.48823976842686534" ymax="147098.40062013283022679" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30127,7 +30127,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998470046557" xmin="554434.94899998628534377" ymax="146543.49708991576335393" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998467136174" xmin="554434.94899998628534377" ymax="146543.4970899157342501" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30562,7 +30562,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994292040356" xmin="555146.75599992461502552" ymax="145729.5550000540970359" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994289129972" xmin="555146.75599992461502552" ymax="145729.55500005406793207" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30660,7 +30660,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282087809406" xmin="554414.48823976842686534" ymax="147098.40062013288843445" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282090719789" xmin="554414.48823976842686534" ymax="147098.40062013291753829" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30720,7 +30720,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926913410425" xmin="555352.02931586769409478" ymax="145918.49579549598274752" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926910500042" xmin="555352.02931586769409478" ymax="145918.49579549595364369" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -30932,7 +30932,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.1159999844385311" xmin="554434.94899998628534377" ymax="146543.49708991550141945" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998440942727" xmin="554434.94899998628534377" ymax="146543.49708991547231562" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -31353,7 +31353,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061097969301" xmin="560672.80429450585506856" ymax="141434.65369718600413762" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061103790067" xmin="560672.80429450585506856" ymax="141434.65369718606234528" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -31482,7 +31482,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705818230286" xmin="559224.55663845222443342" ymax="143160.60991081094834954" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705821140669" xmin="559224.55663845222443342" ymax="143160.60991081097745337" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -55018,6 +55018,16 @@ def my_form_open(dialog, layer, feature):
         <default field="update_geometry_alt1" expression=""/>
         <default field="update_geometry_alt2" expression=""/>
         <default field="schema_force_visible" expression=""/>
+        <default field="label_1_visible" expression=""/>
+        <default field="label_1_x" expression=""/>
+        <default field="label_1_y" expression=""/>
+        <default field="label_1_rotation" expression=""/>
+        <default field="label_1_text" expression=""/>
+        <default field="label_2_visible" expression=""/>
+        <default field="label_2_x" expression=""/>
+        <default field="label_2_y" expression=""/>
+        <default field="label_2_rotation" expression=""/>
+        <default field="label_2_text" expression=""/>
         <default field="valve_function_vl_active" expression=""/>
         <default field="valve_function_short_fr" expression=""/>
         <default field="valve_function_short_en" expression=""/>
@@ -56016,6 +56026,36 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="ValueRelation" name="schema_force_visible">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="ValueRelation" name="label_1_visible">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_x">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_y">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_rotation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_text">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="ValueRelation" name="label_2_visible">
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_x">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_y">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_rotation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_text">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="valve_function_vl_active">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -56639,8 +56679,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/yQuadOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -56738,35 +56778,45 @@ def my_form_open(dialog, layer, feature):
         <alias field="update_geometry_alt1" index="37" name=""/>
         <alias field="update_geometry_alt2" index="38" name=""/>
         <alias field="schema_force_visible" index="39" name="visibilité schéma"/>
-        <alias field="valve_function_vl_active" index="40" name=""/>
-        <alias field="valve_function_short_fr" index="41" name=""/>
-        <alias field="valve_function_short_en" index="42" name=""/>
-        <alias field="valve_function_short_ro" index="43" name=""/>
-        <alias field="valve_function_value_fr" index="44" name=""/>
-        <alias field="valve_function_value_en" index="45" name=""/>
-        <alias field="valve_function_value_ro" index="46" name=""/>
-        <alias field="valve_function_description_fr" index="47" name=""/>
-        <alias field="valve_function_description_en" index="48" name=""/>
-        <alias field="valve_function_description_ro" index="49" name=""/>
-        <alias field="valve_function_schema_visible" index="50" name=""/>
-        <alias field="valve_type_vl_active" index="51" name=""/>
-        <alias field="valve_type_short_fr" index="52" name=""/>
-        <alias field="valve_type_short_en" index="53" name=""/>
-        <alias field="valve_type_short_ro" index="54" name=""/>
-        <alias field="valve_type_value_fr" index="55" name=""/>
-        <alias field="valve_type_value_en" index="56" name=""/>
-        <alias field="valve_type_value_ro" index="57" name=""/>
-        <alias field="valve_type_description_fr" index="58" name=""/>
-        <alias field="valve_type_description_en" index="59" name=""/>
-        <alias field="valve_type_description_ro" index="60" name=""/>
-        <alias field="valve_actuation_id" index="61" name=""/>
-        <alias field="valve_actuation_vl_active" index="62" name=""/>
-        <alias field="valve_actuation_short_fr" index="63" name=""/>
-        <alias field="valve_actuation_value_fr" index="64" name=""/>
-        <alias field="valve_actuation_description_fr" index="65" name=""/>
-        <alias field="valve_actuation_schema_visible" index="66" name=""/>
-        <alias field="status_active" index="67" name=""/>
-        <alias field="status_functional" index="68" name=""/>
+        <alias field="label_1_visible" index="40" name=""/>
+        <alias field="label_1_x" index="41" name=""/>
+        <alias field="label_1_y" index="42" name=""/>
+        <alias field="label_1_rotation" index="43" name=""/>
+        <alias field="label_1_text" index="44" name=""/>
+        <alias field="label_2_visible" index="45" name=""/>
+        <alias field="label_2_x" index="46" name=""/>
+        <alias field="label_2_y" index="47" name=""/>
+        <alias field="label_2_rotation" index="48" name=""/>
+        <alias field="label_2_text" index="49" name=""/>
+        <alias field="valve_function_vl_active" index="50" name=""/>
+        <alias field="valve_function_short_fr" index="51" name=""/>
+        <alias field="valve_function_short_en" index="52" name=""/>
+        <alias field="valve_function_short_ro" index="53" name=""/>
+        <alias field="valve_function_value_fr" index="54" name=""/>
+        <alias field="valve_function_value_en" index="55" name=""/>
+        <alias field="valve_function_value_ro" index="56" name=""/>
+        <alias field="valve_function_description_fr" index="57" name=""/>
+        <alias field="valve_function_description_en" index="58" name=""/>
+        <alias field="valve_function_description_ro" index="59" name=""/>
+        <alias field="valve_function_schema_visible" index="60" name=""/>
+        <alias field="valve_type_vl_active" index="61" name=""/>
+        <alias field="valve_type_short_fr" index="62" name=""/>
+        <alias field="valve_type_short_en" index="63" name=""/>
+        <alias field="valve_type_short_ro" index="64" name=""/>
+        <alias field="valve_type_value_fr" index="65" name=""/>
+        <alias field="valve_type_value_en" index="66" name=""/>
+        <alias field="valve_type_value_ro" index="67" name=""/>
+        <alias field="valve_type_description_fr" index="68" name=""/>
+        <alias field="valve_type_description_en" index="69" name=""/>
+        <alias field="valve_type_description_ro" index="70" name=""/>
+        <alias field="valve_actuation_id" index="71" name=""/>
+        <alias field="valve_actuation_vl_active" index="72" name=""/>
+        <alias field="valve_actuation_short_fr" index="73" name=""/>
+        <alias field="valve_actuation_value_fr" index="74" name=""/>
+        <alias field="valve_actuation_description_fr" index="75" name=""/>
+        <alias field="valve_actuation_schema_visible" index="76" name=""/>
+        <alias field="status_active" index="77" name=""/>
+        <alias field="status_functional" index="78" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -57084,6 +57134,16 @@ def my_form_open(dialog, layer, feature):
         <default field="update_geometry_alt1" expression=""/>
         <default field="update_geometry_alt2" expression=""/>
         <default field="schema_force_visible" expression=""/>
+        <default field="label_1_visible" expression=""/>
+        <default field="label_1_x" expression=""/>
+        <default field="label_1_y" expression=""/>
+        <default field="label_1_rotation" expression=""/>
+        <default field="label_1_text" expression=""/>
+        <default field="label_2_visible" expression=""/>
+        <default field="label_2_x" expression=""/>
+        <default field="label_2_y" expression=""/>
+        <default field="label_2_rotation" expression=""/>
+        <default field="label_2_text" expression=""/>
         <default field="pipe_schema_force_visible" expression=""/>
         <default field="pipe_pipe_function_schema_visible" expression=""/>
         <default field="valve_function_vl_active" expression=""/>
@@ -57237,6 +57297,36 @@ def my_form_open(dialog, layer, feature):
         </edittype>
         <edittype widgetv2type="ValueRelation" name="schema_force_visible">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_visible">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_x">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_y">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_rotation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_1_text">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_visible">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_x">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_y">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_rotation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="label_2_text">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="pipe_schema_force_visible">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -57756,35 +57846,45 @@ def my_form_open(dialog, layer, feature):
         <alias field="update_geometry_alt1" index="37" name=""/>
         <alias field="update_geometry_alt2" index="38" name=""/>
         <alias field="schema_force_visible" index="39" name="visibilité schéma"/>
-        <alias field="pipe_schema_force_visible" index="40" name="Visiblité schématique"/>
-        <alias field="pipe_pipe_function_schema_visible" index="41" name=""/>
-        <alias field="valve_function_vl_active" index="42" name=""/>
-        <alias field="valve_function_short_fr" index="43" name=""/>
-        <alias field="valve_function_short_en" index="44" name=""/>
-        <alias field="valve_function_short_ro" index="45" name=""/>
-        <alias field="valve_function_value_fr" index="46" name=""/>
-        <alias field="valve_function_value_en" index="47" name=""/>
-        <alias field="valve_function_value_ro" index="48" name=""/>
-        <alias field="valve_function_description_fr" index="49" name=""/>
-        <alias field="valve_function_description_en" index="50" name=""/>
-        <alias field="valve_function_description_ro" index="51" name=""/>
-        <alias field="valve_function_schema_visible" index="52" name=""/>
-        <alias field="valve_type_vl_active" index="53" name=""/>
-        <alias field="valve_type_short_fr" index="54" name=""/>
-        <alias field="valve_type_short_en" index="55" name=""/>
-        <alias field="valve_type_short_ro" index="56" name=""/>
-        <alias field="valve_type_value_fr" index="57" name=""/>
-        <alias field="valve_type_value_en" index="58" name=""/>
-        <alias field="valve_type_value_ro" index="59" name=""/>
-        <alias field="valve_type_description_fr" index="60" name=""/>
-        <alias field="valve_type_description_en" index="61" name=""/>
-        <alias field="valve_type_description_ro" index="62" name=""/>
-        <alias field="valve_actuation_id" index="63" name=""/>
-        <alias field="valve_actuation_vl_active" index="64" name=""/>
-        <alias field="valve_actuation_short_fr" index="65" name=""/>
-        <alias field="valve_actuation_value_fr" index="66" name=""/>
-        <alias field="valve_actuation_description_fr" index="67" name=""/>
-        <alias field="valve_actuation_schema_visible" index="68" name=""/>
+        <alias field="label_1_visible" index="40" name=""/>
+        <alias field="label_1_x" index="41" name=""/>
+        <alias field="label_1_y" index="42" name=""/>
+        <alias field="label_1_rotation" index="43" name=""/>
+        <alias field="label_1_text" index="44" name=""/>
+        <alias field="label_2_visible" index="45" name=""/>
+        <alias field="label_2_x" index="46" name=""/>
+        <alias field="label_2_y" index="47" name=""/>
+        <alias field="label_2_rotation" index="48" name=""/>
+        <alias field="label_2_text" index="49" name=""/>
+        <alias field="pipe_schema_force_visible" index="50" name="Visiblité schématique"/>
+        <alias field="pipe_pipe_function_schema_visible" index="51" name=""/>
+        <alias field="valve_function_vl_active" index="52" name=""/>
+        <alias field="valve_function_short_fr" index="53" name=""/>
+        <alias field="valve_function_short_en" index="54" name=""/>
+        <alias field="valve_function_short_ro" index="55" name=""/>
+        <alias field="valve_function_value_fr" index="56" name=""/>
+        <alias field="valve_function_value_en" index="57" name=""/>
+        <alias field="valve_function_value_ro" index="58" name=""/>
+        <alias field="valve_function_description_fr" index="59" name=""/>
+        <alias field="valve_function_description_en" index="60" name=""/>
+        <alias field="valve_function_description_ro" index="61" name=""/>
+        <alias field="valve_function_schema_visible" index="62" name=""/>
+        <alias field="valve_type_vl_active" index="63" name=""/>
+        <alias field="valve_type_short_fr" index="64" name=""/>
+        <alias field="valve_type_short_en" index="65" name=""/>
+        <alias field="valve_type_short_ro" index="66" name=""/>
+        <alias field="valve_type_value_fr" index="67" name=""/>
+        <alias field="valve_type_value_en" index="68" name=""/>
+        <alias field="valve_type_value_ro" index="69" name=""/>
+        <alias field="valve_type_description_fr" index="70" name=""/>
+        <alias field="valve_type_description_en" index="71" name=""/>
+        <alias field="valve_type_description_ro" index="72" name=""/>
+        <alias field="valve_actuation_id" index="73" name=""/>
+        <alias field="valve_actuation_vl_active" index="74" name=""/>
+        <alias field="valve_actuation_short_fr" index="75" name=""/>
+        <alias field="valve_actuation_value_fr" index="76" name=""/>
+        <alias field="valve_actuation_description_fr" index="77" name=""/>
+        <alias field="valve_actuation_schema_visible" index="78" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
