@@ -1,0 +1,3 @@
+[submodule "cadastre"]
+	path = cadastre
+	url = git@github.com:sige-riviera/cadastre.git
