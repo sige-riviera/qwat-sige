@@ -33,7 +33,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Réseau">
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Réseau">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="conduites_copy20130709141244955" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table=&quot;qwat_od&quot;.&quot;pipe&quot; (geometry) sql=" name="conduites">
           <customproperties>
@@ -392,10 +392,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2557922.19522267114371061</xmin>
-      <ymin>1143050.0536481065209955</ymin>
-      <xmax>2560216.83960324060171843</xmax>
-      <ymax>1145435.53698360151611269</ymax>
+      <xmin>2558202.30110921431332827</xmin>
+      <ymin>1143774.7473987634293735</ymin>
+      <xmax>2559349.62329949904233217</xmax>
+      <ymax>1144967.4890665109269321</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -664,7 +664,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
+      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Réseau">
         <legendlayer drawingOrder="14" open="false" checked="Qt::Checked" name="conduites" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="conduites_copy20130709141244955" visible="1"/>
@@ -35273,7 +35273,7 @@ def my_form_open(dialog, layer, feature):
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_district">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -35287,11 +35287,11 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="_printmaps">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt1_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="CheckBox" name="_geometry_alt1_used">
+          <widgetv2config fieldEditable="0" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt2_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="CheckBox" name="_geometry_alt2_used">
+          <widgetv2config fieldEditable="0" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="_pipe_node_type">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -35318,10 +35318,10 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_distributor">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_status">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_folder">
           <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_hydrant_folder" ReadOnly="0" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
@@ -35351,7 +35351,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="remark">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="1" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="schema_force_visible">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -35507,6 +35507,7 @@ def my_form_open(dialog, layer, feature):
       <labeling type="simple"/>
       <customproperties>
         <property key="QFieldSync/action" value="offline"/>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="itemBrowserConnected" value="no"/>
         <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
@@ -35524,6 +35525,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/bufferSizeInMapUnits" value="false"/>
         <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
         <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/bufferTransp" value="0"/>
         <property key="labeling/centroidInside" value="false"/>
         <property key="labeling/centroidWhole" value="false"/>
@@ -35536,13 +35538,14 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distInMapUnits" value="false"/>
         <property key="labeling/distMapUnitMaxScale" value="0"/>
         <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
         <property key="labeling/fieldName" value="CASE WHEN  &quot;underground&quot; = 't' THEN 'HS' ELSE 'BH' END ||identification"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Arial"/>
+        <property key="labeling/fontFamily" value="Cantarell"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -35552,6 +35555,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeInMapUnits" value="false"/>
         <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
         <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
         <property key="labeling/fontWeight" value="50"/>
@@ -35561,6 +35565,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
         <property key="labeling/leftDirectionSymbol" value="&lt;"/>
         <property key="labeling/limitNumLabels" value="false"/>
@@ -35588,6 +35593,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/repeatDistance" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/repeatDistanceUnit" value="1"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
@@ -35604,11 +35610,13 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shadowOffsetGlobal" value="true"/>
         <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shadowOffsetUnits" value="1"/>
         <property key="labeling/shadowRadius" value="1.5"/>
         <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
         <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
         <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shadowRadiusUnits" value="1"/>
         <property key="labeling/shadowScale" value="100"/>
         <property key="labeling/shadowTransparency" value="30"/>
@@ -35621,6 +35629,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeBorderWidth" value="0"/>
         <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeBorderWidthUnits" value="1"/>
         <property key="labeling/shapeDraw" value="false"/>
         <property key="labeling/shapeFillColorA" value="255"/>
@@ -35630,11 +35639,13 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeJoinStyle" value="64"/>
         <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeOffsetUnits" value="1"/>
         <property key="labeling/shapeOffsetX" value="0"/>
         <property key="labeling/shapeOffsetY" value="0"/>
         <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeRadiiUnits" value="1"/>
         <property key="labeling/shapeRadiiX" value="0"/>
         <property key="labeling/shapeRadiiY" value="0"/>
@@ -35643,31 +35654,34 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeSVGFile" value=""/>
         <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeSizeType" value="0"/>
         <property key="labeling/shapeSizeUnits" value="1"/>
         <property key="labeling/shapeSizeX" value="0"/>
         <property key="labeling/shapeSizeY" value="0"/>
         <property key="labeling/shapeTransparency" value="0"/>
         <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
         <property key="labeling/textColorA" value="255"/>
         <property key="labeling/textColorB" value="0"/>
         <property key="labeling/textColorG" value="0"/>
         <property key="labeling/textColorR" value="217"/>
         <property key="labeling/textTransp" value="0"/>
         <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/xQuadOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/yQuadOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>id</displayfield>
+      <displayfield>status_description_fr</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -35690,7 +35704,7 @@ def my_form_open(dialog, layer, feature):
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="10001" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="10001" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -35720,13 +35734,13 @@ def my_form_open(dialog, layer, feature):
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="id" index="0" name=""/>
-        <alias field="fk_district" index="1" name=""/>
-        <alias field="fk_pressurezone" index="2" name=""/>
-        <alias field="fk_printmap" index="3" name=""/>
-        <alias field="_printmaps" index="4" name=""/>
-        <alias field="_geometry_alt1_used" index="5" name=""/>
-        <alias field="_geometry_alt2_used" index="6" name=""/>
+        <alias field="id" index="0" name="ID"/>
+        <alias field="fk_district" index="1" name="commune"/>
+        <alias field="fk_pressurezone" index="2" name="zone de pression"/>
+        <alias field="fk_printmap" index="3" name="folio"/>
+        <alias field="_printmaps" index="4" name="folios"/>
+        <alias field="_geometry_alt1_used" index="5" name="géom. alternative 1"/>
+        <alias field="_geometry_alt2_used" index="6" name="géom. alternative 2"/>
         <alias field="_pipe_node_type" index="7" name=""/>
         <alias field="_pipe_orientation" index="8" name=""/>
         <alias field="_pipe_schema_visible" index="9" name=""/>
@@ -35735,41 +35749,41 @@ def my_form_open(dialog, layer, feature):
         <alias field="update_geometry_alt1" index="12" name=""/>
         <alias field="update_geometry_alt2" index="13" name=""/>
         <alias field="identification" index="14" name=""/>
-        <alias field="fk_distributor" index="15" name=""/>
-        <alias field="fk_status" index="16" name=""/>
-        <alias field="fk_folder" index="17" name=""/>
+        <alias field="fk_distributor" index="15" name="distributeur"/>
+        <alias field="fk_status" index="16" name="état"/>
+        <alias field="fk_folder" index="17" name="dossier technique"/>
         <alias field="fk_locationtype" index="18" name=""/>
-        <alias field="fk_precision" index="19" name=""/>
-        <alias field="fk_precisionalti" index="20" name=""/>
-        <alias field="fk_object_reference" index="21" name=""/>
+        <alias field="fk_precision" index="19" name="précision"/>
+        <alias field="fk_precisionalti" index="20" name="précision altimétrique"/>
+        <alias field="fk_object_reference" index="21" name="pt. de référence"/>
         <alias field="altitude" index="22" name=""/>
-        <alias field="year" index="23" name=""/>
-        <alias field="year_end" index="24" name=""/>
+        <alias field="year" index="23" name="année"/>
+        <alias field="year_end" index="24" name="année fin"/>
         <alias field="orientation" index="25" name=""/>
-        <alias field="remark" index="26" name=""/>
-        <alias field="schema_force_visible" index="27" name=""/>
-        <alias field="label_1_visible" index="28" name=""/>
+        <alias field="remark" index="26" name="remarques"/>
+        <alias field="schema_force_visible" index="27" name="visibilité schématique"/>
+        <alias field="label_1_visible" index="28" name="étiquette 1/250"/>
         <alias field="label_1_x" index="29" name=""/>
         <alias field="label_1_y" index="30" name=""/>
         <alias field="label_1_rotation" index="31" name=""/>
-        <alias field="label_1_text" index="32" name=""/>
-        <alias field="label_2_visible" index="33" name=""/>
+        <alias field="label_1_text" index="32" name="texte 1/250"/>
+        <alias field="label_2_visible" index="33" name="étiquette 1/5000"/>
         <alias field="label_2_x" index="34" name=""/>
         <alias field="label_2_y" index="35" name=""/>
         <alias field="label_2_rotation" index="36" name=""/>
-        <alias field="label_2_text" index="37" name=""/>
-        <alias field="fk_provider" index="38" name=""/>
-        <alias field="fk_model_sup" index="39" name=""/>
-        <alias field="fk_model_inf" index="40" name=""/>
-        <alias field="fk_material" index="41" name=""/>
-        <alias field="fk_output" index="42" name=""/>
-        <alias field="underground" index="43" name=""/>
-        <alias field="marked" index="44" name=""/>
-        <alias field="pressure_static" index="45" name=""/>
-        <alias field="pressure_dynamic" index="46" name=""/>
-        <alias field="flow" index="47" name=""/>
-        <alias field="observation_date" index="48" name=""/>
-        <alias field="observation_source" index="49" name=""/>
+        <alias field="label_2_text" index="37" name="texte 1/5000"/>
+        <alias field="fk_provider" index="38" name="fournisseur"/>
+        <alias field="fk_model_sup" index="39" name="modèle sup."/>
+        <alias field="fk_model_inf" index="40" name="modèle inf."/>
+        <alias field="fk_material" index="41" name="matériau"/>
+        <alias field="fk_output" index="42" name="sortie"/>
+        <alias field="underground" index="43" name="souterraine"/>
+        <alias field="marked" index="44" name="marqué"/>
+        <alias field="pressure_static" index="45" name="pression statique"/>
+        <alias field="pressure_dynamic" index="46" name="pression dynamique"/>
+        <alias field="flow" index="47" name="débit"/>
+        <alias field="observation_date" index="48" name="date de mesure"/>
+        <alias field="observation_source" index="49" name="origine des mesures"/>
         <alias field="status_vl_active" index="50" name=""/>
         <alias field="status_short_fr" index="51" name=""/>
         <alias field="status_short_en" index="52" name=""/>
@@ -35831,7 +35845,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="orientation"/>
           <column width="-1" hidden="1" type="field" name="fk_provider"/>
           <column width="-1" hidden="1" type="field" name="fk_material"/>
-          <column width="-1" hidden="0" type="field" name="model"/>
           <column width="-1" hidden="0" type="field" name="underground"/>
           <column width="-1" hidden="0" type="field" name="marked"/>
           <column width="-1" hidden="0" type="field" name="pressure_static"/>
@@ -35853,7 +35866,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="status_description_en"/>
           <column width="-1" hidden="1" type="field" name="status_description_ro"/>
           <column width="-1" hidden="1" type="field" name="status_active"/>
-          <column width="-1" hidden="1" type="field" name="status_sire"/>
           <column width="-1" hidden="1" type="field" name="status_code_sire"/>
           <column width="-1" hidden="1" type="field" name="status_functional"/>
           <column width="-1" hidden="1" type="actions"/>
@@ -35881,7 +35893,46 @@ def my_form_open(dialog, layer, feature):
 	control = dialog.findChild(QWidget, "MyLineEdit")
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
-      <editorlayout>uifilelayout</editorlayout>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="0" name="id"/>
+          <attributeEditorField showLabel="1" index="15" name="fk_distributor"/>
+          <attributeEditorField showLabel="1" index="14" name="identification"/>
+          <attributeEditorField showLabel="1" index="16" name="fk_status"/>
+          <attributeEditorField showLabel="1" index="17" name="fk_folder"/>
+          <attributeEditorField showLabel="1" index="23" name="year"/>
+          <attributeEditorField showLabel="1" index="39" name="fk_model_sup"/>
+          <attributeEditorField showLabel="1" index="24" name="year_end"/>
+          <attributeEditorField showLabel="1" index="40" name="fk_model_inf"/>
+          <attributeEditorField showLabel="1" index="38" name="fk_provider"/>
+          <attributeEditorField showLabel="1" index="42" name="fk_output"/>
+          <attributeEditorField showLabel="1" index="41" name="fk_material"/>
+          <attributeEditorField showLabel="1" index="26" name="remark"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Géométrie" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="22" name="altitude"/>
+          <attributeEditorField showLabel="1" index="4" name="_printmaps"/>
+          <attributeEditorField showLabel="1" index="19" name="fk_precision"/>
+          <attributeEditorField showLabel="1" index="2" name="fk_pressurezone"/>
+          <attributeEditorField showLabel="1" index="20" name="fk_precisionalti"/>
+          <attributeEditorField showLabel="1" index="1" name="fk_district"/>
+          <attributeEditorField showLabel="1" index="21" name="fk_object_reference"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Etiquettes" groupBox="0" columnCount="1">
+          <attributeEditorField showLabel="1" index="32" name="label_1_text"/>
+          <attributeEditorField showLabel="1" index="28" name="label_1_visible"/>
+          <attributeEditorField showLabel="1" index="37" name="label_2_text"/>
+          <attributeEditorField showLabel="1" index="33" name="label_2_visible"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Hydraulique" groupBox="0" columnCount="1">
+          <attributeEditorField showLabel="1" index="46" name="pressure_dynamic"/>
+          <attributeEditorField showLabel="1" index="45" name="pressure_static"/>
+          <attributeEditorField showLabel="1" index="47" name="flow"/>
+          <attributeEditorField showLabel="1" index="48" name="observation_date"/>
+          <attributeEditorField showLabel="1" index="49" name="observation_source"/>
+        </attributeEditorContainer>
+      </attributeEditorForm>
       <widgets/>
       <conditionalstyles>
         <rowstyles/>
@@ -35903,8 +35954,8 @@ def my_form_open(dialog, layer, feature):
         <default field="update_geometry_alt1" expression=""/>
         <default field="update_geometry_alt2" expression=""/>
         <default field="identification" expression=""/>
-        <default field="fk_distributor" expression=""/>
-        <default field="fk_status" expression=""/>
+        <default field="fk_distributor" expression="1"/>
+        <default field="fk_status" expression="1301"/>
         <default field="fk_folder" expression=""/>
         <default field="fk_locationtype" expression=""/>
         <default field="fk_precision" expression=""/>
@@ -52698,16 +52749,16 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_valve_type">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_valve_type20130304110011685" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_valve_type20130304110011685" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_valve_function">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_valve_function20130304110011544" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_valve_function20130304110011544" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_valve_actuation">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="valve_actuation20150608112911022" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="valve_actuation20150608112911022" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_pipe">
-          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_valve_pipe" ReadOnly="1" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
+          <widgetv2config OrderByValue="0" fieldEditable="0" AllowAddFeatures="0" ShowForm="0" Relation="relation_valve_pipe" ReadOnly="1" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_handle_precision">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -52734,22 +52785,22 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_district">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="0" Key="id" constraint="" Layer="district20130304110004764" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_pressurezone">
-          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurezone20130417133612105" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="1" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="0" Key="id" constraint="" Layer="pressurezone20130417133612105" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_distributor">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="distributor20130304114719702" Value="name" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_precision">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_precisionalti">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precisionalti20131211161429510" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_status">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_status20130304110011436" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_object_reference">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="object_reference20150922083109152" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -52781,11 +52832,11 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="fk_printmap">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt1_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="CheckBox" name="_geometry_alt1_used">
+          <widgetv2config fieldEditable="0" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="_geometry_alt2_used">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        <edittype widgetv2type="CheckBox" name="_geometry_alt2_used">
+          <widgetv2config fieldEditable="0" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="_pipe_node_type">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -53338,7 +53389,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Arial"/>
+        <property key="labeling/fontFamily" value="Cantarell"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -53527,37 +53578,37 @@ def my_form_open(dialog, layer, feature):
       <DiagramLayerSettings yPosColumn="-1" showColumn="0" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="id" index="0" name=""/>
-        <alias field="fk_valve_type" index="1" name=""/>
-        <alias field="fk_valve_function" index="2" name=""/>
-        <alias field="fk_valve_actuation" index="3" name=""/>
-        <alias field="fk_pipe" index="4" name="ID conduite"/>
-        <alias field="fk_handle_precision" index="5" name="précision de la position de la tige"/>
-        <alias field="fk_handle_precisionalti" index="6" name="précision de l'altitude de la tige"/>
+        <alias field="id" index="0" name="ID"/>
+        <alias field="fk_valve_type" index="1" name="Type"/>
+        <alias field="fk_valve_function" index="2" name="Fonction"/>
+        <alias field="fk_valve_actuation" index="3" name="Actionnement"/>
+        <alias field="fk_pipe" index="4" name="conduite"/>
+        <alias field="fk_handle_precision" index="5" name="Précision de la tige"/>
+        <alias field="fk_handle_precisionalti" index="6" name="Précision altimétrique de la tige"/>
         <alias field="fk_maintenance" index="7" name="entretien"/>
         <alias field="diameter_nominal" index="8" name="diamètre nominal"/>
         <alias field="closed" index="9" name="fermée"/>
-        <alias field="networkseparation" index="10" name=""/>
+        <alias field="networkseparation" index="10" name="séparation de réseau"/>
         <alias field="handle_altitude" index="11" name=""/>
         <alias field="handle_geometry" index="12" name=""/>
         <alias field="fk_district" index="13" name="commune"/>
         <alias field="fk_pressurezone" index="14" name="zone de pression"/>
         <alias field="fk_distributor" index="15" name=""/>
-        <alias field="fk_precision" index="16" name=""/>
-        <alias field="fk_precisionalti" index="17" name=""/>
-        <alias field="fk_status" index="18" name=""/>
-        <alias field="fk_object_reference" index="19" name=""/>
-        <alias field="fk_folder" index="20" name=""/>
+        <alias field="fk_precision" index="16" name="précision"/>
+        <alias field="fk_precisionalti" index="17" name="précision altimétrique"/>
+        <alias field="fk_status" index="18" name="Statut"/>
+        <alias field="fk_object_reference" index="19" name="Pt. de réf."/>
+        <alias field="fk_folder" index="20" name="Dossier technique"/>
         <alias field="year" index="21" name="année"/>
-        <alias field="year_end" index="22" name=""/>
+        <alias field="year_end" index="22" name="année fin"/>
         <alias field="altitude" index="23" name=""/>
         <alias field="orientation" index="24" name=""/>
         <alias field="fk_locationtype" index="25" name=""/>
         <alias field="identification" index="26" name=""/>
         <alias field="remark" index="27" name="remarques"/>
-        <alias field="fk_printmap" index="28" name="folio"/>
-        <alias field="_geometry_alt1_used" index="29" name=""/>
-        <alias field="_geometry_alt2_used" index="30" name=""/>
+        <alias field="fk_printmap" index="28" name="Folio"/>
+        <alias field="_geometry_alt1_used" index="29" name="Géom. alternative 1"/>
+        <alias field="_geometry_alt2_used" index="30" name="Géom. alternative 2"/>
         <alias field="_pipe_node_type" index="31" name=""/>
         <alias field="_pipe_orientation" index="32" name=""/>
         <alias field="_pipe_schema_visible" index="33" name=""/>
@@ -53567,16 +53618,16 @@ def my_form_open(dialog, layer, feature):
         <alias field="update_geometry_alt1" index="37" name=""/>
         <alias field="update_geometry_alt2" index="38" name=""/>
         <alias field="schema_force_visible" index="39" name="visibilité schéma"/>
-        <alias field="label_1_visible" index="40" name=""/>
+        <alias field="label_1_visible" index="40" name="visibilité 1/250"/>
         <alias field="label_1_x" index="41" name=""/>
         <alias field="label_1_y" index="42" name=""/>
         <alias field="label_1_rotation" index="43" name=""/>
-        <alias field="label_1_text" index="44" name=""/>
-        <alias field="label_2_visible" index="45" name=""/>
+        <alias field="label_1_text" index="44" name="étiquette 1/250"/>
+        <alias field="label_2_visible" index="45" name="visibilité 1/5000"/>
         <alias field="label_2_x" index="46" name=""/>
         <alias field="label_2_y" index="47" name=""/>
         <alias field="label_2_rotation" index="48" name=""/>
-        <alias field="label_2_text" index="49" name=""/>
+        <alias field="label_2_text" index="49" name="étiquette 1/5000"/>
         <alias field="valve_function_vl_active" index="50" name=""/>
         <alias field="valve_function_short_fr" index="51" name=""/>
         <alias field="valve_function_short_en" index="52" name=""/>
@@ -53607,7 +53658,9 @@ def my_form_open(dialog, layer, feature):
         <alias field="status_active" index="77" name=""/>
         <alias field="status_functional" index="78" name=""/>
       </aliases>
-      <excludeAttributesWMS/>
+      <excludeAttributesWMS>
+        <attribute>altitude</attribute>
+      </excludeAttributesWMS>
       <excludeAttributesWFS/>
       <attributeactions default="0">
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].showHistory('valve20130304110011497',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
@@ -53718,7 +53771,48 @@ def my_form_open(dialog, layer, feature):
 	control = dialog.findChild(QWidget, "MyLineEdit")
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
-      <editorlayout>uifilelayout</editorlayout>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Général" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="0" name="id"/>
+          <attributeEditorField showLabel="1" index="15" name="fk_distributor"/>
+          <attributeEditorField showLabel="1" index="26" name="identification"/>
+          <attributeEditorField showLabel="1" index="1" name="fk_valve_type"/>
+          <attributeEditorField showLabel="1" index="8" name="diameter_nominal"/>
+          <attributeEditorField showLabel="1" index="2" name="fk_valve_function"/>
+          <attributeEditorField showLabel="1" index="20" name="fk_folder"/>
+          <attributeEditorField showLabel="1" index="3" name="fk_valve_actuation"/>
+          <attributeEditorField showLabel="1" index="21" name="year"/>
+          <attributeEditorField showLabel="1" index="18" name="fk_status"/>
+          <attributeEditorField showLabel="1" index="22" name="year_end"/>
+          <attributeEditorField showLabel="1" index="7" name="fk_maintenance"/>
+          <attributeEditorField showLabel="1" index="9" name="closed"/>
+          <attributeEditorField showLabel="1" index="10" name="networkseparation"/>
+          <attributeEditorField showLabel="0" index="27" name="remark"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Géométrie" groupBox="0" columnCount="2">
+          <attributeEditorField showLabel="1" index="23" name="altitude"/>
+          <attributeEditorField showLabel="1" index="4" name="fk_pipe"/>
+          <attributeEditorField showLabel="1" index="16" name="fk_precision"/>
+          <attributeEditorField showLabel="1" index="34" name="_printmaps"/>
+          <attributeEditorField showLabel="1" index="17" name="fk_precisionalti"/>
+          <attributeEditorField showLabel="1" index="13" name="fk_district"/>
+          <attributeEditorField showLabel="1" index="19" name="fk_object_reference"/>
+          <attributeEditorField showLabel="1" index="14" name="fk_pressurezone"/>
+        </attributeEditorContainer>
+        <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Rendu" groupBox="0" columnCount="1">
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Schématique" groupBox="1" columnCount="1">
+            <attributeEditorField showLabel="1" index="39" name="schema_force_visible"/>
+            <attributeEditorField showLabel="1" index="30" name="_geometry_alt2_used"/>
+          </attributeEditorContainer>
+          <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Etiquettes" groupBox="1" columnCount="2">
+            <attributeEditorField showLabel="1" index="40" name="label_1_visible"/>
+            <attributeEditorField showLabel="1" index="44" name="label_1_text"/>
+            <attributeEditorField showLabel="1" index="45" name="label_2_visible"/>
+            <attributeEditorField showLabel="1" index="49" name="label_2_text"/>
+          </attributeEditorContainer>
+        </attributeEditorContainer>
+      </attributeEditorForm>
       <widgets/>
       <conditionalstyles>
         <rowstyles/>
@@ -53730,8 +53824,8 @@ def my_form_open(dialog, layer, feature):
         <default field="fk_valve_function" expression=""/>
         <default field="fk_valve_actuation" expression=""/>
         <default field="fk_pipe" expression=""/>
-        <default field="fk_handle_precision" expression=""/>
-        <default field="fk_handle_precisionalti" expression=""/>
+        <default field="fk_handle_precision" expression="102"/>
+        <default field="fk_handle_precisionalti" expression="102"/>
         <default field="fk_maintenance" expression=""/>
         <default field="diameter_nominal" expression=""/>
         <default field="closed" expression=""/>
@@ -53741,9 +53835,9 @@ def my_form_open(dialog, layer, feature):
         <default field="fk_district" expression=""/>
         <default field="fk_pressurezone" expression=""/>
         <default field="fk_distributor" expression=""/>
-        <default field="fk_precision" expression=""/>
-        <default field="fk_precisionalti" expression=""/>
-        <default field="fk_status" expression=""/>
+        <default field="fk_precision" expression="1102"/>
+        <default field="fk_precisionalti" expression="102"/>
+        <default field="fk_status" expression="1301"/>
         <default field="fk_object_reference" expression=""/>
         <default field="fk_folder" expression=""/>
         <default field="year" expression=""/>
