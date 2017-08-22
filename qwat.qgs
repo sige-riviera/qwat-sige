@@ -60,6 +60,9 @@
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_crossing20141023083754327" source="service='qwat' sslmode=disable key='id' srid=2056 type=Point table=&quot;qwat_od&quot;.&quot;crossing&quot; (geometry) sql=" name="croisements">
           <customproperties/>
         </layer-tree-layer>
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="croquis_reseau20170822084618718" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=Point table=&quot;distribution&quot;.&quot;croquis_reseau&quot; (geometry) sql=" name="croquis_reseau">
+          <customproperties/>
+        </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="leak20130821111917060" source="service='qwat' sslmode=disable key='id' srid=2056 type=Point table=&quot;qwat_od&quot;.&quot;leak&quot; (geometry) sql=" name="fuite">
           <customproperties/>
         </layer-tree-layer>
@@ -392,10 +395,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2560262.69977678684517741</xmin>
-      <ymin>1141886.04129464249126613</ymin>
-      <xmax>2561248.05915178684517741</xmax>
-      <ymax>1142965.24441964249126613</ymax>
+      <xmin>2559433.5135822482407093</xmin>
+      <ymin>1142375.34179667825810611</ymin>
+      <xmax>2560039.19951974228024483</xmax>
+      <ymax>1143038.71210917527787387</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -527,6 +530,7 @@
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="1">
+      <item>croquis_reseau20170822084618718</item>
       <item>od_cover20141219115626229</item>
       <item>vw_node_installation20150918153835436</item>
       <item>subscriber20130304110011459</item>
@@ -631,93 +635,98 @@
   <legend updateDrawingOrder="false">
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
       <legendgroup open="false" checked="Qt::PartiallyChecked" name="ouvrages">
-        <legendlayer drawingOrder="1" open="false" checked="Qt::Checked" name="ouvrage" showFeatureCount="0">
+        <legendlayer drawingOrder="2" open="false" checked="Qt::Checked" name="ouvrage" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_node_installation20150918153835436" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="0" open="false" checked="Qt::Unchecked" name="couvercles" showFeatureCount="0">
+        <legendlayer drawingOrder="1" open="false" checked="Qt::Unchecked" name="couvercles" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_cover20141219115626229" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Checked" name="Abonnés">
-        <legendlayer drawingOrder="2" open="false" checked="Qt::Checked" name="abonnés" showFeatureCount="0">
+        <legendlayer drawingOrder="3" open="false" checked="Qt::Checked" name="abonnés" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="subscriber20130304110011459" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="3" open="false" checked="Qt::Checked" name="abonnés - renvoi" showFeatureCount="0">
+        <legendlayer drawingOrder="4" open="false" checked="Qt::Checked" name="abonnés - renvoi" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_subscriber_reference20131206105928067" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="4" open="false" checked="Qt::Checked" name="compteur réseau" showFeatureCount="0">
+        <legendlayer drawingOrder="5" open="false" checked="Qt::Checked" name="compteur réseau" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_meter20131120073630165" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="5" open="false" checked="Qt::Checked" name="Compteur réseau - renvoi" showFeatureCount="0">
+        <legendlayer drawingOrder="6" open="false" checked="Qt::Checked" name="Compteur réseau - renvoi" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_meter_reference20140304165835390" visible="1"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
-        <legendlayer drawingOrder="14" open="false" checked="Qt::Checked" name="conduites" showFeatureCount="0">
+        <legendlayer drawingOrder="15" open="false" checked="Qt::Checked" name="conduites" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="conduites_copy20130709141244955" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="11" open="false" checked="Qt::Checked" name="noeuds" showFeatureCount="0">
+        <legendlayer drawingOrder="12" open="false" checked="Qt::Checked" name="noeuds" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="node20130304110005126" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="7" open="false" checked="Qt::Checked" name="vannes" showFeatureCount="0">
+        <legendlayer drawingOrder="8" open="false" checked="Qt::Checked" name="vannes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="valve20130304110011497" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="8" open="false" checked="Qt::Checked" name="hydrantes" showFeatureCount="0">
+        <legendlayer drawingOrder="9" open="false" checked="Qt::Checked" name="hydrantes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="hydrant20130304110004848" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="10" open="false" checked="Qt::Checked" name="Pièces d'installations" showFeatureCount="0">
+        <legendlayer drawingOrder="11" open="false" checked="Qt::Checked" name="Pièces d'installations" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_part20140429113327995" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="20" open="true" checked="Qt::Checked" name="télécommande" showFeatureCount="0">
+        <legendlayer drawingOrder="21" open="true" checked="Qt::Checked" name="télécommande" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_remote20150116100522170" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="13" open="false" checked="Qt::Checked" name="croisements" showFeatureCount="0">
+        <legendlayer drawingOrder="14" open="false" checked="Qt::Checked" name="croisements" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_crossing20141023083754327" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="9" open="false" checked="Qt::Unchecked" name="fuite" showFeatureCount="0">
+        <legendlayer drawingOrder="0" open="true" checked="Qt::Unchecked" name="croquis_reseau" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="croquis_reseau20170822084618718" visible="0"/>
+          </filegroup>
+        </legendlayer>
+        <legendlayer drawingOrder="10" open="false" checked="Qt::Unchecked" name="fuite" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="leak20130821111917060" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="point de prélèvement" showFeatureCount="0">
+        <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="point de prélèvement" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_element_samplingpoint20151002161215716" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="Contrôle">
-        <legendlayer drawingOrder="6" open="false" checked="Qt::Unchecked" name="Fleches abonné -> conduite" showFeatureCount="0">
+        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="Fleches abonné -> conduite" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="subscriber_pipe_relation20130417092124312" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="12" open="false" checked="Qt::Unchecked" name="noeuds - tous - controle" showFeatureCount="0">
+        <legendlayer drawingOrder="13" open="false" checked="Qt::Unchecked" name="noeuds - tous - controle" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="od_node20140116161508743" visible="0"/>
           </filegroup>
@@ -726,44 +735,44 @@
     </legendgroup>
     <legendgroup open="false" checked="Qt::Unchecked" name="Schématique">
       <legendgroup open="false" checked="Qt::Unchecked" name="impression">
-        <legendlayer drawingOrder="78" open="false" checked="Qt::Unchecked" name="hydrantes 5000 (pression)" showFeatureCount="0">
+        <legendlayer drawingOrder="79" open="false" checked="Qt::Unchecked" name="hydrantes 5000 (pression)" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="hydrantes_copy20160127124839887" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="17" open="false" checked="Qt::Unchecked" name="conduite impression 5000" showFeatureCount="0">
+        <legendlayer drawingOrder="18" open="false" checked="Qt::Unchecked" name="conduite impression 5000" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_pipe_schema20141208162900166" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="15" open="false" checked="Qt::Unchecked" name="ouvrage 5000" showFeatureCount="0">
+        <legendlayer drawingOrder="16" open="false" checked="Qt::Unchecked" name="ouvrage 5000" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="ouvrage_copy20160125132737527" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="16" open="false" checked="Qt::Unchecked" name="vannes 5000" showFeatureCount="0">
+        <legendlayer drawingOrder="17" open="false" checked="Qt::Unchecked" name="vannes 5000" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vannes_copy20141127160745910" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="18" open="true" checked="Qt::Unchecked" name="télécommande 5000" showFeatureCount="0">
+        <legendlayer drawingOrder="19" open="true" checked="Qt::Unchecked" name="télécommande 5000" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="télécommande_copy20160127112146958" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="84" open="true" checked="Qt::Unchecked" name="zone_pression" showFeatureCount="0">
+        <legendlayer drawingOrder="85" open="true" checked="Qt::Unchecked" name="zone_pression" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="zone_pression20160314171914432" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="edition">
-        <legendlayer drawingOrder="19" open="true" checked="Qt::Unchecked" name="conduites edition 5000" showFeatureCount="0">
+        <legendlayer drawingOrder="20" open="true" checked="Qt::Unchecked" name="conduites edition 5000" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_pipe_schema_visibleitems20141127154708843" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="21" open="false" checked="Qt::Unchecked" name="Flèche conduite enfant -> parent" showFeatureCount="0">
+        <legendlayer drawingOrder="22" open="false" checked="Qt::Unchecked" name="Flèche conduite enfant -> parent" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="pipe_child_parent20130417092030507" visible="0"/>
           </filegroup>
@@ -771,315 +780,315 @@
       </legendgroup>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Checked" name="Annotations">
-      <legendlayer drawingOrder="22" open="false" checked="Qt::Checked" name="annotation - ligne" showFeatureCount="0">
+      <legendlayer drawingOrder="23" open="false" checked="Qt::Checked" name="annotation - ligne" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_annotationline20131203095020365" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="23" open="false" checked="Qt::Checked" name="annotation - point" showFeatureCount="0">
+      <legendlayer drawingOrder="24" open="false" checked="Qt::Checked" name="annotation - point" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_annotationpoint20131203095020392" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="Côtes">
-      <legendlayer drawingOrder="24" open="false" checked="Qt::Checked" name="côtes distance" showFeatureCount="0">
+      <legendlayer drawingOrder="25" open="false" checked="Qt::Checked" name="côtes distance" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="dimension20130807094904783" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="25" open="false" checked="Qt::Checked" name="côtes orientation" showFeatureCount="0">
+      <legendlayer drawingOrder="26" open="false" checked="Qt::Checked" name="côtes orientation" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_dimension_orientation20131202111155806" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="26" open="false" checked="Qt::Unchecked" name="points de construction" showFeatureCount="0">
+      <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="points de construction" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="constructionpoint20130807094904851" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="IntersectIt Points" showFeatureCount="0">
+      <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="IntersectIt Points" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="IntersectIt_Points20130618102143276" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="IntersectIt Lines" showFeatureCount="0">
+      <legendlayer drawingOrder="29" open="false" checked="Qt::Unchecked" name="IntersectIt Lines" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="IntersectIt_Lines20130618102142813" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="cadastre sige">
-      <legendlayer drawingOrder="83" open="false" checked="Qt::Checked" name="nom_rue" showFeatureCount="0">
+      <legendlayer drawingOrder="84" open="false" checked="Qt::Checked" name="nom_rue" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="nom_rue20160215151152641" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="29" open="false" checked="Qt::Unchecked" name="servitude ligne" showFeatureCount="0">
+      <legendlayer drawingOrder="30" open="false" checked="Qt::Unchecked" name="servitude ligne" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude20150109080436604" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="30" open="false" checked="Qt::Unchecked" name="servitude polygone" showFeatureCount="0">
+      <legendlayer drawingOrder="31" open="false" checked="Qt::Unchecked" name="servitude polygone" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude20150109080436650" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="31" open="true" checked="Qt::Unchecked" name="servitude sans géom." showFeatureCount="0">
+      <legendlayer drawingOrder="32" open="true" checked="Qt::Unchecked" name="servitude sans géom." showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_no_geom20150203154142407" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="32" open="false" checked="Qt::Unchecked" name="enquete camac" showFeatureCount="0">
+      <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="enquete camac" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="camac20140113144941208" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="33" open="false" checked="Qt::Checked" name="enquete cadastre" showFeatureCount="0">
+      <legendlayer drawingOrder="34" open="false" checked="Qt::Checked" name="enquete cadastre" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="cadastre20140312152032371" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="Zones">
-      <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="dossiers techniques" showFeatureCount="0">
+      <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="dossiers techniques" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="folder20150629160924367" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="communes" showFeatureCount="0">
+      <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="communes" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="district20130304110004764" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="zones de pressions" showFeatureCount="0">
+      <legendlayer drawingOrder="36" open="false" checked="Qt::Unchecked" name="zones de pressions" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pressurezone20130417133612105" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="70" open="false" checked="Qt::Unchecked" name="Zones de consommation" showFeatureCount="0">
+      <legendlayer drawingOrder="71" open="false" checked="Qt::Unchecked" name="Zones de consommation" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_consumptionzone20150508135647750" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="36" open="true" checked="Qt::Checked" name="folios" showFeatureCount="0">
+      <legendlayer drawingOrder="37" open="true" checked="Qt::Checked" name="folios" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="printmap20130304110011400" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="zones de protections" showFeatureCount="0">
+      <legendlayer drawingOrder="38" open="false" checked="Qt::Unchecked" name="zones de protections" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="protectionzone20130304110011418" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Unchecked" name="Tables auxiliaires">
-      <legendlayer drawingOrder="79" open="true" checked="Qt::Unchecked" name="protectionzone_type" showFeatureCount="0">
+      <legendlayer drawingOrder="80" open="true" checked="Qt::Unchecked" name="protectionzone_type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="protectionzone_type20160205143014456" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="emplacement" showFeatureCount="0">
+      <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="emplacement" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="locationtype20150922082741813" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="40" open="true" checked="Qt::Unchecked" name="abonnés - type" showFeatureCount="0">
+      <legendlayer drawingOrder="41" open="true" checked="Qt::Unchecked" name="abonnés - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_subscriber_type20130304110011480" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="41" open="true" checked="Qt::Unchecked" name="conduites - protection" showFeatureCount="0">
+      <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="conduites - protection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_protection20130304110005258" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="conduites - matériaux" showFeatureCount="0">
+      <legendlayer drawingOrder="43" open="true" checked="Qt::Unchecked" name="conduites - matériaux" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_material20130304110005230" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="43" open="true" checked="Qt::Unchecked" name="conduites - mode de pose" showFeatureCount="0">
+      <legendlayer drawingOrder="44" open="true" checked="Qt::Unchecked" name="conduites - mode de pose" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_installmethod20130304110005209" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="44" open="true" checked="Qt::Unchecked" name="conduites - fonction" showFeatureCount="0">
+      <legendlayer drawingOrder="45" open="true" checked="Qt::Unchecked" name="conduites - fonction" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_function20130304110005186" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="38" open="true" checked="Qt::Unchecked" name="collecteur" showFeatureCount="0">
+      <legendlayer drawingOrder="39" open="true" checked="Qt::Unchecked" name="collecteur" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="collecteur20150203112806387" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="45" open="true" checked="Qt::Unchecked" name="couvercles - Type" showFeatureCount="0">
+      <legendlayer drawingOrder="46" open="true" checked="Qt::Unchecked" name="couvercles - Type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_cover_type20141219115626290" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="46" open="true" checked="Qt::Unchecked" name="distributeur" showFeatureCount="0">
+      <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="distributeur" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="distributor20130304114719702" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="fuite - cause" showFeatureCount="0">
+      <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="fuite - cause" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_leak_cause20130822081237639" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="80" open="true" checked="Qt::Unchecked" name="hydrant_model_inf" showFeatureCount="0">
+      <legendlayer drawingOrder="81" open="true" checked="Qt::Unchecked" name="hydrant_model_inf" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_model_inf20160205143014472" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="81" open="true" checked="Qt::Unchecked" name="hydrant_model_sup" showFeatureCount="0">
+      <legendlayer drawingOrder="82" open="true" checked="Qt::Unchecked" name="hydrant_model_sup" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_model_sup20160205143014484" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="82" open="true" checked="Qt::Unchecked" name="hydrant_output" showFeatureCount="0">
+      <legendlayer drawingOrder="83" open="true" checked="Qt::Unchecked" name="hydrant_output" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_output20160205143014497" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="hydrantes - fournisseur" showFeatureCount="0">
+      <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="hydrantes - fournisseur" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_provider20130304110004893" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="hydrantes - matériau" showFeatureCount="0">
+      <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="hydrantes - matériau" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_material20150925104534891" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="lit de pose" showFeatureCount="0">
+      <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="lit de pose" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_bedding20141219112927344" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - mode" showFeatureCount="0">
+      <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - mode" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pump_operating20150922083814587" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - type" showFeatureCount="0">
+      <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pumptype20130816140237776" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="Ouvrage - rég. de pression - type" showFeatureCount="0">
+      <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="Ouvrage - rég. de pression - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pressurecontrol_type20150203100321270" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type trop plein" showFeatureCount="0">
+      <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type trop plein" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_overflow20130304170704046" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type incendie" showFeatureCount="0">
+      <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type incendie" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_tank_firestorage20130304170704030" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type de cuve" showFeatureCount="0">
+      <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type de cuve" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_cistern20130304110005061" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="ouvrage - source - qualité" showFeatureCount="0">
+      <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="ouvrage - source - qualité" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_sourcequality20130820110518810" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="ouvrage - source - type" showFeatureCount="0">
+      <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="ouvrage - source - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_sourcetype20130820110518791" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="39" open="true" checked="Qt::Unchecked" name="partenaire" showFeatureCount="0">
+      <legendlayer drawingOrder="40" open="true" checked="Qt::Unchecked" name="partenaire" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="partenaire20150203112806405" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="57" open="false" checked="Qt::Unchecked" name="pièces d'installation - type" showFeatureCount="0">
+      <legendlayer drawingOrder="58" open="false" checked="Qt::Unchecked" name="pièces d'installation - type" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_part_type20140429114640509" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="point de référence" showFeatureCount="0">
+      <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="point de référence" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="object_reference20150922083109152" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="précision" showFeatureCount="0">
+      <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="précision" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_precision20130304110011372" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="59" open="false" checked="Qt::Unchecked" name="précision altimétrique" showFeatureCount="0">
+      <legendlayer drawingOrder="60" open="false" checked="Qt::Unchecked" name="précision altimétrique" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_precisionalti20131211161429510" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="Télécommande - type" showFeatureCount="0">
+      <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="Télécommande - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="remote_type20130304110004987" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="Servitude - état" showFeatureCount="0">
+      <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="Servitude - état" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_etat20150116095811244" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="Servitude - statut" showFeatureCount="0">
+      <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="Servitude - statut" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_statut20150116095811261" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="Servitude - type" showFeatureCount="0">
+      <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="Servitude - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_type20150116095811274" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="85" open="true" checked="Qt::Unchecked" name="servitudes - ouvrage" showFeatureCount="0">
+      <legendlayer drawingOrder="86" open="true" checked="Qt::Unchecked" name="servitudes - ouvrage" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="ouvrage20161129094827871" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="Statut" showFeatureCount="0">
+      <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="Statut" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_status20130304110011436" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="65" open="false" checked="Qt::Unchecked" name="Type d'eau" showFeatureCount="0">
+      <legendlayer drawingOrder="66" open="false" checked="Qt::Unchecked" name="Type d'eau" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_watertype20131217141603877" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="vanne - actionnement" showFeatureCount="0">
+      <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="vanne - actionnement" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="valve_actuation20150608112911022" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="Vannes - maintenance" showFeatureCount="0">
+      <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="Vannes - maintenance" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_valve_maintenance20130304110011567" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="Vannes - type" showFeatureCount="0">
+      <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="Vannes - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_valve_type20130304110011685" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="Vannes - fonction" showFeatureCount="0">
+      <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="Vannes - fonction" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_valve_function20130304110011544" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="Visibilité" showFeatureCount="0">
+      <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="Visibilité" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_visible20130304110011703" visible="0"/>
         </filegroup>
@@ -3213,7 +3222,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="1" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061179460026" xmin="560672.80429450585506856" ymax="141434.65369718681904487" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061185280792" xmin="560672.80429450585506856" ymax="141434.65369718687725253" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -3342,7 +3351,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705841513351" xmin="559224.55663845222443342" ymax="143160.60991081118118018" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705844423734" xmin="559224.55663845222443342" ymax="143160.60991081121028401" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -3516,7 +3525,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208428945392" xmin="556387.41481285262852907" ymax="141145.24451662326464429" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208426035009" xmin="556387.41481285262852907" ymax="141145.24451662323554046" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -3663,7 +3672,7 @@
         </layer>
       </symbol>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="148940.92140768279205076" xmin="555084.52102199767250568" ymax="148994.92140773785649799" xmax="555138.52102205285336822"/>
+        <Extent ymin="148940.92140768285025842" xmin="555084.52102199767250568" ymax="148994.92140773791470565" xmax="555138.52102205285336822"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{22202fc4-88f8-489a-842f-ca5a18a9f7bf}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -3811,7 +3820,7 @@
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208408572711" xmin="556387.41481285262852907" ymax="141145.24451662306091748" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208405662328" xmin="556387.41481285262852907" ymax="141145.24451662303181365" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -4089,7 +4098,7 @@
         </ComposerItem>
       </ComposerShape>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208367827348" xmin="556387.41481285262852907" ymax="141145.24451662265346386" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208364916965" xmin="556387.41481285262852907" ymax="141145.24451662262436002" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -4238,7 +4247,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55536084392224438" xmin="555146.75582698069047183" ymax="145729.55536095509887673" xmax="555294.75582713156472892"/>
+        <Extent ymin="145620.55536084389314055" xmin="555146.75582698069047183" ymax="145729.5553609550697729" xmax="555294.75582713156472892"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -4358,7 +4367,7 @@
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.1277192693669349" xmin="555352.02931586769409478" ymax="145918.49579549621557817" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926933783107" xmin="555352.02931586769409478" ymax="145918.49579549618647434" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -4448,7 +4457,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282090719789" xmin="554414.48823976842686534" ymax="147098.40062013291753829" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282093630172" xmin="554414.48823976842686534" ymax="147098.40062013294664212" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -4538,7 +4547,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998455494642" xmin="554434.94899998628534377" ymax="146543.49708991561783478" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998452584259" xmin="554434.94899998628534377" ymax="146543.49708991558873095" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -4696,7 +4705,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208312530071" xmin="556387.41481285262852907" ymax="141145.24451662210049108" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208309619687" xmin="556387.41481285262852907" ymax="141145.24451662207138725" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5087,7 +5096,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994268757291" xmin="555146.75599992461502552" ymax="145729.55500005386420526" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994265846908" xmin="555146.75599992461502552" ymax="145729.55500005383510143" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5207,7 +5216,7 @@
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926895948127" xmin="555352.02931586769409478" ymax="145918.49579549580812454" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926893037744" xmin="555352.02931586769409478" ymax="145918.49579549577902071" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5297,7 +5306,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282125644386" xmin="554414.48823976842686534" ymax="147098.40062013326678425" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282128554769" xmin="554414.48823976842686534" ymax="147098.40062013329588808" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5387,7 +5396,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998423480429" xmin="554434.94899998628534377" ymax="146543.49708991529769264" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998420570046" xmin="554434.94899998628534377" ymax="146543.49708991526858881" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5821,7 +5830,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994245474227" xmin="555146.75599992461502552" ymax="145729.55500005363137461" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994242563844" xmin="555146.75599992461502552" ymax="145729.55500005360227078" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5919,7 +5928,7 @@
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282134375535" xmin="554414.48823976842686534" ymax="147098.40062013335409574" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282137285918" xmin="554414.48823976842686534" ymax="147098.40062013338319957" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -5979,7 +5988,7 @@
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926866844296" xmin="555352.02931586769409478" ymax="145918.49579549551708624" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926863933913" xmin="555352.02931586769409478" ymax="145918.49579549548798241" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -6191,7 +6200,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998397286981" xmin="554434.94899998628534377" ymax="146543.49708991503575817" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998394376598" xmin="554434.94899998628534377" ymax="146543.49708991500665434" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -6611,7 +6620,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061185280792" xmin="560672.80429450585506856" ymax="141434.65369718687725253" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061191101559" xmin="560672.80429450585506856" ymax="141434.65369718693546019" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -6740,7 +6749,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705864796415" xmin="559224.55663845222443342" ymax="143160.60991081141401082" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705867706798" xmin="559224.55663845222443342" ymax="143160.60991081144311465" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -24845,7 +24854,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="1" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061185280792" xmin="560672.80429450585506856" ymax="141434.65369718687725253" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061191101559" xmin="560672.80429450585506856" ymax="141434.65369718693546019" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -24974,7 +24983,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705841513351" xmin="559224.55663845222443342" ymax="143160.60991081118118018" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705844423734" xmin="559224.55663845222443342" ymax="143160.60991081121028401" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -25148,7 +25157,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208431855775" xmin="556387.41481285262852907" ymax="141145.24451662329374813" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208428945392" xmin="556387.41481285262852907" ymax="141145.24451662326464429" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -25296,7 +25305,7 @@ def my_form_open(dialog, layer, feature):
         </layer>
       </symbol>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="false" followPresetName="" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="148940.9214076827338431" xmin="555084.52102199767250568" ymax="148994.92140773779829033" xmax="555138.52102205285336822"/>
+        <Extent ymin="148940.92140768279205076" xmin="555084.52102199767250568" ymax="148994.92140773785649799" xmax="555138.52102205285336822"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{22202fc4-88f8-489a-842f-ca5a18a9f7bf}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -25445,7 +25454,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208411483094" xmin="556387.41481285262852907" ymax="141145.24451662309002131" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208408572711" xmin="556387.41481285262852907" ymax="141145.24451662306091748" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -25724,7 +25733,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerShape>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208370737731" xmin="556387.41481285262852907" ymax="141145.24451662268256769" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208367827348" xmin="556387.41481285262852907" ymax="141145.24451662265346386" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -25874,7 +25883,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55536084392224438" xmin="555146.75582698069047183" ymax="145729.55536095509887673" xmax="555294.75582713156472892"/>
+        <Extent ymin="145620.55536084389314055" xmin="555146.75582698069047183" ymax="145729.5553609550697729" xmax="555294.75582713156472892"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -25994,7 +26003,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.1277192693669349" xmin="555352.02931586769409478" ymax="145918.49579549621557817" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926933783107" xmin="555352.02931586769409478" ymax="145918.49579549618647434" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -26084,7 +26093,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282090719789" xmin="554414.48823976842686534" ymax="147098.40062013291753829" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282093630172" xmin="554414.48823976842686534" ymax="147098.40062013294664212" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -26174,7 +26183,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998455494642" xmin="554434.94899998628534377" ymax="146543.49708991561783478" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998452584259" xmin="554434.94899998628534377" ymax="146543.49708991558873095" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -26332,7 +26341,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="impression 5000" id="0" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="136695.24451208315440454" xmin="556387.41481285262852907" ymax="141145.24451662212959491" xmax="563887.41482050251215696"/>
+        <Extent ymin="136695.24451208312530071" xmin="556387.41481285262852907" ymax="141145.24451662210049108" xmax="563887.41482050251215696"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2073cae7-1df2-4dc0-9ef6-9145db687101}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -26724,7 +26733,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994268757291" xmin="555146.75599992461502552" ymax="145729.55500005386420526" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994265846908" xmin="555146.75599992461502552" ymax="145729.55500005383510143" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -26844,7 +26853,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926895948127" xmin="555352.02931586769409478" ymax="145918.49579549580812454" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926893037744" xmin="555352.02931586769409478" ymax="145918.49579549577902071" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -26934,7 +26943,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282125644386" xmin="554414.48823976842686534" ymax="147098.40062013326678425" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282128554769" xmin="554414.48823976842686534" ymax="147098.40062013329588808" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -27024,7 +27033,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998423480429" xmin="554434.94899998628534377" ymax="146543.49708991529769264" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998420570046" xmin="554434.94899998628534377" ymax="146543.49708991526858881" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -27459,7 +27468,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="5" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145620.55499994245474227" xmin="555146.75599992461502552" ymax="145729.55500005363137461" xmax="555294.75600007548928261"/>
+        <Extent ymin="145620.55499994242563844" xmin="555146.75599992461502552" ymax="145729.55500005360227078" xmax="555294.75600007548928261"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{69d50421-6027-4f5e-8b93-7ecaaa04f8e9}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -27557,7 +27566,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerArrow>
       <ComposerMap followPreset="true" mapRotation="320" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146957.55529282134375535" xmin="554414.48823976842686534" ymax="147098.40062013335409574" xmax="554733.98824009438976645"/>
+        <Extent ymin="146957.55529282137285918" xmin="554414.48823976842686534" ymax="147098.40062013338319957" xmax="554733.98824009438976645"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{43d41761-1e39-410e-ace4-b9fe8913f7a7}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -27617,7 +27626,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerMap>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="4" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="145760.12771926866844296" xmin="555352.02931586769409478" ymax="145918.49579549551708624" xmax="555550.02931606955826283"/>
+        <Extent ymin="145760.12771926863933913" xmin="555352.02931586769409478" ymax="145918.49579549548798241" xmax="555550.02931606955826283"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{2d55993e-c920-4079-aa37-c8a238343d11}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -27829,7 +27838,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="325" keepLayerSet="false" followPresetName="minimap 250" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="146519.11599998397286981" xmin="554434.94899998628534377" ymax="146543.49708991503575817" xmax="554461.94900001375935972"/>
+        <Extent ymin="146519.11599998394376598" xmin="554434.94899998628534377" ymax="146543.49708991500665434" xmax="554461.94900001375935972"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{5a131054-b83a-48c2-9b77-b4604e36f33e}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28250,7 +28259,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="3" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="141259.34320061191101559" xmin="560672.80429450585506856" ymax="141434.65369718693546019" xmax="560845.30429468187503517"/>
+        <Extent ymin="141259.34320061196922325" xmin="560672.80429450585506856" ymax="141434.65369718699366786" xmax="560845.30429468187503517"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{66e915cb-9fde-4ca7-a28a-c7e0bb6f1c52}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -28379,7 +28388,7 @@ def my_form_open(dialog, layer, feature):
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="true" mapRotation="0" keepLayerSet="false" followPresetName="minimap 1000" id="1" previewMode="Cache" drawCanvasItems="true">
-        <Extent ymin="142996.75729705864796415" xmin="559224.55663845222443342" ymax="143160.60991081141401082" xmax="559407.55663863895460963"/>
+        <Extent ymin="142996.75729705867706798" xmin="559224.55663845222443342" ymax="143160.60991081144311465" xmax="559407.55663863895460963"/>
         <LayerSet/>
         <Grid/>
         <ComposerMapGrid rightAnnotationDirection="0" gridFramePenColor="0,0,0,255" show="0" bottomAnnotationPosition="1" annotationPrecision="3" showAnnotation="0" topFrameDivisions="0" uuid="{6ebd3253-31c2-4af7-b9a5-f6c63733c886}" leftAnnotationDirection="0" topAnnotationPosition="1" rightAnnotationDisplay="0" offsetX="0" offsetY="0" rightFrameDivisions="0" gridStyle="0" annotationFontColor="0,0,0,255" intervalX="0" gridFrameSideFlags="15" intervalY="0" bottomAnnotationDirection="0" leftAnnotationDisplay="0" leftFrameDivisions="0" frameFillColor1="255,255,255,255" annotationExpression="" frameFillColor2="0,0,0,255" crossLength="3" gridFramePenThickness="0.5" bottomAnnotationDisplay="0" unit="0" topAnnotationDisplay="0" leftAnnotationPosition="1" blendMode="0" gridFrameStyle="0" rightAnnotationPosition="1" gridFrameWidth="2" name="Grid 1" annotationFormat="0" bottomFrameDivisions="0" topAnnotationDirection="0" frameAnnotationDistance="1">
@@ -34284,6 +34293,327 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2554983.75</xmin>
+        <ymin>1141186</ymin>
+        <xmax>2564213.25</xmax>
+        <ymax>1147411.875</ymax>
+      </extent>
+      <id>croquis_reseau20170822084618718</id>
+      <datasource>service='sige_commun' sslmode=disable key='id' srid=2056 type=Point table="distribution"."croquis_reseau" (geometry) sql=</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>croquis_reseau</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
+          <srsid>47</srsid>
+          <srid>2056</srid>
+          <authid>EPSG:2056</authid>
+          <description>CH1903+ / LV95</description>
+          <projectionacronym>somerc</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <provider encoding="System">postgres</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields>
+        <field typeName="text" precision="-1" expression="  case when @qgis_os_name = 'linux' then 'smb://s4laveyre.sige.ch/dao_saisie$/01_DISTRIBUTION/RESEAU/COMMUNES/'&#xa;  else 'W:\\01_DISTRIBUTION\\RESEAU\\COMMUNES\\'&#xa;  end&#xa; || &#xa;CASE&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '82' THEN  'Blonay'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '84' THEN  'Chardonne'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '81' THEN  'Corseaux'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '80' THEN  'Corsier'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '88' THEN  'Jongny'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '95' THEN  'Lausanne'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '51' THEN  'Montreux'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '43' THEN  'Port-Valais'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '83' THEN  'St-Legier'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '60' THEN  'La_Tour_de_Peilz'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '71' THEN  'Vevey'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '50' THEN  'Veytaux'&#xa;WHEN regexp_substr(&quot;file&quot;, '(^\\d+)') = '37' THEN  'Villeneuve-Noville'&#xa;ELSE regexp_substr(&quot;file&quot;, '(^[A-Za-z]+)')&#xa;END&#xa; || &#xa;   case when @qgis_os_name = 'linux' then '/Croquis_reseau/'&#xa;  else '\\Croquis_reseau\\'&#xa;  end&#xa; || &quot;file&quot;" length="-1" type="10" comment="" name="full_path"/>
+      </expressionfields>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="id">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="file">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
+        </edittype>
+        <edittype widgetv2type="ExternalResource" name="full_path">
+          <widgetv2config RelativeStorage="0" fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="1" FileWidgetFilter=""/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="209,219,12,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="backgrounds/background_tilted_square_rounded.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="69,69,69,255"/>
+              <prop k="outline_width" v="0.4"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="6"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="true"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="0.7"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="5"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="true"/>
+        <property key="labeling/enabled" value="true"/>
+        <property key="labeling/fieldName" value="file"/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="8"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="3"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="6"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="1000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="true"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>file</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="Cantarell"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform>.</annotationform>
+      <aliases>
+        <alias field="id" index="0" name=""/>
+        <alias field="file" index="1" name=""/>
+        <alias field="full_path" index="2" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;full_path&quot;" sortOrder="1">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="file"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="958" hidden="0" type="field" name="full_path"/>
+        </columns>
+      </attributetableconfig>
+      <editform>.</editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath>.</editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="id" expression=""/>
+        <default field="file" expression=""/>
+        <default field="full_path" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
+    </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="501" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>551470.6875</xmin>
@@ -34908,7 +35238,26 @@ def my_form_open(dialog, layer, feature):
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].showHistory('district20130304110004764',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="shortname"/>
+          <column width="-1" hidden="0" type="field" name="zip"/>
+          <column width="-1" hidden="0" type="field" name="land_registry"/>
+          <column width="-1" hidden="0" type="field" name="prefix"/>
+          <column width="-1" hidden="0" type="field" name="colorcode"/>
+          <column width="-1" hidden="0" type="field" name="label_1_visible"/>
+          <column width="-1" hidden="0" type="field" name="label_1_x"/>
+          <column width="-1" hidden="0" type="field" name="label_1_y"/>
+          <column width="-1" hidden="0" type="field" name="label_1_rotation"/>
+          <column width="-1" hidden="0" type="field" name="label_1_text"/>
+          <column width="-1" hidden="0" type="field" name="label_2_visible"/>
+          <column width="-1" hidden="0" type="field" name="label_2_x"/>
+          <column width="-1" hidden="0" type="field" name="label_2_y"/>
+          <column width="-1" hidden="0" type="field" name="label_2_rotation"/>
+          <column width="-1" hidden="0" type="field" name="label_2_text"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
@@ -34941,7 +35290,7 @@ def my_form_open(dialog, layer, feature):
         <default field="label_2_rotation" expression=""/>
         <default field="label_2_text" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>folder20150629160924367</id>
