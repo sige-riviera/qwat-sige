@@ -395,10 +395,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2559433.5135822482407093</xmin>
-      <ymin>1142375.34179667825810611</ymin>
-      <xmax>2560039.19951974228024483</xmax>
-      <ymax>1143038.71210917527787387</ymax>
+      <xmin>2559507.67920724721625447</xmin>
+      <ymin>1142354.15161810698918998</ymin>
+      <xmax>2560113.36514474125579</xmax>
+      <ymax>1143017.52193060400895774</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -34335,7 +34335,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ExternalResource" name="full_path">
-          <widgetv2config RelativeStorage="0" fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="1" FileWidgetFilter=""/>
+          <widgetv2config RelativeStorage="0" fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="0" FileWidgetFilter=""/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
