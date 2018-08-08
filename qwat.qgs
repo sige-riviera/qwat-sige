@@ -40,14 +40,7 @@
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="conduites_copy20130709141244955" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table=&quot;qwat_od&quot;.&quot;pipe&quot; (geometry) sql=" name="016 conduites">
           <customproperties>
-            <property key="expandedLegendNodes">
-              <value>{d7cd7ce7-c1fb-444f-9fd7-375e42e1119d}</value>
-              <value>{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}</value>
-              <value>{f683634b-6b3e-459a-b735-1e5d0fe53ae9}</value>
-              <value>{83c98724-7516-46fb-86e8-4844076d5543}</value>
-              <value>{75060a73-107d-4ace-bc35-d573de40488f}</value>
-              <value>{4f1444d3-106d-49d4-baf3-32e647bbe7aa}</value>
-            </property>
+            <property key="expandedLegendNodes" value="{d7cd7ce7-c1fb-444f-9fd7-375e42e1119d}"/>
           </customproperties>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_export_pipe20170822152003636" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineString table=&quot;qwat_od&quot;.&quot;vw_export_pipe&quot; (geometry2d) sql=" name="009 conduites export DXF">
@@ -413,10 +406,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2547065.82859939010813832</xmin>
-      <ymin>1136540.55683641391806304</ymin>
-      <xmax>2571534.48207801254466176</xmax>
-      <ymax>1150729.13803605991415679</ymax>
+      <xmin>2547615.00250974809750915</xmin>
+      <ymin>1136419.11315186903811991</ymin>
+      <xmax>2572083.65598837053403258</xmax>
+      <ymax>1150607.69435151503421366</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -27516,38 +27509,38 @@ def my_form_open(dialog, layer, feature):
             </edittypes>
             <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
               <rules key="{89d1d7f3-6dd2-48ab-a978-572c899af422}">
-                <rule checkstate="0" filter="status_functional = 't'" key="{71a064ea-fc5d-4548-9c69-5bf1fe84a66d}" label="fonctionnel">
-                  <rule checkstate="0" filter="status_active = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor = 1" key="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}" label="actif">
-                    <rule checkstate="0" filter="installation_type = 'chamber'" key="{5a17ff38-f410-4abf-be4e-9c79367de4fe}" label="Chambre">
-                      <rule checkstate="0" filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{8822d14f-21ea-400b-ad73-aafc21c19773}" symbol="0" label="Chambre débitmètre"/>
-                      <rule checkstate="0" filter="ELSE" key="{6ade4f06-ed80-4a3f-9fe9-38516a340cad}" symbol="1" label="Chambre"/>
+                <rule filter="status_functional = 't'" key="{71a064ea-fc5d-4548-9c69-5bf1fe84a66d}" label="fonctionnel">
+                  <rule filter="status_active = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor = 1" key="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}" label="actif">
+                    <rule filter="installation_type = 'chamber'" key="{5a17ff38-f410-4abf-be4e-9c79367de4fe}" label="Chambre">
+                      <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{8822d14f-21ea-400b-ad73-aafc21c19773}" symbol="0" label="Chambre débitmètre"/>
+                      <rule filter="ELSE" key="{6ade4f06-ed80-4a3f-9fe9-38516a340cad}" symbol="1" label="Chambre"/>
                     </rule>
-                    <rule checkstate="0" filter="installation_type = 'pressurecontrol'" key="{7773e49d-eae4-41b4-8d92-aec7a265046c}" label="pressurecontrol">
-                      <rule checkstate="0" filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{f315adf4-c25e-4483-bab6-237fe3a60041}" symbol="2" label="Chambre réducteur"/>
-                      <rule checkstate="0" filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}" symbol="3" label="Chambre coupe pression"/>
-                      <rule checkstate="0" filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{f018225f-1a3d-44eb-b8a3-fcea387c5b34}" symbol="4" label="Chambre de rassemblement"/>
+                    <rule filter="installation_type = 'pressurecontrol'" key="{7773e49d-eae4-41b4-8d92-aec7a265046c}" label="pressurecontrol">
+                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{f315adf4-c25e-4483-bab6-237fe3a60041}" symbol="2" label="Chambre réducteur"/>
+                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}" symbol="3" label="Chambre coupe pression"/>
+                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{f018225f-1a3d-44eb-b8a3-fcea387c5b34}" symbol="4" label="Chambre de rassemblement"/>
                     </rule>
-                    <rule checkstate="0" filter="installation_type = 'pump'" key="{bcb1f704-8435-4019-bd6f-781938ef8ad9}" symbol="5" label="pump"/>
-                    <rule checkstate="0" filter="installation_type = 'source'" key="{2751ab65-3b68-4243-afab-9ebdcb9f8241}" symbol="6" label="source"/>
-                    <rule checkstate="0" filter="installation_type = 'tank'" key="{8af2dff4-7bea-42be-9478-3f1d88ebf33d}" symbol="7" label="tank"/>
-                    <rule checkstate="0" filter="installation_type = 'treatment'" key="{42540c94-3233-498c-a23d-4e8bd7c1ff4e}" symbol="8" label="treatment"/>
-                    <rule checkstate="0" filter="ELSE" key="{ed82ce06-eee6-4f2d-833b-e537d0b18649}" symbol="9"/>
+                    <rule filter="installation_type = 'pump'" key="{bcb1f704-8435-4019-bd6f-781938ef8ad9}" symbol="5" label="pump"/>
+                    <rule filter="installation_type = 'source'" key="{2751ab65-3b68-4243-afab-9ebdcb9f8241}" symbol="6" label="source"/>
+                    <rule filter="installation_type = 'tank'" key="{8af2dff4-7bea-42be-9478-3f1d88ebf33d}" symbol="7" label="tank"/>
+                    <rule filter="installation_type = 'treatment'" key="{42540c94-3233-498c-a23d-4e8bd7c1ff4e}" symbol="8" label="treatment"/>
+                    <rule filter="ELSE" key="{ed82ce06-eee6-4f2d-833b-e537d0b18649}" symbol="9"/>
                   </rule>
-                  <rule checkstate="0" filter="status_active = 'f' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{83a4c36e-210b-4094-8407-553e64936b5e}" label="inactif">
-                    <rule checkstate="0" filter="installation_type = 'chamber'" key="{2aad166e-0cd1-4083-9002-8aead4f79917}" label="Chambre">
-                      <rule checkstate="0" filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{d1daa4c4-aebd-4274-bbcd-c830f2a3ebe1}" symbol="10" label="Chambre débitmètre"/>
-                      <rule checkstate="0" filter="ELSE" key="{07a91d45-cb4d-4ee4-9f57-13d1f6f2b46b}" symbol="11" label="Chambre"/>
+                  <rule filter="status_active = 'f' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{83a4c36e-210b-4094-8407-553e64936b5e}" label="inactif">
+                    <rule filter="installation_type = 'chamber'" key="{2aad166e-0cd1-4083-9002-8aead4f79917}" label="Chambre">
+                      <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{d1daa4c4-aebd-4274-bbcd-c830f2a3ebe1}" symbol="10" label="Chambre débitmètre"/>
+                      <rule filter="ELSE" key="{07a91d45-cb4d-4ee4-9f57-13d1f6f2b46b}" symbol="11" label="Chambre"/>
                     </rule>
-                    <rule checkstate="0" filter="installation_type = 'pressurecontrol'" key="{d31d075b-227e-40b6-ab03-8d810a0d69b8}" label="pressurecontrol">
-                      <rule checkstate="0" filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{79bf5884-e355-432b-95b6-33a7e9db598e}" symbol="12" label="Chambre réducteur"/>
-                      <rule checkstate="0" filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{f5ba1ef7-6554-4683-88a2-1b2c52e9692f}" symbol="13" label="Chambre coupe pression"/>
-                      <rule checkstate="0" filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{eaa8aab8-0d82-46ee-8fd6-92ef6189f344}" symbol="14" label="Chambre de rassemblement"/>
+                    <rule filter="installation_type = 'pressurecontrol'" key="{d31d075b-227e-40b6-ab03-8d810a0d69b8}" label="pressurecontrol">
+                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{79bf5884-e355-432b-95b6-33a7e9db598e}" symbol="12" label="Chambre réducteur"/>
+                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{f5ba1ef7-6554-4683-88a2-1b2c52e9692f}" symbol="13" label="Chambre coupe pression"/>
+                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{eaa8aab8-0d82-46ee-8fd6-92ef6189f344}" symbol="14" label="Chambre de rassemblement"/>
                     </rule>
-                    <rule checkstate="0" filter="installation_type = 'pump'" key="{73931827-a1f1-4b6a-b930-e4b6873d3222}" symbol="15" label="pump"/>
-                    <rule checkstate="0" filter="installation_type = 'source'" key="{a925b931-2980-4508-8741-9430fd39f98c}" symbol="16" label="source"/>
-                    <rule checkstate="0" filter="installation_type = 'tank'" key="{e3ad57de-33e8-4ea0-a2b6-3754dde05572}" symbol="17" label="tank"/>
-                    <rule checkstate="0" filter="installation_type = 'treatment'" key="{d1f57b66-0919-4b68-83e8-f078553bea81}" symbol="18" label="treatment"/>
-                    <rule checkstate="0" filter="ELSE" key="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}" symbol="19"/>
+                    <rule filter="installation_type = 'pump'" key="{73931827-a1f1-4b6a-b930-e4b6873d3222}" symbol="15" label="pump"/>
+                    <rule filter="installation_type = 'source'" key="{a925b931-2980-4508-8741-9430fd39f98c}" symbol="16" label="source"/>
+                    <rule filter="installation_type = 'tank'" key="{e3ad57de-33e8-4ea0-a2b6-3754dde05572}" symbol="17" label="tank"/>
+                    <rule filter="installation_type = 'treatment'" key="{d1f57b66-0919-4b68-83e8-f078553bea81}" symbol="18" label="treatment"/>
+                    <rule filter="ELSE" key="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}" symbol="19"/>
                   </rule>
                 </rule>
                 <rule filter="status_functional = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor != 1" key="{37ee4804-614d-4742-8288-a79d52f1e1d9}" label="étranger">
@@ -31383,7 +31376,7 @@ def my_form_open(dialog, layer, feature):
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
         <map-layer-style name="minimap folio">
-          <qgis version="2.18.17" simplifyAlgorithm="0" minimumScale="200" maximumScale="250000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+          <qgis version="2.18.20" simplifyAlgorithm="0" minimumScale="200" maximumScale="250000" simplifyDrawingHints="1" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <edittypes>
               <edittype widgetv2type="TextEdit" name="id">
                 <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -36192,7 +36185,7 @@ def my_form_open(dialog, layer, feature):
       <map-layer-style-manager current="">
         <map-layer-style name=""/>
         <map-layer-style name="DXF">
-          <qgis version="2.18.11" simplifyAlgorithm="0" minimumScale="0" maximumScale="10001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+          <qgis version="2.18.20" simplifyAlgorithm="0" minimumScale="0" maximumScale="10001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <edittypes>
               <edittype widgetv2type="TextEdit" name="id">
                 <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -36311,8 +36304,8 @@ def my_form_open(dialog, layer, feature):
               <edittype widgetv2type="TextEdit" name="update_geometry_alt2">
                 <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
               </edittype>
-              <edittype widgetv2type="ValueRelation" name="schema_force_visible">
-                <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              <edittype widgetv2type="TextEdit" name="schema_force_visible_old">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
               </edittype>
               <edittype widgetv2type="ValueRelation" name="label_1_visible">
                 <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code_int" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -36342,6 +36335,21 @@ def my_form_open(dialog, layer, feature):
                 <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="label_2_text">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="ValueRelation" name="schema_force_visible">
+                <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="vl_code" constraint="" Layer="vl_visible20130304110011703" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="_schema_visible">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_etat_exploitation">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_adesafecter">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
+              <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_remarque">
                 <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
               </edittype>
               <edittype widgetv2type="TextEdit" name="valve_function_vl_active">
@@ -37022,7 +37030,7 @@ def my_form_open(dialog, layer, feature):
               <alias field="geometry_alt2" index="36" name=""/>
               <alias field="update_geometry_alt1" index="37" name=""/>
               <alias field="update_geometry_alt2" index="38" name=""/>
-              <alias field="schema_force_visible" index="39" name="visibilité schéma"/>
+              <alias field="schema_force_visible_old" index="39" name=""/>
               <alias field="label_1_visible" index="40" name=""/>
               <alias field="label_1_x" index="41" name=""/>
               <alias field="label_1_y" index="42" name=""/>
@@ -37033,35 +37041,40 @@ def my_form_open(dialog, layer, feature):
               <alias field="label_2_y" index="47" name=""/>
               <alias field="label_2_rotation" index="48" name=""/>
               <alias field="label_2_text" index="49" name=""/>
-              <alias field="valve_function_vl_active" index="50" name=""/>
-              <alias field="valve_function_short_fr" index="51" name=""/>
-              <alias field="valve_function_short_en" index="52" name=""/>
-              <alias field="valve_function_short_ro" index="53" name=""/>
-              <alias field="valve_function_value_fr" index="54" name=""/>
-              <alias field="valve_function_value_en" index="55" name=""/>
-              <alias field="valve_function_value_ro" index="56" name=""/>
-              <alias field="valve_function_description_fr" index="57" name=""/>
-              <alias field="valve_function_description_en" index="58" name=""/>
-              <alias field="valve_function_description_ro" index="59" name=""/>
-              <alias field="valve_function_schema_visible" index="60" name=""/>
-              <alias field="valve_type_vl_active" index="61" name=""/>
-              <alias field="valve_type_short_fr" index="62" name=""/>
-              <alias field="valve_type_short_en" index="63" name=""/>
-              <alias field="valve_type_short_ro" index="64" name=""/>
-              <alias field="valve_type_value_fr" index="65" name=""/>
-              <alias field="valve_type_value_en" index="66" name=""/>
-              <alias field="valve_type_value_ro" index="67" name=""/>
-              <alias field="valve_type_description_fr" index="68" name=""/>
-              <alias field="valve_type_description_en" index="69" name=""/>
-              <alias field="valve_type_description_ro" index="70" name=""/>
-              <alias field="valve_actuation_id" index="71" name=""/>
-              <alias field="valve_actuation_vl_active" index="72" name=""/>
-              <alias field="valve_actuation_short_fr" index="73" name=""/>
-              <alias field="valve_actuation_value_fr" index="74" name=""/>
-              <alias field="valve_actuation_description_fr" index="75" name=""/>
-              <alias field="valve_actuation_schema_visible" index="76" name=""/>
-              <alias field="status_active" index="77" name=""/>
-              <alias field="status_functional" index="78" name=""/>
+              <alias field="schema_force_visible" index="50" name="visibilité schéma"/>
+              <alias field="_schema_visible" index="51" name=""/>
+              <alias field="qwat_ext_ch_vd_sire_etat_exploitation" index="52" name=""/>
+              <alias field="qwat_ext_ch_vd_sire_adesafecter" index="53" name=""/>
+              <alias field="qwat_ext_ch_vd_sire_remarque" index="54" name=""/>
+              <alias field="valve_function_vl_active" index="55" name=""/>
+              <alias field="valve_function_short_fr" index="56" name=""/>
+              <alias field="valve_function_short_en" index="57" name=""/>
+              <alias field="valve_function_short_ro" index="58" name=""/>
+              <alias field="valve_function_value_fr" index="59" name=""/>
+              <alias field="valve_function_value_en" index="60" name=""/>
+              <alias field="valve_function_value_ro" index="61" name=""/>
+              <alias field="valve_function_description_fr" index="62" name=""/>
+              <alias field="valve_function_description_en" index="63" name=""/>
+              <alias field="valve_function_description_ro" index="64" name=""/>
+              <alias field="valve_function_schema_visible" index="65" name=""/>
+              <alias field="valve_type_vl_active" index="66" name=""/>
+              <alias field="valve_type_short_fr" index="67" name=""/>
+              <alias field="valve_type_short_en" index="68" name=""/>
+              <alias field="valve_type_short_ro" index="69" name=""/>
+              <alias field="valve_type_value_fr" index="70" name=""/>
+              <alias field="valve_type_value_en" index="71" name=""/>
+              <alias field="valve_type_value_ro" index="72" name=""/>
+              <alias field="valve_type_description_fr" index="73" name=""/>
+              <alias field="valve_type_description_en" index="74" name=""/>
+              <alias field="valve_type_description_ro" index="75" name=""/>
+              <alias field="valve_actuation_id" index="76" name=""/>
+              <alias field="valve_actuation_vl_active" index="77" name=""/>
+              <alias field="valve_actuation_short_fr" index="78" name=""/>
+              <alias field="valve_actuation_value_fr" index="79" name=""/>
+              <alias field="valve_actuation_description_fr" index="80" name=""/>
+              <alias field="valve_actuation_schema_visible" index="81" name=""/>
+              <alias field="status_active" index="82" name=""/>
+              <alias field="status_functional" index="83" name=""/>
             </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
@@ -37139,7 +37152,7 @@ def my_form_open(dialog, layer, feature):
               <default field="geometry_alt2" expression=""/>
               <default field="update_geometry_alt1" expression=""/>
               <default field="update_geometry_alt2" expression=""/>
-              <default field="schema_force_visible" expression=""/>
+              <default field="schema_force_visible_old" expression=""/>
               <default field="label_1_visible" expression=""/>
               <default field="label_1_x" expression=""/>
               <default field="label_1_y" expression=""/>
@@ -37150,6 +37163,11 @@ def my_form_open(dialog, layer, feature):
               <default field="label_2_y" expression=""/>
               <default field="label_2_rotation" expression=""/>
               <default field="label_2_text" expression=""/>
+              <default field="schema_force_visible" expression=""/>
+              <default field="_schema_visible" expression=""/>
+              <default field="qwat_ext_ch_vd_sire_etat_exploitation" expression=""/>
+              <default field="qwat_ext_ch_vd_sire_adesafecter" expression=""/>
+              <default field="qwat_ext_ch_vd_sire_remarque" expression=""/>
               <default field="valve_function_vl_active" expression=""/>
               <default field="valve_function_short_fr" expression=""/>
               <default field="valve_function_short_en" expression=""/>
@@ -50987,13 +51005,13 @@ def closeProject():
         <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
         <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
         <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
         <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
+        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
         <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
@@ -51031,8 +51049,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -51044,8 +51062,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -51056,8 +51074,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -51083,143 +51101,39 @@ def closeProject():
       </checked-legend-nodes>
     </visibility-preset>
     <visibility-preset name="edition 5000">
-      <layer style="" id="vw_node_installation20150918153835436"/>
-      <layer style="" id="subscriber20130304110011459"/>
-      <layer style="" id="od_subscriber_reference20131206105928067"/>
-      <layer style="" id="od_meter20131120073630165"/>
-      <layer style="" id="od_meter_reference20140304165835390"/>
-      <layer style="" id="conduites_copy20130709141244955"/>
-      <layer style="" id="node20130304110005126"/>
-      <layer style="" id="valve20130304110011497"/>
-      <layer style="" id="hydrant20130304110004848"/>
-      <layer style="" id="od_part20140429113327995"/>
-      <layer style="" id="od_remote20150116100522170"/>
-      <layer style="" id="od_crossing20141023083754327"/>
+      <layer style="automatic labeling" id="ouvrage_copy20160125132737527"/>
+      <layer style="" id="vannes_copy20141127160745910"/>
+      <layer style="" id="télécommande_copy20160127112146958"/>
+      <layer style="" id="vw_pipe_schema_visibleitems20141127154708843"/>
       <layer style="" id="od_annotationline20131203095020365"/>
       <layer style="" id="od_annotationpoint20131203095020392"/>
-      <layer style="" id="dimension20130807094904783"/>
-      <layer style="" id="od_dimension_orientation20131202111155806"/>
-      <layer style="" id="nom_rue20160215151152641"/>
-      <layer style="" id="cadastre20140312152032371"/>
-      <layer style="" id="no_nomenclature20161124151011953"/>
-      <layer style="" id="od_entree_batiment20161124100003328"/>
-      <layer style="" id="bf_point_limite20161123141033694"/>
-      <layer style="" id="pf_points_fixes20161123144654375"/>
-      <layer style="" id="ab_rue20161122113837293"/>
-      <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="od_element_lineaire20161123134458480"/>
-      <layer style="" id="bf_immeuble20161019163752305"/>
-      <layer style="" id="od_element_surfacique20161123111234045"/>
-      <layer style="" id="cs_couverture_sol20161117155047081"/>
-      <checked-legend-nodes id="conduites_copy20130709141244955">
-        <checked-legend-node id="{35b22ed6-654d-4492-a0fa-c4f4c502f524}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
-        <checked-legend-node id="{4cbfe9a5-d974-46cd-9f3d-2986e2330851}"/>
-        <checked-legend-node id="{cfe02b8a-bfad-4fa3-8cb8-d5df88625a57}"/>
-        <checked-legend-node id="{9639d3dd-900e-4944-9635-70e34b4a0002}"/>
-        <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
-        <checked-legend-node id="{f683634b-6b3e-459a-b735-1e5d0fe53ae9}"/>
-        <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
-        <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
-        <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
-        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
-        <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
-        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
-        <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
-        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
-        <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
-        <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
-        <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
-        <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
-        <checked-legend-node id="{0b815298-4880-43c7-aa5c-a0f4487b94ce}"/>
-        <checked-legend-node id="{87da2149-5a6d-4d11-8d93-c9b2cea88fff}"/>
-        <checked-legend-node id="{69e69170-daff-42e5-800a-8db1b66951eb}"/>
-        <checked-legend-node id="{dbbed889-a21b-4eb3-8df7-cc5c10f7aa32}"/>
-        <checked-legend-node id="{865af22a-4b2b-4ff9-b6c5-19e782e9cbc6}"/>
-        <checked-legend-node id="{83c98724-7516-46fb-86e8-4844076d5543}"/>
-        <checked-legend-node id="{d1dedad5-dfc5-4327-a338-401bd8b7bed6}"/>
-      </checked-legend-nodes>
-      <checked-legend-nodes id="nom_rue20160215151152641">
-        <checked-legend-node id="{9ba7b6cf-df66-4dbf-b305-7890bc2646c8}"/>
-      </checked-legend-nodes>
-      <checked-legend-nodes id="od_crossing20141023083754327">
-        <checked-legend-node id="{bdb56b7a-1c26-428b-8597-ce6b6eb58f01}"/>
-      </checked-legend-nodes>
-      <checked-legend-nodes id="pf_points_fixes20161123144654375">
-        <checked-legend-node id="{3585b604-8355-4f87-a5f1-46fa79609e12}"/>
-        <checked-legend-node id="{40049126-2ac8-4e85-8955-370df4899f13}"/>
-        <checked-legend-node id="{b27de174-17c8-4b0a-91af-b09db30e86fa}"/>
-      </checked-legend-nodes>
-      <checked-legend-nodes id="valve20130304110011497">
-        <checked-legend-node id="{6c48a279-b0d9-428b-819c-2fc5371720fe}"/>
-        <checked-legend-node id="{143022c7-b3e1-4c03-80d5-58520da677c2}"/>
-        <checked-legend-node id="{7a025dab-c7fe-4c7c-9f0b-25a39f73abd8}"/>
-        <checked-legend-node id="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}"/>
-        <checked-legend-node id="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}"/>
-        <checked-legend-node id="{6152ea58-2b55-4320-96e8-adb27c5fd9d9}"/>
-        <checked-legend-node id="{32414b2c-9a92-4c96-ac57-93ce877fd767}"/>
-        <checked-legend-node id="{b149b2b9-3783-416c-b413-7a6f7de74e1d}"/>
-        <checked-legend-node id="{a0c08631-a6ac-4d0b-b538-41bb1efe2315}"/>
-        <checked-legend-node id="{a73a080b-0751-43a2-9ace-88c84e23d1ff}"/>
-        <checked-legend-node id="{edf1c363-d849-4700-82d0-34d494178d4d}"/>
-        <checked-legend-node id="{d1ec978f-6d96-4ed2-ac03-a37e6629f13c}"/>
-        <checked-legend-node id="{221f27a3-6778-4b14-8bb9-1b4c7d708bc3}"/>
-      </checked-legend-nodes>
-      <checked-legend-nodes id="vw_node_installation20150918153835436">
-        <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
-        <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
-        <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
-        <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
-        <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
-        <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
-        <checked-legend-node id="{da2a0958-a57b-43fc-9c43-8725b703dedc}"/>
-        <checked-legend-node id="{082eff42-4984-492f-97dc-caedb6a17a07}"/>
-        <checked-legend-node id="{502f5a4d-e6dd-456d-9170-febbacdf05b8}"/>
-        <checked-legend-node id="{ee6ec74f-d3e1-435a-90d0-b91da4a9537f}"/>
-        <checked-legend-node id="{e5d0325a-e0da-4e48-9d56-e1af3d322a7c}"/>
-        <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
-        <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
-        <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
-        <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
-        <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
-        <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
-        <checked-legend-node id="{006b8eb0-9edd-4fe7-8811-9db931679b5f}"/>
-        <checked-legend-node id="{69b3bf49-4ced-4bb9-8799-da2f168ad22c}"/>
-        <checked-legend-node id="{53d7b7ef-bd10-4993-87fd-3d4573cd83ce}"/>
-        <checked-legend-node id="{a6946f96-07f0-4f35-aa70-ad33d6866b8d}"/>
-        <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
-        <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
-        <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
-        <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
-        <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
-        <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
-        <checked-legend-node id="{3c04b823-cf69-4ac1-89cf-d04e9bdd4989}"/>
-        <checked-legend-node id="{e2eb5440-e94b-4c54-a2bc-91b66b6e2c21}"/>
-        <checked-legend-node id="{2da4b3f5-47c6-44d2-8e96-2a0b70b6ad15}"/>
-        <checked-legend-node id="{79439a36-597f-4775-89a8-7c072e5beef5}"/>
-        <checked-legend-node id="{dc540c42-11d4-4a71-a720-5c18f763734e}"/>
-        <checked-legend-node id="{278ef659-c656-449d-a1c5-7c60acabaa65}"/>
-        <checked-legend-node id="{dcad679b-71a0-497e-b02e-93f46651826b}"/>
-        <checked-legend-node id="{f16643c2-ce75-4f94-beee-56389f55aee7}"/>
-        <checked-legend-node id="{a36e1dd4-a5ba-4a46-8647-4b6ecf6a4e58}"/>
-        <checked-legend-node id="{33dee9ac-9240-41d9-8da7-d047d8521f65}"/>
-        <checked-legend-node id="{d2372040-fe4c-4b5f-8432-b8fe2a68d576}"/>
-        <checked-legend-node id="{d9e91fdc-4236-40c2-9a43-470f8c8503cf}"/>
-        <checked-legend-node id="{f955cc23-5f5f-4ac6-949b-6711a8862c7a}"/>
-        <checked-legend-node id="{58ca52b5-c570-46bb-a8d6-37620ad6dfdd}"/>
-        <checked-legend-node id="{c43ff5da-3940-4343-ba73-5421a97e3150}"/>
-        <checked-legend-node id="{a841e611-3390-4ae1-b9f5-e7fee4fea027}"/>
-        <checked-legend-node id="{6f043e9f-1731-47a8-86d1-a6084a99e57b}"/>
-        <checked-legend-node id="{8beaf9ba-e486-46ce-8f70-957911d5515b}"/>
-        <checked-legend-node id="{d31ae609-73ec-4d88-8324-5300f14ed738}"/>
+      <layer style="" id="printmap20130304110011400"/>
+      <checked-legend-nodes id="ouvrage_copy20160125132737527">
+        <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
+        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
+        <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
+        <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
+        <checked-legend-node id="{37ee4804-614d-4742-8288-a79d52f1e1d9}"/>
+        <checked-legend-node id="{b2056b72-4abc-48fb-af2e-0e23779d9c64}"/>
+        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
+        <checked-legend-node id="{25e3684f-58b8-4a10-bdf2-faa3d1410626}"/>
+        <checked-legend-node id="{3820ee54-8445-4a23-b1ab-59038e2f6d28}"/>
+        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
+        <checked-legend-node id="{604665a8-506c-4fdf-a10d-1fa4e79706e9}"/>
+        <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
+        <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
+        <checked-legend-node id="{467aeded-414e-4296-89ab-661c203802ce}"/>
+        <checked-legend-node id="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}"/>
+        <checked-legend-node id="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}"/>
+        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
+        <checked-legend-node id="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}"/>
+        <checked-legend-node id="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}"/>
+        <checked-legend-node id="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}"/>
+        <checked-legend-node id="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}"/>
+        <checked-legend-node id="{fa07847e-bb3b-454d-b957-1a2b5394e819}"/>
+        <checked-legend-node id="{410bdc09-391b-489d-a4e7-3f13c5d2e18d}"/>
+        <checked-legend-node id="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}"/>
+        <checked-legend-node id="{21502443-f0a0-4e80-83e6-198977343b0d}"/>
       </checked-legend-nodes>
     </visibility-preset>
     <visibility-preset name="export DXF">
@@ -51293,13 +51207,13 @@ def closeProject():
         <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
         <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
         <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
         <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
+        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
         <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
@@ -51342,8 +51256,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -51355,8 +51269,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -51367,8 +51281,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -51432,8 +51346,8 @@ def closeProject():
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
         <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
+        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
         <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
         <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
@@ -51441,8 +51355,8 @@ def closeProject():
         <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
         <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
         <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
+        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
         <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
@@ -51479,8 +51393,8 @@ def closeProject():
         <checked-legend-node id="{604665a8-506c-4fdf-a10d-1fa4e79706e9}"/>
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
-        <checked-legend-node id="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}"/>
         <checked-legend-node id="{467aeded-414e-4296-89ab-661c203802ce}"/>
+        <checked-legend-node id="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}"/>
         <checked-legend-node id="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}"/>
         <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
         <checked-legend-node id="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}"/>
@@ -51508,63 +51422,13 @@ def closeProject():
       <layer style="" id="od_crossing20141023083754327"/>
       <layer style="" id="printmap20130304110011400"/>
       <checked-legend-nodes id="conduites_copy20130709141244955">
-        <checked-legend-node id="{6c5ec343-05d3-4fcd-8dc1-283232838086}"/>
-        <checked-legend-node id="{25c2e398-8d5a-4103-ac14-4ff461596d3a}"/>
-        <checked-legend-node id="{fb522923-eeee-47bb-8352-65a3d5637c4c}"/>
-        <checked-legend-node id="{9646576f-b22a-45bf-a4a3-3678392bd8c0}"/>
-        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
-        <checked-legend-node id="{1169fb39-5fd3-43b6-9c6c-0f8ef27a0149}"/>
-        <checked-legend-node id="{c0af50d9-d68b-4c2f-b9fa-9e2be9ec0e34}"/>
-        <checked-legend-node id="{2e14d53a-6d2f-40b3-bf3b-4f32112e3d59}"/>
-        <checked-legend-node id="{46c7536a-ac7b-4e7b-afe6-33f9fee2f171}"/>
-        <checked-legend-node id="{5b970fd5-5c37-4865-81a5-cab18c5fb58c}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
-        <checked-legend-node id="{ca06b6f2-f1ee-4958-b79a-6cb6cbc2059b}"/>
-        <checked-legend-node id="{2513a8b8-a110-4727-854c-6084f64e3bdf}"/>
-        <checked-legend-node id="{bd93e9ea-b64b-4fbd-bf89-6d4395730e60}"/>
-        <checked-legend-node id="{b8c5c345-6f26-4237-a405-a503b361b9da}"/>
-        <checked-legend-node id="{8068754f-f710-413f-b07d-9cf8a386733b}"/>
-        <checked-legend-node id="{93d733e3-3119-42cc-89f8-b67d3197925a}"/>
-        <checked-legend-node id="{091e66aa-1594-4ac1-a779-f671dde391e2}"/>
-        <checked-legend-node id="{65e92041-f079-42f0-80be-f3bedfbdcdac}"/>
-        <checked-legend-node id="{f2f26723-dc46-40c5-abe2-ef61a8c502e3}"/>
-        <checked-legend-node id="{9486a529-9a4e-4a3c-83fe-86f6f93102c0}"/>
-        <checked-legend-node id="{f798c83b-a461-46c3-8031-8b5bc3caffd8}"/>
-        <checked-legend-node id="{67caa7b7-52d8-494c-9386-6622b1e656a3}"/>
-        <checked-legend-node id="{7d0cfa7a-eaf4-499a-b977-1238b90ca15f}"/>
-        <checked-legend-node id="{6082ca45-b8db-490b-a549-f86a8b5e961b}"/>
-        <checked-legend-node id="{783f2167-c790-4baf-a58d-d6fd65a299a4}"/>
+        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
       </checked-legend-nodes>
       <checked-legend-nodes id="od_crossing20141023083754327">
         <checked-legend-node id="{bdb56b7a-1c26-428b-8597-ce6b6eb58f01}"/>
       </checked-legend-nodes>
-      <checked-legend-nodes id="vw_node_installation20150918153835436">
-        <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
-        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
-        <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{37ee4804-614d-4742-8288-a79d52f1e1d9}"/>
-        <checked-legend-node id="{b2056b72-4abc-48fb-af2e-0e23779d9c64}"/>
-        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
-        <checked-legend-node id="{25e3684f-58b8-4a10-bdf2-faa3d1410626}"/>
-        <checked-legend-node id="{3820ee54-8445-4a23-b1ab-59038e2f6d28}"/>
-        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
-        <checked-legend-node id="{604665a8-506c-4fdf-a10d-1fa4e79706e9}"/>
-        <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
-        <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
-        <checked-legend-node id="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}"/>
-        <checked-legend-node id="{467aeded-414e-4296-89ab-661c203802ce}"/>
-        <checked-legend-node id="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}"/>
-        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
-        <checked-legend-node id="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}"/>
-        <checked-legend-node id="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}"/>
-        <checked-legend-node id="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}"/>
-        <checked-legend-node id="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}"/>
-        <checked-legend-node id="{fa07847e-bb3b-454d-b957-1a2b5394e819}"/>
-        <checked-legend-node id="{410bdc09-391b-489d-a4e7-3f13c5d2e18d}"/>
-        <checked-legend-node id="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}"/>
-        <checked-legend-node id="{21502443-f0a0-4e80-83e6-198977343b0d}"/>
-      </checked-legend-nodes>
+      <checked-legend-nodes id="vw_node_installation20150918153835436"/>
     </visibility-preset>
     <visibility-preset name="minimap folios">
       <layer style="minimap folio" id="printmap20130304110011400"/>
