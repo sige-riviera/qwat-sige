@@ -45338,18 +45338,18 @@ def my_form_open(dialog, layer, feature):
         <rules key="{8ac6d04b-1bb5-46e9-b2fb-236cb107ffc9}">
           <rule scalemaxdenom="10000" description="toutes les vannes sauf organe réseau et vanne d'hydrant" filter="(status_active = 't' OR fk_status=1302) AND fk_valve_function != 6105 AND fk_valve_function != 6108" key="{7a025dab-c7fe-4c7c-9f0b-25a39f73abd8}" symbol="0" scalemindenom="1" label="réseau">
             <rule filter="closed = 't'" key="{edf1c363-d849-4700-82d0-34d494178d4d}" symbol="1" label="Fermée"/>
-            <rule checkstate="0" filter="&quot;fk_valve_type&quot; =6311" key="{6152ea58-2b55-4320-96e8-adb27c5fd9d9}" symbol="2" label="papillon"/>
+            <rule filter="&quot;fk_valve_type&quot; =6311" key="{6152ea58-2b55-4320-96e8-adb27c5fd9d9}" symbol="2" label="papillon"/>
             <rule filter="&quot;fk_valve_type&quot; =6312" key="{d1ec978f-6d96-4ed2-ac03-a37e6629f13c}" symbol="3" label="elgelf"/>
             <rule filter="&quot;fk_valve_type&quot; =6313" key="{6c48a279-b0d9-428b-819c-2fc5371720fe}" symbol="4" label="arrêt"/>
             <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}" symbol="5" label="vidange"/>
-            <rule checkstate="0" filter=" &quot;fk_status&quot; = 1302" key="{32414b2c-9a92-4c96-ac57-93ce877fd767}" symbol="6" label="Hors-service"/>
+            <rule filter=" &quot;fk_status&quot; = 1302" key="{32414b2c-9a92-4c96-ac57-93ce877fd767}" symbol="6" label="Hors-service"/>
           </rule>
           <rule scalemaxdenom="1000" filter="(status_active = 't' OR fk_status = 1302) AND fk_valve_function = 6105 OR fk_valve_function = 6108" key="{143022c7-b3e1-4c03-80d5-58520da677c2}" symbol="7" scalemindenom="1" label="abonné">
             <rule filter="closed = 't'" key="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}" symbol="8" label="Fermée"/>
             <rule filter="&quot;fk_valve_type&quot; =6313" key="{b149b2b9-3783-416c-b413-7a6f7de74e1d}" symbol="9" label="arrêt"/>
             <rule filter="fk_valve_type = 6312" key="{221f27a3-6778-4b14-8bb9-1b4c7d708bc3}" symbol="10" label="elgelf"/>
             <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{a0c08631-a6ac-4d0b-b538-41bb1efe2315}" symbol="11" label="vidange"/>
-            <rule checkstate="0" filter=" &quot;fk_status&quot; = 1302" key="{a73a080b-0751-43a2-9ace-88c84e23d1ff}" symbol="12" label="Hors-service"/>
+            <rule filter=" &quot;fk_status&quot; = 1302" key="{a73a080b-0751-43a2-9ace-88c84e23d1ff}" symbol="12" label="Hors-service"/>
           </rule>
           <rule checkstate="0" filter="status_active = 'f'" key="{0e58d6c7-b1a4-4712-9ab5-68675c588c6d}" symbol="13" label="inactive"/>
         </rules>
@@ -58913,8 +58913,11 @@ def closeProject():
         <checked-legend-node id="{7a025dab-c7fe-4c7c-9f0b-25a39f73abd8}"/>
         <checked-legend-node id="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}"/>
         <checked-legend-node id="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}"/>
+        <checked-legend-node id="{6152ea58-2b55-4320-96e8-adb27c5fd9d9}"/>
+        <checked-legend-node id="{32414b2c-9a92-4c96-ac57-93ce877fd767}"/>
         <checked-legend-node id="{b149b2b9-3783-416c-b413-7a6f7de74e1d}"/>
         <checked-legend-node id="{a0c08631-a6ac-4d0b-b538-41bb1efe2315}"/>
+        <checked-legend-node id="{a73a080b-0751-43a2-9ace-88c84e23d1ff}"/>
         <checked-legend-node id="{edf1c363-d849-4700-82d0-34d494178d4d}"/>
         <checked-legend-node id="{d1ec978f-6d96-4ed2-ac03-a37e6629f13c}"/>
         <checked-legend-node id="{221f27a3-6778-4b14-8bb9-1b4c7d708bc3}"/>
@@ -58974,7 +58977,7 @@ def closeProject():
         <checked-legend-node id="{d31ae609-73ec-4d88-8324-5300f14ed738}"/>
       </checked-legend-nodes>
     </visibility-preset>
-    <visibility-preset name="Impression 250">
+    <visibility-preset name="impression 250">
       <layer style="" id="vw_node_installation20150918153835436"/>
       <layer style="" id="subscriber20130304110011459"/>
       <layer style="" id="od_subscriber_reference20131206105928067"/>
@@ -59051,6 +59054,7 @@ def closeProject():
         <checked-legend-node id="{7a025dab-c7fe-4c7c-9f0b-25a39f73abd8}"/>
         <checked-legend-node id="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}"/>
         <checked-legend-node id="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}"/>
+        <checked-legend-node id="{6152ea58-2b55-4320-96e8-adb27c5fd9d9}"/>
         <checked-legend-node id="{32414b2c-9a92-4c96-ac57-93ce877fd767}"/>
         <checked-legend-node id="{b149b2b9-3783-416c-b413-7a6f7de74e1d}"/>
         <checked-legend-node id="{a0c08631-a6ac-4d0b-b538-41bb1efe2315}"/>
@@ -59154,13 +59158,13 @@ def closeProject():
         <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
         <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
         <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
+        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
+        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
         <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
@@ -59203,8 +59207,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
+        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -59216,8 +59220,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
+        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -59228,8 +59232,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
+        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
