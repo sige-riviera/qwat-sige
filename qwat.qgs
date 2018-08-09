@@ -406,10 +406,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2547615.00250974809750915</xmin>
-      <ymin>1136419.11315186903811991</ymin>
-      <xmax>2572083.65598837053403258</xmax>
-      <ymax>1150607.69435151503421366</ymax>
+      <xmin>2548626.89049906050786376</xmin>
+      <ymin>1138030.24628680106252432</ymin>
+      <xmax>2573095.5439776829443872</xmax>
+      <ymax>1152218.82748644705861807</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -1124,7 +1124,7 @@
     </legendgroup>
     <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Fonds de plans" project="./cadastre/cadastre_pg.qgs"/>
   </legend>
-  <Composer title="folio (atlas)" visible="1">
+  <Composer title="folio (atlas)" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="1030" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="10" printAsRaster="1" generateWorldFile="0" paperHeight="914" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1317,7 +1317,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="100" page="1" id="" lastValidViewScaleFactor="0.998041" positionMode="0" positionLock="false" x="950" y="100" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0" excludeFromExports="0" uuid="{b970a2fd-9bd7-4a2a-a787-1664811befc7}" height="40" itemRotation="0" frame="true" pagex="950">
+        <ComposerItem pagey="100" page="1" id="" lastValidViewScaleFactor="0.981391" positionMode="0" positionLock="false" x="950" y="100" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0" excludeFromExports="0" uuid="{b970a2fd-9bd7-4a2a-a787-1664811befc7}" height="40" itemRotation="0" frame="true" pagex="950">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapScale expr="12000" field="" active="true" useExpr="true"/>
@@ -1447,7 +1447,7 @@
           <annotationFontProperties description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="140" page="1" id="" lastValidViewScaleFactor="0.998041" positionMode="0" positionLock="false" x="15" y="140" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1000" outlineWidth="0" excludeFromExports="0" uuid="{27df2cec-4272-4242-93e2-7d5ffc2bbe05}" height="666.667" itemRotation="0" frame="true" pagex="15">
+        <ComposerItem pagey="140" page="1" id="" lastValidViewScaleFactor="0.981391" positionMode="0" positionLock="false" x="15" y="140" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1000" outlineWidth="0" excludeFromExports="0" uuid="{27df2cec-4272-4242-93e2-7d5ffc2bbe05}" height="666.667" itemRotation="0" frame="true" pagex="15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapScale expr="" field="print_scale" active="true" useExpr="false"/>
