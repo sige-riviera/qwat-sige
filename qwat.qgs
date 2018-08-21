@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.20">
+<qgis projectname="" version="2.18.23">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -406,10 +406,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2547073.49744494445621967</xmin>
-      <ymin>1137891.55047839786857367</ymin>
-      <xmax>2571542.15092356689274311</xmax>
-      <ymax>1152080.13167804386466742</ymax>
+      <xmin>2546386.78546848241239786</xmin>
+      <ymin>1137551.6627324721775949</ymin>
+      <xmax>2570855.4389471048489213</xmax>
+      <ymax>1151740.24393211817368865</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -1124,7 +1124,7 @@
     </legendgroup>
     <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Fonds de plans" project="./cadastre/cadastre_pg.qgs"/>
   </legend>
-  <Composer title="folio (atlas)" visible="1">
+  <Composer title="folio (atlas)" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="1030" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="10" printAsRaster="1" generateWorldFile="0" paperHeight="720" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
       <symbol alpha="1" clip_to_extent="1" type="fill" name="">
         <layer pass="0" class="SimpleFill" locked="0">
@@ -1317,7 +1317,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="6" page="1" id="" lastValidViewScaleFactor="1.12047" positionMode="0" positionLock="false" x="950" y="6" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0" excludeFromExports="0" uuid="{b970a2fd-9bd7-4a2a-a787-1664811befc7}" height="40" itemRotation="0" frame="true" pagex="950">
+        <ComposerItem pagey="6" page="1" id="" lastValidViewScaleFactor="0.6711" positionMode="0" positionLock="false" x="950" y="6" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0" excludeFromExports="0" uuid="{b970a2fd-9bd7-4a2a-a787-1664811befc7}" height="40" itemRotation="0" frame="true" pagex="950">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapScale expr="12000" field="" active="true" useExpr="true"/>
@@ -1447,7 +1447,7 @@
           <annotationFontProperties description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="46" page="1" id="" lastValidViewScaleFactor="1.12047" positionMode="0" positionLock="false" x="15" y="46" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1000" outlineWidth="0" excludeFromExports="0" uuid="{27df2cec-4272-4242-93e2-7d5ffc2bbe05}" height="666.667" itemRotation="0" frame="true" pagex="15">
+        <ComposerItem pagey="46" page="1" id="" lastValidViewScaleFactor="0.6711" positionMode="0" positionLock="false" x="15" y="46" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1000" outlineWidth="0" excludeFromExports="0" uuid="{27df2cec-4272-4242-93e2-7d5ffc2bbe05}" height="666.667" itemRotation="0" frame="true" pagex="15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapScale expr="" field="print_scale" active="true" useExpr="false"/>
@@ -10588,7 +10588,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -10619,7 +10619,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -10874,7 +10874,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="year"/>
           <column width="-1" hidden="0" type="field" name="year_end"/>
           <column width="-1" hidden="0" type="field" name="remark"/>
-          <column width="-1" hidden="1" type="field" name="schema_force_visible"/>
           <column width="-1" hidden="1" type="field" name="label_1_visible"/>
           <column width="-1" hidden="1" type="field" name="label_1_x"/>
           <column width="-1" hidden="1" type="field" name="label_1_y"/>
@@ -10916,6 +10915,11 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="field" name="status_code_sire"/>
           <column width="-1" hidden="1" type="field" name="status_functional"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_etat_exploitation"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_adesafecter"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_remarque"/>
+          <column width="-1" hidden="0" type="field" name="model"/>
+          <column width="-1" hidden="0" type="field" name="notification_sent"/>
         </columns>
       </attributetableconfig>
       <editform>./ui_forms/hydrant.ui</editform>
@@ -10956,6 +10960,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="44" name="fk_output"/>
           <attributeEditorField showLabel="1" index="43" name="fk_material"/>
           <attributeEditorField showLabel="1" index="26" name="remark"/>
+          <attributeEditorField showLabel="1" index="45" name="underground"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Géométrie" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="22" name="altitude"/>
