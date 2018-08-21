@@ -348,6 +348,8 @@
           <value>Fond_ASIT_VD___couleur20180322144715694</value>
           <value>Fond_ASIT_VD___niveaux_de_gris20180322144719023</value>
           <value>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</value>
+          <value>cn124420180821142505088</value>
+          <value>cn126420180821142456803</value>
         </property>
         <property key="embedded_project" value="./cadastre/cadastre_pg.qgs"/>
       </customproperties>
@@ -505,6 +507,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="no_posnomlocallieudit20130514143906869"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="IntersectIt_Lines20130618102142813"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ouvrage_général_copy20141218102656671"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="100001" destDatumTransform="-1" layerid="cn126420180821142456803"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_bien_fonds20140214143508556"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="ad_posnumero_maison20130514143346530"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="installation_tank20130304110005008"/>
@@ -534,6 +537,7 @@
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cs_batiment20130514143721709"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="cn126420130327085334221"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="subscriber_pipe_relation20130417092124312"/>
+      <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:21781" srcDatumTransform="100001" destDatumTransform="-1" layerid="cn124420180821142505088"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="vannes_copy20141127160745910"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="bf_ddp20130514143538213"/>
       <layer_coordinate_transform destAuthId="EPSG:2056" srcAuthId="EPSG:2056" srcDatumTransform="-1" destDatumTransform="-1" layerid="conduites_actives_copy_copy20130822080032346"/>
@@ -648,6 +652,8 @@
       <item>Fond_ASIT_VD___couleur20180322144715694</item>
       <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
+      <item>cn124420180821142505088</item>
+      <item>cn126420180821142456803</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="false">
