@@ -25051,13 +25051,13 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{f3ccdd35-7fd8-4b9f-b9f8-3350d86f1ea8}">
-          <rule filter="fk_statut in (1,2,3,4)" key="{be8744b1-363c-49ad-8643-53626d1389cd}" symbol="0" label="à modifier"/>
-          <rule filter="fk_statut = 5" key="{caeb8342-3456-4739-9f86-d9dc6a3f56bf}" symbol="1" label="à inscrire"/>
-          <rule filter="fk_statut is null" key="{9ee2fb69-7a7f-423d-969f-d613851f1801}" symbol="2" label="inscrites"/>
+          <rule filter="id_statut in (1,2,3,4)" key="{be8744b1-363c-49ad-8643-53626d1389cd}" symbol="0" label="à modifier"/>
+          <rule filter="id_statut = 5" key="{caeb8342-3456-4739-9f86-d9dc6a3f56bf}" symbol="1" label="à inscrire"/>
+          <rule filter="id_statut is null" key="{9ee2fb69-7a7f-423d-969f-d613851f1801}" symbol="2" label="inscrites"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="1" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -25084,7 +25084,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="line" name="1">
-            <layer pass="0" class="SimpleLine" locked="0">
+            <layer pass="2" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
               <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
@@ -25215,7 +25215,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -25317,7 +25317,7 @@ def my_form_open(dialog, layer, feature):
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
-      <layerTransparency>0</layerTransparency>
+      <layerTransparency>10</layerTransparency>
       <displayfield>id</displayfield>
       <label>0</label>
       <labelattributes>
@@ -25374,8 +25374,8 @@ def my_form_open(dialog, layer, feature):
         <alias field="id" index="0" name=""/>
         <alias field="id_commune" index="1" name=""/>
         <alias field="id_type" index="2" name=""/>
-        <alias field="id_etat" index="3" name=""/>
-        <alias field="id_statut" index="4" name=""/>
+        <alias field="id_etat" index="3" name="Etat RF"/>
+        <alias field="id_statut" index="4" name="Etat d'avancement"/>
         <alias field="id_ouvrage" index="5" name=""/>
         <alias field="id_collecteur" index="6" name=""/>
         <alias field="id_partenaire" index="7" name=""/>
@@ -25396,7 +25396,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions default="0">
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].audit('servitude20150109080436604',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;id_ouvrage&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;id_etat&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="0" type="field" name="id_commune"/>
@@ -25558,13 +25558,13 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{d9f59999-3adb-4dfe-b344-88abd048752c}">
-          <rule filter="fk_statut in (1,2,3,4)" key="{de3a9131-1deb-46d7-857e-d8eda979e698}" symbol="0" label="à modifier"/>
-          <rule filter="fk_statut = 5" key="{65f6c6eb-9819-40c9-b5e6-1bf740881f15}" symbol="1" label="à inscrire"/>
-          <rule filter="fk_statut is null" key="{44f33559-83ce-45d8-a765-d695c22c111e}" symbol="2" label="inscrites"/>
+          <rule filter="id_statut in (1,2,3,4)" key="{de3a9131-1deb-46d7-857e-d8eda979e698}" symbol="0" label="à modifier"/>
+          <rule filter="id_statut = 5" key="{65f6c6eb-9819-40c9-b5e6-1bf740881f15}" symbol="1" label="à inscrire"/>
+          <rule filter="id_statut is null" key="{44f33559-83ce-45d8-a765-d695c22c111e}" symbol="2" label="inscrites"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="1" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="188,173,201,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -25587,7 +25587,7 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
-            <layer pass="0" class="SimpleFill" locked="0">
+            <layer pass="2" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="216,123,86,255"/>
               <prop k="joinstyle" v="bevel"/>
@@ -25710,7 +25710,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -25869,8 +25869,8 @@ def my_form_open(dialog, layer, feature):
         <alias field="id" index="0" name=""/>
         <alias field="id_commune" index="1" name=""/>
         <alias field="id_type" index="2" name=""/>
-        <alias field="id_etat" index="3" name=""/>
-        <alias field="id_statut" index="4" name=""/>
+        <alias field="id_etat" index="3" name="Etat RF"/>
+        <alias field="id_statut" index="4" name="Etat d'avancement"/>
         <alias field="id_ouvrage" index="5" name=""/>
         <alias field="id_collecteur" index="6" name=""/>
         <alias field="id_partenaire" index="7" name=""/>
@@ -25964,7 +25964,7 @@ def my_form_open(dialog, layer, feature):
         <default field="document" expression=""/>
         <default field="geometry_line" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>servitude_etat20150116095811244</id>
