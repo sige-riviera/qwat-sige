@@ -1207,9 +1207,9 @@
             </layer>
           </symbol>
         </lineStyle>
-        <StartPoint x="15.15" y="397"/>
-        <StopPoint x="34.85" y="397"/>
-        <ComposerItem pagey="396.85" page="1" id="" lastValidViewScaleFactor="9.29985" positionMode="3" positionLock="true" x="15" y="396.85" visibility="1" zValue="11" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="20" outlineWidth="0" excludeFromExports="0" uuid="{dbbbb19e-bbae-45e9-a631-b11648d004a9}" height="0.3" itemRotation="0" frame="false" pagex="15">
+        <StartPoint x="15.15" y="303"/>
+        <StopPoint x="34.85" y="303"/>
+        <ComposerItem pagey="302.85" page="1" id="" lastValidViewScaleFactor="9.29985" positionMode="3" positionLock="false" x="15" y="302.85" visibility="1" zValue="11" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="20" outlineWidth="0" excludeFromExports="0" uuid="{dbbbb19e-bbae-45e9-a631-b11648d004a9}" height="0.3" itemRotation="0" frame="false" pagex="15">
           <FrameColor alpha="0" red="255" blue="255" green="255"/>
           <BackgroundColor alpha="0" red="255" blue="255" green="255"/>
           <customproperties/>
@@ -1323,7 +1323,7 @@
           <annotationFontProperties description="Ubuntu,11,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="6" page="1" id="" lastValidViewScaleFactor="0.6711" positionMode="0" positionLock="false" x="950" y="6" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0" excludeFromExports="0" uuid="{b970a2fd-9bd7-4a2a-a787-1664811befc7}" height="40" itemRotation="0" frame="true" pagex="950">
+        <ComposerItem pagey="6" page="1" id="" lastValidViewScaleFactor="1.54051" positionMode="0" positionLock="false" x="950" y="6" visibility="1" zValue="8" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="65" outlineWidth="0" excludeFromExports="0" uuid="{b970a2fd-9bd7-4a2a-a787-1664811befc7}" height="40" itemRotation="0" frame="true" pagex="950">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapScale expr="12000" field="" active="true" useExpr="true"/>
@@ -1453,7 +1453,7 @@
           <annotationFontProperties description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
         </ComposerMapGrid>
         <AtlasMap scalingMode="0" atlasDriven="1" margin="0.10000000000000001"/>
-        <ComposerItem pagey="46" page="1" id="" lastValidViewScaleFactor="0.6711" positionMode="0" positionLock="false" x="15" y="46" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1000" outlineWidth="0" excludeFromExports="0" uuid="{27df2cec-4272-4242-93e2-7d5ffc2bbe05}" height="666.667" itemRotation="0" frame="true" pagex="15">
+        <ComposerItem pagey="46" page="1" id="" lastValidViewScaleFactor="1.54051" positionMode="0" positionLock="false" x="15" y="46" visibility="1" zValue="1" background="true" transparency="0" frameJoinStyle="miter" blendMode="0" width="1000" outlineWidth="0" excludeFromExports="0" uuid="{27df2cec-4272-4242-93e2-7d5ffc2bbe05}" height="666.667" itemRotation="0" frame="true" pagex="15">
           <FrameColor alpha="255" red="0" blue="0" green="0"/>
           <BackgroundColor alpha="255" red="255" blue="255" green="255"/>
           <dataDefinedMapScale expr="" field="print_scale" active="true" useExpr="false"/>
