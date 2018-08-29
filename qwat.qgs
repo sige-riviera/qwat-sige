@@ -18020,7 +18020,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/previewBkgrdColor" value="#ffffff"/>
         <property key="labeling/priority" value="5"/>
         <property key="labeling/quadOffset" value="4"/>
-        <property key="labeling/repeatDistance" value="90"/>
+        <property key="labeling/repeatDistance" value="45"/>
         <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
         <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
