@@ -29409,7 +29409,7 @@ def my_form_open(dialog, layer, feature):
             <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}" symbol="5" label="vidange"/>
             <rule filter=" &quot;fk_status&quot; = 1302" key="{32414b2c-9a92-4c96-ac57-93ce877fd767}" symbol="6" label="Hors-service"/>
           </rule>
-          <rule scalemaxdenom="1000" filter="(status_active = 't' OR fk_status = 1302) AND fk_valve_function = 6105 OR fk_valve_function = 6108" key="{143022c7-b3e1-4c03-80d5-58520da677c2}" symbol="7" scalemindenom="1" label="abonné">
+          <rule scalemaxdenom="1000" filter="(status_active = 't' OR fk_status = 1302) AND (fk_valve_function = 6105 OR fk_valve_function = 6108)" key="{143022c7-b3e1-4c03-80d5-58520da677c2}" symbol="7" scalemindenom="1" label="abonné">
             <rule filter="closed = 't'" key="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}" symbol="8" label="Fermée"/>
             <rule filter="&quot;fk_valve_type&quot; =6313" key="{b149b2b9-3783-416c-b413-7a6f7de74e1d}" symbol="9" label="arrêt"/>
             <rule filter="fk_valve_type = 6312" key="{221f27a3-6778-4b14-8bb9-1b4c7d708bc3}" symbol="10" label="elgelf"/>
