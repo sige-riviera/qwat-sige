@@ -39444,7 +39444,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="year" index="23" name="année"/>
         <alias field="year_end" index="24" name="année fin"/>
         <alias field="orientation" index="25" name=""/>
-        <alias field="remark" index="26" name="remarques"/>
+        <alias field="remark" index="26" name="Remarque"/>
         <alias field="label_1_visible" index="27" name=""/>
         <alias field="label_1_x" index="28" name=""/>
         <alias field="label_1_y" index="29" name=""/>
@@ -39663,6 +39663,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="44" name="fk_watertype"/>
           <attributeEditorField showLabel="1" index="43" name="fk_remote"/>
           <attributeEditorField showLabel="1" index="47" name="open_water_surface"/>
+          <attributeEditorField showLabel="1" index="26" name="remark"/>
           <attributeEditorField showLabel="1" index="101" name="update_date"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression=" &quot;installation_type&quot;  = 'chamber'" name="Chambre" groupBox="1" columnCount="2">
