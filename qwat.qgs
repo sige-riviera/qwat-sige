@@ -66,7 +66,7 @@
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_crossing20141023083754327" source="service='qwat' sslmode=disable key='id' srid=2056 type=Point table=&quot;qwat_od&quot;.&quot;crossing&quot; (geometry) sql=" name="013 croisements">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="croquis_reseau20170822084618718" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=Point table=&quot;distribution&quot;.&quot;croquis_reseau&quot; (geometry) sql=" name="014 croquis_reseau">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="croquis_reseau20170822084618718" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=Point table=&quot;distribution&quot;.&quot;croquis_reseau&quot; (geometry) sql=" name="014 croquis_reseau">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="leak20130821111917060" source="service='qwat' sslmode=disable key='id' srid=2056 type=Point table=&quot;qwat_od&quot;.&quot;leak&quot; (geometry) sql=" name="015 fuite">
@@ -408,10 +408,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2547424.39066400891169906</xmin>
-      <ymin>1136066.53566891700029373</ymin>
-      <xmax>2571893.04414263134822249</xmax>
-      <ymax>1150255.11686856299638748</ymax>
+      <xmin>2545802.20032086502760649</xmin>
+      <ymin>1136242.79574546520598233</ymin>
+      <xmax>2570270.85379948746412992</xmax>
+      <ymax>1151758.57756385509856045</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -738,9 +738,9 @@
             <legendlayerfile isInOverview="0" layerid="od_crossing20141023083754327" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="13" open="true" checked="Qt::Unchecked" name="014 croquis_reseau" showFeatureCount="0">
-          <filegroup open="true" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="croquis_reseau20170822084618718" visible="0"/>
+        <legendlayer drawingOrder="13" open="false" checked="Qt::Checked" name="014 croquis_reseau" showFeatureCount="0">
+          <filegroup open="false" hidden="false">
+            <legendlayerfile isInOverview="0" layerid="croquis_reseau20170822084618718" visible="1"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="14" open="false" checked="Qt::Unchecked" name="015 fuite" showFeatureCount="0">
@@ -8883,13 +8883,42 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="as_built_plan_name">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="CheckBox" name="is_as_built_plan">
+          <widgetv2config fieldEditable="1" UncheckedState="f" constraint="CASE&#xd;&#xa;&#x9;WHEN &quot;is_as_built_plan&quot; = 't'&#xd;&#xa;&#x9;THEN &quot;as_built_plan_name&quot; IS NOT NULL&#xd;&#xa;&#x9;WHEN &quot;is_as_built_plan&quot; = 'f'&#xd;&#xa;&#x9;THEN &quot;as_built_plan_name&quot; IS NULL&#xd;&#xa;END" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="ExternalResource" name="full_path">
-          <widgetv2config fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="0" FileWidgetFilter=""/>
+          <widgetv2config RelativeStorage="0" fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="0" FileWidgetFilter=""/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{7bff88bc-2513-4451-9988-1cf63c7a1fdd}">
+          <rule filter=" &quot;is_as_built_plan&quot; = 't'" key="{085589d6-5cfa-400c-9c98-9490be6b5b40}" symbol="0" label="schéma de pose"/>
+          <rule filter="ELSE" key="{ec9be7e7-b1e1-4515-b384-b18743fdf9e6}" symbol="1" label="ponctuel"/>
+        </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="22,196,255,97"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="square"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="154,154,154,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.4"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="5"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MapUnit"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="61,141,129,97"/>
@@ -8912,8 +8941,6 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
         </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="simple"/>
       <customproperties>
@@ -9062,7 +9089,7 @@ def my_form_open(dialog, layer, feature):
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
-      <displayfield>file</displayfield>
+      <displayfield>as_built_plan_name</displayfield>
       <label>0</label>
       <labelattributes>
         <label fieldname="" text="Label"/>
@@ -9115,10 +9142,11 @@ def my_form_open(dialog, layer, feature):
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
-        <alias field="id" index="0" name=""/>
-        <alias field="file" index="1" name=""/>
-        <alias field="as_built_plan_name" index="2" name=""/>
-        <alias field="full_path" index="3" name=""/>
+        <alias field="id" index="0" name="ID"/>
+        <alias field="file" index="1" name="Fichier"/>
+        <alias field="as_built_plan_name" index="2" name="Nom schéma de pose"/>
+        <alias field="is_as_built_plan" index="3" name="Schéma de pose ?"/>
+        <alias field="full_path" index="4" name="Adresse et aperçu"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -9129,6 +9157,8 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="file"/>
           <column width="-1" hidden="1" type="actions"/>
           <column width="958" hidden="0" type="field" name="full_path"/>
+          <column width="-1" hidden="0" type="field" name="as_built_plan_name"/>
+          <column width="152" hidden="0" type="field" name="is_as_built_plan"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -9153,7 +9183,14 @@ def my_form_open(dialog, layer, feature):
 	control = dialog.findChild(QWidget, "MyLineEdit")
 ]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
-      <editorlayout>generatedlayout</editorlayout>
+      <editorlayout>tablayout</editorlayout>
+      <attributeEditorForm>
+        <attributeEditorField showLabel="1" index="0" name="id"/>
+        <attributeEditorField showLabel="1" index="1" name="file"/>
+        <attributeEditorField showLabel="1" index="3" name="is_as_built_plan"/>
+        <attributeEditorField showLabel="1" index="2" name="as_built_plan_name"/>
+        <attributeEditorField showLabel="1" index="4" name="full_path"/>
+      </attributeEditorForm>
       <widgets/>
       <conditionalstyles>
         <rowstyles/>
@@ -9163,6 +9200,7 @@ def my_form_open(dialog, layer, feature):
         <default field="id" expression=""/>
         <default field="file" expression=""/>
         <default field="as_built_plan_name" expression=""/>
+        <default field="is_as_built_plan" expression=""/>
         <default field="full_path" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
