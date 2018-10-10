@@ -9,7 +9,7 @@
       <customproperties/>
       <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="ouvrages">
         <customproperties/>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="vw_node_installation20150918153835436" source="service='qwat' sslmode=disable key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_installation&quot; (geometry) sql=" name="001 ouvrage">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="vw_node_installation20150918153835436" source="service='qwat' sslmode=disable key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_installation&quot; (geometry) sql=" name="001 ouvrage">
           <customproperties>
             <property key="expandedLegendNodes"/>
           </customproperties>
@@ -408,10 +408,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2546386.78546848241239786</xmin>
-      <ymin>1137551.6627324721775949</ymin>
-      <xmax>2570855.4389471048489213</xmax>
-      <ymax>1151740.24393211817368865</ymax>
+      <xmin>2547424.39066400891169906</xmin>
+      <ymin>1136066.53566891700029373</ymin>
+      <xmax>2571893.04414263134822249</xmax>
+      <ymax>1150255.11686856299638748</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -659,8 +659,8 @@
   <legend updateDrawingOrder="false">
     <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
       <legendgroup open="true" checked="Qt::PartiallyChecked" name="ouvrages">
-        <legendlayer drawingOrder="0" open="false" checked="Qt::Checked" name="001 ouvrage" showFeatureCount="0">
-          <filegroup open="false" hidden="false">
+        <legendlayer drawingOrder="0" open="true" checked="Qt::Checked" name="001 ouvrage" showFeatureCount="0">
+          <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_node_installation20150918153835436" visible="1"/>
           </filegroup>
         </legendlayer>
@@ -8880,6 +8880,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="file">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="as_built_plan_name">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="ExternalResource" name="full_path">
           <widgetv2config fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="0" FileWidgetFilter=""/>
         </edittype>
@@ -9114,7 +9117,8 @@ def my_form_open(dialog, layer, feature):
       <aliases>
         <alias field="id" index="0" name=""/>
         <alias field="file" index="1" name=""/>
-        <alias field="full_path" index="2" name=""/>
+        <alias field="as_built_plan_name" index="2" name=""/>
+        <alias field="full_path" index="3" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -9158,6 +9162,7 @@ def my_form_open(dialog, layer, feature):
       <defaults>
         <default field="id" expression=""/>
         <default field="file" expression=""/>
+        <default field="as_built_plan_name" expression=""/>
         <default field="full_path" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
@@ -20846,6 +20851,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="ValueRelation" name="fk_pressurecontrol_type">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurecontrol_type20150203100321270" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="update_date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="status_active">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -21637,8 +21645,9 @@ def my_form_open(dialog, layer, feature):
         <alias field="depth" index="98" name=""/>
         <alias field="no_valves" index="99" name=""/>
         <alias field="fk_pressurecontrol_type" index="100" name=""/>
-        <alias field="status_active" index="101" name=""/>
-        <alias field="status_functional" index="102" name=""/>
+        <alias field="update_date" index="101" name=""/>
+        <alias field="status_active" index="102" name=""/>
+        <alias field="status_functional" index="103" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -21765,6 +21774,7 @@ def my_form_open(dialog, layer, feature):
         <default field="depth" expression=""/>
         <default field="no_valves" expression=""/>
         <default field="fk_pressurecontrol_type" expression=""/>
+        <default field="update_date" expression=""/>
         <default field="status_active" expression=""/>
         <default field="status_functional" expression=""/>
       </defaults>
@@ -35174,6 +35184,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="fk_pressurecontrol_type">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="update_date">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
@@ -35497,6 +35510,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="depth" index="98" name=""/>
         <alias field="no_valves" index="99" name=""/>
         <alias field="fk_pressurecontrol_type" index="100" name=""/>
+        <alias field="update_date" index="101" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -35734,6 +35748,7 @@ def my_form_open(dialog, layer, feature):
         <default field="depth" expression=""/>
         <default field="no_valves" expression=""/>
         <default field="fk_pressurecontrol_type" expression=""/>
+        <default field="update_date" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -38223,6 +38238,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="ValueRelation" name="fk_pressurecontrol_type">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurecontrol_type20150203100321270" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="DateTime" name="update_date">
+          <widgetv2config fieldEditable="1" calendar_popup="1" allow_null="1" display_format="yyyy-MM-dd" field_format="yyyy-MM-dd" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="status_active">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -39501,9 +39519,10 @@ def my_form_open(dialog, layer, feature):
         <alias field="depth" index="98" name=""/>
         <alias field="no_valves" index="99" name=""/>
         <alias field="fk_pressurecontrol_type" index="100" name="type de régulation"/>
-        <alias field="status_active" index="101" name=""/>
-        <alias field="status_functional" index="102" name=""/>
-        <alias field="_installation_type_short" index="103" name=""/>
+        <alias field="update_date" index="101" name="Date màj données"/>
+        <alias field="status_active" index="102" name=""/>
+        <alias field="status_functional" index="103" name=""/>
+        <alias field="_installation_type_short" index="104" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -39615,6 +39634,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_etat_exploitation"/>
           <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_adesafecter"/>
           <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_remarque"/>
+          <column width="-1" hidden="0" type="field" name="update_date"/>
         </columns>
       </attributetableconfig>
       <editform>./ui_forms/installation.ui</editform>
@@ -39643,6 +39663,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="44" name="fk_watertype"/>
           <attributeEditorField showLabel="1" index="43" name="fk_remote"/>
           <attributeEditorField showLabel="1" index="47" name="open_water_surface"/>
+          <attributeEditorField showLabel="1" index="101" name="update_date"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="1" visibilityExpression=" &quot;installation_type&quot;  = 'chamber'" name="Chambre" groupBox="1" columnCount="2">
           <attributeEditorField showLabel="1" index="94" name="networkseparation"/>
@@ -39826,6 +39847,7 @@ def my_form_open(dialog, layer, feature):
         <default field="depth" expression=""/>
         <default field="no_valves" expression=""/>
         <default field="fk_pressurecontrol_type" expression=""/>
+        <default field="update_date" expression=""/>
         <default field="status_active" expression=""/>
         <default field="status_functional" expression=""/>
         <default field="_installation_type_short" expression=""/>
