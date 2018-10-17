@@ -36,7 +36,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Réseau">
+      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Réseau">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="conduites_copy20130709141244955" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table=&quot;qwat_od&quot;.&quot;pipe&quot; (geometry) sql=" name="016 conduites">
           <customproperties>
@@ -86,7 +86,7 @@
         </layer-tree-layer>
       </layer-tree-group>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Schématique">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Schématique">
       <customproperties/>
       <layer-tree-group expanded="0" checked="Qt::Unchecked" name="impression">
         <customproperties/>
@@ -190,7 +190,7 @@
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_consumptionzone20150508135647750" source="service='qwat' sslmode=disable key='name' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;vw_consumptionzone&quot; (geometry) sql=" name="045 Zones de consommation">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="printmap20130304110011400" source="service='qwat' sslmode=allow key='id' srid=2056 type=Polygon table=&quot;qwat_od&quot;.&quot;printmap&quot; (geometry) sql=" name="046 folios">
+      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="printmap20130304110011400" source="service='qwat' sslmode=allow key='id' srid=2056 type=Polygon table=&quot;qwat_od&quot;.&quot;printmap&quot; (geometry) sql=" name="046 folios">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="protectionzone20130304110011418" source="service='qwat' sslmode=allow key='id' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;protectionzone&quot; (geometry) sql=" name="047 zones de protections">
@@ -408,10 +408,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2548166.87122554238885641</xmin>
-      <ymin>1138398.81921737641096115</ymin>
-      <xmax>2572635.52470416482537985</xmax>
-      <ymax>1153914.60103576630353928</ymax>
+      <xmin>2547945.57849382096901536</xmin>
+      <ymin>1138670.69314491935074329</ymin>
+      <xmax>2572414.2319724434055388</xmax>
+      <ymax>1154186.47496330924332142</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -697,7 +697,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
+      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Réseau">
         <legendlayer drawingOrder="15" open="false" checked="Qt::Checked" name="016 conduites" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="conduites_copy20130709141244955" visible="1"/>
@@ -767,7 +767,7 @@
         </legendlayer>
       </legendgroup>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::Unchecked" name="Schématique">
+    <legendgroup open="true" checked="Qt::Unchecked" name="Schématique">
       <legendgroup open="false" checked="Qt::Unchecked" name="impression">
         <legendlayer drawingOrder="20" open="false" checked="Qt::Unchecked" name="021 hydrantes 5000 (pression)" showFeatureCount="0">
           <filegroup open="false" hidden="false">
@@ -905,8 +905,8 @@
           <legendlayerfile isInOverview="0" layerid="vw_consumptionzone20150508135647750" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="45" open="false" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
-        <filegroup open="false" hidden="false">
+      <legendlayer drawingOrder="45" open="true" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
+        <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="printmap20130304110011400" visible="1"/>
         </filegroup>
       </legendlayer>
@@ -11677,6 +11677,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="10001" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2551513.72438377980142832</xmin>
+        <ymin>1136205.3947091200388968</ymin>
+        <xmax>2564495.0226529398933053</xmax>
+        <ymax>1152008.86777818994596601</ymax>
+      </extent>
       <id>hydrantes_copy20160127124839887</id>
       <datasource>service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table="qwat_od"."vw_element_hydrant" (geometry) sql=</datasource>
       <shortname>hydrantes copy</shortname>
@@ -18726,6 +18732,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2551180.36802018992602825</xmin>
+        <ymin>1136435.87360480008646846</ymin>
+        <xmax>2565094.26920572016388178</xmax>
+        <ymax>1152119.11931171989999712</ymax>
+      </extent>
       <id>ouvrage_copy20160125132737527</id>
       <datasource>service='qwat' sslmode=disable key='id' srid=2056 type=PointZ table="qwat_od"."vw_element_installation" (geometry_alt2) sql=</datasource>
       <shortname>ouvrage copy</shortname>
@@ -24046,8 +24058,9 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{c66734f8-9401-4a46-bb87-697879c73065}">
-          <rule scalemaxdenom="200000" filter="label_2_visible = 0" key="{0776c2f8-67b0-4ba7-9ad4-b47a34356abc}" symbol="0" scalemindenom="6000" label="5000"/>
+          <rule scalemaxdenom="200000" filter="label_2_visible = 0 AND remark != 'disabled'" key="{c6347210-f028-40a2-8b79-0e2f46a936f8}" symbol="0" scalemindenom="6000" label="5000"/>
           <rule scalemaxdenom="200000" filter="ELSE" key="{7e34c023-3a38-4c28-96a3-cd36dd937b02}" symbol="1" scalemindenom="200" label="folios"/>
+          <rule scalemaxdenom="200000" checkstate="0" filter="label_2_visible = 0 AND remark = 'disabled'" key="{6def3452-a5b7-4d87-bf74-b2ea071d6d09}" symbol="2" scalemindenom="6000" label="Anciens"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="0">
@@ -24074,6 +24087,29 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="fill" name="1">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="0,0,255,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="79,79,79,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.1"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="no"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="fill" name="2">
             <layer pass="0" class="SimpleFill" locked="0">
               <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="color" v="0,0,255,255"/>
@@ -24152,7 +24188,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -24183,7 +24219,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="1"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -24409,10 +24445,10 @@ def my_form_open(dialog, layer, feature):
       <attributeactions default="0">
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].audit('printmap20130304110011400',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;name&quot;" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;remark&quot;" sortOrder="1">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
-          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="174" hidden="0" type="field" name="name"/>
           <column width="-1" hidden="0" type="field" name="fk_district"/>
           <column width="-1" hidden="0" type="field" name="remark"/>
           <column width="-1" hidden="0" type="field" name="version_date"/>
@@ -30671,6 +30707,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression>COALESCE("id", '&lt;NULL>')</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="1" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2551002.25</xmin>
+        <ymin>1136095.125</ymin>
+        <xmax>2565251.75</xmax>
+        <ymax>1152096.875</ymax>
+      </extent>
       <id>vannes_copy20141127160745910</id>
       <datasource>service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table="qwat_od"."valve" (geometry_alt2) sql=</datasource>
       <keywordList>
@@ -39910,6 +39952,12 @@ END
 || coalesce(name,'')</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2550340.40851210989058018</xmin>
+        <ymin>1136143.95795514993369579</ymin>
+        <xmax>2565206.71281286003068089</xmax>
+        <ymax>1152283.55775768007151783</ymax>
+      </extent>
       <id>vw_pipe_schema20141208162900166</id>
       <datasource>service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table="qwat_od"."vw_pipe_schema" (geometry) sql="fk_status" NOT IN (1303, 1304, 1305, 1306, 1307, 1308)</datasource>
       <keywordList>
@@ -42728,6 +42776,10 @@ def closeProject():
       <checked-legend-nodes id="od_crossing20141023083754327">
         <checked-legend-node id="{bdb56b7a-1c26-428b-8597-ce6b6eb58f01}"/>
       </checked-legend-nodes>
+      <checked-legend-nodes id="printmap20130304110011400">
+        <checked-legend-node id="{7e34c023-3a38-4c28-96a3-cd36dd937b02}"/>
+        <checked-legend-node id="{c6347210-f028-40a2-8b79-0e2f46a936f8}"/>
+      </checked-legend-nodes>
       <checked-legend-nodes id="valve20130304110011497">
         <checked-legend-node id="{6c48a279-b0d9-428b-819c-2fc5371720fe}"/>
         <checked-legend-node id="{143022c7-b3e1-4c03-80d5-58520da677c2}"/>
@@ -43069,6 +43121,10 @@ def closeProject():
         <checked-legend-node id="{8af2dff4-7bea-42be-9478-3f1d88ebf33d}"/>
         <checked-legend-node id="{6ade4f06-ed80-4a3f-9fe9-38516a340cad}"/>
         <checked-legend-node id="{73931827-a1f1-4b6a-b930-e4b6873d3222}"/>
+      </checked-legend-nodes>
+      <checked-legend-nodes id="printmap20130304110011400">
+        <checked-legend-node id="{7e34c023-3a38-4c28-96a3-cd36dd937b02}"/>
+        <checked-legend-node id="{c6347210-f028-40a2-8b79-0e2f46a936f8}"/>
       </checked-legend-nodes>
     </visibility-preset>
     <visibility-preset name="minimap 1000">
