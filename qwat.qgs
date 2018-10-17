@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.23">
+<qgis projectname="" version="2.18.24">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -66,7 +66,7 @@
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="od_crossing20141023083754327" source="service='qwat' sslmode=disable key='id' srid=2056 type=Point table=&quot;qwat_od&quot;.&quot;crossing&quot; (geometry) sql=" name="013 croisements">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="croquis_reseau20170822084618718" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=Point table=&quot;distribution&quot;.&quot;croquis_reseau&quot; (geometry) sql=" name="014 croquis_reseau">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="croquis_reseau20170822084618718" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=Point table=&quot;distribution&quot;.&quot;croquis_reseau&quot; (geometry) sql=" name="014 croquis_reseau">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="leak20130821111917060" source="service='qwat' sslmode=disable key='id' srid=2056 type=Point table=&quot;qwat_od&quot;.&quot;leak&quot; (geometry) sql=" name="015 fuite">
@@ -95,7 +95,7 @@
             <property key="expandedLegendNodes"/>
           </customproperties>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_pipe_schema20141208162900166" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table=&quot;qwat_od&quot;.&quot;vw_pipe_schema&quot; (geometry) sql=" name="025 conduite impression 5000">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_pipe_schema20141208162900166" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table=&quot;qwat_od&quot;.&quot;vw_pipe_schema&quot; (geometry) sql=&quot;fk_status&quot; NOT IN (1303, 1304, 1305, 1306, 1307, 1308)" name="025 conduite impression 5000">
           <customproperties/>
         </layer-tree-layer>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="ouvrage_copy20160125132737527" source="service='qwat' sslmode=disable key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_installation&quot; (geometry_alt2) sql=" name="022 ouvrage 5000">
@@ -408,10 +408,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2545802.20032086502760649</xmin>
-      <ymin>1136242.79574546520598233</ymin>
-      <xmax>2570270.85379948746412992</xmax>
-      <ymax>1151758.57756385509856045</ymax>
+      <xmin>2548166.87122554238885641</xmin>
+      <ymin>1138398.81921737641096115</ymin>
+      <xmax>2572635.52470416482537985</xmax>
+      <ymax>1153914.60103576630353928</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -738,9 +738,9 @@
             <legendlayerfile isInOverview="0" layerid="od_crossing20141023083754327" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="13" open="false" checked="Qt::Checked" name="014 croquis_reseau" showFeatureCount="0">
+        <legendlayer drawingOrder="13" open="false" checked="Qt::Unchecked" name="014 croquis_reseau" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="croquis_reseau20170822084618718" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="croquis_reseau20170822084618718" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="14" open="false" checked="Qt::Unchecked" name="015 fuite" showFeatureCount="0">
@@ -8887,7 +8887,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" UncheckedState="f" constraint="CASE&#xd;&#xa;&#x9;WHEN &quot;is_as_built_plan&quot; = 't'&#xd;&#xa;&#x9;THEN &quot;as_built_plan_name&quot; IS NOT NULL&#xd;&#xa;&#x9;WHEN &quot;is_as_built_plan&quot; = 'f'&#xd;&#xa;&#x9;THEN &quot;as_built_plan_name&quot; IS NULL&#xd;&#xa;END" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ExternalResource" name="full_path">
-          <widgetv2config RelativeStorage="0" fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="0" FileWidgetFilter=""/>
+          <widgetv2config fieldEditable="0" DocumentViewer="1" FileWidgetButton="0" UseLink="1" DocumentViewerWidth="0" FullUrl="1" constraint="" FileWidget="1" DocumentViewerHeight="0" StorageMode="0" labelOnTop="0" constraintDescription="" notNull="0" FileWidgetFilter=""/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
@@ -18725,7 +18725,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>ouvrage_copy20160125132737527</id>
       <datasource>service='qwat' sslmode=disable key='id' srid=2056 type=PointZ table="qwat_od"."vw_element_installation" (geometry_alt2) sql=</datasource>
       <shortname>ouvrage copy</shortname>
@@ -18756,9 +18756,10 @@ def my_form_open(dialog, layer, feature):
       </vectorjoins>
       <layerDependencies/>
       <expressionfields/>
-      <map-layer-style-manager current="automatic labeling">
-        <map-layer-style name="">
-          <qgis version="2.18.20" simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+        <map-layer-style name="automatic labeling">
+          <qgis version="2.18.24" simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" simplifyMaxScale="1" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
             <edittypes>
               <edittype widgetv2type="TextEdit" name="id">
                 <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -19070,6 +19071,9 @@ def my_form_open(dialog, layer, feature):
               <edittype widgetv2type="ValueRelation" name="fk_pressurecontrol_type">
                 <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="pressurecontrol_type20150203100321270" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
               </edittype>
+              <edittype widgetv2type="TextEdit" name="update_date">
+                <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+              </edittype>
               <edittype widgetv2type="TextEdit" name="status_active">
                 <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
               </edittype>
@@ -19079,71 +19083,37 @@ def my_form_open(dialog, layer, feature):
             </edittypes>
             <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
               <rules key="{89d1d7f3-6dd2-48ab-a978-572c899af422}">
-                <rule filter="status_functional = 't'" key="{71a064ea-fc5d-4548-9c69-5bf1fe84a66d}" label="fonctionnel">
-                  <rule filter="status_active = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor = 1" key="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}" label="actif">
-                    <rule filter="installation_type = 'chamber'" key="{5a17ff38-f410-4abf-be4e-9c79367de4fe}" label="Chambre">
-                      <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{8822d14f-21ea-400b-ad73-aafc21c19773}" symbol="0" label="Chambre débitmètre"/>
-                      <rule filter="ELSE" key="{6ade4f06-ed80-4a3f-9fe9-38516a340cad}" symbol="1" label="Chambre"/>
-                    </rule>
-                    <rule filter="installation_type = 'pressurecontrol'" key="{7773e49d-eae4-41b4-8d92-aec7a265046c}" label="pressurecontrol">
-                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{f315adf4-c25e-4483-bab6-237fe3a60041}" symbol="2" label="Chambre réducteur"/>
-                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}" symbol="3" label="Chambre coupe pression"/>
-                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{f018225f-1a3d-44eb-b8a3-fcea387c5b34}" symbol="4" label="Chambre de rassemblement"/>
-                    </rule>
-                    <rule filter="installation_type = 'pump'" key="{bcb1f704-8435-4019-bd6f-781938ef8ad9}" symbol="5" label="pump"/>
-                    <rule filter="installation_type = 'source'" key="{2751ab65-3b68-4243-afab-9ebdcb9f8241}" symbol="6" label="source"/>
-                    <rule filter="installation_type = 'tank'" key="{8af2dff4-7bea-42be-9478-3f1d88ebf33d}" symbol="7" label="tank"/>
-                    <rule filter="installation_type = 'treatment'" key="{42540c94-3233-498c-a23d-4e8bd7c1ff4e}" symbol="8" label="treatment"/>
-                    <rule filter="ELSE" key="{ed82ce06-eee6-4f2d-833b-e537d0b18649}" symbol="9"/>
-                  </rule>
-                  <rule filter="status_active = 'f' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{83a4c36e-210b-4094-8407-553e64936b5e}" label="inactif">
-                    <rule filter="installation_type = 'chamber'" key="{2aad166e-0cd1-4083-9002-8aead4f79917}" label="Chambre">
-                      <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{d1daa4c4-aebd-4274-bbcd-c830f2a3ebe1}" symbol="10" label="Chambre débitmètre"/>
-                      <rule filter="ELSE" key="{07a91d45-cb4d-4ee4-9f57-13d1f6f2b46b}" symbol="11" label="Chambre"/>
-                    </rule>
-                    <rule filter="installation_type = 'pressurecontrol'" key="{d31d075b-227e-40b6-ab03-8d810a0d69b8}" label="pressurecontrol">
-                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{79bf5884-e355-432b-95b6-33a7e9db598e}" symbol="12" label="Chambre réducteur"/>
-                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{f5ba1ef7-6554-4683-88a2-1b2c52e9692f}" symbol="13" label="Chambre coupe pression"/>
-                      <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{eaa8aab8-0d82-46ee-8fd6-92ef6189f344}" symbol="14" label="Chambre de rassemblement"/>
-                    </rule>
-                    <rule filter="installation_type = 'pump'" key="{73931827-a1f1-4b6a-b930-e4b6873d3222}" symbol="15" label="pump"/>
-                    <rule filter="installation_type = 'source'" key="{a925b931-2980-4508-8741-9430fd39f98c}" symbol="16" label="source"/>
-                    <rule filter="installation_type = 'tank'" key="{e3ad57de-33e8-4ea0-a2b6-3754dde05572}" symbol="17" label="tank"/>
-                    <rule filter="installation_type = 'treatment'" key="{d1f57b66-0919-4b68-83e8-f078553bea81}" symbol="18" label="treatment"/>
-                    <rule filter="ELSE" key="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}" symbol="19"/>
-                  </rule>
-                </rule>
-                <rule filter="status_functional = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor != 1" key="{37ee4804-614d-4742-8288-a79d52f1e1d9}" label="étranger">
+                <rule filter="status_active = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{37ee4804-614d-4742-8288-a79d52f1e1d9}" label="actif">
                   <rule filter="installation_type = 'chamber'" key="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}" label="Chambre">
-                    <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{3820ee54-8445-4a23-b1ab-59038e2f6d28}" symbol="20" label="Chambre débitmètre"/>
-                    <rule filter="ELSE" key="{25e3684f-58b8-4a10-bdf2-faa3d1410626}" symbol="21" label="Chambre"/>
+                    <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{3820ee54-8445-4a23-b1ab-59038e2f6d28}" symbol="0" label="Chambre débitmètre"/>
+                    <rule filter="ELSE" key="{25e3684f-58b8-4a10-bdf2-faa3d1410626}" symbol="1" label="Chambre"/>
                   </rule>
                   <rule filter="installation_type = 'pressurecontrol'" key="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}" label="pressurecontrol">
-                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{18ded8b4-221b-4e2d-9817-0f52fd66b782}" symbol="22" label="Chambre réducteur"/>
-                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}" symbol="23" label="Chambre coupe pression"/>
-                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}" symbol="24" label="Chambre de rassemblement"/>
+                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{18ded8b4-221b-4e2d-9817-0f52fd66b782}" symbol="2" label="Chambre réducteur"/>
+                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}" symbol="3" label="Chambre coupe pression"/>
+                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}" symbol="4" label="Chambre de rassemblement"/>
                   </rule>
-                  <rule filter="installation_type = 'pump'" key="{21502443-f0a0-4e80-83e6-198977343b0d}" symbol="25" label="pump"/>
-                  <rule filter="installation_type = 'source'" key="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}" symbol="26" label="source"/>
-                  <rule filter="installation_type = 'tank'" key="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}" symbol="27" label="tank"/>
-                  <rule filter="installation_type = 'treatment'" key="{59878a6a-ca5c-4809-b1a0-b317151cfb27}" symbol="28" label="treatment"/>
-                  <rule filter="ELSE" key="{72c92aed-f674-478a-a8f8-e96348d0e09a}" symbol="29"/>
+                  <rule filter="installation_type = 'pump'" key="{21502443-f0a0-4e80-83e6-198977343b0d}" symbol="5" label="pump"/>
+                  <rule filter="installation_type = 'source'" key="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}" symbol="6" label="source"/>
+                  <rule filter="installation_type = 'tank'" key="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}" symbol="7" label="tank"/>
+                  <rule filter="installation_type = 'treatment'" key="{59878a6a-ca5c-4809-b1a0-b317151cfb27}" symbol="8" label="treatment"/>
+                  <rule filter="ELSE" key="{72c92aed-f674-478a-a8f8-e96348d0e09a}" symbol="9"/>
                 </rule>
-                <rule checkstate="0" filter="status_functional = 'f'" key="{6a77fe04-db6e-4bf9-a9c6-fe3ea7f31b03}" label="non fonctionnel">
+                <rule checkstate="0" filter="status_active = 'f' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{6a77fe04-db6e-4bf9-a9c6-fe3ea7f31b03}" label="inactif">
                   <rule filter="installation_type = 'chamber'" key="{467aeded-414e-4296-89ab-661c203802ce}" label="Chambre">
-                    <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}" symbol="30" label="Chambre débitmètre"/>
-                    <rule filter="ELSE" key="{fa07847e-bb3b-454d-b957-1a2b5394e819}" symbol="31" label="Chambre"/>
+                    <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}" symbol="10" label="Chambre débitmètre"/>
+                    <rule filter="ELSE" key="{fa07847e-bb3b-454d-b957-1a2b5394e819}" symbol="11" label="Chambre"/>
                   </rule>
                   <rule filter="installation_type = 'pressurecontrol'" key="{410bdc09-391b-489d-a4e7-3f13c5d2e18d}" label="pressurecontrol">
-                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}" symbol="32" label="Chambre réducteur"/>
-                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}" symbol="33" label="Chambre coupe pression"/>
-                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{6344ee42-45a2-40ee-b52d-f7b7db81a674}" symbol="34" label="Chambre de rassemblement"/>
+                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}" symbol="12" label="Chambre réducteur"/>
+                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}" symbol="13" label="Chambre coupe pression"/>
+                    <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{6344ee42-45a2-40ee-b52d-f7b7db81a674}" symbol="14" label="Chambre de rassemblement"/>
                   </rule>
-                  <rule filter="installation_type = 'pump'" key="{604665a8-506c-4fdf-a10d-1fa4e79706e9}" symbol="35" label="pump"/>
-                  <rule filter="installation_type = 'source'" key="{b2056b72-4abc-48fb-af2e-0e23779d9c64}" symbol="36" label="source"/>
-                  <rule filter="installation_type = 'tank'" key="{8cf17e40-4159-47e8-b16b-e157021e9fd3}" symbol="37" label="tank"/>
-                  <rule filter="installation_type = 'treatment'" key="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}" symbol="38" label="treatment"/>
-                  <rule filter="ELSE" key="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}" symbol="39"/>
+                  <rule filter="installation_type = 'pump'" key="{604665a8-506c-4fdf-a10d-1fa4e79706e9}" symbol="15" label="pump"/>
+                  <rule filter="installation_type = 'source'" key="{b2056b72-4abc-48fb-af2e-0e23779d9c64}" symbol="16" label="source"/>
+                  <rule filter="installation_type = 'tank'" key="{8cf17e40-4159-47e8-b16b-e157021e9fd3}" symbol="17" label="tank"/>
+                  <rule filter="installation_type = 'treatment'" key="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}" symbol="18" label="treatment"/>
+                  <rule filter="ELSE" key="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}" symbol="19"/>
                 </rule>
               </rules>
               <symbols>
@@ -19433,220 +19403,6 @@ def my_form_open(dialog, layer, feature):
                     <prop k="vertical_anchor_point" v="1"/>
                   </layer>
                 </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="20">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="fill_dd_active" v="0"/>
-                    <prop k="fill_dd_expression" v="'[0,0,0]'"/>
-                    <prop k="fill_dd_field" v=""/>
-                    <prop k="fill_dd_useexpr" v="1"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_dd_active" v="0"/>
-                    <prop k="outline_dd_expression" v="'[0,0,0]'"/>
-                    <prop k="outline_dd_field" v=""/>
-                    <prop k="outline_dd_useexpr" v="1"/>
-                    <prop k="outline_width" v="1"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="21">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="22">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="23">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="24">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="0,0,0,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_dd_active" v="0"/>
-                    <prop k="outline_dd_expression" v="'[255,100,0]'"/>
-                    <prop k="outline_dd_field" v=""/>
-                    <prop k="outline_dd_useexpr" v="1"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="25">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="26">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="0,0,0,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="27">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="28">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="40,180,16,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="40,180,16,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="29">
-                  <layer pass="0" class="SimpleMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="238,208,136,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="joinstyle" v="bevel"/>
-                    <prop k="name" v="circle"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="0,0,0,255"/>
-                    <prop k="outline_style" v="solid"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="2"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
                 <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
                   <layer pass="0" class="SvgMarker" locked="0">
                     <prop k="angle" v="0"/>
@@ -19662,224 +19418,6 @@ def my_form_open(dialog, layer, feature):
                     <prop k="outline_width_unit" v="MM"/>
                     <prop k="scale_method" v="diameter"/>
                     <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="30">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="1"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="31">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="32">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="33">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="34">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="0,0,0,255"/>
-                    <prop k="fill_dd_active" v="0"/>
-                    <prop k="fill_dd_expression" v="'[227,26,0]'"/>
-                    <prop k="fill_dd_field" v=""/>
-                    <prop k="fill_dd_useexpr" v="1"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_dd_active" v="0"/>
-                    <prop k="outline_dd_expression" v="'[227,26,0]'"/>
-                    <prop k="outline_dd_field" v=""/>
-                    <prop k="outline_dd_useexpr" v="1"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="35">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="36">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="0,0,0,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="37">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="fill_dd_active" v="0"/>
-                    <prop k="fill_dd_expression" v="@color_inactive"/>
-                    <prop k="fill_dd_field" v=""/>
-                    <prop k="fill_dd_useexpr" v="1"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_dd_active" v="0"/>
-                    <prop k="outline_dd_expression" v="@color_inactive"/>
-                    <prop k="outline_dd_field" v=""/>
-                    <prop k="outline_dd_useexpr" v="1"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="38">
-                  <layer pass="0" class="SvgMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="227,26,28,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="227,26,28,255"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="4"/>
-                    <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="size_unit" v="MM"/>
-                    <prop k="vertical_anchor_point" v="1"/>
-                  </layer>
-                </symbol>
-                <symbol alpha="1" clip_to_extent="1" type="marker" name="39">
-                  <layer pass="0" class="SimpleMarker" locked="0">
-                    <prop k="angle" v="0"/>
-                    <prop k="color" v="238,208,136,255"/>
-                    <prop k="horizontal_anchor_point" v="1"/>
-                    <prop k="joinstyle" v="bevel"/>
-                    <prop k="name" v="circle"/>
-                    <prop k="offset" v="0,0"/>
-                    <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="offset_unit" v="MM"/>
-                    <prop k="outline_color" v="0,0,0,255"/>
-                    <prop k="outline_style" v="solid"/>
-                    <prop k="outline_width" v="0"/>
-                    <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-                    <prop k="outline_width_unit" v="MM"/>
-                    <prop k="scale_method" v="diameter"/>
-                    <prop k="size" v="2"/>
                     <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
                     <prop k="size_unit" v="MM"/>
                     <prop k="vertical_anchor_point" v="1"/>
@@ -20032,12 +19570,11 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/bufferSizeInMapUnits" value="false"/>
               <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
               <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
-              <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/bufferTransp" value="0"/>
               <property key="labeling/centroidInside" value="false"/>
               <property key="labeling/centroidWhole" value="false"/>
-              <property key="labeling/dataDefined/PositionX" value="1~~0~~~~label_2_x"/>
-              <property key="labeling/dataDefined/PositionY" value="1~~0~~~~label_2_y"/>
+              <property key="labeling/dataDefined/PositionX" value="0~~0~~~~label_2_x"/>
+              <property key="labeling/dataDefined/PositionY" value="0~~0~~~~label_2_y"/>
               <property key="labeling/dataDefined/Rotation" value="1~~0~~~~label_2_rotation"/>
               <property key="labeling/decimals" value="3"/>
               <property key="labeling/displayAll" value="true"/>
@@ -20045,7 +19582,6 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/distInMapUnits" value="false"/>
               <property key="labeling/distMapUnitMaxScale" value="0"/>
               <property key="labeling/distMapUnitMinScale" value="0"/>
-              <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/drawLabels" value="true"/>
               <property key="labeling/enabled" value="true"/>
               <property key="labeling/fieldName" value="CASE&#xa;WHEN  &quot;installation_type&quot;  = 'chamber' THEN 'C. '&#xa;WHEN &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2801 THEN 'CR. '&#xa;WHEN  &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2802 THEN 'CCP. ' &#xa;WHEN  &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2803 THEN 'CRA. '&#xa;WHEN  &quot;installation_type&quot;  = 'pump' THEN 'P. ' &#xa;WHEN  &quot;installation_type&quot;  = 'source' THEN 'S. ' &#xa;WHEN  &quot;installation_type&quot;  = 'tank' THEN 'R. '&#xa;WHEN  &quot;installation_type&quot;  = 'treatment' THEN 'T. '&#xa;ELSE '' &#xa;END&#xa;||name&#xa;||&#xa;CASE WHEN  &quot;installation_type&quot;  = 'tank' THEN &#xa;&#x9;COALESCE('\n'|| &quot;altitude_apron&quot; ||'m','')&#xa;&#x9;||'\n'&#x9;||&#xa;&#x9;COALESCE(  &quot;storage_supply&quot;,'-')||'m3 / '||COALESCE(  &quot;storage_fire&quot;,'-')||'m3'&#xa;ELSE &#x9;&#xa;&#x9;COALESCE('\n'|| &quot;altitude&quot; ||'m','')&#xa;END "/>
@@ -20062,7 +19598,6 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/fontSizeInMapUnits" value="false"/>
               <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
               <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
-              <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/fontStrikeout" value="false"/>
               <property key="labeling/fontUnderline" value="false"/>
               <property key="labeling/fontWeight" value="50"/>
@@ -20072,7 +19607,6 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/labelOffsetInMapUnits" value="true"/>
               <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
               <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
-              <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/labelPerPart" value="false"/>
               <property key="labeling/leftDirectionSymbol" value="&lt;"/>
               <property key="labeling/limitNumLabels" value="false"/>
@@ -20100,7 +19634,6 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/repeatDistance" value="0"/>
               <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
               <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
-              <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/repeatDistanceUnit" value="1"/>
               <property key="labeling/reverseDirectionSymbol" value="false"/>
               <property key="labeling/rightDirectionSymbol" value=">"/>
@@ -20117,13 +19650,11 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/shadowOffsetGlobal" value="true"/>
               <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
               <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
-              <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/shadowOffsetUnits" value="1"/>
               <property key="labeling/shadowRadius" value="1.5"/>
               <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
               <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
               <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
-              <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/shadowRadiusUnits" value="1"/>
               <property key="labeling/shadowScale" value="100"/>
               <property key="labeling/shadowTransparency" value="30"/>
@@ -20136,7 +19667,6 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/shapeBorderWidth" value="0"/>
               <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
               <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
-              <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/shapeBorderWidthUnits" value="1"/>
               <property key="labeling/shapeDraw" value="false"/>
               <property key="labeling/shapeFillColorA" value="255"/>
@@ -20146,13 +19676,11 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/shapeJoinStyle" value="64"/>
               <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
               <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
-              <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/shapeOffsetUnits" value="1"/>
               <property key="labeling/shapeOffsetX" value="0"/>
               <property key="labeling/shapeOffsetY" value="0"/>
               <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
               <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
-              <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/shapeRadiiUnits" value="1"/>
               <property key="labeling/shapeRadiiX" value="0"/>
               <property key="labeling/shapeRadiiY" value="0"/>
@@ -20161,7 +19689,6 @@ def my_form_open(dialog, layer, feature):
               <property key="labeling/shapeSVGFile" value=""/>
               <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
               <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
-              <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
               <property key="labeling/shapeSizeType" value="0"/>
               <property key="labeling/shapeSizeUnits" value="1"/>
               <property key="labeling/shapeSizeX" value="0"/>
@@ -20207,7 +19734,7 @@ def my_form_open(dialog, layer, feature):
               <selectedonly on=""/>
             </labelattributes>
             <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-              <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
+              <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
                 <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
                 <attribute field="" color="#000000" label=""/>
               </DiagramCategory>
@@ -20338,117 +19865,15 @@ def my_form_open(dialog, layer, feature):
               <alias field="depth" index="98" name=""/>
               <alias field="no_valves" index="99" name=""/>
               <alias field="fk_pressurecontrol_type" index="100" name=""/>
-              <alias field="status_active" index="101" name=""/>
-              <alias field="status_functional" index="102" name=""/>
+              <alias field="update_date" index="101" name=""/>
+              <alias field="status_active" index="102" name=""/>
+              <alias field="status_functional" index="103" name=""/>
             </aliases>
             <excludeAttributesWMS/>
             <excludeAttributesWFS/>
-            <attributeactions default="-1"/>
+            <attributeactions default="0"/>
             <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-              <columns>
-                <column width="-1" hidden="0" type="field" name="id"/>
-                <column width="-1" hidden="0" type="field" name="fk_district"/>
-                <column width="-1" hidden="0" type="field" name="fk_pressurezone"/>
-                <column width="-1" hidden="0" type="field" name="fk_printmap"/>
-                <column width="-1" hidden="0" type="field" name="_printmaps"/>
-                <column width="-1" hidden="0" type="field" name="_geometry_alt1_used"/>
-                <column width="-1" hidden="0" type="field" name="_geometry_alt2_used"/>
-                <column width="-1" hidden="0" type="field" name="_pipe_node_type"/>
-                <column width="-1" hidden="0" type="field" name="_pipe_orientation"/>
-                <column width="-1" hidden="0" type="field" name="_pipe_schema_visible"/>
-                <column width="-1" hidden="1" type="field" name="geometry"/>
-                <column width="-1" hidden="1" type="field" name="geometry_alt1"/>
-                <column width="-1" hidden="1" type="field" name="update_geometry_alt1"/>
-                <column width="-1" hidden="1" type="field" name="update_geometry_alt2"/>
-                <column width="-1" hidden="0" type="field" name="identification"/>
-                <column width="-1" hidden="0" type="field" name="fk_distributor"/>
-                <column width="-1" hidden="0" type="field" name="fk_status"/>
-                <column width="-1" hidden="0" type="field" name="fk_folder"/>
-                <column width="-1" hidden="0" type="field" name="fk_locationtype"/>
-                <column width="-1" hidden="0" type="field" name="year"/>
-                <column width="-1" hidden="0" type="field" name="year_end"/>
-                <column width="-1" hidden="0" type="field" name="remark"/>
-                <column width="-1" hidden="0" type="field" name="schema_force_visible"/>
-                <column width="-1" hidden="1" type="field" name="label_1_visible"/>
-                <column width="-1" hidden="1" type="field" name="label_1_x"/>
-                <column width="-1" hidden="1" type="field" name="label_1_y"/>
-                <column width="-1" hidden="1" type="field" name="label_1_rotation"/>
-                <column width="-1" hidden="1" type="field" name="label_1_text"/>
-                <column width="-1" hidden="1" type="field" name="label_2_visible"/>
-                <column width="-1" hidden="1" type="field" name="label_2_x"/>
-                <column width="-1" hidden="1" type="field" name="label_2_y"/>
-                <column width="-1" hidden="1" type="field" name="label_2_rotation"/>
-                <column width="-1" hidden="1" type="field" name="label_2_text"/>
-                <column width="-1" hidden="0" type="field" name="fk_precision"/>
-                <column width="-1" hidden="0" type="field" name="fk_precisionalti"/>
-                <column width="-1" hidden="0" type="field" name="fk_object_reference"/>
-                <column width="-1" hidden="0" type="field" name="altitude"/>
-                <column width="-1" hidden="0" type="field" name="orientation"/>
-                <column width="-1" hidden="0" type="field" name="installation_type"/>
-                <column width="-1" hidden="0" type="field" name="name"/>
-                <column width="-1" hidden="0" type="field" name="fk_parent"/>
-                <column width="-1" hidden="0" type="field" name="fk_remote"/>
-                <column width="-1" hidden="0" type="field" name="fk_watertype"/>
-                <column width="-1" hidden="0" type="field" name="parcel"/>
-                <column width="-1" hidden="0" type="field" name="eca"/>
-                <column width="-1" hidden="0" type="field" name="open_water_surface"/>
-                <column width="-1" hidden="0" type="field" name="geometry_polygon"/>
-                <column width="-1" hidden="0" type="field" name="fk_source_type"/>
-                <column width="-1" hidden="0" type="field" name="fk_source_quality"/>
-                <column width="-1" hidden="0" type="field" name="flow_lowest"/>
-                <column width="-1" hidden="0" type="field" name="flow_average"/>
-                <column width="-1" hidden="0" type="field" name="flow_concession"/>
-                <column width="-1" hidden="0" type="field" name="contract_end"/>
-                <column width="-1" hidden="0" type="field" name="gathering_chamber"/>
-                <column width="-1" hidden="0" type="field" name="fk_pump_type"/>
-                <column width="-1" hidden="0" type="field" name="fk_pipe_in"/>
-                <column width="-1" hidden="0" type="field" name="fk_pipe_out"/>
-                <column width="-1" hidden="0" type="field" name="fk_pump_operating"/>
-                <column width="-1" hidden="0" type="field" name="no_pumps"/>
-                <column width="-1" hidden="0" type="field" name="rejected_flow"/>
-                <column width="-1" hidden="0" type="field" name="manometric_height"/>
-                <column width="-1" hidden="0" type="field" name="fk_overflow"/>
-                <column width="-1" hidden="0" type="field" name="fk_tank_firestorage"/>
-                <column width="-1" hidden="0" type="field" name="storage_total"/>
-                <column width="-1" hidden="0" type="field" name="storage_supply"/>
-                <column width="-1" hidden="0" type="field" name="storage_fire"/>
-                <column width="-1" hidden="0" type="field" name="altitude_overflow"/>
-                <column width="-1" hidden="0" type="field" name="altitude_apron"/>
-                <column width="-1" hidden="0" type="field" name="height_max"/>
-                <column width="-1" hidden="0" type="field" name="fire_valve"/>
-                <column width="-1" hidden="0" type="field" name="fire_remote"/>
-                <column width="-1" hidden="0" type="field" name="_litrepercm"/>
-                <column width="-1" hidden="0" type="field" name="cistern1_fk_type"/>
-                <column width="-1" hidden="0" type="field" name="cistern1_dimension_1"/>
-                <column width="-1" hidden="0" type="field" name="cistern1_dimension_2"/>
-                <column width="-1" hidden="0" type="field" name="cistern1_storage"/>
-                <column width="-1" hidden="0" type="field" name="_cistern1_litrepercm"/>
-                <column width="-1" hidden="0" type="field" name="cistern2_fk_type"/>
-                <column width="-1" hidden="0" type="field" name="cistern2_dimension_1"/>
-                <column width="-1" hidden="0" type="field" name="cistern2_dimension_2"/>
-                <column width="-1" hidden="0" type="field" name="cistern2_storage"/>
-                <column width="-1" hidden="0" type="field" name="_cistern2_litrepercm"/>
-                <column width="-1" hidden="0" type="field" name="sanitization_uv"/>
-                <column width="-1" hidden="0" type="field" name="sanitization_chlorine_liquid"/>
-                <column width="-1" hidden="0" type="field" name="sanitization_chlorine_gazeous"/>
-                <column width="-1" hidden="0" type="field" name="sanitization_ozone"/>
-                <column width="-1" hidden="0" type="field" name="filtration_membrane"/>
-                <column width="-1" hidden="0" type="field" name="filtration_sandorgravel"/>
-                <column width="-1" hidden="0" type="field" name="flocculation"/>
-                <column width="-1" hidden="0" type="field" name="activatedcharcoal"/>
-                <column width="-1" hidden="0" type="field" name="settling"/>
-                <column width="-1" hidden="0" type="field" name="treatment_capacity"/>
-                <column width="-1" hidden="0" type="field" name="networkseparation"/>
-                <column width="-1" hidden="0" type="field" name="flow_meter"/>
-                <column width="-1" hidden="0" type="field" name="water_meter"/>
-                <column width="-1" hidden="0" type="field" name="manometer"/>
-                <column width="-1" hidden="0" type="field" name="depth"/>
-                <column width="-1" hidden="0" type="field" name="no_valves"/>
-                <column width="-1" hidden="0" type="field" name="fk_pressurecontrol_type"/>
-                <column width="-1" hidden="0" type="field" name="status_active"/>
-                <column width="-1" hidden="1" type="actions"/>
-                <column width="-1" hidden="0" type="field" name="status_functional"/>
-              </columns>
+              <columns/>
             </attributetableconfig>
             <editform>./ui_forms/installation.ui</editform>
             <editforminit>formOpen</editforminit>
@@ -20569,14 +19994,14 @@ def my_form_open(dialog, layer, feature):
               <default field="depth" expression=""/>
               <default field="no_valves" expression=""/>
               <default field="fk_pressurecontrol_type" expression=""/>
+              <default field="update_date" expression=""/>
               <default field="status_active" expression=""/>
               <default field="status_functional" expression=""/>
             </defaults>
-            <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
+            <previewExpression/>
             <layerGeometryType>0</layerGeometryType>
           </qgis>
         </map-layer-style>
-        <map-layer-style name="automatic labeling"/>
       </map-layer-style-manager>
       <edittypes>
         <edittype widgetv2type="TextEdit" name="id">
@@ -20901,37 +20326,71 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{89d1d7f3-6dd2-48ab-a978-572c899af422}">
-          <rule filter="status_active = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{37ee4804-614d-4742-8288-a79d52f1e1d9}" label="actif">
+          <rule filter="status_functional = 't'" key="{71a064ea-fc5d-4548-9c69-5bf1fe84a66d}" label="fonctionnel">
+            <rule filter="status_active = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor = 1" key="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}" label="actif">
+              <rule filter="installation_type = 'chamber'" key="{5a17ff38-f410-4abf-be4e-9c79367de4fe}" label="Chambre">
+                <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{8822d14f-21ea-400b-ad73-aafc21c19773}" symbol="0" label="Chambre débitmètre"/>
+                <rule filter="ELSE" key="{6ade4f06-ed80-4a3f-9fe9-38516a340cad}" symbol="1" label="Chambre"/>
+              </rule>
+              <rule filter="installation_type = 'pressurecontrol'" key="{7773e49d-eae4-41b4-8d92-aec7a265046c}" label="pressurecontrol">
+                <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{f315adf4-c25e-4483-bab6-237fe3a60041}" symbol="2" label="Chambre réducteur"/>
+                <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}" symbol="3" label="Chambre coupe pression"/>
+                <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{f018225f-1a3d-44eb-b8a3-fcea387c5b34}" symbol="4" label="Chambre de rassemblement"/>
+              </rule>
+              <rule filter="installation_type = 'pump'" key="{bcb1f704-8435-4019-bd6f-781938ef8ad9}" symbol="5" label="pump"/>
+              <rule filter="installation_type = 'source'" key="{2751ab65-3b68-4243-afab-9ebdcb9f8241}" symbol="6" label="source"/>
+              <rule filter="installation_type = 'tank'" key="{8af2dff4-7bea-42be-9478-3f1d88ebf33d}" symbol="7" label="tank"/>
+              <rule filter="installation_type = 'treatment'" key="{42540c94-3233-498c-a23d-4e8bd7c1ff4e}" symbol="8" label="treatment"/>
+              <rule filter="ELSE" key="{ed82ce06-eee6-4f2d-833b-e537d0b18649}" symbol="9"/>
+            </rule>
+            <rule filter="status_active = 'f' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{83a4c36e-210b-4094-8407-553e64936b5e}" label="inactif">
+              <rule filter="installation_type = 'chamber'" key="{2aad166e-0cd1-4083-9002-8aead4f79917}" label="Chambre">
+                <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{d1daa4c4-aebd-4274-bbcd-c830f2a3ebe1}" symbol="10" label="Chambre débitmètre"/>
+                <rule filter="ELSE" key="{07a91d45-cb4d-4ee4-9f57-13d1f6f2b46b}" symbol="11" label="Chambre"/>
+              </rule>
+              <rule filter="installation_type = 'pressurecontrol'" key="{d31d075b-227e-40b6-ab03-8d810a0d69b8}" label="pressurecontrol">
+                <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{79bf5884-e355-432b-95b6-33a7e9db598e}" symbol="12" label="Chambre réducteur"/>
+                <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{f5ba1ef7-6554-4683-88a2-1b2c52e9692f}" symbol="13" label="Chambre coupe pression"/>
+                <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{eaa8aab8-0d82-46ee-8fd6-92ef6189f344}" symbol="14" label="Chambre de rassemblement"/>
+              </rule>
+              <rule filter="installation_type = 'pump'" key="{73931827-a1f1-4b6a-b930-e4b6873d3222}" symbol="15" label="pump"/>
+              <rule filter="installation_type = 'source'" key="{a925b931-2980-4508-8741-9430fd39f98c}" symbol="16" label="source"/>
+              <rule filter="installation_type = 'tank'" key="{e3ad57de-33e8-4ea0-a2b6-3754dde05572}" symbol="17" label="tank"/>
+              <rule filter="installation_type = 'treatment'" key="{d1f57b66-0919-4b68-83e8-f078553bea81}" symbol="18" label="treatment"/>
+              <rule filter="ELSE" key="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}" symbol="19"/>
+            </rule>
+          </rule>
+          <rule filter="status_functional = 't' AND (fk_parent IS NULL OR @map_scale &lt; 501) AND fk_distributor != 1" key="{37ee4804-614d-4742-8288-a79d52f1e1d9}" label="étranger">
             <rule filter="installation_type = 'chamber'" key="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}" label="Chambre">
-              <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{3820ee54-8445-4a23-b1ab-59038e2f6d28}" symbol="0" label="Chambre débitmètre"/>
-              <rule filter="ELSE" key="{25e3684f-58b8-4a10-bdf2-faa3d1410626}" symbol="1" label="Chambre"/>
+              <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{3820ee54-8445-4a23-b1ab-59038e2f6d28}" symbol="20" label="Chambre débitmètre"/>
+              <rule filter="ELSE" key="{25e3684f-58b8-4a10-bdf2-faa3d1410626}" symbol="21" label="Chambre"/>
             </rule>
             <rule filter="installation_type = 'pressurecontrol'" key="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}" label="pressurecontrol">
-              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{18ded8b4-221b-4e2d-9817-0f52fd66b782}" symbol="2" label="Chambre réducteur"/>
-              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}" symbol="3" label="Chambre coupe pression"/>
-              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}" symbol="4" label="Chambre de rassemblement"/>
+              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{18ded8b4-221b-4e2d-9817-0f52fd66b782}" symbol="22" label="Chambre réducteur"/>
+              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}" symbol="23" label="Chambre coupe pression"/>
+              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}" symbol="24" label="Chambre de rassemblement"/>
             </rule>
-            <rule filter="installation_type = 'pump'" key="{21502443-f0a0-4e80-83e6-198977343b0d}" symbol="5" label="pump"/>
-            <rule filter="installation_type = 'source'" key="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}" symbol="6" label="source"/>
-            <rule filter="installation_type = 'tank'" key="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}" symbol="7" label="tank"/>
-            <rule filter="installation_type = 'treatment'" key="{59878a6a-ca5c-4809-b1a0-b317151cfb27}" symbol="8" label="treatment"/>
-            <rule filter="ELSE" key="{72c92aed-f674-478a-a8f8-e96348d0e09a}" symbol="9"/>
+            <rule filter="installation_type = 'pump'" key="{21502443-f0a0-4e80-83e6-198977343b0d}" symbol="25" label="pump"/>
+            <rule filter="installation_type = 'source'" key="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}" symbol="26" label="source"/>
+            <rule filter="installation_type = 'tank'" key="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}" symbol="27" label="tank"/>
+            <rule filter="installation_type = 'treatment'" key="{59878a6a-ca5c-4809-b1a0-b317151cfb27}" symbol="28" label="treatment"/>
+            <rule filter="ELSE" key="{72c92aed-f674-478a-a8f8-e96348d0e09a}" symbol="29"/>
           </rule>
-          <rule checkstate="0" filter="status_active = 'f' AND (fk_parent IS NULL OR @map_scale &lt; 501)" key="{6a77fe04-db6e-4bf9-a9c6-fe3ea7f31b03}" label="inactif">
+          <rule checkstate="0" filter="status_functional = 'f'" key="{6a77fe04-db6e-4bf9-a9c6-fe3ea7f31b03}" label="non fonctionnel">
             <rule filter="installation_type = 'chamber'" key="{467aeded-414e-4296-89ab-661c203802ce}" label="Chambre">
-              <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}" symbol="10" label="Chambre débitmètre"/>
-              <rule filter="ELSE" key="{fa07847e-bb3b-454d-b957-1a2b5394e819}" symbol="11" label="Chambre"/>
+              <rule filter="flow_meter = 't' or water_meter = 't' or manometer = 't'" key="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}" symbol="30" label="Chambre débitmètre"/>
+              <rule filter="ELSE" key="{fa07847e-bb3b-454d-b957-1a2b5394e819}" symbol="31" label="Chambre"/>
             </rule>
             <rule filter="installation_type = 'pressurecontrol'" key="{410bdc09-391b-489d-a4e7-3f13c5d2e18d}" label="pressurecontrol">
-              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}" symbol="12" label="Chambre réducteur"/>
-              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}" symbol="13" label="Chambre coupe pression"/>
-              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{6344ee42-45a2-40ee-b52d-f7b7db81a674}" symbol="14" label="Chambre de rassemblement"/>
+              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2801 " key="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}" symbol="32" label="Chambre réducteur"/>
+              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2802" key="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}" symbol="33" label="Chambre coupe pression"/>
+              <rule filter=" &quot;fk_pressurecontrol_type&quot; =  2803" key="{6344ee42-45a2-40ee-b52d-f7b7db81a674}" symbol="34" label="Chambre de rassemblement"/>
             </rule>
-            <rule filter="installation_type = 'pump'" key="{604665a8-506c-4fdf-a10d-1fa4e79706e9}" symbol="15" label="pump"/>
-            <rule filter="installation_type = 'source'" key="{b2056b72-4abc-48fb-af2e-0e23779d9c64}" symbol="16" label="source"/>
-            <rule filter="installation_type = 'tank'" key="{8cf17e40-4159-47e8-b16b-e157021e9fd3}" symbol="17" label="tank"/>
-            <rule filter="installation_type = 'treatment'" key="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}" symbol="18" label="treatment"/>
-            <rule filter="ELSE" key="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}" symbol="19"/>
+            <rule filter="installation_type = 'pump'" key="{604665a8-506c-4fdf-a10d-1fa4e79706e9}" symbol="35" label="pump"/>
+            <rule filter="installation_type = 'source'" key="{b2056b72-4abc-48fb-af2e-0e23779d9c64}" symbol="36" label="source"/>
+            <rule filter="installation_type = 'tank'" key="{8cf17e40-4159-47e8-b16b-e157021e9fd3}" symbol="37" label="tank"/>
+            <rule filter="installation_type = 'treatment'" key="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}" symbol="38" label="treatment"/>
+            <rule filter="ELSE" key="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}" symbol="39"/>
           </rule>
         </rules>
         <symbols>
@@ -21221,6 +20680,220 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="20">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="fill_dd_active" v="0"/>
+              <prop k="fill_dd_expression" v="'[0,0,0]'"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_dd_active" v="0"/>
+              <prop k="outline_dd_expression" v="'[0,0,0]'"/>
+              <prop k="outline_dd_field" v=""/>
+              <prop k="outline_dd_useexpr" v="1"/>
+              <prop k="outline_width" v="1"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="21">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="22">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="23">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="24">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_dd_active" v="0"/>
+              <prop k="outline_dd_expression" v="'[255,100,0]'"/>
+              <prop k="outline_dd_field" v=""/>
+              <prop k="outline_dd_useexpr" v="1"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="25">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="26">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="27">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="28">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,180,16,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="40,180,16,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="29">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="238,208,136,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
@@ -21236,6 +20909,224 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="30">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/meter.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="1"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="31">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/chamber.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="32">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/reduction.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="33">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/pressurebreak.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="34">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="fill_dd_active" v="0"/>
+              <prop k="fill_dd_expression" v="'[227,26,0]'"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/gathering.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_dd_active" v="0"/>
+              <prop k="outline_dd_expression" v="'[227,26,0]'"/>
+              <prop k="outline_dd_field" v=""/>
+              <prop k="outline_dd_useexpr" v="1"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="35">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/pump.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="36">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/source.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="37">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="fill_dd_active" v="0"/>
+              <prop k="fill_dd_expression" v="@color_inactive"/>
+              <prop k="fill_dd_field" v=""/>
+              <prop k="fill_dd_useexpr" v="1"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/tank.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_dd_active" v="0"/>
+              <prop k="outline_dd_expression" v="@color_inactive"/>
+              <prop k="outline_dd_field" v=""/>
+              <prop k="outline_dd_useexpr" v="1"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="38">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/param_svg/treatment.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="227,26,28,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="39">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="238,208,136,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="2"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -21388,11 +21279,12 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/bufferSizeInMapUnits" value="false"/>
         <property key="labeling/bufferSizeMapUnitMaxScale" value="0"/>
         <property key="labeling/bufferSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/bufferTransp" value="0"/>
         <property key="labeling/centroidInside" value="false"/>
         <property key="labeling/centroidWhole" value="false"/>
-        <property key="labeling/dataDefined/PositionX" value="0~~0~~~~label_2_x"/>
-        <property key="labeling/dataDefined/PositionY" value="0~~0~~~~label_2_y"/>
+        <property key="labeling/dataDefined/PositionX" value="1~~0~~~~label_2_x"/>
+        <property key="labeling/dataDefined/PositionY" value="1~~0~~~~label_2_y"/>
         <property key="labeling/dataDefined/Rotation" value="1~~0~~~~label_2_rotation"/>
         <property key="labeling/decimals" value="3"/>
         <property key="labeling/displayAll" value="true"/>
@@ -21400,6 +21292,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distInMapUnits" value="false"/>
         <property key="labeling/distMapUnitMaxScale" value="0"/>
         <property key="labeling/distMapUnitMinScale" value="0"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
         <property key="labeling/fieldName" value="CASE&#xa;WHEN  &quot;installation_type&quot;  = 'chamber' THEN 'C. '&#xa;WHEN &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2801 THEN 'CR. '&#xa;WHEN  &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2802 THEN 'CCP. ' &#xa;WHEN  &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2803 THEN 'CRA. '&#xa;WHEN  &quot;installation_type&quot;  = 'pump' THEN 'P. ' &#xa;WHEN  &quot;installation_type&quot;  = 'source' THEN 'S. ' &#xa;WHEN  &quot;installation_type&quot;  = 'tank' THEN 'R. '&#xa;WHEN  &quot;installation_type&quot;  = 'treatment' THEN 'T. '&#xa;ELSE '' &#xa;END&#xa;||name&#xa;||&#xa;CASE WHEN  &quot;installation_type&quot;  = 'tank' THEN &#xa;&#x9;COALESCE('\n'|| &quot;altitude_apron&quot; ||'m','')&#xa;&#x9;||'\n'&#x9;||&#xa;&#x9;COALESCE(  &quot;storage_supply&quot;,'-')||'m3 / '||COALESCE(  &quot;storage_fire&quot;,'-')||'m3'&#xa;ELSE &#x9;&#xa;&#x9;COALESCE('\n'|| &quot;altitude&quot; ||'m','')&#xa;END "/>
@@ -21416,6 +21309,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontSizeInMapUnits" value="false"/>
         <property key="labeling/fontSizeMapUnitMaxScale" value="0"/>
         <property key="labeling/fontSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/fontStrikeout" value="false"/>
         <property key="labeling/fontUnderline" value="false"/>
         <property key="labeling/fontWeight" value="50"/>
@@ -21425,6 +21319,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/labelPerPart" value="false"/>
         <property key="labeling/leftDirectionSymbol" value="&lt;"/>
         <property key="labeling/limitNumLabels" value="false"/>
@@ -21452,6 +21347,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/repeatDistance" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMaxScale" value="0"/>
         <property key="labeling/repeatDistanceMapUnitMinScale" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/repeatDistanceUnit" value="1"/>
         <property key="labeling/reverseDirectionSymbol" value="false"/>
         <property key="labeling/rightDirectionSymbol" value=">"/>
@@ -21468,11 +21364,13 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shadowOffsetGlobal" value="true"/>
         <property key="labeling/shadowOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/shadowOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shadowOffsetUnits" value="1"/>
         <property key="labeling/shadowRadius" value="1.5"/>
         <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
         <property key="labeling/shadowRadiusMapUnitMaxScale" value="0"/>
         <property key="labeling/shadowRadiusMapUnitMinScale" value="0"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shadowRadiusUnits" value="1"/>
         <property key="labeling/shadowScale" value="100"/>
         <property key="labeling/shadowTransparency" value="30"/>
@@ -21485,6 +21383,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeBorderWidth" value="0"/>
         <property key="labeling/shapeBorderWidthMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeBorderWidthMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeBorderWidthUnits" value="1"/>
         <property key="labeling/shapeDraw" value="false"/>
         <property key="labeling/shapeFillColorA" value="255"/>
@@ -21494,11 +21393,13 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeJoinStyle" value="64"/>
         <property key="labeling/shapeOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeOffsetMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeOffsetUnits" value="1"/>
         <property key="labeling/shapeOffsetX" value="0"/>
         <property key="labeling/shapeOffsetY" value="0"/>
         <property key="labeling/shapeRadiiMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeRadiiMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeRadiiUnits" value="1"/>
         <property key="labeling/shapeRadiiX" value="0"/>
         <property key="labeling/shapeRadiiY" value="0"/>
@@ -21507,6 +21408,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeSVGFile" value=""/>
         <property key="labeling/shapeSizeMapUnitMaxScale" value="0"/>
         <property key="labeling/shapeSizeMapUnitMinScale" value="0"/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/shapeSizeType" value="0"/>
         <property key="labeling/shapeSizeUnits" value="1"/>
         <property key="labeling/shapeSizeX" value="0"/>
@@ -21552,7 +21454,7 @@ def my_form_open(dialog, layer, feature):
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="100000">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -21689,9 +21591,112 @@ def my_form_open(dialog, layer, feature):
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
-      <attributeactions default="0"/>
+      <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="fk_district"/>
+          <column width="-1" hidden="0" type="field" name="fk_pressurezone"/>
+          <column width="-1" hidden="0" type="field" name="fk_printmap"/>
+          <column width="-1" hidden="0" type="field" name="_printmaps"/>
+          <column width="-1" hidden="0" type="field" name="_geometry_alt1_used"/>
+          <column width="-1" hidden="0" type="field" name="_geometry_alt2_used"/>
+          <column width="-1" hidden="0" type="field" name="_pipe_node_type"/>
+          <column width="-1" hidden="0" type="field" name="_pipe_orientation"/>
+          <column width="-1" hidden="0" type="field" name="_pipe_schema_visible"/>
+          <column width="-1" hidden="1" type="field" name="geometry"/>
+          <column width="-1" hidden="1" type="field" name="geometry_alt1"/>
+          <column width="-1" hidden="1" type="field" name="update_geometry_alt1"/>
+          <column width="-1" hidden="1" type="field" name="update_geometry_alt2"/>
+          <column width="-1" hidden="0" type="field" name="identification"/>
+          <column width="-1" hidden="0" type="field" name="fk_distributor"/>
+          <column width="-1" hidden="0" type="field" name="fk_status"/>
+          <column width="-1" hidden="0" type="field" name="fk_folder"/>
+          <column width="-1" hidden="0" type="field" name="fk_locationtype"/>
+          <column width="-1" hidden="0" type="field" name="year"/>
+          <column width="-1" hidden="0" type="field" name="year_end"/>
+          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="0" type="field" name="schema_force_visible"/>
+          <column width="-1" hidden="1" type="field" name="label_1_visible"/>
+          <column width="-1" hidden="1" type="field" name="label_1_x"/>
+          <column width="-1" hidden="1" type="field" name="label_1_y"/>
+          <column width="-1" hidden="1" type="field" name="label_1_rotation"/>
+          <column width="-1" hidden="1" type="field" name="label_1_text"/>
+          <column width="-1" hidden="1" type="field" name="label_2_visible"/>
+          <column width="-1" hidden="1" type="field" name="label_2_x"/>
+          <column width="-1" hidden="1" type="field" name="label_2_y"/>
+          <column width="-1" hidden="1" type="field" name="label_2_rotation"/>
+          <column width="-1" hidden="1" type="field" name="label_2_text"/>
+          <column width="-1" hidden="0" type="field" name="fk_precision"/>
+          <column width="-1" hidden="0" type="field" name="fk_precisionalti"/>
+          <column width="-1" hidden="0" type="field" name="fk_object_reference"/>
+          <column width="-1" hidden="0" type="field" name="altitude"/>
+          <column width="-1" hidden="0" type="field" name="orientation"/>
+          <column width="-1" hidden="0" type="field" name="installation_type"/>
+          <column width="-1" hidden="0" type="field" name="name"/>
+          <column width="-1" hidden="0" type="field" name="fk_parent"/>
+          <column width="-1" hidden="0" type="field" name="fk_remote"/>
+          <column width="-1" hidden="0" type="field" name="fk_watertype"/>
+          <column width="-1" hidden="0" type="field" name="parcel"/>
+          <column width="-1" hidden="0" type="field" name="eca"/>
+          <column width="-1" hidden="0" type="field" name="open_water_surface"/>
+          <column width="-1" hidden="0" type="field" name="geometry_polygon"/>
+          <column width="-1" hidden="0" type="field" name="fk_source_type"/>
+          <column width="-1" hidden="0" type="field" name="fk_source_quality"/>
+          <column width="-1" hidden="0" type="field" name="flow_lowest"/>
+          <column width="-1" hidden="0" type="field" name="flow_average"/>
+          <column width="-1" hidden="0" type="field" name="flow_concession"/>
+          <column width="-1" hidden="0" type="field" name="contract_end"/>
+          <column width="-1" hidden="0" type="field" name="gathering_chamber"/>
+          <column width="-1" hidden="0" type="field" name="fk_pump_type"/>
+          <column width="-1" hidden="0" type="field" name="fk_pipe_in"/>
+          <column width="-1" hidden="0" type="field" name="fk_pipe_out"/>
+          <column width="-1" hidden="0" type="field" name="fk_pump_operating"/>
+          <column width="-1" hidden="0" type="field" name="no_pumps"/>
+          <column width="-1" hidden="0" type="field" name="rejected_flow"/>
+          <column width="-1" hidden="0" type="field" name="manometric_height"/>
+          <column width="-1" hidden="0" type="field" name="fk_overflow"/>
+          <column width="-1" hidden="0" type="field" name="fk_tank_firestorage"/>
+          <column width="-1" hidden="0" type="field" name="storage_total"/>
+          <column width="-1" hidden="0" type="field" name="storage_supply"/>
+          <column width="-1" hidden="0" type="field" name="storage_fire"/>
+          <column width="-1" hidden="0" type="field" name="altitude_overflow"/>
+          <column width="-1" hidden="0" type="field" name="altitude_apron"/>
+          <column width="-1" hidden="0" type="field" name="height_max"/>
+          <column width="-1" hidden="0" type="field" name="fire_valve"/>
+          <column width="-1" hidden="0" type="field" name="fire_remote"/>
+          <column width="-1" hidden="0" type="field" name="_litrepercm"/>
+          <column width="-1" hidden="0" type="field" name="cistern1_fk_type"/>
+          <column width="-1" hidden="0" type="field" name="cistern1_dimension_1"/>
+          <column width="-1" hidden="0" type="field" name="cistern1_dimension_2"/>
+          <column width="-1" hidden="0" type="field" name="cistern1_storage"/>
+          <column width="-1" hidden="0" type="field" name="_cistern1_litrepercm"/>
+          <column width="-1" hidden="0" type="field" name="cistern2_fk_type"/>
+          <column width="-1" hidden="0" type="field" name="cistern2_dimension_1"/>
+          <column width="-1" hidden="0" type="field" name="cistern2_dimension_2"/>
+          <column width="-1" hidden="0" type="field" name="cistern2_storage"/>
+          <column width="-1" hidden="0" type="field" name="_cistern2_litrepercm"/>
+          <column width="-1" hidden="0" type="field" name="sanitization_uv"/>
+          <column width="-1" hidden="0" type="field" name="sanitization_chlorine_liquid"/>
+          <column width="-1" hidden="0" type="field" name="sanitization_chlorine_gazeous"/>
+          <column width="-1" hidden="0" type="field" name="sanitization_ozone"/>
+          <column width="-1" hidden="0" type="field" name="filtration_membrane"/>
+          <column width="-1" hidden="0" type="field" name="filtration_sandorgravel"/>
+          <column width="-1" hidden="0" type="field" name="flocculation"/>
+          <column width="-1" hidden="0" type="field" name="activatedcharcoal"/>
+          <column width="-1" hidden="0" type="field" name="settling"/>
+          <column width="-1" hidden="0" type="field" name="treatment_capacity"/>
+          <column width="-1" hidden="0" type="field" name="networkseparation"/>
+          <column width="-1" hidden="0" type="field" name="flow_meter"/>
+          <column width="-1" hidden="0" type="field" name="water_meter"/>
+          <column width="-1" hidden="0" type="field" name="manometer"/>
+          <column width="-1" hidden="0" type="field" name="depth"/>
+          <column width="-1" hidden="0" type="field" name="no_valves"/>
+          <column width="-1" hidden="0" type="field" name="fk_pressurecontrol_type"/>
+          <column width="-1" hidden="0" type="field" name="status_active"/>
+          <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="status_functional"/>
+        </columns>
       </attributetableconfig>
       <editform>./ui_forms/installation.ui</editform>
       <editforminit>formOpen</editforminit>
@@ -21816,7 +21821,7 @@ def my_form_open(dialog, layer, feature):
         <default field="status_active" expression=""/>
         <default field="status_functional" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "name", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer minimumScale="0" maximumScale="1e+08" readOnly="0" geometry="No geometry" type="vector" hasScaleBasedVisibilityFlag="0">
       <id>partenaire20150203112806405</id>
@@ -39906,7 +39911,7 @@ END
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="100000" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>vw_pipe_schema20141208162900166</id>
-      <datasource>service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table="qwat_od"."vw_pipe_schema" (geometry) sql=</datasource>
+      <datasource>service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table="qwat_od"."vw_pipe_schema" (geometry) sql="fk_status" NOT IN (1303, 1304, 1305, 1306, 1307, 1308)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -40313,7 +40318,7 @@ END
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -40398,18 +40403,20 @@ END
         <property key="labeling/shapeSizeY" value="0"/>
         <property key="labeling/shapeTransparency" value="0"/>
         <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
         <property key="labeling/textColorA" value="255"/>
         <property key="labeling/textColorB" value="255"/>
         <property key="labeling/textColorG" value="80"/>
         <property key="labeling/textColorR" value="0"/>
         <property key="labeling/textTransp" value="0"/>
         <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -42696,13 +42703,13 @@ def closeProject():
         <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
         <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
         <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
         <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
+        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
         <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
@@ -42740,8 +42747,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -42753,8 +42760,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -42765,8 +42772,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -43036,8 +43043,8 @@ def closeProject():
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
         <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
+        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
         <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
         <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
@@ -43045,8 +43052,8 @@ def closeProject():
         <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
         <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
         <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
+        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
         <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
