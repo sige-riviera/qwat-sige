@@ -29248,7 +29248,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="valve_actuation20150608112911022" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_pipe">
-          <widgetv2config OrderByValue="0" fieldEditable="0" AllowAddFeatures="0" ShowForm="0" Relation="relation_valve_pipe" ReadOnly="1" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
+          <widgetv2config OrderByValue="0" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_valve_pipe" ReadOnly="1" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_handle_precision">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
