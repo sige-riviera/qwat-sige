@@ -43093,6 +43093,8 @@ def closeProject():
       <layer style="" id="ouvrage_copy20160125132737527"/>
       <layer style="" id="vannes_copy20141127160745910"/>
       <layer style="" id="printmap20130304110011400"/>
+      <layer style="" id="cn124420180821142505088"/>
+      <layer style="" id="cn126420180821142456803"/>
       <checked-legend-nodes id="hydrantes_copy20160127124839887">
         <checked-legend-node id="{a83ef0cf-9977-418a-84e8-92fa1cc4523e}"/>
         <checked-legend-node id="{d396e075-aace-4cc7-9a47-2d2cfab45263}"/>
