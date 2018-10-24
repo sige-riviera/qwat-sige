@@ -408,10 +408,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2547945.57849382096901536</xmin>
-      <ymin>1138670.69314491935074329</ymin>
-      <xmax>2572414.2319724434055388</xmax>
-      <ymax>1154186.47496330924332142</ymax>
+      <xmin>2547726.87409750977531075</xmin>
+      <ymin>1140000.18826498719863594</ymin>
+      <xmax>2568205.62411817023530602</xmax>
+      <ymax>1152985.93827822688035667</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -31019,7 +31019,8 @@ def my_form_open(dialog, layer, feature):
             <rule filter="fk_valve_function IN (6110,6112)" key="{8f1997aa-ce0e-467b-a33f-719c22255041}" symbol="2" label="vidange"/>
             <rule filter="fk_valve_function =6102" key="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}" symbol="3" label="ventouse"/>
             <rule filter="fk_valve_function NOT IN (6102,6110,6112) AND fk_valve_type NOT IN (6313) AND closed = 'f'" key="{6ea67572-5f92-462b-9419-18b0f15198f6}" symbol="4" label="vanne"/>
-            <rule filter="distance(  $geometry,  make_point(  &quot;label_2_x&quot; ,  &quot;label_2_y&quot; ) ) / @map_scale  > 0.008" key="{ca9eb282-1517-4c0d-b3f2-2d60140a470a}" symbol="5" label="Lien vanne - étiquette"/>
+            <rule filter="&quot;fk_status&quot; = 1302" key="{9420088a-5888-4b5a-9abf-327814a2b895}" symbol="5" label="HS"/>
+            <rule filter="distance(  $geometry,  make_point(  &quot;label_2_x&quot; ,  &quot;label_2_y&quot; ) ) / @map_scale  > 0.008" key="{ca9eb282-1517-4c0d-b3f2-2d60140a470a}" symbol="6" label="Lien vanne - étiquette"/>
           </rule>
         </rules>
         <symbols>
@@ -31140,10 +31141,34 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="angle_dd_active" v="1"/>
+              <prop k="angle_dd_expression" v=""/>
+              <prop k="angle_dd_field" v="orientation"/>
+              <prop k="angle_dd_useexpr" v="0"/>
+              <prop k="color" v="227,26,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/installations/valve_hs.svg"/>
+              <prop k="offset" v="0,2.66666666666666652"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
             <layer pass="0" class="GeometryGenerator" locked="0">
               <prop k="SymbolType" v="Line"/>
               <prop k="geometryModifier" v="   make_line( $geometry,  make_point(  &quot;label_2_x&quot; ,  &quot;label_2_y&quot; )) &#xa;"/>
-              <symbol alpha="1" clip_to_extent="1" type="line" name="@5@0">
+              <symbol alpha="1" clip_to_extent="1" type="line" name="@6@0">
                 <layer pass="0" class="SimpleLine" locked="0">
                   <prop k="capstyle" v="square"/>
                   <prop k="customdash" v="5;2"/>
@@ -31216,7 +31241,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -31247,7 +31272,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -31577,6 +31602,11 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="valve_actuation_value_fr"/>
           <column width="-1" hidden="0" type="field" name="valve_actuation_description_fr"/>
           <column width="-1" hidden="0" type="field" name="valve_actuation_schema_visible"/>
+          <column width="-1" hidden="0" type="field" name="schema_force_visible_old"/>
+          <column width="-1" hidden="0" type="field" name="_schema_visible"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_etat_exploitation"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_adesafecter"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_remarque"/>
         </columns>
       </attributetableconfig>
       <editform>./ui_forms/valve.ui</editform>
