@@ -40192,7 +40192,7 @@ def my_form_open(dialog, layer, feature):
         <default field="label_2_visible" expression=""/>
         <default field="label_2_x" expression=""/>
         <default field="label_2_y" expression=""/>
-        <default field="label_2_rotation" expression=""/>
+        <default field="label_2_rotation" expression="0"/>
         <default field="label_2_text" expression=""/>
         <default field="qwat_ext_ch_vd_sire_etat_exploitation" expression=""/>
         <default field="qwat_ext_ch_vd_sire_adesafecter" expression=""/>
@@ -43078,9 +43078,9 @@ def closeProject():
         <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{6aadf562-982f-4223-b8b0-c07c0f4bd505}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{011f50bd-cae0-428e-acdc-07a438e9c05f}"/>
         <checked-legend-node id="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
@@ -43132,8 +43132,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
+        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -43145,8 +43145,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
+        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -43157,8 +43157,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
+        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
