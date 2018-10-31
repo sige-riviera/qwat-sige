@@ -109,7 +109,7 @@
             </property>
           </customproperties>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vannes_copy20141127160745910" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;valve&quot; (geometry_alt2) sql=" name="023 vannes 5000">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vannes_copy20141127160745910" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;valve&quot; (geometry_alt2) sql=&quot;fk_status&quot; NOT IN (1303, 1304, 1305, 1306, 1307, 1308)" name="023 vannes 5000">
           <customproperties>
             <property key="expandedLegendNodes"/>
           </customproperties>
@@ -31009,7 +31009,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1152096.875</ymax>
       </extent>
       <id>vannes_copy20141127160745910</id>
-      <datasource>service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table="qwat_od"."valve" (geometry_alt2) sql=</datasource>
+      <datasource>service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table="qwat_od"."valve" (geometry_alt2) sql="fk_status" NOT IN (1303, 1304, 1305, 1306, 1307, 1308)</datasource>
       <keywordList>
         <value></value>
       </keywordList>
