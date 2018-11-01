@@ -193,7 +193,7 @@
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_consumptionzone20150508135647750" source="service='qwat' sslmode=disable key='name' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;vw_consumptionzone&quot; (geometry) sql=" name="045 Zones de consommation">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Checked" id="printmap20130304110011400" source="service='qwat' sslmode=allow key='id' srid=2056 type=Polygon table=&quot;qwat_od&quot;.&quot;printmap&quot; (geometry) sql=" name="046 folios">
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="printmap20130304110011400" source="service='qwat' sslmode=allow key='id' srid=2056 type=Polygon table=&quot;qwat_od&quot;.&quot;printmap&quot; (geometry) sql=" name="046 folios">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="protectionzone20130304110011418" source="service='qwat' sslmode=allow key='id' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;protectionzone&quot; (geometry) sql=" name="047 zones de protections">
@@ -411,10 +411,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2551988.47188764903694391</xmin>
-      <ymin>1134094.40709826117381454</ymin>
-      <xmax>2566376.75485920999199152</xmax>
-      <ymax>1156500.31310617690905929</ymax>
+      <xmin>2555406.02418538462370634</xmin>
+      <ymin>1138896.42780402232892811</ymin>
+      <xmax>2563745.01506227534264326</xmax>
+      <ymax>1151882.17781726946122944</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -908,8 +908,8 @@
           <legendlayerfile isInOverview="0" layerid="vw_consumptionzone20150508135647750" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="45" open="true" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
-        <filegroup open="true" hidden="false">
+      <legendlayer drawingOrder="45" open="false" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
+        <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="printmap20130304110011400" visible="1"/>
         </filegroup>
       </legendlayer>
@@ -24485,7 +24485,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name"/>
+        <property key="labeling/fieldName" value="CASE&#xd;&#xa;  WHEN  &quot;label_2_visible&quot; = 1&#xd;&#xa;  THEN substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name&#xd;&#xa;END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -24720,8 +24720,8 @@ def my_form_open(dialog, layer, feature):
         <attribute>district_colorcode</attribute>
         <attribute>district_prefix</attribute>
         <attribute>district_label_1_visible</attribute>
-        <attribute>district_label_2_rotation</attribute>
         <attribute>label_2_x</attribute>
+        <attribute>district_label_2_rotation</attribute>
         <attribute>label_2_y</attribute>
         <attribute>label_1_x</attribute>
         <attribute>label_1_visible</attribute>
