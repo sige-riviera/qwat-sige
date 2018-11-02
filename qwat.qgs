@@ -24441,14 +24441,50 @@ def my_form_open(dialog, layer, feature):
           </effect>
         </effect>
       </renderer-v2>
-      <labeling type="simple"/>
+      <labeling type="rule-based">
+        <rules key="{b15dfca8-808e-43cf-809d-9fdfc0dcf75f}">
+          <rule description="251-4999 - Rouge et Jaune" filter="label_2_visible = 1 OR label_2_visible = 2" key="{aa12e2e8-b30d-4ac3-8b08-f031510e8fbd}">
+            <settings>
+              <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="255,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="4294967295" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,0,255" bufferDraw="1" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="64"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="0" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="4" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="4999" fontMaxPixelSize="10000" scaleMin="251" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="1" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="1" minFeatureSize="0"/>
+              <data-defined>
+                <Rotation expr="0" field="" active="true" useExpr="true"/>
+                <Show expr="1" field="" active="false" useExpr="true"/>
+                <AlwaysShow expr="1" field="" active="false" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+          <rule description="5000-1000000 - Noire" filter="label_2_visible = 1 OR label_2_visible = 2" key="{822f177e-8d93-41f8-912b-1d2c0c908075}">
+            <settings>
+              <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="4294967295" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="0" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="4" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="20000" fontMaxPixelSize="10000" scaleMin="5000" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="1" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="1" minFeatureSize="0"/>
+              <data-defined>
+                <Rotation expr="0" field="" active="true" useExpr="true"/>
+              </data-defined>
+            </settings>
+          </rule>
+        </rules>
+      </labeling>
       <customproperties>
         <property key="QFieldSync/action" value="offline"/>
         <property key="embeddedWidgets/count" value="0"/>
         <property key="itemBrowserConnected" value="no"/>
         <property key="itemBrowserCurrentItem" value="1"/>
         <property key="itemBrowserSelection" value="[]"/>
-        <property key="labeling" value="pal"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
@@ -24483,7 +24519,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE&#xd;&#xa;  WHEN  &quot;label_2_visible&quot; = 1&#xd;&#xa;  THEN substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name&#xd;&#xa;END"/>
+        <property key="labeling/fieldName" value="substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -24718,8 +24754,8 @@ def my_form_open(dialog, layer, feature):
         <attribute>district_colorcode</attribute>
         <attribute>district_prefix</attribute>
         <attribute>district_label_1_visible</attribute>
-        <attribute>district_label_2_rotation</attribute>
         <attribute>label_2_x</attribute>
+        <attribute>district_label_2_rotation</attribute>
         <attribute>label_2_y</attribute>
         <attribute>label_1_x</attribute>
         <attribute>label_1_visible</attribute>
@@ -24744,43 +24780,43 @@ def my_form_open(dialog, layer, feature):
       <attributeactions default="0">
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].audit('printmap20130304110011400',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;remark&quot;" sortOrder="1">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;label_2_visible&quot;" sortOrder="1">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="174" hidden="0" type="field" name="name"/>
-          <column width="-1" hidden="0" type="field" name="fk_district"/>
+          <column width="-1" hidden="1" type="field" name="fk_district"/>
           <column width="-1" hidden="0" type="field" name="remark"/>
-          <column width="-1" hidden="0" type="field" name="version_date"/>
-          <column width="-1" hidden="0" type="field" name="x_min"/>
-          <column width="-1" hidden="0" type="field" name="y_min"/>
-          <column width="-1" hidden="0" type="field" name="x_max"/>
-          <column width="-1" hidden="0" type="field" name="y_max"/>
-          <column width="-1" hidden="0" type="field" name="label_1_visible"/>
-          <column width="-1" hidden="0" type="field" name="label_1_x"/>
-          <column width="-1" hidden="0" type="field" name="label_1_y"/>
-          <column width="-1" hidden="0" type="field" name="label_1_rotation"/>
-          <column width="-1" hidden="0" type="field" name="label_1_text"/>
+          <column width="-1" hidden="1" type="field" name="version_date"/>
+          <column width="-1" hidden="1" type="field" name="x_min"/>
+          <column width="-1" hidden="1" type="field" name="y_min"/>
+          <column width="-1" hidden="1" type="field" name="x_max"/>
+          <column width="-1" hidden="1" type="field" name="y_max"/>
+          <column width="-1" hidden="1" type="field" name="label_1_visible"/>
+          <column width="-1" hidden="1" type="field" name="label_1_x"/>
+          <column width="-1" hidden="1" type="field" name="label_1_y"/>
+          <column width="-1" hidden="1" type="field" name="label_1_rotation"/>
+          <column width="-1" hidden="1" type="field" name="label_1_text"/>
           <column width="-1" hidden="0" type="field" name="label_2_visible"/>
-          <column width="-1" hidden="0" type="field" name="label_2_x"/>
-          <column width="-1" hidden="0" type="field" name="label_2_y"/>
-          <column width="-1" hidden="0" type="field" name="label_2_rotation"/>
-          <column width="-1" hidden="0" type="field" name="label_2_text"/>
-          <column width="-1" hidden="0" type="field" name="district_name"/>
-          <column width="-1" hidden="0" type="field" name="district_shortname"/>
-          <column width="-1" hidden="0" type="field" name="district_zip"/>
-          <column width="-1" hidden="0" type="field" name="district_land_registry"/>
-          <column width="-1" hidden="0" type="field" name="district_prefix"/>
-          <column width="-1" hidden="0" type="field" name="district_colorcode"/>
-          <column width="-1" hidden="0" type="field" name="district_label_1_visible"/>
-          <column width="-1" hidden="0" type="field" name="district_label_1_x"/>
-          <column width="-1" hidden="0" type="field" name="district_label_1_y"/>
-          <column width="-1" hidden="0" type="field" name="district_label_1_rotation"/>
-          <column width="-1" hidden="0" type="field" name="district_label_1_text"/>
-          <column width="-1" hidden="0" type="field" name="district_label_2_visible"/>
-          <column width="-1" hidden="0" type="field" name="district_label_2_x"/>
-          <column width="-1" hidden="0" type="field" name="district_label_2_y"/>
-          <column width="-1" hidden="0" type="field" name="district_label_2_rotation"/>
-          <column width="-1" hidden="0" type="field" name="district_label_2_text"/>
+          <column width="-1" hidden="1" type="field" name="label_2_x"/>
+          <column width="-1" hidden="1" type="field" name="label_2_y"/>
+          <column width="-1" hidden="1" type="field" name="label_2_rotation"/>
+          <column width="-1" hidden="1" type="field" name="label_2_text"/>
+          <column width="-1" hidden="1" type="field" name="district_name"/>
+          <column width="-1" hidden="1" type="field" name="district_shortname"/>
+          <column width="-1" hidden="1" type="field" name="district_zip"/>
+          <column width="-1" hidden="1" type="field" name="district_land_registry"/>
+          <column width="-1" hidden="1" type="field" name="district_prefix"/>
+          <column width="-1" hidden="1" type="field" name="district_colorcode"/>
+          <column width="-1" hidden="1" type="field" name="district_label_1_visible"/>
+          <column width="-1" hidden="1" type="field" name="district_label_1_x"/>
+          <column width="-1" hidden="1" type="field" name="district_label_1_y"/>
+          <column width="-1" hidden="1" type="field" name="district_label_1_rotation"/>
+          <column width="-1" hidden="1" type="field" name="district_label_1_text"/>
+          <column width="-1" hidden="1" type="field" name="district_label_2_visible"/>
+          <column width="-1" hidden="1" type="field" name="district_label_2_x"/>
+          <column width="-1" hidden="1" type="field" name="district_label_2_y"/>
+          <column width="-1" hidden="1" type="field" name="district_label_2_rotation"/>
+          <column width="-1" hidden="1" type="field" name="district_label_2_text"/>
           <column width="-1" hidden="1" type="actions"/>
           <column width="-1" hidden="0" type="field" name="print_scale"/>
         </columns>
@@ -43082,9 +43118,9 @@ def closeProject():
         <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{6aadf562-982f-4223-b8b0-c07c0f4bd505}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{011f50bd-cae0-428e-acdc-07a438e9c05f}"/>
         <checked-legend-node id="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
@@ -43136,8 +43172,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
+        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -43149,8 +43185,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
+        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -43161,8 +43197,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
+        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -43433,8 +43469,8 @@ def closeProject():
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
         <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
         <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
+        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
         <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
         <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
         <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
@@ -43442,8 +43478,8 @@ def closeProject():
         <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
         <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
         <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
         <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
+        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
         <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
         <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
