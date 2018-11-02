@@ -36,7 +36,7 @@
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
-      <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Réseau">
+      <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Réseau">
         <customproperties/>
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="conduites_copy20130709141244955" source="service='qwat' sslmode=disable key='id' srid=2056 type=LineStringZ table=&quot;qwat_od&quot;.&quot;pipe&quot; (geometry) sql=" name="016 conduites">
           <customproperties>
@@ -698,7 +698,7 @@
           </filegroup>
         </legendlayer>
       </legendgroup>
-      <legendgroup open="false" checked="Qt::PartiallyChecked" name="Réseau">
+      <legendgroup open="true" checked="Qt::PartiallyChecked" name="Réseau">
         <legendlayer drawingOrder="15" open="false" checked="Qt::Checked" name="016 conduites" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="conduites_copy20130709141244955" visible="1"/>
@@ -6748,38 +6748,48 @@ def my_form_open(dialog, layer, feature):
             <rule checkstate="0" filter="fk_status=1307" key="{7c5fde76-05d7-4d4a-9eaa-953db28fbe87}" symbol="12" label="Fictives"/>
           </rule>
           <rule filter="fk_distributor = 1 and &quot;status_functional&quot; = 'f'" key="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}" label="non fonctionnel">
-            <rule checkstate="0" filter=" &quot;fk_status&quot; != 1306" key="{9b8097a6-86f1-4caf-97ba-313183191f2c}" label="existant">
-              <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}" symbol="13" label="schématique">
-                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{6aadf562-982f-4223-b8b0-c07c0f4bd505}" symbol="14" scalemindenom="1" label="chemisée"/>
-                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{0ae869d2-87bb-49d7-b6e0-68b6349122a6}" symbol="15" label="protégée"/>
+            <rule checkstate="0" filter=" &quot;fk_status&quot; != 1306  &quot;fk_status&quot; != 1308" key="{3560fb42-77fd-461c-8d93-b79a7220ff24}" label="existant">
+              <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{7224dd4f-e1ef-46e4-999f-2d526efd7344}" symbol="13" label="schématique">
+                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{08a54ff6-d256-46e8-b3f8-609cbff8d675}" symbol="14" scalemindenom="1" label="chemisée"/>
+                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{4d6f06f9-1122-4cb8-9bd3-ce839a5c2933}" symbol="15" label="protégée"/>
               </rule>
-              <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{011f50bd-cae0-428e-acdc-07a438e9c05f}" symbol="16" scalemindenom="1" label="détail">
-                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{3d08bdc5-8fe3-4516-b036-64204106113a}" symbol="17" scalemindenom="1" label="chemisée"/>
-                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{0b2ac848-0c52-45ac-856a-387bf14daec2}" symbol="18" label="protégée"/>
+              <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{8959bede-b7d1-42cd-a111-e4f5d19827a2}" symbol="16" scalemindenom="1" label="détail">
+                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}" symbol="17" scalemindenom="1" label="chemisée"/>
+                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{c11c2a23-7a38-4255-ac4e-96de934d983c}" symbol="18" label="protégée"/>
+              </rule>
+            </rule>
+            <rule filter="&quot;fk_status&quot; = 1308" key="{9b8097a6-86f1-4caf-97ba-313183191f2c}" label="en attente">
+              <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}" symbol="19" label="schématique">
+                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{6aadf562-982f-4223-b8b0-c07c0f4bd505}" symbol="20" scalemindenom="1" label="chemisée"/>
+                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{0ae869d2-87bb-49d7-b6e0-68b6349122a6}" symbol="21" label="protégée"/>
+              </rule>
+              <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{011f50bd-cae0-428e-acdc-07a438e9c05f}" symbol="22" scalemindenom="1" label="détail">
+                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{3d08bdc5-8fe3-4516-b036-64204106113a}" symbol="23" scalemindenom="1" label="chemisée"/>
+                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{0b2ac848-0c52-45ac-856a-387bf14daec2}" symbol="24" label="protégée"/>
               </rule>
             </rule>
             <rule filter=" &quot;fk_status&quot; = 1306" key="{c80868b8-8b54-40d5-a8e1-7a49244c64d6}" label="projet">
-              <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{2f34b1bc-8861-4987-b41c-5c78c7a7e4b0}" symbol="19" label="schématique">
-                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{8e058230-f8da-4e1f-a578-bc698e7532d5}" symbol="20" scalemindenom="1" label="chemisée"/>
-                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{220c91b2-efc1-495b-9a1a-a2645586710d}" symbol="21" label="protégée"/>
+              <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{2f34b1bc-8861-4987-b41c-5c78c7a7e4b0}" symbol="25" label="schématique">
+                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{8e058230-f8da-4e1f-a578-bc698e7532d5}" symbol="26" scalemindenom="1" label="chemisée"/>
+                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{220c91b2-efc1-495b-9a1a-a2645586710d}" symbol="27" label="protégée"/>
               </rule>
-              <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}" symbol="22" scalemindenom="1" label="détail">
-                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{e3fd507a-71b4-44ad-a95f-44cf2913b834}" symbol="23" scalemindenom="1" label="chemisée"/>
-                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}" symbol="24" label="protégée"/>
+              <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}" symbol="28" scalemindenom="1" label="détail">
+                <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{e3fd507a-71b4-44ad-a95f-44cf2913b834}" symbol="29" scalemindenom="1" label="chemisée"/>
+                <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}" symbol="30" label="protégée"/>
               </rule>
             </rule>
           </rule>
           <rule filter="fk_distributor != 1" key="{013429dc-a1cd-4a17-904a-6550a0175046}" label="étranger">
-            <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{0b815298-4880-43c7-aa5c-a0f4487b94ce}" symbol="25" label="schématique">
-              <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}" symbol="26" scalemindenom="1" label="chemisée"/>
-              <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{ca9c1d30-406f-4a4a-82f8-ad982710e778}" symbol="27" label="protégée"/>
+            <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{0b815298-4880-43c7-aa5c-a0f4487b94ce}" symbol="31" label="schématique">
+              <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}" symbol="32" scalemindenom="1" label="chemisée"/>
+              <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{ca9c1d30-406f-4a4a-82f8-ad982710e778}" symbol="33" label="protégée"/>
             </rule>
-            <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{d1dedad5-dfc5-4327-a338-401bd8b7bed6}" symbol="28" scalemindenom="1" label="détail">
-              <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{e8ac0281-6fd9-4a32-9610-5e3535020b54}" symbol="29" scalemindenom="1" label="chemisée"/>
-              <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}" symbol="30" label="protégée"/>
+            <rule scalemaxdenom="3000" filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 'f'" key="{d1dedad5-dfc5-4327-a338-401bd8b7bed6}" symbol="34" scalemindenom="1" label="détail">
+              <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{e8ac0281-6fd9-4a32-9610-5e3535020b54}" symbol="35" scalemindenom="1" label="chemisée"/>
+              <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}" symbol="36" label="protégée"/>
             </rule>
           </rule>
-          <rule checkstate="0" filter="ELSE" key="{bb9b38f1-c76d-4c6d-908b-414f0cc24f97}" symbol="31" label="incomplètes"/>
+          <rule checkstate="0" filter="ELSE" key="{bb9b38f1-c76d-4c6d-908b-414f0cc24f97}" symbol="37" label="incomplètes"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -7315,7 +7325,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,255"/>
+              <prop k="line_color" v="217,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_style_dd_active" v="0"/>
               <prop k="line_style_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', 'solid', 'dash')"/>
@@ -7381,7 +7391,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,255"/>
+              <prop k="line_color" v="217,0,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7415,7 +7425,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,255"/>
+              <prop k="line_color" v="217,0,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7451,7 +7461,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,69"/>
+              <prop k="line_color" v="217,0,0,70"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="2"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7486,7 +7496,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,255"/>
+              <prop k="line_color" v="217,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_style_dd_active" v="0"/>
               <prop k="line_style_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', 'solid', 'dash')"/>
@@ -7521,7 +7531,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,255"/>
+              <prop k="line_color" v="217,0,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7555,7 +7565,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,255"/>
+              <prop k="line_color" v="217,0,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7591,7 +7601,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="255,127,0,69"/>
+              <prop k="line_color" v="217,0,0,70"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="2"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7626,7 +7636,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_style_dd_active" v="0"/>
               <prop k="line_style_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', 'solid', 'dash')"/>
@@ -7661,7 +7671,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7695,7 +7705,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7731,7 +7741,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,69"/>
+              <prop k="line_color" v="255,127,0,69"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="2"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7766,7 +7776,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_style_dd_active" v="0"/>
               <prop k="line_style_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', 'solid', 'dash')"/>
@@ -7801,7 +7811,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7835,7 +7845,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_color" v="255,127,0,255"/>
               <prop k="line_style" v="dot"/>
               <prop k="line_width" v="0.3"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7910,7 +7920,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="40,180,16,69"/>
+              <prop k="line_color" v="255,127,0,69"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="2"/>
               <prop k="line_width_unit" v="MM"/>
@@ -7934,6 +7944,286 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="line" name="31">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="3;2"/>
+              <prop k="customdash_dd_active" v="1"/>
+              <prop k="customdash_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', '1;0', '2;2')"/>
+              <prop k="customdash_dd_field" v=""/>
+              <prop k="customdash_dd_useexpr" v="1"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_style_dd_active" v="0"/>
+              <prop k="line_style_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', 'solid', 'dash')"/>
+              <prop k="line_style_dd_field" v=""/>
+              <prop k="line_style_dd_useexpr" v="1"/>
+              <prop k="line_width" v="0.6"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="1"/>
+              <prop k="width_dd_active" v="1"/>
+              <prop k="width_dd_expression" v="CASE WHEN &quot;pipe_material_diameter_nominal&quot; IS NOT NULL OR &quot;pipe_material_diameter_external&quot; IS NOT NULL&#xa;THEN min(1.0,max(.6,&#xa;&#x9;abs(&#xa;&#x9;&#x9;(to_real(COALESCE(&quot;pipe_material_diameter_external&quot;,&quot;pipe_material_diameter_nominal&quot;))-100) / 300 + 0.6&#xa;&#x9;)&#xa;))&#xa;ELSE 0.6&#xa;END"/>
+              <prop k="width_dd_field" v=""/>
+              <prop k="width_dd_useexpr" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="32">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="flat"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_style" v="dot"/>
+              <prop k="line_width" v="0.3"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="-1.2"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="transform">
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="reflect_x" v="0"/>
+                  <prop k="reflect_y" v="0"/>
+                  <prop k="rotation" v="0"/>
+                  <prop k="scale_x" v="1"/>
+                  <prop k="scale_y" v="1"/>
+                  <prop k="shear_x" v="0"/>
+                  <prop k="shear_y" v="0"/>
+                  <prop k="translate_unit" v="MM"/>
+                  <prop k="translate_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="translate_x" v="5.55112e-17"/>
+                  <prop k="translate_y" v="1.6"/>
+                </effect>
+              </effect>
+            </layer>
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="flat"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_style" v="dot"/>
+              <prop k="line_width" v="0.3"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="1.2"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="transform">
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="reflect_x" v="0"/>
+                  <prop k="reflect_y" v="0"/>
+                  <prop k="rotation" v="0"/>
+                  <prop k="scale_x" v="1"/>
+                  <prop k="scale_y" v="1"/>
+                  <prop k="shear_x" v="0"/>
+                  <prop k="shear_y" v="0"/>
+                  <prop k="translate_unit" v="MM"/>
+                  <prop k="translate_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="translate_x" v="0"/>
+                  <prop k="translate_y" v="-1.6"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="33">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="flat"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,69"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="2"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_dd_active" v="1"/>
+              <prop k="width_dd_expression" v="CASE WHEN &quot;pipe_material_diameter&quot; is not NULL&#xa;THEN toreal(COALESCE(&quot;pipe_material_diameter_external&quot;,&quot;pipe_material_diameter_nominal&quot;)) / 900 + 2.2&#xa;ELSE 2.2&#xa;END"/>
+              <prop k="width_dd_field" v=""/>
+              <prop k="width_dd_useexpr" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="34">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="customdash" v="2;2"/>
+              <prop k="customdash_dd_active" v="1"/>
+              <prop k="customdash_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', '1;0', '2;2')"/>
+              <prop k="customdash_dd_field" v=""/>
+              <prop k="customdash_dd_useexpr" v="1"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_style_dd_active" v="0"/>
+              <prop k="line_style_dd_expression" v="if( &quot;pipe_function_major&quot; = 't', 'solid', 'dash')"/>
+              <prop k="line_style_dd_field" v=""/>
+              <prop k="line_style_dd_useexpr" v="1"/>
+              <prop k="line_width" v="0.4"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="1"/>
+              <prop k="width_dd_active" v="1"/>
+              <prop k="width_dd_expression" v="CASE WHEN &quot;pipe_material_diameter_nominal&quot; IS NOT NULL OR &quot;pipe_material_diameter_external&quot; IS NOT NULL&#xa;THEN min(1.0,max(.6,&#xa;&#x9;abs(&#xa;&#x9;&#x9;(to_real(COALESCE(&quot;pipe_material_diameter_external&quot;,&quot;pipe_material_diameter_nominal&quot;))-100) / 300 + 0.6&#xa;&#x9;)&#xa;))&#xa;ELSE 0.6&#xa;END"/>
+              <prop k="width_dd_field" v=""/>
+              <prop k="width_dd_useexpr" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="35">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="flat"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_style" v="dot"/>
+              <prop k="line_width" v="0.3"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="-1.2"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="transform">
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="reflect_x" v="0"/>
+                  <prop k="reflect_y" v="0"/>
+                  <prop k="rotation" v="0"/>
+                  <prop k="scale_x" v="1"/>
+                  <prop k="scale_y" v="1"/>
+                  <prop k="shear_x" v="0"/>
+                  <prop k="shear_y" v="0"/>
+                  <prop k="translate_unit" v="MM"/>
+                  <prop k="translate_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="translate_x" v="5.55112e-17"/>
+                  <prop k="translate_y" v="1.6"/>
+                </effect>
+              </effect>
+            </layer>
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="flat"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,255"/>
+              <prop k="line_style" v="dot"/>
+              <prop k="line_width" v="0.3"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="1.2"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="transform">
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="reflect_x" v="0"/>
+                  <prop k="reflect_y" v="0"/>
+                  <prop k="rotation" v="0"/>
+                  <prop k="scale_x" v="1"/>
+                  <prop k="scale_y" v="1"/>
+                  <prop k="shear_x" v="0"/>
+                  <prop k="shear_y" v="0"/>
+                  <prop k="translate_unit" v="MM"/>
+                  <prop k="translate_unit_scale" v="0,0,0,0,0,0"/>
+                  <prop k="translate_x" v="0"/>
+                  <prop k="translate_y" v="-1.6"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="36">
+            <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="flat"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="40,180,16,69"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="2"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_dd_active" v="1"/>
+              <prop k="width_dd_expression" v="CASE WHEN &quot;pipe_material_diameter&quot; is not NULL&#xa;THEN toreal(COALESCE(&quot;pipe_material_diameter_external&quot;,&quot;pipe_material_diameter_nominal&quot;)) / 900 + 2.2&#xa;ELSE 2.2&#xa;END"/>
+              <prop k="width_dd_field" v=""/>
+              <prop k="width_dd_useexpr" v="1"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="37">
             <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="square"/>
               <prop k="customdash" v="5;2"/>
@@ -24754,8 +25044,8 @@ def my_form_open(dialog, layer, feature):
         <attribute>district_colorcode</attribute>
         <attribute>district_prefix</attribute>
         <attribute>district_label_1_visible</attribute>
-        <attribute>label_2_x</attribute>
         <attribute>district_label_2_rotation</attribute>
+        <attribute>label_2_x</attribute>
         <attribute>label_2_y</attribute>
         <attribute>label_1_x</attribute>
         <attribute>label_1_visible</attribute>
@@ -43118,9 +43408,9 @@ def closeProject():
         <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
         <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{6aadf562-982f-4223-b8b0-c07c0f4bd505}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
         <checked-legend-node id="{011f50bd-cae0-428e-acdc-07a438e9c05f}"/>
         <checked-legend-node id="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
@@ -43172,8 +43462,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -43185,8 +43475,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -43197,8 +43487,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -43320,34 +43610,48 @@ def closeProject():
       <layer style="" id="od_element_surfacique20161123111234045"/>
       <layer style="" id="cs_couverture_sol20161117155047081"/>
       <checked-legend-nodes id="conduites_copy20130709141244955">
-        <checked-legend-node id="{35b22ed6-654d-4492-a0fa-c4f4c502f524}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
-        <checked-legend-node id="{4cbfe9a5-d974-46cd-9f3d-2986e2330851}"/>
-        <checked-legend-node id="{cfe02b8a-bfad-4fa3-8cb8-d5df88625a57}"/>
-        <checked-legend-node id="{9639d3dd-900e-4944-9635-70e34b4a0002}"/>
-        <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
-        <checked-legend-node id="{f683634b-6b3e-459a-b735-1e5d0fe53ae9}"/>
-        <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
-        <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
-        <checked-legend-node id="{4f1444d3-106d-49d4-baf3-32e647bbe7aa}"/>
-        <checked-legend-node id="{5887a5f9-6293-4535-b975-2903433efa09}"/>
-        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
-        <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
-        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
-        <checked-legend-node id="{f082f78d-9e20-42e4-aebc-dc2186d0ad19}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
-        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
-        <checked-legend-node id="{26b0ed9c-935d-40a4-9c57-cacbed69281b}"/>
+        <checked-legend-node id="{6aadf562-982f-4223-b8b0-c07c0f4bd505}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
+        <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
+        <checked-legend-node id="{0ae869d2-87bb-49d7-b6e0-68b6349122a6}"/>
+        <checked-legend-node id="{e3fd507a-71b4-44ad-a95f-44cf2913b834}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
+        <checked-legend-node id="{8959bede-b7d1-42cd-a111-e4f5d19827a2}"/>
+        <checked-legend-node id="{9b8097a6-86f1-4caf-97ba-313183191f2c}"/>
+        <checked-legend-node id="{4cbfe9a5-d974-46cd-9f3d-2986e2330851}"/>
+        <checked-legend-node id="{0b2ac848-0c52-45ac-856a-387bf14daec2}"/>
+        <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
+        <checked-legend-node id="{08a54ff6-d256-46e8-b3f8-609cbff8d675}"/>
         <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
-        <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
-        <checked-legend-node id="{0b815298-4880-43c7-aa5c-a0f4487b94ce}"/>
-        <checked-legend-node id="{87da2149-5a6d-4d11-8d93-c9b2cea88fff}"/>
+        <checked-legend-node id="{9639d3dd-900e-4944-9635-70e34b4a0002}"/>
         <checked-legend-node id="{69e69170-daff-42e5-800a-8db1b66951eb}"/>
-        <checked-legend-node id="{dbbed889-a21b-4eb3-8df7-cc5c10f7aa32}"/>
+        <checked-legend-node id="{4d6f06f9-1122-4cb8-9bd3-ce839a5c2933}"/>
         <checked-legend-node id="{865af22a-4b2b-4ff9-b6c5-19e782e9cbc6}"/>
-        <checked-legend-node id="{83c98724-7516-46fb-86e8-4844076d5543}"/>
         <checked-legend-node id="{d1dedad5-dfc5-4327-a338-401bd8b7bed6}"/>
+        <checked-legend-node id="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}"/>
+        <checked-legend-node id="{0b815298-4880-43c7-aa5c-a0f4487b94ce}"/>
+        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
+        <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
+        <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
+        <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
+        <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
+        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
+        <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
+        <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
+        <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
+        <checked-legend-node id="{8e058230-f8da-4e1f-a578-bc698e7532d5}"/>
+        <checked-legend-node id="{7224dd4f-e1ef-46e4-999f-2d526efd7344}"/>
+        <checked-legend-node id="{c80868b8-8b54-40d5-a8e1-7a49244c64d6}"/>
+        <checked-legend-node id="{cfe02b8a-bfad-4fa3-8cb8-d5df88625a57}"/>
+        <checked-legend-node id="{220c91b2-efc1-495b-9a1a-a2645586710d}"/>
+        <checked-legend-node id="{dbbed889-a21b-4eb3-8df7-cc5c10f7aa32}"/>
+        <checked-legend-node id="{f683634b-6b3e-459a-b735-1e5d0fe53ae9}"/>
+        <checked-legend-node id="{83c98724-7516-46fb-86e8-4844076d5543}"/>
+        <checked-legend-node id="{2f34b1bc-8861-4987-b41c-5c78c7a7e4b0}"/>
+        <checked-legend-node id="{c11c2a23-7a38-4255-ac4e-96de934d983c}"/>
+        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
+        <checked-legend-node id="{3d08bdc5-8fe3-4516-b036-64204106113a}"/>
       </checked-legend-nodes>
       <checked-legend-nodes id="nom_rue20160215151152641">
         <checked-legend-node id="{9ba7b6cf-df66-4dbf-b305-7890bc2646c8}"/>
@@ -43379,8 +43683,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -43392,8 +43696,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -43404,8 +43708,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
