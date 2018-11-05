@@ -11734,7 +11734,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config OrderByValue="0" AllowNull="1" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="locationtype20150922082741813" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="1" notNull="0"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_precision">
-          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
+          <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precision20130304110011372" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="1"/>
         </edittype>
         <edittype widgetv2type="ValueRelation" name="fk_precisionalti">
           <widgetv2config OrderByValue="0" AllowNull="0" FilterExpression="" UseCompleter="0" fieldEditable="1" Key="id" constraint="" Layer="vl_precisionalti20131211161429510" Value="value_fr" labelOnTop="0" constraintDescription="" AllowMulti="0" notNull="0"/>
@@ -12383,7 +12383,7 @@ def my_form_open(dialog, layer, feature):
         <default field="fk_status" expression="1301"/>
         <default field="fk_folder" expression=""/>
         <default field="fk_locationtype" expression=""/>
-        <default field="fk_precision" expression=""/>
+        <default field="fk_precision" expression="1102"/>
         <default field="fk_precisionalti" expression=""/>
         <default field="fk_object_reference" expression=""/>
         <default field="altitude" expression=""/>
