@@ -332,7 +332,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Fonds de plans">
+    <layer-tree-group expanded="1" checked="Qt::Unchecked" name="Fonds de plans">
       <customproperties>
         <property key="embedded" value="1"/>
         <property key="embedded-invisible-layers">
@@ -354,7 +354,8 @@
           <value>Fond_ASIT_VD___couleur20180322144715694</value>
           <value>Fond_ASIT_VD___niveaux_de_gris20180322144719023</value>
           <value>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</value>
-          <value>SMR10_LV95_SIGE20181101151017825</value>
+          <value>SMR10_LV95_SIGE_M_resampled20181107111357915</value>
+          <value>SMR10_LV95_SIGE_NN_resampled20181107111112733</value>
         </property>
         <property key="embedded_project" value="./cadastre/cadastre_pg.qgs"/>
       </customproperties>
@@ -575,6 +576,7 @@
       <item>vannes_copy20141127160745910</item>
       <item>télécommande_copy20160127112146958</item>
       <item>vw_pipe_schema20141208162900166</item>
+      <item>025_conduite_impression_5000_copier20181102151535588</item>
       <item>pressurezone20180816154717204</item>
       <item>vw_pipe_schema_visibleitems20141127154708843</item>
       <item>pipe_child_parent20130417092030507</item>
@@ -657,8 +659,8 @@
       <item>Fond_ASIT_VD___couleur20180322144715694</item>
       <item>Fond_ASIT_VD___niveaux_de_gris20180322144719023</item>
       <item>Fond_ASIT_VD___niveaux_de_gris_sans_labels20180322144721880</item>
-      <item>SMR10_LV95_SIGE20181101151017825</item>
-      <item>025_conduite_impression_5000_copier20181102151535588</item>
+      <item>SMR10_LV95_SIGE_M_resampled20181107111357915</item>
+      <item>SMR10_LV95_SIGE_NN_resampled20181107111112733</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="false">
@@ -784,7 +786,7 @@
             <legendlayerfile isInOverview="0" layerid="vw_pipe_schema20141208162900166" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="108" open="false" checked="Qt::Unchecked" name="025b conduite impression 5000 copier" showFeatureCount="0">
+        <legendlayer drawingOrder="25" open="false" checked="Qt::Unchecked" name="025b conduite impression 5000 copier" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="025_conduite_impression_5000_copier20181102151535588" visible="0"/>
           </filegroup>
@@ -804,19 +806,19 @@
             <legendlayerfile isInOverview="0" layerid="télécommande_copy20160127112146958" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="25" open="true" checked="Qt::Unchecked" name="026 zone_pression" showFeatureCount="0">
+        <legendlayer drawingOrder="26" open="true" checked="Qt::Unchecked" name="026 zone_pression" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="pressurezone20180816154717204" visible="0"/>
           </filegroup>
         </legendlayer>
       </legendgroup>
       <legendgroup open="false" checked="Qt::Unchecked" name="edition">
-        <legendlayer drawingOrder="26" open="true" checked="Qt::Unchecked" name="027 conduites edition 5000" showFeatureCount="0">
+        <legendlayer drawingOrder="27" open="true" checked="Qt::Unchecked" name="027 conduites edition 5000" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_pipe_schema_visibleitems20141127154708843" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="27" open="false" checked="Qt::Unchecked" name="028 Flèche conduite enfant -> parent" showFeatureCount="0">
+        <legendlayer drawingOrder="28" open="false" checked="Qt::Unchecked" name="028 Flèche conduite enfant -> parent" showFeatureCount="0">
           <filegroup open="false" hidden="false">
             <legendlayerfile isInOverview="0" layerid="pipe_child_parent20130417092030507" visible="0"/>
           </filegroup>
@@ -824,321 +826,321 @@
       </legendgroup>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Checked" name="Annotations">
-      <legendlayer drawingOrder="28" open="false" checked="Qt::Checked" name="029 annotation - ligne" showFeatureCount="0">
+      <legendlayer drawingOrder="29" open="false" checked="Qt::Checked" name="029 annotation - ligne" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_annotationline20131203095020365" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="29" open="false" checked="Qt::Checked" name="030 annotation - point" showFeatureCount="0">
+      <legendlayer drawingOrder="30" open="false" checked="Qt::Checked" name="030 annotation - point" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_annotationpoint20131203095020392" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="Côtes">
-      <legendlayer drawingOrder="30" open="false" checked="Qt::Checked" name="031 côtes distance" showFeatureCount="0">
+      <legendlayer drawingOrder="31" open="false" checked="Qt::Checked" name="031 côtes distance" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="dimension20130807094904783" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="31" open="false" checked="Qt::Checked" name="032 côtes orientation" showFeatureCount="0">
+      <legendlayer drawingOrder="32" open="false" checked="Qt::Checked" name="032 côtes orientation" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="od_dimension_orientation20131202111155806" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="32" open="false" checked="Qt::Unchecked" name="033 points de construction" showFeatureCount="0">
+      <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="033 points de construction" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="constructionpoint20130807094904851" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="33" open="false" checked="Qt::Unchecked" name="034 IntersectIt Points" showFeatureCount="0">
+      <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="034 IntersectIt Points" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="IntersectIt_Points20130618102143276" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="34" open="false" checked="Qt::Unchecked" name="035 IntersectIt Lines" showFeatureCount="0">
+      <legendlayer drawingOrder="35" open="false" checked="Qt::Unchecked" name="035 IntersectIt Lines" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="IntersectIt_Lines20130618102142813" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="cadastre sige">
-      <legendlayer drawingOrder="35" open="false" checked="Qt::Checked" name="036 nom_rue" showFeatureCount="0">
+      <legendlayer drawingOrder="36" open="false" checked="Qt::Checked" name="036 nom_rue" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="nom_rue20160215151152641" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="36" open="false" checked="Qt::Unchecked" name="037 servitude ligne" showFeatureCount="0">
+      <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="037 servitude ligne" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude20150109080436604" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="37" open="false" checked="Qt::Unchecked" name="038 servitude polygone" showFeatureCount="0">
+      <legendlayer drawingOrder="38" open="false" checked="Qt::Unchecked" name="038 servitude polygone" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude20150109080436650" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="38" open="true" checked="Qt::Unchecked" name="039 servitude sans géom." showFeatureCount="0">
+      <legendlayer drawingOrder="39" open="true" checked="Qt::Unchecked" name="039 servitude sans géom." showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_no_geom20150203154142407" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="39" open="false" checked="Qt::Unchecked" name="040 enquete camac" showFeatureCount="0">
+      <legendlayer drawingOrder="40" open="false" checked="Qt::Unchecked" name="040 enquete camac" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="camac20140113144941208" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="40" open="false" checked="Qt::Checked" name="041 enquete cadastre" showFeatureCount="0">
+      <legendlayer drawingOrder="41" open="false" checked="Qt::Checked" name="041 enquete cadastre" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="cadastre20140312152032371" visible="1"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::PartiallyChecked" name="Zones">
-      <legendlayer drawingOrder="41" open="true" checked="Qt::Unchecked" name="042 dossiers techniques" showFeatureCount="0">
+      <legendlayer drawingOrder="42" open="true" checked="Qt::Unchecked" name="042 dossiers techniques" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="folder20150629160924367" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="42" open="false" checked="Qt::Unchecked" name="043 communes" showFeatureCount="0">
+      <legendlayer drawingOrder="43" open="false" checked="Qt::Unchecked" name="043 communes" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="district20130304110004764" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="43" open="false" checked="Qt::Unchecked" name="044 zones de pressions" showFeatureCount="0">
+      <legendlayer drawingOrder="44" open="false" checked="Qt::Unchecked" name="044 zones de pressions" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pressurezone20130417133612105" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="44" open="false" checked="Qt::Unchecked" name="045 Zones de consommation" showFeatureCount="0">
+      <legendlayer drawingOrder="45" open="false" checked="Qt::Unchecked" name="045 Zones de consommation" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vw_consumptionzone20150508135647750" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="45" open="false" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
+      <legendlayer drawingOrder="46" open="false" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="printmap20130304110011400" visible="1"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="46" open="false" checked="Qt::Unchecked" name="047 zones de protections" showFeatureCount="0">
+      <legendlayer drawingOrder="47" open="false" checked="Qt::Unchecked" name="047 zones de protections" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="protectionzone20130304110011418" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
     <legendgroup open="false" checked="Qt::Unchecked" name="Tables auxiliaires">
-      <legendlayer drawingOrder="47" open="true" checked="Qt::Unchecked" name="protectionzone_type" showFeatureCount="0">
+      <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="protectionzone_type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="protectionzone_type20160205143014456" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="48" open="true" checked="Qt::Unchecked" name="emplacement" showFeatureCount="0">
+      <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="emplacement" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="locationtype20150922082741813" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="49" open="true" checked="Qt::Unchecked" name="abonnés - type" showFeatureCount="0">
+      <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="abonnés - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_subscriber_type20130304110011480" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="50" open="true" checked="Qt::Unchecked" name="conduites - protection" showFeatureCount="0">
+      <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="conduites - protection" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_protection20130304110005258" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="51" open="true" checked="Qt::Unchecked" name="conduites - matériaux" showFeatureCount="0">
+      <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="conduites - matériaux" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_material20130304110005230" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="52" open="true" checked="Qt::Unchecked" name="conduites - mode de pose" showFeatureCount="0">
+      <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="conduites - mode de pose" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_installmethod20130304110005209" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="53" open="true" checked="Qt::Unchecked" name="conduites - fonction" showFeatureCount="0">
+      <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="conduites - fonction" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pipe_function20130304110005186" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="54" open="true" checked="Qt::Unchecked" name="collecteur" showFeatureCount="0">
+      <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="collecteur" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="collecteur20150203112806387" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="55" open="true" checked="Qt::Unchecked" name="couvercles - Type" showFeatureCount="0">
+      <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="couvercles - Type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_cover_type20141219115626290" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="56" open="true" checked="Qt::Unchecked" name="distributeur" showFeatureCount="0">
+      <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="distributeur" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="distributor20130304114719702" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="57" open="true" checked="Qt::Unchecked" name="fuite - cause" showFeatureCount="0">
+      <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="fuite - cause" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_leak_cause20130822081237639" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="58" open="true" checked="Qt::Unchecked" name="hydrant_model_inf" showFeatureCount="0">
+      <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="hydrant_model_inf" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_model_inf20160205143014472" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="59" open="true" checked="Qt::Unchecked" name="hydrant_model_sup" showFeatureCount="0">
+      <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="hydrant_model_sup" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_model_sup20160205143014484" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="60" open="true" checked="Qt::Unchecked" name="hydrant_output" showFeatureCount="0">
+      <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="hydrant_output" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_output20160205143014497" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="61" open="true" checked="Qt::Unchecked" name="hydrantes - fournisseur" showFeatureCount="0">
+      <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="hydrantes - fournisseur" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_provider20130304110004893" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="62" open="true" checked="Qt::Unchecked" name="hydrantes - matériau" showFeatureCount="0">
+      <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="hydrantes - matériau" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="hydrant_material20150925104534891" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="63" open="true" checked="Qt::Unchecked" name="lit de pose" showFeatureCount="0">
+      <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="lit de pose" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_bedding20141219112927344" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="64" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - mode" showFeatureCount="0">
+      <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - mode" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pump_operating20150922083814587" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="65" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - type" showFeatureCount="0">
+      <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="ouvrage - pompe - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_pumptype20130816140237776" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="66" open="true" checked="Qt::Unchecked" name="Ouvrage - rég. de pression - type" showFeatureCount="0">
+      <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="Ouvrage - rég. de pression - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="pressurecontrol_type20150203100321270" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="67" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type trop plein" showFeatureCount="0">
+      <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type trop plein" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_overflow20130304170704046" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="68" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type incendie" showFeatureCount="0">
+      <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type incendie" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_tank_firestorage20130304170704030" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="69" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type de cuve" showFeatureCount="0">
+      <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="Ouvrage - réservoir - type de cuve" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_cistern20130304110005061" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="70" open="true" checked="Qt::Unchecked" name="ouvrage - source - qualité" showFeatureCount="0">
+      <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="ouvrage - source - qualité" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_sourcequality20130820110518810" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="71" open="true" checked="Qt::Unchecked" name="ouvrage - source - type" showFeatureCount="0">
+      <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="ouvrage - source - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_sourcetype20130820110518791" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="72" open="true" checked="Qt::Unchecked" name="partenaire" showFeatureCount="0">
+      <legendlayer drawingOrder="73" open="true" checked="Qt::Unchecked" name="partenaire" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="partenaire20150203112806405" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="73" open="false" checked="Qt::Unchecked" name="pièces d'installation - type" showFeatureCount="0">
+      <legendlayer drawingOrder="74" open="false" checked="Qt::Unchecked" name="pièces d'installation - type" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_part_type20140429114640509" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="74" open="true" checked="Qt::Unchecked" name="point de référence" showFeatureCount="0">
+      <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="point de référence" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="object_reference20150922083109152" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="75" open="true" checked="Qt::Unchecked" name="précision" showFeatureCount="0">
+      <legendlayer drawingOrder="76" open="true" checked="Qt::Unchecked" name="précision" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_precision20130304110011372" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="76" open="false" checked="Qt::Unchecked" name="précision altimétrique" showFeatureCount="0">
+      <legendlayer drawingOrder="77" open="false" checked="Qt::Unchecked" name="précision altimétrique" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_precisionalti20131211161429510" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="77" open="true" checked="Qt::Unchecked" name="Télécommande - type" showFeatureCount="0">
+      <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="Télécommande - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="remote_type20130304110004987" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="78" open="true" checked="Qt::Unchecked" name="Servitude - état" showFeatureCount="0">
+      <legendlayer drawingOrder="79" open="true" checked="Qt::Unchecked" name="Servitude - état" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_etat20150116095811244" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="79" open="true" checked="Qt::Unchecked" name="Servitude - statut" showFeatureCount="0">
+      <legendlayer drawingOrder="80" open="true" checked="Qt::Unchecked" name="Servitude - statut" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_statut20150116095811261" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="80" open="true" checked="Qt::Unchecked" name="Servitude - type" showFeatureCount="0">
+      <legendlayer drawingOrder="81" open="true" checked="Qt::Unchecked" name="Servitude - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="servitude_type20150116095811274" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="81" open="true" checked="Qt::Unchecked" name="servitudes - ouvrage" showFeatureCount="0">
+      <legendlayer drawingOrder="82" open="true" checked="Qt::Unchecked" name="servitudes - ouvrage" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="ouvrage20161129094827871" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="82" open="true" checked="Qt::Unchecked" name="Statut" showFeatureCount="0">
+      <legendlayer drawingOrder="83" open="true" checked="Qt::Unchecked" name="Statut" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_status20130304110011436" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="83" open="false" checked="Qt::Unchecked" name="Type d'eau" showFeatureCount="0">
+      <legendlayer drawingOrder="84" open="false" checked="Qt::Unchecked" name="Type d'eau" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_watertype20131217141603877" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="84" open="true" checked="Qt::Unchecked" name="vanne - actionnement" showFeatureCount="0">
+      <legendlayer drawingOrder="85" open="true" checked="Qt::Unchecked" name="vanne - actionnement" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="valve_actuation20150608112911022" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="85" open="true" checked="Qt::Unchecked" name="Vannes - maintenance" showFeatureCount="0">
+      <legendlayer drawingOrder="86" open="true" checked="Qt::Unchecked" name="Vannes - maintenance" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_valve_maintenance20130304110011567" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="86" open="true" checked="Qt::Unchecked" name="Vannes - type" showFeatureCount="0">
+      <legendlayer drawingOrder="87" open="true" checked="Qt::Unchecked" name="Vannes - type" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_valve_type20130304110011685" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="87" open="true" checked="Qt::Unchecked" name="Vannes - fonction" showFeatureCount="0">
+      <legendlayer drawingOrder="88" open="true" checked="Qt::Unchecked" name="Vannes - fonction" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_valve_function20130304110011544" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="88" open="true" checked="Qt::Unchecked" name="Visibilité" showFeatureCount="0">
+      <legendlayer drawingOrder="89" open="true" checked="Qt::Unchecked" name="Visibilité" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="vl_visible20130304110011703" visible="0"/>
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup embedded="1" open="false" checked="Qt::Unchecked" name="Fonds de plans" project="./cadastre/cadastre_pg.qgs"/>
+    <legendgroup embedded="1" open="true" checked="Qt::Unchecked" name="Fonds de plans" project="./cadastre/cadastre_pg.qgs"/>
   </legend>
   <Composer title="folio (atlas)" visible="0">
     <Composition resizeToContentsMarginLeft="0" snapping="0" showPages="1" guidesVisible="1" resizeToContentsMarginTop="0" worldFileMap="" alignmentSnap="1" printResolution="300" paperWidth="1030" gridVisible="1" snapGridOffsetX="0" smartGuides="1" snapGridOffsetY="0" resizeToContentsMarginRight="0" snapTolerancePixels="10" printAsRaster="1" generateWorldFile="0" paperHeight="720" numPages="1" snapGridResolution="10" resizeToContentsMarginBottom="0">
@@ -44137,42 +44139,49 @@ def closeProject():
       <layer style="" id="cadastre20140312152032371"/>
       <layer style="" id="printmap20130304110011400"/>
       <checked-legend-nodes id="conduites_copy20130709141244955">
-        <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
-        <checked-legend-node id="{4cbfe9a5-d974-46cd-9f3d-2986e2330851}"/>
-        <checked-legend-node id="{cfe02b8a-bfad-4fa3-8cb8-d5df88625a57}"/>
-        <checked-legend-node id="{9639d3dd-900e-4944-9635-70e34b4a0002}"/>
-        <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
-        <checked-legend-node id="{f683634b-6b3e-459a-b735-1e5d0fe53ae9}"/>
-        <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
-        <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
-        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
-        <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
-        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
-        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
-        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
         <checked-legend-node id="{6aadf562-982f-4223-b8b0-c07c0f4bd505}"/>
-        <checked-legend-node id="{011f50bd-cae0-428e-acdc-07a438e9c05f}"/>
-        <checked-legend-node id="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
-        <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
-        <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
-        <checked-legend-node id="{0b2ac848-0c52-45ac-856a-387bf14daec2}"/>
-        <checked-legend-node id="{2f34b1bc-8861-4987-b41c-5c78c7a7e4b0}"/>
-        <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
-        <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
-        <checked-legend-node id="{e3fd507a-71b4-44ad-a95f-44cf2913b834}"/>
+        <checked-legend-node id="{4dcaf9ea-51a9-44d0-a825-cea01c4dcd0b}"/>
         <checked-legend-node id="{0ae869d2-87bb-49d7-b6e0-68b6349122a6}"/>
-        <checked-legend-node id="{3d08bdc5-8fe3-4516-b036-64204106113a}"/>
-        <checked-legend-node id="{0b815298-4880-43c7-aa5c-a0f4487b94ce}"/>
+        <checked-legend-node id="{e3fd507a-71b4-44ad-a95f-44cf2913b834}"/>
+        <checked-legend-node id="{ca9c1d30-406f-4a4a-82f8-ad982710e778}"/>
+        <checked-legend-node id="{8959bede-b7d1-42cd-a111-e4f5d19827a2}"/>
+        <checked-legend-node id="{9b8097a6-86f1-4caf-97ba-313183191f2c}"/>
+        <checked-legend-node id="{4cbfe9a5-d974-46cd-9f3d-2986e2330851}"/>
+        <checked-legend-node id="{0b2ac848-0c52-45ac-856a-387bf14daec2}"/>
+        <checked-legend-node id="{c57c368d-fd1b-4e70-9b7a-c24a306b3941}"/>
+        <checked-legend-node id="{08a54ff6-d256-46e8-b3f8-609cbff8d675}"/>
+        <checked-legend-node id="{931b0d98-bcb9-41ad-92e8-f82b8ec36c33}"/>
+        <checked-legend-node id="{9639d3dd-900e-4944-9635-70e34b4a0002}"/>
         <checked-legend-node id="{69e69170-daff-42e5-800a-8db1b66951eb}"/>
-        <checked-legend-node id="{dbbed889-a21b-4eb3-8df7-cc5c10f7aa32}"/>
-        <checked-legend-node id="{8e058230-f8da-4e1f-a578-bc698e7532d5}"/>
-        <checked-legend-node id="{220c91b2-efc1-495b-9a1a-a2645586710d}"/>
+        <checked-legend-node id="{4d6f06f9-1122-4cb8-9bd3-ce839a5c2933}"/>
         <checked-legend-node id="{865af22a-4b2b-4ff9-b6c5-19e782e9cbc6}"/>
-        <checked-legend-node id="{c80868b8-8b54-40d5-a8e1-7a49244c64d6}"/>
-        <checked-legend-node id="{83c98724-7516-46fb-86e8-4844076d5543}"/>
         <checked-legend-node id="{d1dedad5-dfc5-4327-a338-401bd8b7bed6}"/>
+        <checked-legend-node id="{4b72f6be-05b4-41a0-89dd-765d21cc7eda}"/>
+        <checked-legend-node id="{0b815298-4880-43c7-aa5c-a0f4487b94ce}"/>
+        <checked-legend-node id="{f550eef3-fdaa-427b-b415-bd7e8fc25f9e}"/>
+        <checked-legend-node id="{d1bbbb53-b702-4d56-9f8b-ccf8029e5318}"/>
+        <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
+        <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
+        <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
+        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
+        <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
+        <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
+        <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
+        <checked-legend-node id="{8e058230-f8da-4e1f-a578-bc698e7532d5}"/>
+        <checked-legend-node id="{7224dd4f-e1ef-46e4-999f-2d526efd7344}"/>
+        <checked-legend-node id="{c80868b8-8b54-40d5-a8e1-7a49244c64d6}"/>
+        <checked-legend-node id="{cfe02b8a-bfad-4fa3-8cb8-d5df88625a57}"/>
+        <checked-legend-node id="{220c91b2-efc1-495b-9a1a-a2645586710d}"/>
+        <checked-legend-node id="{011f50bd-cae0-428e-acdc-07a438e9c05f}"/>
+        <checked-legend-node id="{dbbed889-a21b-4eb3-8df7-cc5c10f7aa32}"/>
+        <checked-legend-node id="{f683634b-6b3e-459a-b735-1e5d0fe53ae9}"/>
+        <checked-legend-node id="{83c98724-7516-46fb-86e8-4844076d5543}"/>
+        <checked-legend-node id="{2f34b1bc-8861-4987-b41c-5c78c7a7e4b0}"/>
+        <checked-legend-node id="{c11c2a23-7a38-4255-ac4e-96de934d983c}"/>
+        <checked-legend-node id="{e82d89d7-29ed-47e4-a0cc-a953dbe58355}"/>
+        <checked-legend-node id="{3d08bdc5-8fe3-4516-b036-64204106113a}"/>
       </checked-legend-nodes>
       <checked-legend-nodes id="nom_rue20160215151152641">
         <checked-legend-node id="{9ba7b6cf-df66-4dbf-b305-7890bc2646c8}"/>
@@ -44203,8 +44212,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -44216,8 +44225,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -44228,8 +44237,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -44481,7 +44490,7 @@ def closeProject():
       <layer style="" id="ouvrage_copy20160125132737527"/>
       <layer style="" id="vannes_copy20141127160745910"/>
       <layer style="" id="printmap20130304110011400"/>
-      <layer style="" id="SMR10_LV95_SIGE20181101151017825"/>
+      <layer style="" id="SMR10_LV95_SIGE_M_resampled20181107111357915"/>
       <checked-legend-nodes id="hydrantes_copy20160127124839887">
         <checked-legend-node id="{a83ef0cf-9977-418a-84e8-92fa1cc4523e}"/>
         <checked-legend-node id="{d396e075-aace-4cc7-9a47-2d2cfab45263}"/>
@@ -44514,8 +44523,8 @@ def closeProject():
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
         <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
+        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
         <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
         <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
@@ -44523,8 +44532,8 @@ def closeProject():
         <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
         <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
         <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
+        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
         <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
