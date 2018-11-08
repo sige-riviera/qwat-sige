@@ -336,6 +336,16 @@
       <customproperties>
         <property key="embedded" value="1"/>
         <property key="embedded-invisible-layers">
+          <value>no_nomenclature_copier20181108104111532</value>
+          <value>od_entree_batiment_copier20181108104111732</value>
+          <value>bf_point_limite_copier20181108104111885</value>
+          <value>pf_points_fixes_copier20181108104112082</value>
+          <value>ab_rue_copier20181108104112287</value>
+          <value>lc_limites_commune_copier20181108104112378</value>
+          <value>od_element_lineaire_copier20181108104112570</value>
+          <value>bf_immeuble_copier20181108104112829</value>
+          <value>od_element_surfacique_copier20181108104112995</value>
+          <value>cs_couverture_sol_copier20181108104113163</value>
           <value>no_nomenclature20161124151011953</value>
           <value>od_entree_batiment20161124100003328</value>
           <value>bf_point_limite20161123141033694</value>
@@ -414,10 +424,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2555542.61533136060461402</xmin>
-      <ymin>1138593.64525162964127958</ymin>
-      <xmax>2563881.60620824387297034</xmax>
-      <ymax>1151579.39526488049887121</ymax>
+      <xmin>2555500.28199798427522182</xmin>
+      <ymin>1140234.06191997020505369</ymin>
+      <xmax>2563839.27287486754357815</xmax>
+      <ymax>1153219.81193322106264532</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -641,6 +651,16 @@
       <item>vl_valve_type20130304110011685</item>
       <item>vl_valve_function20130304110011544</item>
       <item>vl_visible20130304110011703</item>
+      <item>no_nomenclature_copier20181108104111532</item>
+      <item>od_entree_batiment_copier20181108104111732</item>
+      <item>bf_point_limite_copier20181108104111885</item>
+      <item>pf_points_fixes_copier20181108104112082</item>
+      <item>ab_rue_copier20181108104112287</item>
+      <item>lc_limites_commune_copier20181108104112378</item>
+      <item>od_element_lineaire_copier20181108104112570</item>
+      <item>bf_immeuble_copier20181108104112829</item>
+      <item>od_element_surfacique_copier20181108104112995</item>
+      <item>cs_couverture_sol_copier20181108104113163</item>
       <item>no_nomenclature20161124151011953</item>
       <item>od_entree_batiment20161124100003328</item>
       <item>bf_point_limite20161123141033694</item>
@@ -44350,16 +44370,16 @@ def closeProject():
       <layer style="" id="nom_rue20160215151152641"/>
       <layer style="" id="cadastre20140312152032371"/>
       <layer style="" id="printmap20130304110011400"/>
-      <layer style="" id="no_nomenclature20161124151011953"/>
-      <layer style="" id="od_entree_batiment20161124100003328"/>
-      <layer style="" id="bf_point_limite20161123141033694"/>
-      <layer style="" id="pf_points_fixes20161123144654375"/>
-      <layer style="" id="ab_rue20161122113837293"/>
-      <layer style="" id="lc_limites_commune20180525110719694"/>
-      <layer style="" id="od_element_lineaire20161123134458480"/>
-      <layer style="" id="bf_immeuble20161019163752305"/>
-      <layer style="" id="od_element_surfacique20161123111234045"/>
-      <layer style="" id="cs_couverture_sol20161117155047081"/>
+      <layer style="" id="no_nomenclature_copier20181108104111532"/>
+      <layer style="" id="od_entree_batiment_copier20181108104111732"/>
+      <layer style="" id="bf_point_limite_copier20181108104111885"/>
+      <layer style="" id="pf_points_fixes_copier20181108104112082"/>
+      <layer style="" id="ab_rue_copier20181108104112287"/>
+      <layer style="" id="lc_limites_commune_copier20181108104112378"/>
+      <layer style="" id="od_element_lineaire_copier20181108104112570"/>
+      <layer style="" id="bf_immeuble_copier20181108104112829"/>
+      <layer style="" id="od_element_surfacique_copier20181108104112995"/>
+      <layer style="" id="cs_couverture_sol_copier20181108104113163"/>
       <checked-legend-nodes id="conduites_copy20130709141244955">
         <checked-legend-node id="{6aadf562-982f-4223-b8b0-c07c0f4bd505}"/>
         <checked-legend-node id="{013429dc-a1cd-4a17-904a-6550a0175046}"/>
@@ -44386,8 +44406,8 @@ def closeProject():
         <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
         <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
         <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
         <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
         <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
@@ -44410,7 +44430,7 @@ def closeProject():
       <checked-legend-nodes id="od_crossing20141023083754327">
         <checked-legend-node id="{bdb56b7a-1c26-428b-8597-ce6b6eb58f01}"/>
       </checked-legend-nodes>
-      <checked-legend-nodes id="pf_points_fixes20161123144654375">
+      <checked-legend-nodes id="pf_points_fixes_copier20181108104112082">
         <checked-legend-node id="{3585b604-8355-4f87-a5f1-46fa79609e12}"/>
         <checked-legend-node id="{40049126-2ac8-4e85-8955-370df4899f13}"/>
         <checked-legend-node id="{b27de174-17c8-4b0a-91af-b09db30e86fa}"/>
@@ -44434,8 +44454,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -44447,8 +44467,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -44459,8 +44479,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -44574,8 +44594,8 @@ def closeProject():
         <checked-legend-node id="{604665a8-506c-4fdf-a10d-1fa4e79706e9}"/>
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
-        <checked-legend-node id="{467aeded-414e-4296-89ab-661c203802ce}"/>
         <checked-legend-node id="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}"/>
+        <checked-legend-node id="{467aeded-414e-4296-89ab-661c203802ce}"/>
         <checked-legend-node id="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}"/>
         <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
         <checked-legend-node id="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}"/>
