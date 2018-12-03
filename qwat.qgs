@@ -426,10 +426,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2564591.36534059420228004</xmin>
-      <ymin>1134937.10358123178593814</ymin>
-      <xmax>2572930.35621747747063637</xmax>
-      <ymax>1147922.85359448264352977</ymax>
+      <xmin>2554399.61533019365742803</xmin>
+      <ymin>1138757.68691846379078925</ymin>
+      <xmax>2562738.60620707692578435</xmax>
+      <ymax>1151743.43693171464838088</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -7642,7 +7642,7 @@ def my_form_open(dialog, layer, feature):
             <rule checkstate="0" filter="fk_status=1307" key="{7c5fde76-05d7-4d4a-9eaa-953db28fbe87}" symbol="12" label="Fictives"/>
           </rule>
           <rule filter="fk_distributor = 1 and &quot;status_functional&quot; = 'f'" key="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}" label="non fonctionnel">
-            <rule checkstate="0" filter="&quot;fk_status&quot; != 1306 AND &quot;fk_status&quot; != 1308" key="{3560fb42-77fd-461c-8d93-b79a7220ff24}" label="existant">
+            <rule filter="&quot;fk_status&quot; != 1306 AND &quot;fk_status&quot; != 1308" key="{3560fb42-77fd-461c-8d93-b79a7220ff24}" label="existant">
               <rule filter="COALESCE( &quot;schema_force_visible&quot;,  &quot;pipe_function_schema_visible&quot;) = 't'" key="{7224dd4f-e1ef-46e4-999f-2d526efd7344}" symbol="13" label="schématique">
                 <rule scalemaxdenom="3000" filter=" &quot;fk_installmethod&quot;  =4202" key="{08a54ff6-d256-46e8-b3f8-609cbff8d675}" symbol="14" scalemindenom="1" label="chemisée"/>
                 <rule filter=" &quot;fk_protection&quot; IS NOT NULL" key="{4d6f06f9-1122-4cb8-9bd3-ce839a5c2933}" symbol="15" label="protégée"/>
