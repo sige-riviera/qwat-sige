@@ -426,10 +426,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2554399.61533019365742803</xmin>
-      <ymin>1138757.68691846379078925</ymin>
-      <xmax>2562738.60620707692578435</xmax>
-      <ymax>1151743.43693171464838088</ymax>
+      <xmin>2553746.75595452729612589</xmin>
+      <ymin>1140188.42129492526873946</ymin>
+      <xmax>2562085.74683141056448221</xmax>
+      <ymax>1153174.17130817240104079</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -11991,6 +11991,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="notification_sent">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="CheckBox" name="third_party_supply">
+          <widgetv2config fieldEditable="1" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="status_vl_active">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -12357,19 +12360,20 @@ def my_form_open(dialog, layer, feature):
         <alias field="observation_source" index="51" name="origine des mesures"/>
         <alias field="model" index="52" name=""/>
         <alias field="notification_sent" index="53" name=""/>
-        <alias field="status_vl_active" index="54" name=""/>
-        <alias field="status_short_fr" index="55" name=""/>
-        <alias field="status_short_en" index="56" name=""/>
-        <alias field="status_short_ro" index="57" name=""/>
-        <alias field="status_value_fr" index="58" name="statut"/>
-        <alias field="status_value_en" index="59" name=""/>
-        <alias field="status_value_ro" index="60" name=""/>
-        <alias field="status_description_fr" index="61" name=""/>
-        <alias field="status_description_en" index="62" name=""/>
-        <alias field="status_description_ro" index="63" name=""/>
-        <alias field="status_active" index="64" name=""/>
-        <alias field="status_functional" index="65" name="fonctionnelle"/>
-        <alias field="status_code_sire" index="66" name=""/>
+        <alias field="third_party_supply" index="54" name="alimenté par tiers"/>
+        <alias field="status_vl_active" index="55" name=""/>
+        <alias field="status_short_fr" index="56" name=""/>
+        <alias field="status_short_en" index="57" name=""/>
+        <alias field="status_short_ro" index="58" name=""/>
+        <alias field="status_value_fr" index="59" name="statut"/>
+        <alias field="status_value_en" index="60" name=""/>
+        <alias field="status_value_ro" index="61" name=""/>
+        <alias field="status_description_fr" index="62" name=""/>
+        <alias field="status_description_en" index="63" name=""/>
+        <alias field="status_description_ro" index="64" name=""/>
+        <alias field="status_active" index="65" name=""/>
+        <alias field="status_functional" index="66" name="fonctionnelle"/>
+        <alias field="status_code_sire" index="67" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -12446,6 +12450,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_remarque"/>
           <column width="-1" hidden="0" type="field" name="model"/>
           <column width="-1" hidden="0" type="field" name="notification_sent"/>
+          <column width="-1" hidden="0" type="field" name="third_party_supply"/>
         </columns>
       </attributetableconfig>
       <editform>./ui_forms/hydrant.ui</editform>
@@ -12487,6 +12492,7 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="43" name="fk_material"/>
           <attributeEditorField showLabel="1" index="26" name="remark"/>
           <attributeEditorField showLabel="1" index="45" name="underground"/>
+          <attributeEditorField showLabel="1" index="54" name="third_party_supply"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Géométrie" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="22" name="altitude"/>
@@ -12571,6 +12577,7 @@ def my_form_open(dialog, layer, feature):
         <default field="observation_source" expression=""/>
         <default field="model" expression=""/>
         <default field="notification_sent" expression=""/>
+        <default field="third_party_supply" expression=""/>
         <default field="status_vl_active" expression=""/>
         <default field="status_short_fr" expression=""/>
         <default field="status_short_en" expression=""/>
@@ -13351,6 +13358,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="notification_sent">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="third_party_supply">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="status_vl_active">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -13786,19 +13796,20 @@ def my_form_open(dialog, layer, feature):
         <alias field="observation_source" index="51" name=""/>
         <alias field="model" index="52" name=""/>
         <alias field="notification_sent" index="53" name=""/>
-        <alias field="status_vl_active" index="54" name=""/>
-        <alias field="status_short_fr" index="55" name=""/>
-        <alias field="status_short_en" index="56" name=""/>
-        <alias field="status_short_ro" index="57" name=""/>
-        <alias field="status_value_fr" index="58" name=""/>
-        <alias field="status_value_en" index="59" name=""/>
-        <alias field="status_value_ro" index="60" name=""/>
-        <alias field="status_description_fr" index="61" name=""/>
-        <alias field="status_description_en" index="62" name=""/>
-        <alias field="status_description_ro" index="63" name=""/>
-        <alias field="status_active" index="64" name=""/>
-        <alias field="status_functional" index="65" name=""/>
-        <alias field="status_code_sire" index="66" name=""/>
+        <alias field="third_party_supply" index="54" name=""/>
+        <alias field="status_vl_active" index="55" name=""/>
+        <alias field="status_short_fr" index="56" name=""/>
+        <alias field="status_short_en" index="57" name=""/>
+        <alias field="status_short_ro" index="58" name=""/>
+        <alias field="status_value_fr" index="59" name=""/>
+        <alias field="status_value_en" index="60" name=""/>
+        <alias field="status_value_ro" index="61" name=""/>
+        <alias field="status_description_fr" index="62" name=""/>
+        <alias field="status_description_en" index="63" name=""/>
+        <alias field="status_description_ro" index="64" name=""/>
+        <alias field="status_active" index="65" name=""/>
+        <alias field="status_functional" index="66" name=""/>
+        <alias field="status_code_sire" index="67" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -13958,6 +13969,7 @@ def my_form_open(dialog, layer, feature):
         <default field="observation_source" expression=""/>
         <default field="model" expression=""/>
         <default field="notification_sent" expression=""/>
+        <default field="third_party_supply" expression=""/>
         <default field="status_vl_active" expression=""/>
         <default field="status_short_fr" expression=""/>
         <default field="status_short_en" expression=""/>
