@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.24">
+<qgis projectname="" version="2.18.26">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -426,10 +426,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2553746.75595452729612589</xmin>
-      <ymin>1140188.42129492526873946</ymin>
-      <xmax>2562085.74683141056448221</xmax>
-      <ymax>1153174.17130817240104079</ymax>
+      <xmin>2554446.90960107464343309</xmin>
+      <ymin>1140199.33535743644461036</ymin>
+      <xmax>2562785.90047795791178942</xmax>
+      <ymax>1153185.08537068357691169</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -11971,10 +11971,10 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config fieldEditable="1" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="pressure_static">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint=" &quot;pressure_static&quot; > 0 OR &quot;pressure_static&quot; IS NULL" UseHtml="0" labelOnTop="0" constraintDescription="Pour éviter des saisies avec valeurs à 0 si valeur inconnue" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="pressure_dynamic">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint=" &quot;pressure_dynamic&quot; > 0 OR &quot;pressure_dynamic&quot; IS NULL" UseHtml="0" labelOnTop="0" constraintDescription="Pour éviter des saisies avec valeurs à 0 si valeur inconnue" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="flow">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
