@@ -83,7 +83,7 @@
         <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="samplingpoint20190206083700019" source="service='sige_carto' sslmode=allow key='id' srid=2056 type=Point table=&quot;sige&quot;.&quot;samplingpoint&quot; (geometry) sql=" name="018.1 point de prélèvement et purge">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_element_subscriber20190206111700552" source="service='qwat' user='sige' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_subscriber&quot; (geometry) sql=&quot;fk_subscriber_type&quot; = 9405" name="18.2 sprinkler">
+        <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="vw_element_subscriber20190206111700552" source="service='qwat' user='sige' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_subscriber&quot; (geometry) sql=&quot;fk_subscriber_type&quot; = 9405" name="018.2 sprinkler">
           <customproperties/>
         </layer-tree-layer>
       </layer-tree-group>
@@ -795,7 +795,7 @@
             <legendlayerfile isInOverview="0" layerid="samplingpoint20190206083700019" visible="0"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="19" open="true" checked="Qt::Unchecked" name="18.2 sprinkler" showFeatureCount="0">
+        <legendlayer drawingOrder="19" open="true" checked="Qt::Unchecked" name="018.2 sprinkler" showFeatureCount="0">
           <filegroup open="true" hidden="false">
             <legendlayerfile isInOverview="0" layerid="vw_element_subscriber20190206111700552" visible="0"/>
           </filegroup>
@@ -22816,7 +22816,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE&#xa;WHEN  &quot;installation_type&quot;  = 'chamber' THEN 'C. '&#xa;WHEN &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2801 THEN 'CR. '&#xa;WHEN  &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2802 THEN 'CCP. ' &#xa;WHEN  &quot;installation_type&quot;  = 'pressurecontrol' AND fk_pressurecontrol_type = 2803 THEN 'CRA. '&#xa;WHEN  &quot;installation_type&quot;  = 'pump' THEN 'P. ' &#xa;WHEN  &quot;installation_type&quot;  = 'source' THEN 'S. ' &#xa;WHEN  &quot;installation_type&quot;  = 'tank' THEN 'R. '&#xa;WHEN  &quot;installation_type&quot;  = 'treatment' THEN 'T. '&#xa;ELSE '' &#xa;END&#xa;||name&#xa;||&#xa;CASE WHEN  &quot;installation_type&quot;  = 'tank' THEN &#xa;&#x9;COALESCE('\n'|| &quot;altitude_apron&quot; ||'m','')&#xa;&#x9;||'\n'&#x9;||&#xa;&#x9;COALESCE(  &quot;storage_supply&quot;,'-')||'m3 / '||COALESCE(  &quot;storage_fire&quot;,'-')||'m3'&#xa;ELSE &#x9;&#xa;&#x9;COALESCE('\n'|| &quot;altitude&quot; ||'m','')&#xa;END "/>
+        <property key="labeling/fieldName" value="CASE&#xd;&#xa;WHEN  &quot;installation_type&quot; = 'chamber' THEN 'C. '&#xd;&#xa;WHEN &quot;installation_type&quot; = 'pressurecontrol' AND fk_pressurecontrol_type = 2801 THEN 'CR. '&#xd;&#xa;WHEN  &quot;installation_type&quot; = 'pressurecontrol' AND fk_pressurecontrol_type = 2802 THEN 'CCP. ' &#xd;&#xa;WHEN  &quot;installation_type&quot; = 'pressurecontrol' AND fk_pressurecontrol_type = 2803 THEN 'CRA. '&#xd;&#xa;WHEN  &quot;installation_type&quot; = 'pump' THEN 'P. ' &#xd;&#xa;WHEN  &quot;installation_type&quot; = 'source' THEN 'S. ' &#xd;&#xa;WHEN  &quot;installation_type&quot; = 'tank' THEN 'R. '&#xd;&#xa;WHEN  &quot;installation_type&quot; = 'treatment' THEN 'T. ' || &#xd;&#xa;  if(&quot;sanitization_uv&quot; = 't','UV ','') ||&#xd;&#xa;  if(&quot;sanitization_chlorine_liquid&quot; = 't','CL ','') ||&#xd;&#xa;  if(&quot;sanitization_chlorine_gazeous&quot; = 't','CG ','') ||&#xd;&#xa;  if(&quot;sanitization_ozone&quot; = 't','O3 ','') ||&#xd;&#xa;  if(&quot;filtration_membrane&quot; = 't','UF ','') ||&#xd;&#xa;  if(&quot;filtration_sandorgravel&quot; = 't','FS ','') ||&#xd;&#xa;  if(&quot;flocculation&quot; = 't','FL ','') ||&#xd;&#xa;  if(&quot;activatedcharcoal&quot; = 't','CA ','') ||&#xd;&#xa;  if(&quot;settling&quot; = 't','D','')&#xd;&#xa;ELSE '' &#xd;&#xa;END&#xd;&#xa;|| if(&quot;installation_type&quot; = 'treatment','',name)&#xd;&#xa;||&#xd;&#xa;CASE WHEN  &quot;installation_type&quot;  = 'tank' THEN &#xd;&#xa;&#x9;COALESCE('\n'|| &quot;altitude_apron&quot; ||'m','')&#xd;&#xa;&#x9;||'\n'&#x9;||&#xd;&#xa;&#x9;COALESCE(  &quot;storage_supply&quot;,'-')||'m3 / '||COALESCE(  &quot;storage_fire&quot;,'-')||'m3'&#xd;&#xa;ELSE &#x9;&#xd;&#xa;&#x9;COALESCE('\n'|| &quot;altitude&quot; ||'m','')&#xd;&#xa;END "/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -38124,7 +38124,7 @@ def my_form_open(dialog, layer, feature):
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>18.2 sprinkler</layername>
+      <layername>018.2 sprinkler</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=somerc +lat_0=46.95240555555556 +lon_0=7.439583333333333 +k_0=1 +x_0=2600000 +y_0=1200000 +ellps=bessel +towgs84=674.374,15.056,405.346,0,0,0,0 +units=m +no_defs</proj4>
