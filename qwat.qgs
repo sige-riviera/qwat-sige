@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="2.18.26">
+<qgis projectname="" version="2.18.28">
   <title></title>
   <autotransaction active="0"/>
   <evaluateDefaultValues active="0"/>
@@ -350,8 +350,8 @@
           <value>pf_points_fixes_copier20181108104112082</value>
           <value>ab_rue_copier20181108104112287</value>
           <value>lc_limites_commune_copier20181108104112378</value>
-          <value>od_element_lineaire_copier20181108104112570</value>
           <value>bf_immeuble_copier20181108104112829</value>
+          <value>od_element_lineaire_copier20181108104112570</value>
           <value>od_element_surfacique_copier20181108104112995</value>
           <value>cs_couverture_sol_copier20181108104113163</value>
           <value>no_nomenclature20161124151011953</value>
@@ -360,8 +360,8 @@
           <value>pf_points_fixes20161123144654375</value>
           <value>ab_rue20161122113837293</value>
           <value>lc_limites_commune20180525110719694</value>
-          <value>od_element_lineaire20161123134458480</value>
           <value>bf_immeuble20161019163752305</value>
+          <value>od_element_lineaire20161123134458480</value>
           <value>od_element_surfacique20161123111234045</value>
           <value>cs_couverture_sol20161117155047081</value>
           <value>National_Map_1_25_00020170314120154767</value>
@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2555181.45908096944913268</xmin>
-      <ymin>1138706.05182727589271963</ymin>
-      <xmax>2563520.44995788251981139</xmax>
-      <ymax>1151691.80184050812385976</ymax>
+      <xmin>2553627.19736063573509455</xmin>
+      <ymin>1137180.77025020075961947</ymin>
+      <xmax>2561966.18823754880577326</xmax>
+      <ymax>1150166.52026343299075961</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -12052,7 +12052,11 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
-      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+      <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
+        <rules key="{f71f497b-3bb8-46f9-a7e7-e9271a6a72a0}">
+          <rule key="{bdaec995-8341-4518-94d6-aceddc487e58}" symbol="0"/>
+          <rule filter=" &quot;third_party_supply&quot; = 't'" key="{6fcecc7e-6a95-48d0-817d-ab3294b80377}" symbol="1" label="alimentée par tiers"/>
+        </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
             <layer pass="0" class="SvgMarker" locked="0">
@@ -12082,9 +12086,29 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
+            <layer pass="0" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="108,208,65,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="no"/>
+              <prop k="outline_width" v="1"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
         </symbols>
-        <rotation/>
-        <sizescale scalemethod="diameter"/>
         <effect enabled="0" type="effectStack">
           <effect type="drawSource">
             <prop k="blend_mode" v="0"/>
