@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2548233.14719506073743105</xmin>
-      <ymin>1137685.92327956273220479</ymin>
-      <xmax>2567896.98054843116551638</xmax>
-      <ymax>1150763.17180237337015569</ymax>
+      <xmin>2548263.68435003934428096</xmin>
+      <ymin>1138667.24046319513581693</ymin>
+      <xmax>2568054.5177035597153008</xmax>
+      <ymax>1151652.99047644785605371</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -13445,12 +13445,8 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{10f2edd8-6de2-40bd-8157-b0ba9c71e514}">
-          <rule filter=" &quot;pressure_static&quot; is not null AND label_2_visible !=0" key="{a83ef0cf-9977-418a-84e8-92fa1cc4523e}" label="A imprimer">
-            <rule filter="label_2_x is not null and label_2_y is not null" key="{d396e075-aace-4cc7-9a47-2d2cfab45263}" symbol="0" label="Label décalé"/>
-            <rule filter="label_2_x is null or label_2_y is null" key="{c0dcdf60-6b84-4734-9546-ceffa9cdad0e}" symbol="1" label="Label non décalé"/>
-          </rule>
-          <rule checkstate="0" filter=" &quot;pressure_static&quot; is not null and label_2_visible = 0" key="{fd3cf071-1473-4711-83a9-27d859b09345}" symbol="2" label="Non imprimée"/>
-          <rule checkstate="0" filter="&quot;pressure_static&quot; IS null" key="{479c0789-93b5-4b56-806e-8e36f47ac0b0}" symbol="3" label="Pas de donnée"/>
+          <rule filter="label_2_x is not null and label_2_y is not null" key="{a8cf80c4-6122-492a-9b3a-828f2cef667b}" symbol="0" label="Label décalé"/>
+          <rule filter="label_2_x is null or label_2_y is null" key="{660d0232-96b8-4d50-97e0-695e1b49593d}" symbol="1" label="Label non décalé"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -13495,50 +13491,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="diameter"/>
               <prop k="size" v="0.1"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="255,255,255,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,140,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="3.2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
-            <layer pass="0" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="255,255,255,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="circle"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="255,28,31,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="1"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="diameter"/>
-              <prop k="size" v="4"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -13593,7 +13545,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="pressure_static"/>
+        <property key="labeling/fieldName" value="CASE when &quot;pressure_static&quot; IS NOT NULL &#xa;THEN &quot;pressure_static&quot;&#xa;ELSE '-'&#xa;END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -13613,7 +13565,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fontWeight" value="50"/>
         <property key="labeling/fontWordSpacing" value="0"/>
         <property key="labeling/formatNumbers" value="false"/>
-        <property key="labeling/isExpression" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
         <property key="labeling/labelOffsetInMapUnits" value="true"/>
         <property key="labeling/labelOffsetMapUnitMaxScale" value="0"/>
         <property key="labeling/labelOffsetMapUnitMinScale" value="0"/>
@@ -13628,7 +13580,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="1"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -13713,20 +13665,22 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/shapeSizeY" value="4.2"/>
         <property key="labeling/shapeTransparency" value="0"/>
         <property key="labeling/shapeType" value="3"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
         <property key="labeling/textColorA" value="255"/>
         <property key="labeling/textColorB" value="52"/>
         <property key="labeling/textColorG" value="52"/>
         <property key="labeling/textColorR" value="52"/>
         <property key="labeling/textTransp" value="0"/>
         <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/xQuadOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
         <property key="labeling/yQuadOffset" value="0"/>
         <property key="labeling/zIndex" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -13754,7 +13708,7 @@ def my_form_open(dialog, layer, feature):
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="10001" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="0">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="10001" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -13858,7 +13812,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions default="0">
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].showHistory('hydrant20130304110004848',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;pressure_static&quot;" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="0" type="field" name="fk_district"/>
@@ -13882,7 +13836,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="year"/>
           <column width="-1" hidden="0" type="field" name="year_end"/>
           <column width="-1" hidden="0" type="field" name="remark"/>
-          <column width="-1" hidden="0" type="field" name="schema_force_visible"/>
           <column width="-1" hidden="0" type="field" name="label_1_visible"/>
           <column width="-1" hidden="0" type="field" name="label_1_x"/>
           <column width="-1" hidden="0" type="field" name="label_1_y"/>
@@ -13922,10 +13875,14 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="status_description_en"/>
           <column width="-1" hidden="0" type="field" name="status_description_ro"/>
           <column width="-1" hidden="0" type="field" name="status_active"/>
-          <column width="-1" hidden="0" type="field" name="status_sire"/>
           <column width="-1" hidden="0" type="field" name="status_code_sire"/>
           <column width="-1" hidden="0" type="field" name="status_functional"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_etat_exploitation"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_adesafecter"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_remarque"/>
+          <column width="-1" hidden="0" type="field" name="notification_sent"/>
+          <column width="-1" hidden="0" type="field" name="third_party_supply"/>
         </columns>
       </attributetableconfig>
       <editform>./ui_forms/hydrant.ui</editform>
@@ -14026,7 +13983,7 @@ def my_form_open(dialog, layer, feature):
         <default field="status_functional" expression=""/>
         <default field="status_code_sire" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="1" maximumScale="5000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>leak20130821111917060</id>
@@ -27138,6 +27095,12 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="geometry_polygon">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="date_der_maj">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="etat_avancement">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{f3ccdd35-7fd8-4b9f-b9f8-3350d86f1ea8}">
@@ -27480,6 +27443,8 @@ def my_form_open(dialog, layer, feature):
         <alias field="remarque" index="16" name=""/>
         <alias field="document" index="17" name=""/>
         <alias field="geometry_polygon" index="18" name=""/>
+        <alias field="date_der_maj" index="19" name=""/>
+        <alias field="etat_avancement" index="20" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -27558,6 +27523,8 @@ def my_form_open(dialog, layer, feature):
         <default field="remarque" expression=""/>
         <default field="document" expression=""/>
         <default field="geometry_polygon" expression=""/>
+        <default field="date_der_maj" expression=""/>
+        <default field="etat_avancement" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -27643,6 +27610,12 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="geometry_line">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="date_der_maj">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="etat_avancement">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -27975,6 +27948,8 @@ def my_form_open(dialog, layer, feature):
         <alias field="remarque" index="16" name=""/>
         <alias field="document" index="17" name=""/>
         <alias field="geometry_line" index="18" name=""/>
+        <alias field="date_der_maj" index="19" name=""/>
+        <alias field="etat_avancement" index="20" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -28053,6 +28028,8 @@ def my_form_open(dialog, layer, feature):
         <default field="remarque" expression=""/>
         <default field="document" expression=""/>
         <default field="geometry_line" expression=""/>
+        <default field="date_der_maj" expression=""/>
+        <default field="etat_avancement" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -28355,6 +28332,12 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="geometry_polygon">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="date_der_maj">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="etat_avancement">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
@@ -28378,6 +28361,8 @@ def my_form_open(dialog, layer, feature):
         <alias field="document" index="17" name=""/>
         <alias field="geometry_line" index="18" name=""/>
         <alias field="geometry_polygon" index="19" name=""/>
+        <alias field="date_der_maj" index="20" name=""/>
+        <alias field="etat_avancement" index="21" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -28420,6 +28405,8 @@ def my_form_open(dialog, layer, feature):
         <default field="document" expression=""/>
         <default field="geometry_line" expression=""/>
         <default field="geometry_polygon" expression=""/>
+        <default field="date_der_maj" expression=""/>
+        <default field="etat_avancement" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
@@ -45369,8 +45356,8 @@ def closeProject():
         <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
         <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
         <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
         <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
         <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
@@ -45417,8 +45404,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -45430,8 +45417,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -45442,8 +45429,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -45801,8 +45788,8 @@ def closeProject():
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
         <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
+        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
         <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
         <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
         <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
@@ -45810,8 +45797,8 @@ def closeProject():
         <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
         <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
         <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
+        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
         <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
         <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
