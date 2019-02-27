@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2548263.68435003934428096</xmin>
-      <ymin>1138667.24046319513581693</ymin>
-      <xmax>2568054.5177035597153008</xmax>
-      <ymax>1151652.99047644785605371</ymax>
+      <xmin>2548489.73309232061728835</xmin>
+      <ymin>1137804.27239723107777536</ymin>
+      <xmax>2569106.06644662236794829</xmax>
+      <ymax>1151149.85574416047893465</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -13445,8 +13445,10 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{10f2edd8-6de2-40bd-8157-b0ba9c71e514}">
-          <rule filter="label_2_x is not null and label_2_y is not null" key="{a8cf80c4-6122-492a-9b3a-828f2cef667b}" symbol="0" label="Label décalé"/>
-          <rule filter="label_2_x is null or label_2_y is null" key="{660d0232-96b8-4d50-97e0-695e1b49593d}" symbol="1" label="Label non décalé"/>
+          <rule filter="label_2_visible !=0" key="{a83ef0cf-9977-418a-84e8-92fa1cc4523e}" label="A imprimer">
+            <rule filter="label_2_x is not null and label_2_y is not null" key="{d396e075-aace-4cc7-9a47-2d2cfab45263}" symbol="0" label="Label décalé"/>
+            <rule filter="label_2_x is null or label_2_y is null" key="{c0dcdf60-6b84-4734-9546-ceffa9cdad0e}" symbol="1" label="Label non décalé"/>
+          </rule>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -13545,7 +13547,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="CASE when &quot;pressure_static&quot; IS NOT NULL &#xa;THEN &quot;pressure_static&quot;&#xa;ELSE '-'&#xa;END"/>
+        <property key="labeling/fieldName" value="CASE WHEN pressure_static IS NOT NULL &#xd;&#xa;THEN pressure_static&#xd;&#xa;ELSE '-'&#xd;&#xa;END"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
@@ -13812,7 +13814,7 @@ def my_form_open(dialog, layer, feature):
       <attributeactions default="0">
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].showHistory('hydrant20130304110004848',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
-      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="&quot;pressure_static&quot;" sortOrder="0">
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
         <columns>
           <column width="-1" hidden="0" type="field" name="id"/>
           <column width="-1" hidden="0" type="field" name="fk_district"/>
@@ -45756,11 +45758,6 @@ def closeProject():
       <layer style="" id="vannes_copy20141127160745910"/>
       <layer style="" id="printmap20130304110011400"/>
       <layer style="" id="SMR10_LV95_SIGE_M_resampled20181107111357915"/>
-      <checked-legend-nodes id="hydrantes_copy20160127124839887">
-        <checked-legend-node id="{a83ef0cf-9977-418a-84e8-92fa1cc4523e}"/>
-        <checked-legend-node id="{d396e075-aace-4cc7-9a47-2d2cfab45263}"/>
-        <checked-legend-node id="{c0dcdf60-6b84-4734-9546-ceffa9cdad0e}"/>
-      </checked-legend-nodes>
       <checked-legend-nodes id="ouvrage_copy20160125132737527">
         <checked-legend-node id="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}"/>
         <checked-legend-node id="{b2056b72-4abc-48fb-af2e-0e23779d9c64}"/>
