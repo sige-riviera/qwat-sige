@@ -27123,6 +27123,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="etat_avancement">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="lien_dossier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{f3ccdd35-7fd8-4b9f-b9f8-3350d86f1ea8}">
@@ -27467,6 +27470,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="geometry_polygon" index="18" name=""/>
         <alias field="date_der_maj" index="19" name=""/>
         <alias field="etat_avancement" index="20" name=""/>
+        <alias field="lien_dossier" index="21" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -27547,6 +27551,7 @@ def my_form_open(dialog, layer, feature):
         <default field="geometry_polygon" expression=""/>
         <default field="date_der_maj" expression=""/>
         <default field="etat_avancement" expression=""/>
+        <default field="lien_dossier" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -27638,6 +27643,9 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="etat_avancement">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="lien_dossier">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -27972,6 +27980,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="geometry_line" index="18" name=""/>
         <alias field="date_der_maj" index="19" name=""/>
         <alias field="etat_avancement" index="20" name=""/>
+        <alias field="lien_dossier" index="21" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -28052,6 +28061,7 @@ def my_form_open(dialog, layer, feature):
         <default field="geometry_line" expression=""/>
         <default field="date_der_maj" expression=""/>
         <default field="etat_avancement" expression=""/>
+        <default field="lien_dossier" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
@@ -28360,6 +28370,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="etat_avancement">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="lien_dossier">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <annotationform>.</annotationform>
       <aliases>
@@ -28385,6 +28398,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="geometry_polygon" index="19" name=""/>
         <alias field="date_der_maj" index="20" name=""/>
         <alias field="etat_avancement" index="21" name=""/>
+        <alias field="lien_dossier" index="22" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -28429,6 +28443,7 @@ def my_form_open(dialog, layer, feature):
         <default field="geometry_polygon" expression=""/>
         <default field="date_der_maj" expression=""/>
         <default field="etat_avancement" expression=""/>
+        <default field="lien_dossier" expression=""/>
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
@@ -45384,8 +45399,8 @@ def closeProject():
         <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
         <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
         <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
         <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
         <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
@@ -45432,8 +45447,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -45445,8 +45460,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -45457,8 +45472,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -45481,6 +45496,71 @@ def closeProject():
         <checked-legend-node id="{6f043e9f-1731-47a8-86d1-a6084a99e57b}"/>
         <checked-legend-node id="{8beaf9ba-e486-46ce-8f70-957911d5515b}"/>
         <checked-legend-node id="{d31ae609-73ec-4d88-8324-5300f14ed738}"/>
+      </checked-legend-nodes>
+    </visibility-preset>
+    <visibility-preset name="BH 2500">
+      <layer style="" id="hydrant20130304110004848"/>
+      <layer style="" id="vw_pipe_schema20141208162900166"/>
+      <layer style="" id="ouvrage_copy20160125132737527"/>
+      <layer style="" id="printmap20130304110011400"/>
+      <layer style="" id="SMR10_LV95_SIGE_M_resampled20181107111357915"/>
+      <checked-legend-nodes id="ouvrage_copy20160125132737527">
+        <checked-legend-node id="{8fa41cb0-dcd9-4fb7-8375-9b2779b17514}"/>
+        <checked-legend-node id="{b2056b72-4abc-48fb-af2e-0e23779d9c64}"/>
+        <checked-legend-node id="{3820ee54-8445-4a23-b1ab-59038e2f6d28}"/>
+        <checked-legend-node id="{2751ab65-3b68-4243-afab-9ebdcb9f8241}"/>
+        <checked-legend-node id="{eaa8aab8-0d82-46ee-8fd6-92ef6189f344}"/>
+        <checked-legend-node id="{bcb1f704-8435-4019-bd6f-781938ef8ad9}"/>
+        <checked-legend-node id="{410bdc09-391b-489d-a4e7-3f13c5d2e18d}"/>
+        <checked-legend-node id="{604665a8-506c-4fdf-a10d-1fa4e79706e9}"/>
+        <checked-legend-node id="{f315adf4-c25e-4483-bab6-237fe3a60041}"/>
+        <checked-legend-node id="{83a4c36e-210b-4094-8407-553e64936b5e}"/>
+        <checked-legend-node id="{8822d14f-21ea-400b-ad73-aafc21c19773}"/>
+        <checked-legend-node id="{5a17ff38-f410-4abf-be4e-9c79367de4fe}"/>
+        <checked-legend-node id="{cec9c0f1-7573-488d-917a-fb97f52e5cb2}"/>
+        <checked-legend-node id="{4eeb5562-996b-4cb4-b502-b05eaf404d2e}"/>
+        <checked-legend-node id="{25e3684f-58b8-4a10-bdf2-faa3d1410626}"/>
+        <checked-legend-node id="{71a064ea-fc5d-4548-9c69-5bf1fe84a66d}"/>
+        <checked-legend-node id="{79bf5884-e355-432b-95b6-33a7e9db598e}"/>
+        <checked-legend-node id="{21502443-f0a0-4e80-83e6-198977343b0d}"/>
+        <checked-legend-node id="{f5ba1ef7-6554-4683-88a2-1b2c52e9692f}"/>
+        <checked-legend-node id="{07a91d45-cb4d-4ee4-9f57-13d1f6f2b46b}"/>
+        <checked-legend-node id="{b7cfa44a-acc1-4818-ae4e-eebc16b3b60f}"/>
+        <checked-legend-node id="{a925b931-2980-4508-8741-9430fd39f98c}"/>
+        <checked-legend-node id="{1748c4b8-9632-4c31-b4c6-1e750fbb851f}"/>
+        <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
+        <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
+        <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
+        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
+        <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
+        <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
+        <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
+        <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
+        <checked-legend-node id="{c896fa82-5e7f-4ffb-9f39-983dda5f6566}"/>
+        <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
+        <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
+        <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
+        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
+        <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
+        <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
+        <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
+        <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
+        <checked-legend-node id="{f018225f-1a3d-44eb-b8a3-fcea387c5b34}"/>
+        <checked-legend-node id="{7773e49d-eae4-41b4-8d92-aec7a265046c}"/>
+        <checked-legend-node id="{d1daa4c4-aebd-4274-bbcd-c830f2a3ebe1}"/>
+        <checked-legend-node id="{e3ad57de-33e8-4ea0-a2b6-3754dde05572}"/>
+        <checked-legend-node id="{467aeded-414e-4296-89ab-661c203802ce}"/>
+        <checked-legend-node id="{37ee4804-614d-4742-8288-a79d52f1e1d9}"/>
+        <checked-legend-node id="{fa07847e-bb3b-454d-b957-1a2b5394e819}"/>
+        <checked-legend-node id="{42540c94-3233-498c-a23d-4e8bd7c1ff4e}"/>
+        <checked-legend-node id="{fdad650c-d4a2-4b3d-bf92-e5a305c0d6ef}"/>
+        <checked-legend-node id="{8af2dff4-7bea-42be-9478-3f1d88ebf33d}"/>
+        <checked-legend-node id="{6ade4f06-ed80-4a3f-9fe9-38516a340cad}"/>
+        <checked-legend-node id="{73931827-a1f1-4b6a-b930-e4b6873d3222}"/>
+      </checked-legend-nodes>
+      <checked-legend-nodes id="printmap20130304110011400">
+        <checked-legend-node id="{7e34c023-3a38-4c28-96a3-cd36dd937b02}"/>
+        <checked-legend-node id="{c6347210-f028-40a2-8b79-0e2f46a936f8}"/>
       </checked-legend-nodes>
     </visibility-preset>
     <visibility-preset name="Impression 5000 - pressions">
