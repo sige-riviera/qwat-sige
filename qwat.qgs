@@ -45531,8 +45531,8 @@ def closeProject():
         <checked-legend-node id="{c0076781-68f6-43ab-9b4b-1fb0a074b4c1}"/>
         <checked-legend-node id="{ba47d809-a5d0-4192-b1ef-631a0c6a0fb2}"/>
         <checked-legend-node id="{8cf17e40-4159-47e8-b16b-e157021e9fd3}"/>
-        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
         <checked-legend-node id="{59878a6a-ca5c-4809-b1a0-b317151cfb27}"/>
+        <checked-legend-node id="{17131e2c-6fc3-40b3-b53d-5bc039d78a6b}"/>
         <checked-legend-node id="{18ded8b4-221b-4e2d-9817-0f52fd66b782}"/>
         <checked-legend-node id="{2aad166e-0cd1-4083-9002-8aead4f79917}"/>
         <checked-legend-node id="{ed82ce06-eee6-4f2d-833b-e537d0b18649}"/>
@@ -45540,8 +45540,8 @@ def closeProject():
         <checked-legend-node id="{d31d075b-227e-40b6-ab03-8d810a0d69b8}"/>
         <checked-legend-node id="{e946cc4f-cd0b-4ad9-8be4-7ffafae00622}"/>
         <checked-legend-node id="{9f3f6e03-b69a-427b-8367-e7d64d6fc557}"/>
-        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
         <checked-legend-node id="{6344ee42-45a2-40ee-b52d-f7b7db81a674}"/>
+        <checked-legend-node id="{2af9d655-d60f-4ee2-a31b-d5f075a9fad8}"/>
         <checked-legend-node id="{d1f57b66-0919-4b68-83e8-f078553bea81}"/>
         <checked-legend-node id="{72c92aed-f674-478a-a8f8-e96348d0e09a}"/>
         <checked-legend-node id="{bcc4a12d-4133-4556-adb8-a3cdedbd5406}"/>
@@ -45726,8 +45726,8 @@ def closeProject():
       <layer style="" id="pf_points_fixes_copier20181108104112082"/>
       <layer style="" id="ab_rue_copier20181108104112287"/>
       <layer style="" id="lc_limites_commune_copier20181108104112378"/>
-      <layer style="" id="od_element_lineaire_copier20181108104112570"/>
       <layer style="" id="bf_immeuble_copier20181108104112829"/>
+      <layer style="" id="od_element_lineaire_copier20181108104112570"/>
       <layer style="" id="od_element_surfacique_copier20181108104112995"/>
       <layer style="" id="cs_couverture_sol_copier20181108104113163"/>
       <checked-legend-nodes id="conduites_copy20130709141244955">
@@ -45756,8 +45756,8 @@ def closeProject():
         <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
         <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
         <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
+        <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
         <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
         <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
         <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
@@ -45766,6 +45766,7 @@ def closeProject():
         <checked-legend-node id="{c80868b8-8b54-40d5-a8e1-7a49244c64d6}"/>
         <checked-legend-node id="{cfe02b8a-bfad-4fa3-8cb8-d5df88625a57}"/>
         <checked-legend-node id="{220c91b2-efc1-495b-9a1a-a2645586710d}"/>
+        <checked-legend-node id="{011f50bd-cae0-428e-acdc-07a438e9c05f}"/>
         <checked-legend-node id="{dbbed889-a21b-4eb3-8df7-cc5c10f7aa32}"/>
         <checked-legend-node id="{f683634b-6b3e-459a-b735-1e5d0fe53ae9}"/>
         <checked-legend-node id="{83c98724-7516-46fb-86e8-4844076d5543}"/>
@@ -45804,8 +45805,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
+        <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -45817,8 +45818,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
+        <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -45829,8 +45830,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
+        <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
