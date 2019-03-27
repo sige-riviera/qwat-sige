@@ -25952,8 +25952,8 @@ def my_form_open(dialog, layer, feature):
         <attribute>district_colorcode</attribute>
         <attribute>district_prefix</attribute>
         <attribute>district_label_1_visible</attribute>
-        <attribute>label_2_x</attribute>
         <attribute>district_label_2_rotation</attribute>
+        <attribute>label_2_x</attribute>
         <attribute>label_2_y</attribute>
         <attribute>label_1_x</attribute>
         <attribute>label_1_visible</attribute>
@@ -42769,9 +42769,10 @@ END
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="RuleRenderer" enableorderby="0">
         <rules key="{6d5d664c-b9fc-488b-8315-60819bd5cb9c}">
-          <rule filter="true" key="{6bc77f86-9668-4ab7-8fb8-7de8905e0db2}" symbol="0"/>
-          <rule scalemaxdenom="6000" filter=" &quot;fk_protection&quot; IS NOT NULL" key="{a95a4acd-9cc7-42c0-8dc2-fa8bdc1dcb90}" symbol="1" scalemindenom="1000" label="protégée"/>
-          <rule scalemaxdenom="6000" filter=" &quot;fk_installmethod&quot;  =4202" key="{a50d0b92-3d13-4426-a8cd-f8ce3a0d442f}" symbol="2" scalemindenom="1" label="chemisée"/>
+          <rule filter=" &quot;fk_function&quot; != 4102" key="{c32f52fc-b416-447c-9a13-441447700f5a}" symbol="0" label="conduites shématiques"/>
+          <rule scalemaxdenom="2600" filter=" &quot;fk_function&quot; = 4102" key="{6bc77f86-9668-4ab7-8fb8-7de8905e0db2}" symbol="1" scalemindenom="1" label="conduites d'hydrantes pour plans BH"/>
+          <rule scalemaxdenom="6000" filter=" &quot;fk_protection&quot; IS NOT NULL" key="{a95a4acd-9cc7-42c0-8dc2-fa8bdc1dcb90}" symbol="2" scalemindenom="1000" label="protégée"/>
+          <rule scalemaxdenom="6000" filter=" &quot;fk_installmethod&quot;  =4202" key="{a50d0b92-3d13-4426-a8cd-f8ce3a0d442f}" symbol="3" scalemindenom="1" label="chemisée"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="line" name="0">
@@ -42807,6 +42808,37 @@ END
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="line" name="1">
             <layer pass="0" class="SimpleLine" locked="0">
+              <prop k="capstyle" v="square"/>
+              <prop k="color_dd_active" v="1"/>
+              <prop k="color_dd_expression" v="case &#xa;when &quot;fk_status&quot; = 1302 then '217,0,0'&#xa;when &quot;fk_distributor&quot; = 1 then '0,80,255'&#xa; else '40,180,16'&#xa; end"/>
+              <prop k="color_dd_field" v=""/>
+              <prop k="color_dd_useexpr" v="1"/>
+              <prop k="customdash" v="5;2"/>
+              <prop k="customdash_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="customdash_unit" v="MM"/>
+              <prop k="draw_inside_polygon" v="0"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="line_color" v="0,80,255,255"/>
+              <prop k="line_style" v="solid"/>
+              <prop k="line_width" v="0.55"/>
+              <prop k="line_width_unit" v="MM"/>
+              <prop k="offset" v="0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="use_custom_dash" v="0"/>
+              <prop k="width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="line" name="2">
+            <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="flat"/>
               <prop k="color_dd_active" v="1"/>
               <prop k="color_dd_expression" v="case &#xa;when &quot;fk_status&quot; = 1302 then '217,0,0,80'&#xa;when &quot;fk_distributor&quot; = 1 then '0,80,255,80'&#xa; else '40,180,16,80'&#xa; end"/>
@@ -42840,7 +42872,7 @@ END
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="line" name="2">
+          <symbol alpha="1" clip_to_extent="1" type="line" name="3">
             <layer pass="0" class="SimpleLine" locked="0">
               <prop k="capstyle" v="flat"/>
               <prop k="color_dd_active" v="1"/>
