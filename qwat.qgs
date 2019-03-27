@@ -190,7 +190,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Zones">
+    <layer-tree-group expanded="0" checked="Qt::Unchecked" name="Zones">
       <customproperties/>
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="folder20150629160924367" source="service='qwat' sslmode=disable key='id' srid=2056 type=MultiLineString table=&quot;qwat_od&quot;.&quot;folder&quot; (geometry_line) sql=" name="042 dossiers techniques">
         <customproperties/>
@@ -204,7 +204,7 @@
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vw_consumptionzone20150508135647750" source="service='qwat' sslmode=disable key='name' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;vw_consumptionzone&quot; (geometry) sql=" name="045 Zones de consommation">
         <customproperties/>
       </layer-tree-layer>
-      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="printmap20130304110011400" source="service='qwat' sslmode=allow key='id' srid=2056 type=Polygon table=&quot;qwat_od&quot;.&quot;printmap&quot; (geometry) sql=" name="046 folios">
+      <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="printmap20130304110011400" source="service='qwat' sslmode=allow key='id' srid=2056 type=Polygon table=&quot;qwat_od&quot;.&quot;printmap&quot; (geometry) sql=" name="046 folios">
         <customproperties/>
       </layer-tree-layer>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="protectionzone20130304110011418" source="service='qwat' sslmode=allow key='id' srid=2056 type=MultiPolygon table=&quot;qwat_od&quot;.&quot;protectionzone&quot; (geometry) sql=" name="047 zones de protections">
@@ -936,7 +936,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="Zones">
+    <legendgroup open="false" checked="Qt::Unchecked" name="Zones">
       <legendlayer drawingOrder="44" open="true" checked="Qt::Unchecked" name="042 dossiers techniques" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="folder20150629160924367" visible="0"/>
@@ -957,9 +957,9 @@
           <legendlayerfile isInOverview="0" layerid="vw_consumptionzone20150508135647750" visible="0"/>
         </filegroup>
       </legendlayer>
-      <legendlayer drawingOrder="48" open="false" checked="Qt::Checked" name="046 folios" showFeatureCount="0">
+      <legendlayer drawingOrder="48" open="false" checked="Qt::Unchecked" name="046 folios" showFeatureCount="0">
         <filegroup open="false" hidden="false">
-          <legendlayerfile isInOverview="0" layerid="printmap20130304110011400" visible="1"/>
+          <legendlayerfile isInOverview="0" layerid="printmap20130304110011400" visible="0"/>
         </filegroup>
       </legendlayer>
       <legendlayer drawingOrder="49" open="false" checked="Qt::Unchecked" name="047 zones de protections" showFeatureCount="0">
@@ -25640,8 +25640,8 @@ def my_form_open(dialog, layer, feature):
         </effect>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{722b23a9-4ed5-4e41-8b30-fe32c0b0a627}">
-          <rule description="251 - 2500 - Rouge et Jaune" filter="label_2_visible = 1 OR label_2_visible = 2" key="{66cf5a7c-e8a7-450b-8330-12804d7afea9}">
+        <rules key="{f283bcc9-b51d-4398-9b0a-add86b5111bc}">
+          <rule description="251 - 2400 - Rouge et Jaune" filter="label_2_visible = 1 OR label_2_visible = 2" key="{a0d7e982-112a-4109-88c0-a097cdbd6e81}">
             <settings>
               <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="255,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -25651,7 +25651,7 @@ def my_form_open(dialog, layer, feature):
               <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
               <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
               <placement repeatDistanceUnit="1" placement="0" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="4" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
-              <rendering fontMinPixelSize="3" scaleMax="2500" fontMaxPixelSize="10000" scaleMin="251" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="1" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="1" minFeatureSize="0"/>
+              <rendering fontMinPixelSize="3" scaleMax="2400" fontMaxPixelSize="10000" scaleMin="251" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="1" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="1" minFeatureSize="0"/>
               <data-defined>
                 <Rotation expr="0" field="" active="true" useExpr="true"/>
                 <Show expr="1" field="" active="false" useExpr="true"/>
@@ -25659,7 +25659,7 @@ def my_form_open(dialog, layer, feature):
               </data-defined>
             </settings>
           </rule>
-          <rule description="2500 - 40000 - Noir" filter="label_2_visible = 1 OR label_2_visible = 2" key="{7e573a5e-bc0e-42ef-8e9b-5bccd7bcfd75}">
+          <rule description="2400 - 40000 - Noir" filter="label_2_visible = 1 OR label_2_visible = 2" key="{f48a5661-abff-45f0-9b7d-69104666fa0a}">
             <settings>
               <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,0,0,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="8" fieldName="substr( &quot;district_name&quot; ,1,1) || right( &quot;district_name&quot; ,1) ||'. '||name" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
@@ -25669,7 +25669,7 @@ def my_form_open(dialog, layer, feature):
               <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
               <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
               <placement repeatDistanceUnit="1" placement="0" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="0" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="4" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
-              <rendering fontMinPixelSize="3" scaleMax="40000" fontMaxPixelSize="10000" scaleMin="2500" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="1" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="1" minFeatureSize="0"/>
+              <rendering fontMinPixelSize="3" scaleMax="40000" fontMaxPixelSize="10000" scaleMin="2400" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="1" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="1" minFeatureSize="0"/>
               <data-defined>
                 <Rotation expr="0" field="" active="true" useExpr="true"/>
               </data-defined>
@@ -25952,8 +25952,8 @@ def my_form_open(dialog, layer, feature):
         <attribute>district_colorcode</attribute>
         <attribute>district_prefix</attribute>
         <attribute>district_label_1_visible</attribute>
-        <attribute>district_label_2_rotation</attribute>
         <attribute>label_2_x</attribute>
+        <attribute>district_label_2_rotation</attribute>
         <attribute>label_2_y</attribute>
         <attribute>label_1_x</attribute>
         <attribute>label_1_visible</attribute>
@@ -45399,8 +45399,8 @@ def closeProject():
         <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
         <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
         <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
+        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
         <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
         <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
@@ -45447,8 +45447,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
+        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -45460,8 +45460,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
+        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -45472,8 +45472,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
+        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
@@ -45756,8 +45756,8 @@ def closeProject():
         <checked-legend-node id="{903689fd-49c6-413a-bc33-5f8f5eac64b3}"/>
         <checked-legend-node id="{918276d8-ed78-44c2-aaef-9ddb8c0531fb}"/>
         <checked-legend-node id="{c8b00867-761c-4c3f-8922-cceb0d0e55ea}"/>
-        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{5818bcf7-6790-48bc-8192-4e0f67a64a7e}"/>
+        <checked-legend-node id="{e8ac0281-6fd9-4a32-9610-5e3535020b54}"/>
         <checked-legend-node id="{7c5c138a-f894-43c4-ab43-97c6cef3b1fc}"/>
         <checked-legend-node id="{ff275668-6a9b-447a-a8ce-b32f78f57b85}"/>
         <checked-legend-node id="{09c9adfa-57b8-46e1-b1c6-fd8aa375f963}"/>
@@ -45805,8 +45805,8 @@ def closeProject():
         <checked-legend-node id="{c5aa7421-12d9-4e1f-b39e-ddc5f7c287e9}"/>
         <checked-legend-node id="{5fb13620-50f9-41de-93f9-9ab384ab087f}"/>
         <checked-legend-node id="{e50fbbc2-a891-4432-a846-34d4f3e99c86}"/>
-        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{5f09c1ec-36a2-4dba-98f0-bcd568e24533}"/>
+        <checked-legend-node id="{ce0c94bb-b016-41a1-931c-3109807689b0}"/>
         <checked-legend-node id="{18febfc6-d9a9-4440-bee8-fa580f8b5d76}"/>
         <checked-legend-node id="{37877255-94b0-449e-ae98-71803ed4ef1c}"/>
         <checked-legend-node id="{980ea4bf-d999-4d98-b45a-9c3890a64496}"/>
@@ -45818,8 +45818,8 @@ def closeProject():
         <checked-legend-node id="{a6204137-028d-44b7-b245-5d3b24a7d399}"/>
         <checked-legend-node id="{224820ff-9d97-46ba-88a8-8073f0a09a29}"/>
         <checked-legend-node id="{0b8281d6-7c39-44b5-8a40-ecb1889399cb}"/>
-        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{94454820-5d27-4427-80f6-24d28c5c51a3}"/>
+        <checked-legend-node id="{5d01efe9-2c1b-4052-a11f-5ce82dd09f65}"/>
         <checked-legend-node id="{9402cda0-5af5-4a12-8353-366c479faed7}"/>
         <checked-legend-node id="{05336f6d-543d-4bf7-bea5-a474d431bdf3}"/>
         <checked-legend-node id="{318b69f6-b284-41b7-aa22-bdf34451d264}"/>
@@ -45830,8 +45830,8 @@ def closeProject():
         <checked-legend-node id="{6be86ca3-25cf-47e9-a4d8-09d481490c9c}"/>
         <checked-legend-node id="{5b2d8e5a-3356-4b07-b16a-4d65880b37be}"/>
         <checked-legend-node id="{8366c510-1142-41fb-85a1-bf9663ad9d11}"/>
-        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{95c23bff-05b6-444b-ba53-a19d85aec669}"/>
+        <checked-legend-node id="{cdead7aa-d728-472d-b382-91cf70fd6e5f}"/>
         <checked-legend-node id="{ffab370b-cfc7-4704-9929-5e4dd09ee8f3}"/>
         <checked-legend-node id="{7e777116-29bb-4af3-883d-504a8f109298}"/>
         <checked-legend-node id="{b30d473c-b7f4-448a-b647-b2a5ceb1a131}"/>
