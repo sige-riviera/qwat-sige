@@ -120,7 +120,7 @@
             </property>
           </customproperties>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vannes_copy20141127160745910" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;valve&quot; (geometry_alt2) sql=&quot;fk_status&quot; NOT IN (1303, 1304, 1305, 1306, 1307, 1308)" name="023 vannes 5000">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="vannes_copy20141127160745910" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;valve&quot; (geometry_alt2) sql=&quot;fk_status&quot; NOT IN (1303, 1304, 1305, 1306, 1307, 1308) AND fk_valve_function != 6108" name="023 vannes 5000">
           <customproperties>
             <property key="expandedLegendNodes"/>
           </customproperties>
@@ -3812,6 +3812,15 @@
         <edittype widgetv2type="TextEdit" name="label_2_text">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_etat_exploitation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_diametre">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_adesafecter">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="_length2d">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -4388,36 +4397,39 @@
         <alias field="_printmaps" index="16" name=""/>
         <alias field="label_2_visible" index="17" name=""/>
         <alias field="label_2_text" index="18" name=""/>
-        <alias field="_length2d" index="19" name=""/>
-        <alias field="_length3d" index="20" name=""/>
-        <alias field="number_of_pipe" index="21" name=""/>
-        <alias field="tunnel_or_bridge" index="22" name=""/>
-        <alias field="_valve_count" index="23" name=""/>
-        <alias field="_valve_closed" index="24" name=""/>
-        <alias field="_pressurezone" index="25" name=""/>
-        <alias field="_pressurezone_colorcode" index="26" name=""/>
-        <alias field="pipe_material_vl_active" index="27" name=""/>
-        <alias field="pipe_material_short_fr" index="28" name=""/>
-        <alias field="pipe_material_short_en" index="29" name=""/>
-        <alias field="pipe_material_short_ro" index="30" name=""/>
-        <alias field="pipe_material_value_fr" index="31" name=""/>
-        <alias field="pipe_material_value_en" index="32" name=""/>
-        <alias field="pipe_material_value_ro" index="33" name=""/>
-        <alias field="pipe_material_description_fr" index="34" name=""/>
-        <alias field="pipe_material_description_en" index="35" name=""/>
-        <alias field="pipe_material_description_ro" index="36" name=""/>
-        <alias field="pipe_material__displayname_fr" index="37" name=""/>
-        <alias field="pipe_material__displayname_en" index="38" name=""/>
-        <alias field="pipe_material__displayname_ro" index="39" name=""/>
-        <alias field="pipe_material_diameter" index="40" name=""/>
-        <alias field="pipe_material_diameter_nominal" index="41" name=""/>
-        <alias field="pipe_material_diameter_internal" index="42" name=""/>
-        <alias field="pipe_material_diameter_external" index="43" name=""/>
-        <alias field="pipe_material_code_sire" index="44" name=""/>
-        <alias field="pipe_material_pressure_nominal" index="45" name=""/>
-        <alias field="pipe_material_sdr" index="46" name=""/>
-        <alias field="pipe_material_wall_thickness" index="47" name=""/>
-        <alias field="pipe_material_sn" index="48" name=""/>
+        <alias field="qwat_ext_ch_vd_sire_etat_exploitation" index="19" name=""/>
+        <alias field="qwat_ext_ch_vd_sire_diametre" index="20" name=""/>
+        <alias field="qwat_ext_ch_vd_sire_adesafecter" index="21" name=""/>
+        <alias field="_length2d" index="22" name=""/>
+        <alias field="_length3d" index="23" name=""/>
+        <alias field="number_of_pipe" index="24" name=""/>
+        <alias field="tunnel_or_bridge" index="25" name=""/>
+        <alias field="_valve_count" index="26" name=""/>
+        <alias field="_valve_closed" index="27" name=""/>
+        <alias field="_pressurezone" index="28" name=""/>
+        <alias field="_pressurezone_colorcode" index="29" name=""/>
+        <alias field="pipe_material_vl_active" index="30" name=""/>
+        <alias field="pipe_material_short_fr" index="31" name=""/>
+        <alias field="pipe_material_short_en" index="32" name=""/>
+        <alias field="pipe_material_short_ro" index="33" name=""/>
+        <alias field="pipe_material_value_fr" index="34" name=""/>
+        <alias field="pipe_material_value_en" index="35" name=""/>
+        <alias field="pipe_material_value_ro" index="36" name=""/>
+        <alias field="pipe_material_description_fr" index="37" name=""/>
+        <alias field="pipe_material_description_en" index="38" name=""/>
+        <alias field="pipe_material_description_ro" index="39" name=""/>
+        <alias field="pipe_material__displayname_fr" index="40" name=""/>
+        <alias field="pipe_material__displayname_en" index="41" name=""/>
+        <alias field="pipe_material__displayname_ro" index="42" name=""/>
+        <alias field="pipe_material_diameter" index="43" name=""/>
+        <alias field="pipe_material_diameter_nominal" index="44" name=""/>
+        <alias field="pipe_material_diameter_internal" index="45" name=""/>
+        <alias field="pipe_material_diameter_external" index="46" name=""/>
+        <alias field="pipe_material_code_sire" index="47" name=""/>
+        <alias field="pipe_material_pressure_nominal" index="48" name=""/>
+        <alias field="pipe_material_sdr" index="49" name=""/>
+        <alias field="pipe_material_wall_thickness" index="50" name=""/>
+        <alias field="pipe_material_sn" index="51" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -4554,6 +4566,9 @@ def my_form_open(dialog, layer, feature):
         <default field="_printmaps" expression=""/>
         <default field="label_2_visible" expression=""/>
         <default field="label_2_text" expression=""/>
+        <default field="qwat_ext_ch_vd_sire_etat_exploitation" expression=""/>
+        <default field="qwat_ext_ch_vd_sire_diametre" expression=""/>
+        <default field="qwat_ext_ch_vd_sire_adesafecter" expression=""/>
         <default field="_length2d" expression=""/>
         <default field="_length3d" expression=""/>
         <default field="number_of_pipe" expression=""/>
@@ -32739,7 +32754,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>1152096.875</ymax>
       </extent>
       <id>vannes_copy20141127160745910</id>
-      <datasource>service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table="qwat_od"."valve" (geometry_alt2) sql="fk_status" NOT IN (1303, 1304, 1305, 1306, 1307, 1308)</datasource>
+      <datasource>service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table="qwat_od"."valve" (geometry_alt2) sql="fk_status" NOT IN (1303, 1304, 1305, 1306, 1307, 1308) AND fk_valve_function != 6108</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -42676,6 +42691,15 @@ END
         <edittype widgetv2type="TextEdit" name="label_2_text">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_etat_exploitation">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_diametre">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="qwat_ext_ch_vd_sire_adesafecter">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
         <edittype widgetv2type="TextEdit" name="_length2d">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -43206,36 +43230,39 @@ END
         <alias field="_printmaps" index="16" name=""/>
         <alias field="label_2_visible" index="17" name=""/>
         <alias field="label_2_text" index="18" name=""/>
-        <alias field="_length2d" index="19" name=""/>
-        <alias field="_length3d" index="20" name=""/>
-        <alias field="number_of_pipe" index="21" name=""/>
-        <alias field="tunnel_or_bridge" index="22" name=""/>
-        <alias field="_valve_count" index="23" name=""/>
-        <alias field="_valve_closed" index="24" name=""/>
-        <alias field="_pressurezone" index="25" name=""/>
-        <alias field="_pressurezone_colorcode" index="26" name=""/>
-        <alias field="pipe_material_vl_active" index="27" name=""/>
-        <alias field="pipe_material_short_fr" index="28" name=""/>
-        <alias field="pipe_material_short_en" index="29" name=""/>
-        <alias field="pipe_material_short_ro" index="30" name=""/>
-        <alias field="pipe_material_value_fr" index="31" name=""/>
-        <alias field="pipe_material_value_en" index="32" name=""/>
-        <alias field="pipe_material_value_ro" index="33" name=""/>
-        <alias field="pipe_material_description_fr" index="34" name=""/>
-        <alias field="pipe_material_description_en" index="35" name=""/>
-        <alias field="pipe_material_description_ro" index="36" name=""/>
-        <alias field="pipe_material__displayname_fr" index="37" name=""/>
-        <alias field="pipe_material__displayname_en" index="38" name=""/>
-        <alias field="pipe_material__displayname_ro" index="39" name=""/>
-        <alias field="pipe_material_diameter" index="40" name=""/>
-        <alias field="pipe_material_diameter_nominal" index="41" name=""/>
-        <alias field="pipe_material_diameter_internal" index="42" name=""/>
-        <alias field="pipe_material_diameter_external" index="43" name=""/>
-        <alias field="pipe_material_code_sire" index="44" name=""/>
-        <alias field="pipe_material_pressure_nominal" index="45" name=""/>
-        <alias field="pipe_material_sdr" index="46" name=""/>
-        <alias field="pipe_material_wall_thickness" index="47" name=""/>
-        <alias field="pipe_material_sn" index="48" name=""/>
+        <alias field="qwat_ext_ch_vd_sire_etat_exploitation" index="19" name=""/>
+        <alias field="qwat_ext_ch_vd_sire_diametre" index="20" name=""/>
+        <alias field="qwat_ext_ch_vd_sire_adesafecter" index="21" name=""/>
+        <alias field="_length2d" index="22" name=""/>
+        <alias field="_length3d" index="23" name=""/>
+        <alias field="number_of_pipe" index="24" name=""/>
+        <alias field="tunnel_or_bridge" index="25" name=""/>
+        <alias field="_valve_count" index="26" name=""/>
+        <alias field="_valve_closed" index="27" name=""/>
+        <alias field="_pressurezone" index="28" name=""/>
+        <alias field="_pressurezone_colorcode" index="29" name=""/>
+        <alias field="pipe_material_vl_active" index="30" name=""/>
+        <alias field="pipe_material_short_fr" index="31" name=""/>
+        <alias field="pipe_material_short_en" index="32" name=""/>
+        <alias field="pipe_material_short_ro" index="33" name=""/>
+        <alias field="pipe_material_value_fr" index="34" name=""/>
+        <alias field="pipe_material_value_en" index="35" name=""/>
+        <alias field="pipe_material_value_ro" index="36" name=""/>
+        <alias field="pipe_material_description_fr" index="37" name=""/>
+        <alias field="pipe_material_description_en" index="38" name=""/>
+        <alias field="pipe_material_description_ro" index="39" name=""/>
+        <alias field="pipe_material__displayname_fr" index="40" name=""/>
+        <alias field="pipe_material__displayname_en" index="41" name=""/>
+        <alias field="pipe_material__displayname_ro" index="42" name=""/>
+        <alias field="pipe_material_diameter" index="43" name=""/>
+        <alias field="pipe_material_diameter_nominal" index="44" name=""/>
+        <alias field="pipe_material_diameter_internal" index="45" name=""/>
+        <alias field="pipe_material_diameter_external" index="46" name=""/>
+        <alias field="pipe_material_code_sire" index="47" name=""/>
+        <alias field="pipe_material_pressure_nominal" index="48" name=""/>
+        <alias field="pipe_material_sdr" index="49" name=""/>
+        <alias field="pipe_material_wall_thickness" index="50" name=""/>
+        <alias field="pipe_material_sn" index="51" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -43344,6 +43371,9 @@ def my_form_open(dialog, layer, feature):
         <default field="_printmaps" expression=""/>
         <default field="label_2_visible" expression=""/>
         <default field="label_2_text" expression=""/>
+        <default field="qwat_ext_ch_vd_sire_etat_exploitation" expression=""/>
+        <default field="qwat_ext_ch_vd_sire_diametre" expression=""/>
+        <default field="qwat_ext_ch_vd_sire_adesafecter" expression=""/>
         <default field="_length2d" expression=""/>
         <default field="_length3d" expression=""/>
         <default field="number_of_pipe" expression=""/>
