@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2541653.18529566843062639</xmin>
-      <ymin>1134697.11726248450577259</ymin>
-      <xmax>2573081.45199450571089983</xmax>
-      <ymax>1155041.59585952945053577</ymax>
+      <xmin>2541097.92860212409868836</xmin>
+      <ymin>1135297.32155194529332221</ymin>
+      <xmax>2573194.66582765663042665</xmax>
+      <ymax>1156074.52157321223057806</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -18824,9 +18824,10 @@ def my_form_open(dialog, layer, feature):
       <renderer-v2 attr="fk_part_type" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
           <category render="true" symbol="0" value="9200" label="compteur"/>
-          <category render="true" symbol="1" value="9201" label="bouchon"/>
-          <category render="true" symbol="2" value="9202" label="bouche d'arrosage"/>
-          <category render="true" symbol="3" value="" label=""/>
+          <category render="true" symbol="1" value="9211" label="compteur de chantier"/>
+          <category render="true" symbol="2" value="9201" label="bouchon"/>
+          <category render="true" symbol="3" value="9202" label="bouche d'arrosage"/>
+          <category render="true" symbol="4" value="" label=""/>
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -18866,11 +18867,11 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
               <prop k="angle_dd_expression" v="- &quot;_pipe_orientation&quot;"/>
-              <prop k="angle_dd_field" v="-_pipe_orientation"/>
+              <prop k="angle_dd_field" v="_pipe_orientation"/>
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="./symbols/nodes/cap.svg"/>
+              <prop k="name" v="./symbols/nodes/subscriber_meter.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -18902,7 +18903,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="angle_dd_useexpr" v="1"/>
               <prop k="color" v="0,0,0,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="name" v="./symbols/nodes/watering_output.svg"/>
+              <prop k="name" v="./symbols/nodes/cap.svg"/>
               <prop k="offset" v="0,0"/>
               <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="offset_unit" v="MM"/>
@@ -18926,6 +18927,38 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="angle_dd_active" v="1"/>
+              <prop k="angle_dd_expression" v="- &quot;_pipe_orientation&quot;"/>
+              <prop k="angle_dd_field" v="-_pipe_orientation"/>
+              <prop k="angle_dd_useexpr" v="1"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="./symbols/nodes/watering_output.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="1"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="4"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
             <layer pass="0" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="128,168,121,255"/>
@@ -19000,8 +19033,8 @@ def my_form_open(dialog, layer, feature):
         </effect>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{0d92cf33-55dd-4815-bb03-a646697aadbf}">
-          <rule scalemaxdenom="1000" description="Etiquette pour compteurs de chantiers" filter=" &quot;fk_part_type&quot; = 9211" key="{23661239-2dfd-4a91-b3ff-aebfcfad5df4}" scalemindenom="1">
+        <rules key="{06f50eb5-f70d-4ad4-99ca-3edf7efd9e52}">
+          <rule scalemaxdenom="1000" description="Etiquette pour compteurs de chantiers" filter=" &quot;fk_part_type&quot; = 9211" key="{d4609c54-3485-4653-9cfd-0645c3d1931b}" scalemindenom="1">
             <settings>
               <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="90,90,90,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="9" fieldName="'Chèvre de chantier'" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
