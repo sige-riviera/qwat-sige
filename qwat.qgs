@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2548099.83825263194739819</xmin>
-      <ymin>1135533.43752533569931984</ymin>
-      <xmax>2568716.17160695977509022</xmax>
-      <ymax>1148879.02087228139862418</ymax>
+      <xmin>2541653.18529566843062639</xmin>
+      <ymin>1134697.11726248450577259</ymin>
+      <xmax>2573081.45199450571089983</xmax>
+      <ymax>1155041.59585952945053577</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -18651,7 +18651,7 @@ def my_form_open(dialog, layer, feature):
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
-    <maplayer simplifyAlgorithm="0" minimumScale="-4.65661e-10" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="3.6" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="3.6" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="0" scaleBasedLabelVisibilityFlag="0">
       <extent>
         <xmin>551180.72481756994966418</xmin>
         <ymin>136178.64705177501309663</ymin>
@@ -18999,10 +18999,27 @@ def my_form_open(dialog, layer, feature):
           </effect>
         </effect>
       </renderer-v2>
-      <labeling type="simple"/>
+      <labeling type="rule-based">
+        <rules key="{0d92cf33-55dd-4815-bb03-a646697aadbf}">
+          <rule scalemaxdenom="1000" description="Etiquette pour compteurs de chantiers" filter=" &quot;fk_part_type&quot; = 9211" key="{23661239-2dfd-4a91-b3ff-aebfcfad5df4}" scalemindenom="1">
+            <settings>
+              <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="90,90,90,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="9" fieldName="'Chèvre de chantier'" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
+                <substitutions/>
+              </text-style>
+              <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
+              <text-buffer bufferSize="1" bufferSizeMapUnitScale="0,0,0,0,0,0" bufferColor="255,255,255,255" bufferDraw="0" bufferBlendMode="0" bufferTransp="0" bufferSizeInMapUnits="0" bufferNoFill="0" bufferJoinStyle="128"/>
+              <background shapeSizeUnits="1" shapeType="0" shapeSVGFile="" shapeOffsetX="0" shapeOffsetY="0" shapeBlendMode="0" shapeFillColor="255,255,255,255" shapeTransparency="0" shapeSizeMapUnitScale="0,0,0,0,0,0" shapeSizeType="0" shapeJoinStyle="64" shapeDraw="0" shapeBorderWidthUnits="1" shapeSizeX="0" shapeSizeY="0" shapeOffsetMapUnitScale="0,0,0,0,0,0" shapeRadiiX="0" shapeRadiiY="0" shapeOffsetUnits="1" shapeRotation="0" shapeBorderWidth="0" shapeBorderColor="128,128,128,255" shapeRotationType="0" shapeBorderWidthMapUnitScale="0,0,0,0,0,0" shapeRadiiMapUnitScale="0,0,0,0,0,0" shapeRadiiUnits="1"/>
+              <shadow shadowOffsetMapUnitScale="0,0,0,0,0,0" shadowOffsetGlobal="1" shadowRadiusUnits="1" shadowTransparency="30" shadowColor="0,0,0,255" shadowUnder="0" shadowScale="100" shadowOffsetDist="1" shadowDraw="0" shadowOffsetAngle="135" shadowRadius="1.5" shadowRadiusMapUnitScale="0,0,0,0,0,0" shadowBlendMode="6" shadowRadiusAlphaOnly="0" shadowOffsetUnits="1"/>
+              <placement repeatDistanceUnit="1" placement="6" maxCurvedCharAngleIn="25" repeatDistance="0" distInMapUnits="0" labelOffsetInMapUnits="1" xOffset="0" distMapUnitScale="0,0,0,0,0,0" predefinedPositionOrder="TR,TL,BR,BL,R,L,TSR,BSR" preserveRotation="1" repeatDistanceMapUnitScale="0,0,0,0,0,0" centroidWhole="0" priority="5" yOffset="0" offsetType="0" placementFlags="10" centroidInside="0" dist="5" angleOffset="0" maxCurvedCharAngleOut="-25" fitInPolygonOnly="0" quadOffset="4" labelOffsetMapUnitScale="0,0,0,0,0,0"/>
+              <rendering fontMinPixelSize="3" scaleMax="10000000" fontMaxPixelSize="10000" scaleMin="1" upsidedownLabels="0" limitNumLabels="0" obstacle="1" obstacleFactor="1" scaleVisibility="0" fontLimitPixelSize="0" mergeLines="0" obstacleType="0" labelPerPart="0" zIndex="0" maxNumLabels="2000" displayAll="0" minFeatureSize="0"/>
+              <data-defined/>
+            </settings>
+          </rule>
+        </rules>
+      </labeling>
       <customproperties>
         <property key="QFieldSync/action" value="offline"/>
-        <property key="labeling" value="pal"/>
+        <property key="embeddedWidgets/count" value="0"/>
         <property key="labeling/addDirectionSymbol" value="false"/>
         <property key="labeling/angleOffset" value="0"/>
         <property key="labeling/blendMode" value="0"/>
@@ -19147,8 +19164,8 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/wrapChar" value=""/>
         <property key="labeling/xOffset" value="0"/>
         <property key="labeling/yOffset" value="0"/>
-        <property key="variableNames" value="_fields_"/>
-        <property key="variableValues" value=""/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
@@ -19176,7 +19193,7 @@ def my_form_open(dialog, layer, feature):
         <selectedonly on=""/>
       </labelattributes>
       <SingleCategoryDiagramRenderer diagramType="Pie" sizeLegend="0" attributeLegend="1">
-        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="-4.65661e-10">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="Cantarell,11,-1,5,50,0,0,0,0,0" style=""/>
           <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
@@ -19255,7 +19272,51 @@ def my_form_open(dialog, layer, feature):
         <actionsetting showInAttributeTable="1" action="qgis.utils.plugins['postgres91plusauditor'].audit('od_part20140429113327995',[% $id %])" icon="" capture="0" type="1" name="History audit" shortTitle=""/>
       </attributeactions>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="id"/>
+          <column width="-1" hidden="0" type="field" name="fk_district"/>
+          <column width="-1" hidden="0" type="field" name="fk_pressurezone"/>
+          <column width="-1" hidden="0" type="field" name="fk_printmap"/>
+          <column width="-1" hidden="0" type="field" name="_printmaps"/>
+          <column width="-1" hidden="0" type="field" name="_geometry_alt1_used"/>
+          <column width="-1" hidden="0" type="field" name="_geometry_alt2_used"/>
+          <column width="-1" hidden="0" type="field" name="_pipe_node_type"/>
+          <column width="-1" hidden="0" type="field" name="_pipe_orientation"/>
+          <column width="-1" hidden="0" type="field" name="_pipe_schema_visible"/>
+          <column width="-1" hidden="0" type="field" name="geometry_alt1"/>
+          <column width="-1" hidden="0" type="field" name="geometry_alt2"/>
+          <column width="-1" hidden="0" type="field" name="update_geometry_alt1"/>
+          <column width="-1" hidden="0" type="field" name="update_geometry_alt2"/>
+          <column width="-1" hidden="0" type="field" name="identification"/>
+          <column width="-1" hidden="0" type="field" name="fk_distributor"/>
+          <column width="-1" hidden="0" type="field" name="fk_status"/>
+          <column width="-1" hidden="0" type="field" name="fk_folder"/>
+          <column width="-1" hidden="0" type="field" name="fk_locationtype"/>
+          <column width="-1" hidden="0" type="field" name="fk_precision"/>
+          <column width="-1" hidden="0" type="field" name="fk_precisionalti"/>
+          <column width="-1" hidden="0" type="field" name="fk_object_reference"/>
+          <column width="-1" hidden="0" type="field" name="altitude"/>
+          <column width="-1" hidden="0" type="field" name="year"/>
+          <column width="-1" hidden="0" type="field" name="year_end"/>
+          <column width="-1" hidden="0" type="field" name="orientation"/>
+          <column width="-1" hidden="0" type="field" name="remark"/>
+          <column width="-1" hidden="0" type="field" name="label_1_visible"/>
+          <column width="-1" hidden="0" type="field" name="label_1_x"/>
+          <column width="-1" hidden="0" type="field" name="label_1_y"/>
+          <column width="-1" hidden="0" type="field" name="label_1_rotation"/>
+          <column width="-1" hidden="0" type="field" name="label_1_text"/>
+          <column width="-1" hidden="0" type="field" name="label_2_visible"/>
+          <column width="-1" hidden="0" type="field" name="label_2_x"/>
+          <column width="-1" hidden="0" type="field" name="label_2_y"/>
+          <column width="-1" hidden="0" type="field" name="label_2_rotation"/>
+          <column width="-1" hidden="0" type="field" name="label_2_text"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_etat_exploitation"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_adesafecter"/>
+          <column width="-1" hidden="0" type="field" name="qwat_ext_ch_vd_sire_remarque"/>
+          <column width="-1" hidden="0" type="field" name="fk_part_type"/>
+          <column width="-1" hidden="0" type="field" name="fk_pipe"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
       <editform>./ui_forms/part.ui</editform>
       <editforminit/>
