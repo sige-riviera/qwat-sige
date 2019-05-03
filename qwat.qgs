@@ -54,7 +54,7 @@
         <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="node20130304110005126" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;node&quot; (geometry) sql=" name="010 noeuds">
           <customproperties/>
         </layer-tree-layer>
-        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="valve20130304110011497" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;valve&quot; (geometry) sql=" name="008 vannes">
+        <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Unchecked" id="valve20130304110011497" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;valve&quot; (geometry) sql=" name="008 vannes">
           <customproperties>
             <property key="expandedLegendNodes"/>
           </customproperties>
@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2541097.92860212409868836</xmin>
-      <ymin>1135297.32155194529332221</ymin>
-      <xmax>2573194.66582765663042665</xmax>
-      <ymax>1156074.52157321223057806</ymax>
+      <xmin>2543708.41804684698581696</xmin>
+      <ymin>1135512.45961423800326884</ymin>
+      <xmax>2575805.15527237951755524</xmax>
+      <ymax>1156289.6596355049405247</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -750,9 +750,9 @@
             <legendlayerfile isInOverview="0" layerid="node20130304110005126" visible="1"/>
           </filegroup>
         </legendlayer>
-        <legendlayer drawingOrder="7" open="false" checked="Qt::Checked" name="008 vannes" showFeatureCount="0">
+        <legendlayer drawingOrder="7" open="false" checked="Qt::Unchecked" name="008 vannes" showFeatureCount="0">
           <filegroup open="false" hidden="false">
-            <legendlayerfile isInOverview="0" layerid="valve20130304110011497" visible="1"/>
+            <legendlayerfile isInOverview="0" layerid="valve20130304110011497" visible="0"/>
           </filegroup>
         </legendlayer>
         <legendlayer drawingOrder="10" open="false" checked="Qt::Checked" name="011 hydrantes" showFeatureCount="0">
@@ -31627,19 +31627,21 @@ def my_form_open(dialog, layer, feature):
           <rule scalemaxdenom="10000" description="toutes les vannes sauf organe réseau et vanne d'hydrant" filter="(status_active = 't' OR fk_status=1302) AND fk_valve_function != 6105 AND fk_valve_function != 6108" key="{7a025dab-c7fe-4c7c-9f0b-25a39f73abd8}" symbol="0" scalemindenom="1" label="réseau">
             <rule filter="closed = 't'" key="{edf1c363-d849-4700-82d0-34d494178d4d}" symbol="1" label="Fermée"/>
             <rule filter="&quot;fk_valve_type&quot; =6311" key="{6152ea58-2b55-4320-96e8-adb27c5fd9d9}" symbol="2" label="papillon"/>
-            <rule filter="&quot;fk_valve_type&quot; =6312" key="{d1ec978f-6d96-4ed2-ac03-a37e6629f13c}" symbol="3" label="elgelf"/>
-            <rule filter="&quot;fk_valve_type&quot; =6313" key="{6c48a279-b0d9-428b-819c-2fc5371720fe}" symbol="4" label="arrêt"/>
-            <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}" symbol="5" label="vidange"/>
-            <rule filter=" &quot;fk_status&quot; = 1302" key="{32414b2c-9a92-4c96-ac57-93ce877fd767}" symbol="6" label="Hors-service"/>
+            <rule filter="&quot;fk_valve_type&quot; =6313" key="{6c48a279-b0d9-428b-819c-2fc5371720fe}" symbol="3" label="arrêt"/>
+            <rule filter="&quot;fk_valve_type&quot; =6316" key="{8e2de8bf-7c92-490b-a69b-b143d7336979}" symbol="4" label="1/2 tour"/>
+            <rule filter="&quot;fk_valve_type&quot; =6312" key="{2f80a98b-b9e4-45c0-82dc-ff6ce1a15e7c}" symbol="5" label="elgelf"/>
+            <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{3bf2a10c-e2fe-43c6-9287-c4055baec2a1}" symbol="6" label="vidange"/>
+            <rule filter=" &quot;fk_status&quot; = 1302" key="{32414b2c-9a92-4c96-ac57-93ce877fd767}" symbol="7" label="Hors-service"/>
           </rule>
-          <rule scalemaxdenom="1000" filter="(status_active = 't' OR fk_status = 1302) AND (fk_valve_function = 6105 OR fk_valve_function = 6108)" key="{143022c7-b3e1-4c03-80d5-58520da677c2}" symbol="7" scalemindenom="1" label="abonné">
-            <rule filter="closed = 't'" key="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}" symbol="8" label="Fermée"/>
-            <rule filter="&quot;fk_valve_type&quot; =6313" key="{b149b2b9-3783-416c-b413-7a6f7de74e1d}" symbol="9" label="arrêt"/>
-            <rule filter="fk_valve_type = 6312" key="{221f27a3-6778-4b14-8bb9-1b4c7d708bc3}" symbol="10" label="elgelf"/>
-            <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{a0c08631-a6ac-4d0b-b538-41bb1efe2315}" symbol="11" label="vidange"/>
-            <rule filter=" &quot;fk_status&quot; = 1302" key="{a73a080b-0751-43a2-9ace-88c84e23d1ff}" symbol="12" label="Hors-service"/>
+          <rule scalemaxdenom="1000" filter="(status_active = 't' OR fk_status = 1302) AND (fk_valve_function = 6105 OR fk_valve_function = 6108)" key="{143022c7-b3e1-4c03-80d5-58520da677c2}" symbol="8" scalemindenom="1" label="abonné">
+            <rule filter="closed = 't'" key="{ee4ed8dd-20ae-42fb-b43b-a4c02c5399e9}" symbol="9" label="Fermée"/>
+            <rule filter="&quot;fk_valve_type&quot; =6313" key="{b149b2b9-3783-416c-b413-7a6f7de74e1d}" symbol="10" label="arrêt"/>
+            <rule filter="fk_valve_type = 6316" key="{e5e13019-b333-4ded-acf8-e6d124502c4c}" symbol="11" label="1/2 tour"/>
+            <rule filter="fk_valve_type = 6312" key="{4cb2ab42-3db2-4c29-9e6c-5ce21f4597e3}" symbol="12" label="elgelf"/>
+            <rule filter=" &quot;valve_function_value_fr&quot; IN ( 'vidange' ,  'vidange-ventouse' )" key="{a0c08631-a6ac-4d0b-b538-41bb1efe2315}" symbol="13" label="vidange"/>
+            <rule filter=" &quot;fk_status&quot; = 1302" key="{a73a080b-0751-43a2-9ace-88c84e23d1ff}" symbol="14" label="Hors-service"/>
           </rule>
-          <rule checkstate="0" filter="status_active = 'f'" key="{0e58d6c7-b1a4-4712-9ab5-68675c588c6d}" symbol="13" label="inactive"/>
+          <rule checkstate="0" filter="status_active = 'f'" key="{0e58d6c7-b1a4-4712-9ab5-68675c588c6d}" symbol="15" label="inactive"/>
         </rules>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -31707,6 +31709,70 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="10">
+            <layer pass="1" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="0,140,255,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="cross2"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,140,255,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.3"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="11">
+            <layer pass="2" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="angle_dd_active" v="1"/>
+              <prop k="angle_dd_expression" v="- &quot;_pipe_orientation&quot; + 90"/>
+              <prop k="angle_dd_field" v="orientation"/>
+              <prop k="angle_dd_useexpr" v="1"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="semi_circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="12">
             <layer pass="2" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -31740,7 +31806,7 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="11">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="13">
             <layer pass="1" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -31772,7 +31838,7 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="12">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="14">
             <layer pass="1" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -31796,7 +31862,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="13">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="15">
             <layer pass="6" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="138,68,107,255"/>
@@ -31929,6 +31995,70 @@ def my_form_open(dialog, layer, feature):
             </layer>
           </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+            <layer pass="1" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="217,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="cross2"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="217,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+            <layer pass="2" class="SimpleMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="angle_dd_active" v="1"/>
+              <prop k="angle_dd_expression" v="- &quot;_pipe_orientation&quot; + 90"/>
+              <prop k="angle_dd_field" v="orientation"/>
+              <prop k="angle_dd_useexpr" v="1"/>
+              <prop k="color" v="0,0,0,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="name" v="semi_circle"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="area"/>
+              <prop k="size" v="1.5"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+              <effect enabled="0" type="effectStack">
+                <effect type="drawSource">
+                  <prop k="blend_mode" v="0"/>
+                  <prop k="draw_mode" v="2"/>
+                  <prop k="enabled" v="1"/>
+                  <prop k="transparency" v="0"/>
+                </effect>
+              </effect>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
             <layer pass="2" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -31962,37 +32092,7 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
-            <layer pass="1" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="217,0,0,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="cross2"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="217,0,0,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="1.2"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
             <layer pass="1" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -32024,7 +32124,7 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
             <layer pass="1" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -32048,7 +32148,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
             <layer pass="1" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="color" v="255,255,255,255"/>
@@ -32078,7 +32178,7 @@ def my_form_open(dialog, layer, feature):
               </effect>
             </layer>
           </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="9">
             <layer pass="7" class="SimpleMarker" locked="0">
               <prop k="angle" v="0"/>
               <prop k="angle_dd_active" v="1"/>
@@ -32099,36 +32199,6 @@ def my_form_open(dialog, layer, feature):
               <prop k="outline_width_unit" v="MM"/>
               <prop k="scale_method" v="area"/>
               <prop k="size" v="4"/>
-              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="size_unit" v="MM"/>
-              <prop k="vertical_anchor_point" v="1"/>
-              <effect enabled="0" type="effectStack">
-                <effect type="drawSource">
-                  <prop k="blend_mode" v="0"/>
-                  <prop k="draw_mode" v="2"/>
-                  <prop k="enabled" v="1"/>
-                  <prop k="transparency" v="0"/>
-                </effect>
-              </effect>
-            </layer>
-          </symbol>
-          <symbol alpha="1" clip_to_extent="1" type="marker" name="9">
-            <layer pass="1" class="SimpleMarker" locked="0">
-              <prop k="angle" v="0"/>
-              <prop k="color" v="0,140,255,255"/>
-              <prop k="horizontal_anchor_point" v="1"/>
-              <prop k="joinstyle" v="bevel"/>
-              <prop k="name" v="cross2"/>
-              <prop k="offset" v="0,0"/>
-              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="offset_unit" v="MM"/>
-              <prop k="outline_color" v="0,140,255,255"/>
-              <prop k="outline_style" v="solid"/>
-              <prop k="outline_width" v="0.3"/>
-              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
-              <prop k="outline_width_unit" v="MM"/>
-              <prop k="scale_method" v="area"/>
-              <prop k="size" v="1.2"/>
               <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
               <prop k="size_unit" v="MM"/>
               <prop k="vertical_anchor_point" v="1"/>
@@ -44216,26 +44286,21 @@ def closeProject():
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">1</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
+        <value>025_conduite_impression_5000_copier20181102151535588</value>
         <value>IntersectIt_Lines20130618102142813</value>
         <value>IntersectIt_Points20130618102143276</value>
         <value>_cadinput_techical_snap_layer_20140203092715598</value>
-        <value>ab_rue20161122113837293</value>
-        <value>bf_immeuble20161019163752305</value>
-        <value>bf_point_limite20161123141033694</value>
         <value>cadastre20140312152032371</value>
         <value>camac20140113144941208</value>
         <value>conduites_copy20130709141244955</value>
         <value>constructionpoint20130807094904851</value>
         <value>croquis_reseau20170822084618718</value>
-        <value>cs_couverture_sol20161117155047081</value>
         <value>dimension20130807094904783</value>
         <value>district20130304110004764</value>
         <value>folder20150629160924367</value>
         <value>hydrant20130304110004848</value>
         <value>hydrantes_copy20160127124839887</value>
-        <value>lc_limites_commune20180525110719694</value>
         <value>leak20130821111917060</value>
-        <value>no_nomenclature20161124151011953</value>
         <value>node20130304110005126</value>
         <value>nom_rue20160215151152641</value>
         <value>od_annotationline20131203095020365</value>
@@ -44243,9 +44308,6 @@ def closeProject():
         <value>od_cover20141219115626229</value>
         <value>od_crossing20141023083754327</value>
         <value>od_dimension_orientation20131202111155806</value>
-        <value>od_element_lineaire20161123134458480</value>
-        <value>od_element_surfacique20161123111234045</value>
-        <value>od_entree_batiment20161124100003328</value>
         <value>od_meter20131120073630165</value>
         <value>od_meter_reference20140304165835390</value>
         <value>od_node20140116161508743</value>
@@ -44253,12 +44315,12 @@ def closeProject():
         <value>od_remote20150116100522170</value>
         <value>od_subscriber_reference20131206105928067</value>
         <value>ouvrage_copy20160125132737527</value>
-        <value>pf_points_fixes20161123144654375</value>
         <value>pipe_child_parent20130417092030507</value>
         <value>pressurezone20130417133612105</value>
         <value>pressurezone20180816154717204</value>
         <value>printmap20130304110011400</value>
         <value>protectionzone20130304110011418</value>
+        <value>samplingpoint20190206083700019</value>
         <value>servitude20150109080436604</value>
         <value>servitude20150109080436650</value>
         <value>subscriber20130304110011459</value>
@@ -44269,131 +44331,178 @@ def closeProject():
         <value>vw_consumptionzone20150508135647750</value>
         <value>vw_element_installation20171023081038862</value>
         <value>vw_element_samplingpoint20151002161215716</value>
+        <value>vw_element_subscriber20190206111700552</value>
         <value>vw_export_pipe20170822152003636</value>
         <value>vw_node_installation20150918153835436</value>
         <value>vw_pipe_schema20141208162900166</value>
         <value>vw_pipe_schema_visibleitems20141127154708843</value>
+        <value>no_nomenclature_copier20181108104111532</value>
+        <value>od_entree_batiment_copier20181108104111732</value>
+        <value>bf_point_limite_copier20181108104111885</value>
+        <value>pf_points_fixes_copier20181108104112082</value>
+        <value>ab_rue_copier20181108104112287</value>
+        <value>lc_limites_commune_copier20181108104112378</value>
+        <value>bf_immeuble_copier20181108104112829</value>
+        <value>od_element_lineaire_copier20181108104112570</value>
+        <value>od_element_surfacique_copier20181108104112995</value>
+        <value>cs_couverture_sol_copier20181108104113163</value>
+        <value>no_nomenclature20161124151011953</value>
+        <value>od_entree_batiment20161124100003328</value>
+        <value>bf_point_limite20161123141033694</value>
+        <value>pf_points_fixes20161123144654375</value>
+        <value>ab_rue20161122113837293</value>
+        <value>lc_limites_commune20180525110719694</value>
+        <value>bf_immeuble20161019163752305</value>
+        <value>od_element_lineaire20161123134458480</value>
+        <value>od_element_surfacique20161123111234045</value>
+        <value>cs_couverture_sol20161117155047081</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
-        <value>disabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
+        <value>enabled</value>
       </LayerSnappingEnabledList>
-      <SnappingMode type="QString">all_layers</SnappingMode>
+      <SnappingMode type="QString">current_layer</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <IntersectionSnapping type="bool">false</IntersectionSnapping>
       <LayerSnappingToleranceUnitList type="QStringList">
         <value>1</value>
         <value>1</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
-        <value>2</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
+        <value>1</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
         <value>to_vertex_and_segment</value>
@@ -44453,68 +44562,94 @@ def closeProject():
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
       </LayerSnapToList>
       <DefaultSnapType type="QString">to vertex and segment</DefaultSnapType>
-      <DefaultSnapTolerance type="double">10</DefaultSnapTolerance>
+      <DefaultSnapTolerance type="double">20</DefaultSnapTolerance>
       <TopologicalEditing type="bool">false</TopologicalEditing>
       <LayerSnappingToleranceList type="QStringList">
-        <value>1.000000</value>
-        <value>1.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
-        <value>0.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
+        <value>20.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
     <Identify>
