@@ -5703,6 +5703,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="4000" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="1" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description="MS Shell Dlg 2,8.25,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -19190,10 +19191,10 @@ def my_form_open(dialog, layer, feature):
         </effect>
       </renderer-v2>
       <labeling type="rule-based">
-        <rules key="{06f50eb5-f70d-4ad4-99ca-3edf7efd9e52}">
-          <rule scalemaxdenom="1000" description="Etiquette pour compteurs de chantiers" filter=" &quot;fk_part_type&quot; = 9211" key="{d4609c54-3485-4653-9cfd-0645c3d1931b}" scalemindenom="1">
+        <rules key="{dd427d1b-67a5-4f02-897f-b5f2ed55e7c8}">
+          <rule scalemaxdenom="1000" description="Etiquette pour compteurs de chantiers" filter=" &quot;fk_part_type&quot; = 9211" key="{11c99381-0786-4398-a21c-afe073554fbc}" scalemindenom="1">
             <settings>
-              <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="90,90,90,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="9" fieldName="'Chèvre de chantier'" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
+              <text-style fontItalic="0" fontFamily="MS Shell Dlg 2" fontLetterSpacing="0" fontUnderline="0" fontWeight="50" fontStrikeout="0" textTransp="0" previewBkgrdColor="#ffffff" fontCapitals="0" textColor="0,140,255,255" fontSizeInMapUnits="0" isExpression="1" blendMode="0" fontSizeMapUnitScale="0,0,0,0,0,0" fontSize="9" fieldName="'Chèvre de chantier'" namedStyle="Normal" fontWordSpacing="0" useSubstitutions="0">
                 <substitutions/>
               </text-style>
               <text-format placeDirectionSymbol="0" multilineAlign="3" rightDirectionSymbol=">" multilineHeight="1" plussign="0" addDirectionSymbol="0" leftDirectionSymbol="&lt;" formatNumbers="0" decimals="3" wrapChar="" reverseDirectionSymbol="0"/>
