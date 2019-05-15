@@ -169,7 +169,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="cadastre sige">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="cadastre sige">
       <customproperties/>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="nom_rue20160215151152641" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=LineString table=&quot;cadastre&quot;.&quot;nom_rue&quot; (geometry) sql=" name="036 nom_rue">
         <customproperties/>
@@ -904,7 +904,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="cadastre sige">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="cadastre sige">
       <legendlayer drawingOrder="38" open="false" checked="Qt::Checked" name="036 nom_rue" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="nom_rue20160215151152641" visible="1"/>
@@ -5383,6 +5383,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="4000" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="1" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>2547282.77534459996968508</xmin>
+        <ymin>1133140.30436131008900702</ymin>
+        <xmax>2566499.6244451398961246</xmax>
+        <ymax>1154460.40599019010551274</ymax>
+      </extent>
       <id>camac20140113144941208</id>
       <datasource>service='sige_commun' sslmode=disable key='id' estimatedmetadata=true srid=2056 type=Point table="cadastre"."enquete_camac" (geometry) sql=</datasource>
       <keywordList>
@@ -5416,13 +5422,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="date_recu">
-          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="dd-MM-yyyy" field_format="dd-MM-yyyy" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="dd.MM.yyyy" field_format="dd.MM.yyyy" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="date_traite">
-          <widgetv2config fieldEditable="1" calendar_popup="1" allow_null="0" display_format="dd-MM-yyyy" field_format="dd-MM-yyyy" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config fieldEditable="1" calendar_popup="1" allow_null="0" display_format="dd.MM.yyyy" field_format="dd.MM.yyyy" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="DateTime" name="date_fin">
-          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="dd-MM-yyyy" field_format="dd-MM-yyyy" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config fieldEditable="1" calendar_popup="0" allow_null="0" display_format="dd.MM.yyyy" field_format="dd.MM.yyyy" constraint="" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="CheckBox" name="construction">
           <widgetv2config fieldEditable="1" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="0"/>
