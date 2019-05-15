@@ -169,7 +169,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="cadastre sige">
+    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="cadastre sige">
       <customproperties/>
       <layer-tree-layer expanded="0" providerKey="postgres" checked="Qt::Checked" id="nom_rue20160215151152641" source="service='sige_commun' sslmode=disable key='id' srid=2056 type=LineString table=&quot;cadastre&quot;.&quot;nom_rue&quot; (geometry) sql=" name="036 nom_rue">
         <customproperties/>
@@ -904,7 +904,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="true" checked="Qt::PartiallyChecked" name="cadastre sige">
+    <legendgroup open="false" checked="Qt::PartiallyChecked" name="cadastre sige">
       <legendlayer drawingOrder="38" open="false" checked="Qt::Checked" name="036 nom_rue" showFeatureCount="0">
         <filegroup open="false" hidden="false">
           <legendlayerfile isInOverview="0" layerid="nom_rue20160215151152641" visible="1"/>
