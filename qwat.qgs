@@ -5920,13 +5920,6 @@ def my_form_open(dialog, layer, feature):
             <field name="major"/>
           </joinFieldsSubset>
         </join>
-        <join hasCustomPrefix="1" joinFieldName="id" customPrefix="pipe_protection_" targetFieldName="fk_protection" memoryCache="1" joinLayerId="vl_pipe_protection20130304110005258">
-          <joinFieldsSubset>
-            <field name="value_en"/>
-            <field name="value_fr"/>
-            <field name="value_ro"/>
-          </joinFieldsSubset>
-        </join>
         <join hasCustomPrefix="1" joinFieldName="id" customPrefix="pressurezone_" targetFieldName="fk_pressurezone" memoryCache="1" joinLayerId="pressurezone20130417133612105">
           <joinFieldsSubset>
             <field name="name"/>
@@ -5956,6 +5949,13 @@ def my_form_open(dialog, layer, feature):
             <field name="value_ro"/>
             <field name="active"/>
             <field name="functional"/>
+          </joinFieldsSubset>
+        </join>
+        <join hasCustomPrefix="1" joinFieldName="id" customPrefix="pipe_protection_" targetFieldName="fk_protection" memoryCache="1" joinLayerId="vl_pipe_protection20130304110005258">
+          <joinFieldsSubset>
+            <field name="value_fr"/>
+            <field name="value_en"/>
+            <field name="value_ro"/>
           </joinFieldsSubset>
         </join>
       </vectorjoins>
@@ -7675,15 +7675,6 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="pipe_function_major">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="pipe_protection_value_fr">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pipe_protection_value_en">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
-        <edittype widgetv2type="TextEdit" name="pipe_protection_value_ro">
-          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
         <edittype widgetv2type="TextEdit" name="pressurezone_name">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
@@ -7739,6 +7730,15 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="status_functional">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pipe_protection_value_fr">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pipe_protection_value_en">
+          <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="pipe_protection_value_ro">
           <widgetv2config IsMultiline="0" fieldEditable="0" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
       </edittypes>
@@ -9837,28 +9837,28 @@ def my_form_open(dialog, layer, feature):
         <alias field="pipe_function_value_ro" index="49" name=""/>
         <alias field="pipe_function_schema_visible" index="50" name=""/>
         <alias field="pipe_function_major" index="51" name=""/>
-        <alias field="pipe_protection_value_fr" index="52" name=""/>
-        <alias field="pipe_protection_value_en" index="53" name=""/>
-        <alias field="pipe_protection_value_ro" index="54" name=""/>
-        <alias field="pressurezone_name" index="55" name=""/>
-        <alias field="pressurezone_colorcode" index="56" name=""/>
-        <alias field="pipe_material_short_fr" index="57" name=""/>
-        <alias field="pipe_material_short_en" index="58" name=""/>
-        <alias field="pipe_material_short_ro" index="59" name=""/>
-        <alias field="pipe_material_value_fr" index="60" name=""/>
-        <alias field="pipe_material_value_en" index="61" name=""/>
-        <alias field="pipe_material_value_ro" index="62" name=""/>
-        <alias field="pipe_material__displayname_fr" index="63" name=""/>
-        <alias field="pipe_material__displayname_en" index="64" name=""/>
-        <alias field="pipe_material__displayname_ro" index="65" name=""/>
-        <alias field="pipe_material_diameter" index="66" name=""/>
-        <alias field="pipe_material_diameter_nominal" index="67" name=""/>
-        <alias field="pipe_material_diameter_external" index="68" name=""/>
-        <alias field="status_value_fr" index="69" name=""/>
-        <alias field="status_value_en" index="70" name=""/>
-        <alias field="status_value_ro" index="71" name=""/>
-        <alias field="status_active" index="72" name=""/>
-        <alias field="status_functional" index="73" name=""/>
+        <alias field="pressurezone_name" index="52" name=""/>
+        <alias field="pressurezone_colorcode" index="53" name=""/>
+        <alias field="pipe_material_short_fr" index="54" name=""/>
+        <alias field="pipe_material_short_en" index="55" name=""/>
+        <alias field="pipe_material_short_ro" index="56" name=""/>
+        <alias field="pipe_material_value_fr" index="57" name=""/>
+        <alias field="pipe_material_value_en" index="58" name=""/>
+        <alias field="pipe_material_value_ro" index="59" name=""/>
+        <alias field="pipe_material__displayname_fr" index="60" name=""/>
+        <alias field="pipe_material__displayname_en" index="61" name=""/>
+        <alias field="pipe_material__displayname_ro" index="62" name=""/>
+        <alias field="pipe_material_diameter" index="63" name=""/>
+        <alias field="pipe_material_diameter_nominal" index="64" name=""/>
+        <alias field="pipe_material_diameter_external" index="65" name=""/>
+        <alias field="status_value_fr" index="66" name=""/>
+        <alias field="status_value_en" index="67" name=""/>
+        <alias field="status_value_ro" index="68" name=""/>
+        <alias field="status_active" index="69" name=""/>
+        <alias field="status_functional" index="70" name=""/>
+        <alias field="pipe_protection_value_fr" index="71" name=""/>
+        <alias field="pipe_protection_value_en" index="72" name=""/>
+        <alias field="pipe_protection_value_ro" index="73" name=""/>
       </aliases>
       <excludeAttributesWMS>
         <attribute>fk_function</attribute>
@@ -10119,9 +10119,6 @@ def my_form_open(dialog, layer, feature):
         <default field="pipe_function_value_ro" expression=""/>
         <default field="pipe_function_schema_visible" expression=""/>
         <default field="pipe_function_major" expression=""/>
-        <default field="pipe_protection_value_fr" expression=""/>
-        <default field="pipe_protection_value_en" expression=""/>
-        <default field="pipe_protection_value_ro" expression=""/>
         <default field="pressurezone_name" expression=""/>
         <default field="pressurezone_colorcode" expression=""/>
         <default field="pipe_material_short_fr" expression=""/>
@@ -10141,6 +10138,9 @@ def my_form_open(dialog, layer, feature):
         <default field="status_value_ro" expression=""/>
         <default field="status_active" expression=""/>
         <default field="status_functional" expression=""/>
+        <default field="pipe_protection_value_fr" expression=""/>
+        <default field="pipe_protection_value_en" expression=""/>
+        <default field="pipe_protection_value_ro" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "id", '&lt;NULL>' )</previewExpression>
     </maplayer>
