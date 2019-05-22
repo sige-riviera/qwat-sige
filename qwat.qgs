@@ -9786,21 +9786,21 @@ def my_form_open(dialog, layer, feature):
       <annotationform>.</annotationform>
       <aliases>
         <alias field="id" index="0" name="ID"/>
-        <alias field="fk_parent" index="1" name="parent"/>
-        <alias field="fk_function" index="2" name="fonction"/>
-        <alias field="fk_installmethod" index="3" name="mode de pose"/>
-        <alias field="fk_material" index="4" name="matériau"/>
-        <alias field="fk_distributor" index="5" name="distributeur"/>
-        <alias field="fk_precision" index="6" name="précision"/>
-        <alias field="fk_bedding" index="7" name="lit de pose"/>
-        <alias field="fk_protection" index="8" name="protection"/>
-        <alias field="fk_status" index="9" name="statut"/>
-        <alias field="fk_watertype" index="10" name="eau"/>
-        <alias field="fk_locationtype" index="11" name="localisation"/>
-        <alias field="fk_folder" index="12" name="dossier technique"/>
+        <alias field="fk_parent" index="1" name="Parent"/>
+        <alias field="fk_function" index="2" name="Fonction"/>
+        <alias field="fk_installmethod" index="3" name="Mode de pose"/>
+        <alias field="fk_material" index="4" name="Matériau"/>
+        <alias field="fk_distributor" index="5" name="Distributeur"/>
+        <alias field="fk_precision" index="6" name="Précision"/>
+        <alias field="fk_bedding" index="7" name="Lit de pose"/>
+        <alias field="fk_protection" index="8" name="Protection"/>
+        <alias field="fk_status" index="9" name="Statut"/>
+        <alias field="fk_watertype" index="10" name="Eau"/>
+        <alias field="fk_locationtype" index="11" name="Localisation"/>
+        <alias field="fk_folder" index="12" name="Dossier technique"/>
         <alias field="year" index="13" name="Année"/>
-        <alias field="year_rehabilitation" index="14" name=""/>
-        <alias field="year_end" index="15" name="Année fin"/>
+        <alias field="year_rehabilitation" index="14" name="Année de réhabilitation"/>
+        <alias field="year_end" index="15" name="Année de fin"/>
         <alias field="tunnel_or_bridge" index="16" name="Tunnel ou pont"/>
         <alias field="pressure_nominal" index="17" name=""/>
         <alias field="remark" index="18" name="Remarque"/>
@@ -9991,11 +9991,12 @@ def my_form_open(dialog, layer, feature):
           <attributeEditorField showLabel="1" index="4" name="fk_material"/>
           <attributeEditorField showLabel="1" index="13" name="year"/>
           <attributeEditorField showLabel="1" index="3" name="fk_installmethod"/>
-          <attributeEditorField showLabel="1" index="15" name="year_end"/>
+          <attributeEditorField showLabel="1" index="14" name="year_rehabilitation"/>
           <attributeEditorField showLabel="1" index="8" name="fk_protection"/>
-          <attributeEditorField showLabel="1" index="16" name="tunnel_or_bridge"/>
+          <attributeEditorField showLabel="1" index="15" name="year_end"/>
           <attributeEditorField showLabel="1" index="7" name="fk_bedding"/>
           <attributeEditorField showLabel="0" index="18" name="remark"/>
+          <attributeEditorField showLabel="1" index="16" name="tunnel_or_bridge"/>
         </attributeEditorContainer>
         <attributeEditorContainer showLabel="1" visibilityExpressionEnabled="0" visibilityExpression="" name="Hydraulique" groupBox="0" columnCount="2">
           <attributeEditorField showLabel="1" index="10" name="fk_watertype"/>
