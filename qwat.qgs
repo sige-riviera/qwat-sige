@@ -11609,7 +11609,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="CheckBox" name="to_be_exported_to_authority">
-          <widgetv2config fieldEditable="1" UncheckedState="'f'" constraint="" CheckedState="'t'" labelOnTop="0" constraintDescription="" notNull="1"/>
+          <widgetv2config fieldEditable="0" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="1"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -11935,7 +11935,7 @@ def my_form_open(dialog, layer, feature):
         <default field="geometry_polygon" expression=""/>
         <default field="authority_approval_identification" expression=""/>
         <default field="authority_approval_description" expression=""/>
-        <default field="to_be_exported_to_authority" expression=""/>
+        <default field="to_be_exported_to_authority" expression="true"/>
       </defaults>
       <previewExpression>identification</previewExpression>
     </maplayer>
