@@ -190,7 +190,7 @@
         <customproperties/>
       </layer-tree-layer>
     </layer-tree-group>
-    <layer-tree-group expanded="0" checked="Qt::PartiallyChecked" name="Zones">
+    <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="Zones">
       <customproperties/>
       <layer-tree-layer expanded="1" providerKey="postgres" checked="Qt::Unchecked" id="folder20150629160924367" source="service='qwat' sslmode=disable key='id' srid=2056 type=MultiLineString table=&quot;qwat_od&quot;.&quot;folder&quot; (geometry_line) sql=" name="042 dossiers techniques">
         <customproperties/>
@@ -936,7 +936,7 @@
         </filegroup>
       </legendlayer>
     </legendgroup>
-    <legendgroup open="false" checked="Qt::PartiallyChecked" name="Zones">
+    <legendgroup open="true" checked="Qt::PartiallyChecked" name="Zones">
       <legendlayer drawingOrder="44" open="true" checked="Qt::Unchecked" name="042 dossiers techniques" showFeatureCount="0">
         <filegroup open="true" hidden="false">
           <legendlayerfile isInOverview="0" layerid="folder20150629160924367" visible="0"/>
@@ -7556,7 +7556,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_folder">
-          <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_pipe_folder" ReadOnly="0" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="0" AllowNULL="1"/>
+          <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_pipe_folder" ReadOnly="0" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="1" AllowNULL="1"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="year">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
@@ -11602,6 +11602,15 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="geometry_polygon">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="authority_approval_identification">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint=" &quot;authority_approval_identification&quot; IS NOT NULL AND NOT regexp_match(&quot;authority_approval_identification&quot;, '\\s') AND  length(&quot;authority_approval_identification&quot;) > 0" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="authority_approval_description">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="CheckBox" name="to_be_exported_to_authority">
+          <widgetv2config fieldEditable="1" UncheckedState="'f'" constraint="" CheckedState="'t'" labelOnTop="0" constraintDescription="" notNull="1"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
@@ -11665,7 +11674,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontBold" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
-        <property key="labeling/fontFamily" value="Cantarell"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
         <property key="labeling/fontItalic" value="false"/>
         <property key="labeling/fontLetterSpacing" value="0"/>
         <property key="labeling/fontLimitPixelSize" value="false"/>
@@ -11696,7 +11705,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/minFeatureSize" value="0"/>
         <property key="labeling/multilineAlign" value="0"/>
         <property key="labeling/multilineHeight" value="1"/>
-        <property key="labeling/namedStyle" value="Regular"/>
+        <property key="labeling/namedStyle" value="Normal"/>
         <property key="labeling/obstacle" value="true"/>
         <property key="labeling/obstacleFactor" value="1"/>
         <property key="labeling/obstacleType" value="0"/>
@@ -11858,6 +11867,9 @@ def my_form_open(dialog, layer, feature):
         <alias field="date_start" index="3" name=""/>
         <alias field="date_end" index="4" name=""/>
         <alias field="geometry_polygon" index="5" name=""/>
+        <alias field="authority_approval_identification" index="6" name="Numéro sur l'approbation du canton (SIRE)"/>
+        <alias field="authority_approval_description" index="7" name="Description de l'objet approuvé par le canton (SIRE)"/>
+        <alias field="to_be_exported_to_authority" index="8" name="Soumis à l'export canton (SIRE)"/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -11871,6 +11883,9 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="date_end"/>
           <column width="-1" hidden="0" type="field" name="geometry_polygon"/>
           <column width="-1" hidden="1" type="actions"/>
+          <column width="-1" hidden="0" type="field" name="authority_approval_identification"/>
+          <column width="-1" hidden="0" type="field" name="authority_approval_description"/>
+          <column width="-1" hidden="0" type="field" name="to_be_exported_to_authority"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -11918,6 +11933,9 @@ def my_form_open(dialog, layer, feature):
         <default field="date_start" expression=""/>
         <default field="date_end" expression=""/>
         <default field="geometry_polygon" expression=""/>
+        <default field="authority_approval_identification" expression=""/>
+        <default field="authority_approval_description" expression=""/>
+        <default field="to_be_exported_to_authority" expression=""/>
       </defaults>
       <previewExpression>identification</previewExpression>
     </maplayer>
