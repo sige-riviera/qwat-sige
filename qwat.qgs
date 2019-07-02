@@ -11603,10 +11603,10 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="authority_approval_identification">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="if(&quot;to_be_exported_to_authority&quot; IS TRUE, &quot;authority_approval_identification&quot; IS NOT NULL AND NOT regexp_match(&quot;authority_approval_identification&quot;, '\\s') AND  length(&quot;authority_approval_identification&quot;) > 0,TRUE)" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="if (&quot;to_be_exported_to_authority&quot;='t', &quot;authority_approval_identification&quot; IS NOT NULL AND NOT regexp_match(&quot;authority_approval_identification&quot;, '\\s') AND  length(&quot;authority_approval_identification&quot;) > 0, &quot;authority_approval_identification&quot; IS NULL)" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="authority_approval_description">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="if (&quot;to_be_exported_to_authority&quot;='f', &quot;authority_approval_description&quot; IS NULL, TRUE)" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="CheckBox" name="to_be_exported_to_authority">
           <widgetv2config fieldEditable="1" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="1"/>
