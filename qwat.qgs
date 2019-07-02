@@ -11603,13 +11603,13 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="authority_approval_identification">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint=" &quot;authority_approval_identification&quot; IS NOT NULL AND NOT regexp_match(&quot;authority_approval_identification&quot;, '\\s') AND  length(&quot;authority_approval_identification&quot;) > 0" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="if(&quot;to_be_exported_to_authority&quot; IS TRUE, &quot;authority_approval_identification&quot; IS NOT NULL AND NOT regexp_match(&quot;authority_approval_identification&quot;, '\\s') AND  length(&quot;authority_approval_identification&quot;) > 0,TRUE)" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="1"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="authority_approval_description">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="CheckBox" name="to_be_exported_to_authority">
-          <widgetv2config fieldEditable="0" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="1"/>
+          <widgetv2config fieldEditable="1" UncheckedState="f" constraint="" CheckedState="t" labelOnTop="0" constraintDescription="" notNull="1"/>
         </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
@@ -11867,7 +11867,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="date_start" index="3" name=""/>
         <alias field="date_end" index="4" name=""/>
         <alias field="geometry_polygon" index="5" name=""/>
-        <alias field="authority_approval_identification" index="6" name="Numéro sur l'approbation du canton (SIRE)"/>
+        <alias field="authority_approval_identification" index="6" name="Numéro de l'approbation du canton (SIRE)"/>
         <alias field="authority_approval_description" index="7" name="Description de l'objet approuvé par le canton (SIRE)"/>
         <alias field="to_be_exported_to_authority" index="8" name="Soumis à l'export canton (SIRE)"/>
       </aliases>
