@@ -432,10 +432,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>2544727.09491738816723228</xmin>
-      <ymin>1134536.94163914513774216</ymin>
-      <xmax>2576823.83214292069897056</xmax>
-      <ymax>1155314.14166041207499802</ymax>
+      <xmin>2551091.81255540624260902</xmin>
+      <ymin>1140480.54164522886276245</ymin>
+      <xmax>2567140.18116817250847816</xmax>
+      <ymax>1150869.14165586233139038</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
@@ -1437,7 +1437,7 @@
         </ComposerItem>
       </ComposerLabel>
       <ComposerMap followPreset="false" mapRotation="0" keepLayerSet="true" followPresetName="impression 250" id="0" previewMode="Render" drawCanvasItems="true">
-        <Extent ymin="145378.57302559929667041" xmin="555539.58216474729124457" ymax="145545.23977576958714053" xmax="555789.58216500224079937"/>
+        <Extent ymin="145378.57302559929667041" xmin="555539.58216474729124457" ymax="145545.2397757692669984" xmax="555789.58216500224079937"/>
         <LayerSet>
           <Layer provider="postgres" source="service='qwat' sslmode=disable key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_installation&quot; (geometry) sql=" name="001 ouvrage">vw_node_installation20150918153835436</Layer>
           <Layer provider="postgres" source="service='qwat' sslmode=allow key='id' srid=2056 type=PointZ table=&quot;qwat_od&quot;.&quot;vw_element_subscriber&quot; (geometry) sql=" name="004 abonnés">subscriber20130304110011459</Layer>
@@ -26905,7 +26905,7 @@ def my_form_open(dialog, layer, feature):
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
         <edittype widgetv2type="RelationReference" name="fk_folder">
-          <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_pipe_folder" ReadOnly="0" constraint="" MapIdentification="1" labelOnTop="0" constraintDescription="" notNull="1" AllowNULL="1"/>
+          <widgetv2config OrderByValue="1" fieldEditable="1" AllowAddFeatures="0" ShowForm="0" Relation="relation_pipe_folder" ReadOnly="0" constraint="if(&quot;fk_function&quot; NOT IN (4106,4108) AND &quot;fk_status&quot; NOT IN (1303,1304,1305,1306,1307), &quot;fk_folder&quot; IS NOT NULL, TRUE)" MapIdentification="1" labelOnTop="0" constraintDescription="à renseigner pour du réseau principal ou fonctionnel" notNull="0" AllowNULL="1"/>
         </edittype>
         <edittype widgetv2type="TextEdit" name="year">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
