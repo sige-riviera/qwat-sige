@@ -63842,17 +63842,29 @@ def closeProject():
         <value>IntersectIt_Lines20130618102142813</value>
         <value>IntersectIt_Points20130618102143276</value>
         <value>_cadinput_techical_snap_layer_20140203092715598</value>
+        <value>ab_rue20161122113837293</value>
+        <value>ab_rue_copier20181108104112287</value>
+        <value>bf_immeuble20161019163752305</value>
+        <value>bf_immeuble_copier20181108104112829</value>
+        <value>bf_point_limite20161123141033694</value>
+        <value>bf_point_limite_copier20181108104111885</value>
         <value>cadastre20140312152032371</value>
         <value>camac20140113144941208</value>
         <value>conduites_copy20130709141244955</value>
         <value>constructionpoint20130807094904851</value>
         <value>croquis_reseau20170822084618718</value>
+        <value>cs_couverture_sol20161117155047081</value>
+        <value>cs_couverture_sol_copier20181108104113163</value>
         <value>dimension20130807094904783</value>
         <value>district20130304110004764</value>
         <value>folder20150629160924367</value>
         <value>hydrant20130304110004848</value>
         <value>hydrantes_copy20160127124839887</value>
+        <value>lc_limites_commune20180525110719694</value>
+        <value>lc_limites_commune_copier20181108104112378</value>
         <value>leak20130821111917060</value>
+        <value>no_nomenclature20161124151011953</value>
+        <value>no_nomenclature_copier20181108104111532</value>
         <value>node20130304110005126</value>
         <value>nom_rue20160215151152641</value>
         <value>od_annotationline20131203095020365</value>
@@ -63860,6 +63872,12 @@ def closeProject():
         <value>od_cover20141219115626229</value>
         <value>od_crossing20141023083754327</value>
         <value>od_dimension_orientation20131202111155806</value>
+        <value>od_element_lineaire20161123134458480</value>
+        <value>od_element_lineaire_copier20181108104112570</value>
+        <value>od_element_surfacique20161123111234045</value>
+        <value>od_element_surfacique_copier20181108104112995</value>
+        <value>od_entree_batiment20161124100003328</value>
+        <value>od_entree_batiment_copier20181108104111732</value>
         <value>od_meter20131120073630165</value>
         <value>od_meter_reference20140304165835390</value>
         <value>od_node20140116161508743</value>
@@ -63867,6 +63885,8 @@ def closeProject():
         <value>od_remote20150116100522170</value>
         <value>od_subscriber_reference20131206105928067</value>
         <value>ouvrage_copy20160125132737527</value>
+        <value>pf_points_fixes20161123144654375</value>
+        <value>pf_points_fixes_copier20181108104112082</value>
         <value>pipe_child_parent20130417092030507</value>
         <value>pressurezone20130417133612105</value>
         <value>pressurezone20180816154717204</value>
@@ -63888,26 +63908,6 @@ def closeProject():
         <value>vw_node_installation20150918153835436</value>
         <value>vw_pipe_schema20141208162900166</value>
         <value>vw_pipe_schema_visibleitems20141127154708843</value>
-        <value>no_nomenclature_copier20181108104111532</value>
-        <value>od_entree_batiment_copier20181108104111732</value>
-        <value>bf_point_limite_copier20181108104111885</value>
-        <value>pf_points_fixes_copier20181108104112082</value>
-        <value>ab_rue_copier20181108104112287</value>
-        <value>lc_limites_commune_copier20181108104112378</value>
-        <value>bf_immeuble_copier20181108104112829</value>
-        <value>od_element_lineaire_copier20181108104112570</value>
-        <value>od_element_surfacique_copier20181108104112995</value>
-        <value>cs_couverture_sol_copier20181108104113163</value>
-        <value>no_nomenclature20161124151011953</value>
-        <value>od_entree_batiment20161124100003328</value>
-        <value>bf_point_limite20161123141033694</value>
-        <value>pf_points_fixes20161123144654375</value>
-        <value>ab_rue20161122113837293</value>
-        <value>lc_limites_commune20180525110719694</value>
-        <value>bf_immeuble20161019163752305</value>
-        <value>od_element_lineaire20161123134458480</value>
-        <value>od_element_surfacique20161123111234045</value>
-        <value>cs_couverture_sol20161117155047081</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
         <value>enabled</value>
@@ -63981,7 +63981,7 @@ def closeProject():
         <value>enabled</value>
         <value>enabled</value>
       </LayerSnappingEnabledList>
-      <SnappingMode type="QString">current_layer</SnappingMode>
+      <SnappingMode type="QString">all_layers</SnappingMode>
       <AvoidIntersectionsList type="QStringList"/>
       <IntersectionSnapping type="bool">false</IntersectionSnapping>
       <LayerSnappingToleranceUnitList type="QStringList">
