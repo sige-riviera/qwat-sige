@@ -30940,7 +30940,7 @@ def my_form_open(dialog, layer, feature):
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="227,26,28,74"/>
+              <prop k="line_color" v="227,26,28,31"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="4"/>
               <prop k="line_width_unit" v="MM"/>
@@ -63725,15 +63725,15 @@ def my_form_open(dialog, layer, feature):
       <vectorLayer type="QString">node20130304110005126</vectorLayer>
       <dtmLayer type="QString">riviera20130405112707706</dtmLayer>
     </landit>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
     <WMSExtent type="QStringList">
       <value>549759.89072271669283509</value>
       <value>135552.6009769570955541</value>
       <value>570524.14072271669283509</value>
       <value>152569.00963780135498382</value>
     </WMSExtent>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
     <postgres91plusauditor>
       <redefineSubset type="bool">true</redefineSubset>
       <logLayer type="QString">logged_actions20130304110005081</logLayer>
@@ -64236,7 +64236,7 @@ def closeProject():
       <Automatic type="bool">true</Automatic>
     </NorthArrow>
     <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorBluePart type="int">42</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
       <CanvasColorRedPart type="int">255</CanvasColorRedPart>
       <SelectionColorRedPart type="int">255</SelectionColorRedPart>
