@@ -746,7 +746,7 @@
         </Option>
         <Option type="List" name="NAME">
           <Option type="Map">
-            <Option type="QString" value="'Control_abonnés_résultat_r' || @Valeur || '_' || hour(now()) || 'h' || minute(now())" name="expression"/>
+            <Option type="QString" value="'Control_distance_abonné_conduite_r' || @Valeur || '_' || hour(now()) || 'h' || minute(now())" name="expression"/>
             <Option type="int" value="3" name="source"/>
           </Option>
         </Option>
