@@ -62,7 +62,7 @@
   </LayoutItem>
   <GuideCollection visible="1"/>
  </PageCollection>
- <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="1" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="true" pictureWidth="210" positionOnPage="30,75.0068,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.2,mm" size="210,60.0174,mm" itemRotation="0" excludeFromExports="0" zValue="18" pictureHeight="60.0174" file="S:/09_MODELES-TYPE/01_MISE_EN_PAGE_CARTOUCHE/MEP_EP_5000/schematic_legend_prelevements_sprinkler.svg" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="0" templateUuid="{71581f4a-c106-40e3-a03b-ffcb8dc6d227}" uuid="{71581f4a-c106-40e3-a03b-ffcb8dc6d227}" position="30,75.0068,mm" frameJoinStyle="miter">
+ <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="1" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="true" pictureWidth="210" positionOnPage="30,75.0068,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.2,mm" size="210,60.0174,mm" itemRotation="0" excludeFromExports="0" zValue="18" pictureHeight="60.0174" file="C:/qgis/qwat-sige/composer/schematic_legend_pressions.svg" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="0" templateUuid="{71581f4a-c106-40e3-a03b-ffcb8dc6d227}" uuid="{71581f4a-c106-40e3-a03b-ffcb8dc6d227}" position="30,75.0068,mm" frameJoinStyle="miter">
   <FrameColor red="0" green="0" blue="0" alpha="255"/>
   <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
   <LayoutObject>
@@ -557,7 +557,7 @@
   <LabelFont description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
   <FontColor red="0" green="0" blue="0" alpha="255"/>
  </LayoutItem>
- <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="0" pictureRotation="0" opacity="1" frame="false" referencePoint="0" visibility="1" background="false" pictureWidth="89.0567" positionOnPage="40,35,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.3,mm" size="110,23.635,mm" itemRotation="0" excludeFromExports="0" zValue="9" pictureHeight="23.635" file="./composer/logo_sige_2.png" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="1" templateUuid="{ac51d3fd-14c2-4a9b-adb6-56605ffcf74f}" uuid="{ac51d3fd-14c2-4a9b-adb6-56605ffcf74f}" position="40,35,mm" frameJoinStyle="miter">
+ <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="0" pictureRotation="0" opacity="1" frame="false" referencePoint="0" visibility="1" background="false" pictureWidth="89.0567" positionOnPage="40,35,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.3,mm" size="110,23.635,mm" itemRotation="0" excludeFromExports="0" zValue="9" pictureHeight="23.635" file="C:/qgis/qwat-sige/composer/logo_sige_2.png" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="1" templateUuid="{ac51d3fd-14c2-4a9b-adb6-56605ffcf74f}" uuid="{ac51d3fd-14c2-4a9b-adb6-56605ffcf74f}" position="40,35,mm" frameJoinStyle="miter">
   <FrameColor red="0" green="0" blue="0" alpha="255"/>
   <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
   <LayoutObject>

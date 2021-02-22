@@ -573,7 +573,7 @@
   <LabelFont description="Arial,10,-1,5,50,0,0,0,0,0" style=""/>
   <FontColor red="0" green="0" blue="0" alpha="255"/>
  </LayoutItem>
- <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="0" pictureRotation="0" opacity="1" frame="false" referencePoint="0" visibility="1" background="false" pictureWidth="89.0567" positionOnPage="1171.05,700.05,mm" positionLock="false" mapUuid="{8999e640-6ccc-486e-94f3-a38b2ef495ab}" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.3,mm" size="110,23.635,mm" itemRotation="0" excludeFromExports="0" zValue="7" pictureHeight="23.635" file="./composer/logo_sige_2.png" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="1" templateUuid="{f4df56e6-38e9-4dd7-9c34-562241febc94}" uuid="{f4df56e6-38e9-4dd7-9c34-562241febc94}" position="1171.05,700.05,mm" frameJoinStyle="miter">
+ <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="0" pictureRotation="0" opacity="1" frame="false" referencePoint="0" visibility="1" background="false" pictureWidth="89.0567" positionOnPage="1171.05,700.05,mm" positionLock="false" mapUuid="{8999e640-6ccc-486e-94f3-a38b2ef495ab}" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.3,mm" size="110,23.635,mm" itemRotation="0" excludeFromExports="0" zValue="7" pictureHeight="23.635" file="C:/qgis/qwat-sige/composer/logo_sige_2.png" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="1" templateUuid="{f4df56e6-38e9-4dd7-9c34-562241febc94}" uuid="{f4df56e6-38e9-4dd7-9c34-562241febc94}" position="1171.05,700.05,mm" frameJoinStyle="miter">
   <FrameColor red="0" green="0" blue="0" alpha="255"/>
   <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
   <LayoutObject>
