@@ -78,7 +78,7 @@
   </LayoutItem>
   <GuideCollection visible="1"/>
  </PageCollection>
- <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="0" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="true" pictureWidth="209.967" positionOnPage="1161.05,740.047,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.2,mm" size="210,59.9906,mm" itemRotation="0" excludeFromExports="0" zValue="14" pictureHeight="59.9906" file="S:/09_MODELES-TYPE/01_MISE_EN_PAGE_CARTOUCHE/MEP_EP_5000/schematic_legend_prelevements_new.svg" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="0" templateUuid="{14a74d01-dc9f-4f65-938b-8e14289bf89c}" uuid="{14a74d01-dc9f-4f65-938b-8e14289bf89c}" position="1161.05,740.047,mm" frameJoinStyle="miter">
+ <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="0" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="true" pictureWidth="209.967" positionOnPage="1161.05,740.047,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.2,mm" size="210,59.9906,mm" itemRotation="0" excludeFromExports="0" zValue="14" pictureHeight="59.9906" file="C:/qgis/qwat-sige/composer/schematic_legend_bleu.svg" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="0" templateUuid="{14a74d01-dc9f-4f65-938b-8e14289bf89c}" uuid="{14a74d01-dc9f-4f65-938b-8e14289bf89c}" position="1161.05,740.047,mm" frameJoinStyle="miter">
   <FrameColor red="0" green="0" blue="0" alpha="255"/>
   <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
   <LayoutObject>

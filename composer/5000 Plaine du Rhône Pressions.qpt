@@ -713,7 +713,7 @@
    </layer>
   </symbol>
  </LayoutItem>
- <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="3" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="false" pictureWidth="274.062" positionOnPage="538.219,322.709,mm" positionLock="false" mapUuid="{13a6c40f-24b4-4e30-b109-6b58f024bf54}" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.3,mm" size="274.062,193.631,mm" itemRotation="0" excludeFromExports="0" zValue="2" pictureHeight="193.631" file="S:/09_MODELES-TYPE/01_MISE_EN_PAGE_CARTOUCHE/MEP_EP_5000/Plaine_du_Rhone_Sources.png" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="1" templateUuid="{2766ac31-9e09-440d-bb10-258faadc97dc}" uuid="{2766ac31-9e09-440d-bb10-258faadc97dc}" position="538.219,322.709,mm" frameJoinStyle="miter">
+ <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="3" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="false" pictureWidth="274.062" positionOnPage="538.219,322.709,mm" positionLock="false" mapUuid="{13a6c40f-24b4-4e30-b109-6b58f024bf54}" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.3,mm" size="274.062,193.631,mm" itemRotation="0" excludeFromExports="0" zValue="2" pictureHeight="193.631" file="C:/qgis/qwat-sige/composer/Plaine_du_Rhone_Sources.png" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="1" templateUuid="{2766ac31-9e09-440d-bb10-258faadc97dc}" uuid="{2766ac31-9e09-440d-bb10-258faadc97dc}" position="538.219,322.709,mm" frameJoinStyle="miter">
   <FrameColor red="0" green="0" blue="0" alpha="255"/>
   <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
   <LayoutObject>

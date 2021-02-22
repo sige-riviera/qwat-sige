@@ -107,7 +107,7 @@
    <node x="18.58" y="0"/>
   </nodes>
  </LayoutItem>
- <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="1" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="true" pictureWidth="210" positionOnPage="1320.05,74.9225,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.2,mm" size="210,60.0207,mm" itemRotation="0" excludeFromExports="0" zValue="13" pictureHeight="60.0207" file="C:/qgis/qwat-sige/composer/schematic_legend.svg" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="0" templateUuid="{2f44cbd3-3f2b-430f-b6f0-1e6716ed7790}" uuid="{2f44cbd3-3f2b-430f-b6f0-1e6716ed7790}" position="1320.05,74.9225,mm" frameJoinStyle="miter">
+ <LayoutItem northMode="0" svgBorderColor="0,0,0,255" groupUuid="" resizeMode="1" pictureRotation="0" opacity="1" frame="true" referencePoint="0" visibility="1" background="true" pictureWidth="210" positionOnPage="1320.05,74.9225,mm" positionLock="false" mapUuid="" type="65640" blendMode="0" anchorPoint="0" id="" northOffset="0" outlineWidthM="0.2,mm" size="210,60.0207,mm" itemRotation="0" excludeFromExports="0" zValue="13" pictureHeight="60.0207" file="C:/qgis/qwat-sige/composer/schematic_legend_bleu.svg" svgBorderWidth="0.2" svgFillColor="255,255,255,255" mode="0" templateUuid="{2f44cbd3-3f2b-430f-b6f0-1e6716ed7790}" uuid="{2f44cbd3-3f2b-430f-b6f0-1e6716ed7790}" position="1320.05,74.9225,mm" frameJoinStyle="miter">
   <FrameColor red="0" green="0" blue="0" alpha="255"/>
   <BackgroundColor red="255" green="255" blue="255" alpha="255"/>
   <LayoutObject>
