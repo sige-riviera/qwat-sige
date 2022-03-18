@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   width="32"
+   height="32"
+   id="svg2"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="permanent_outflow.svg"
+   inkscape:export-filename="C:\qgis\qwat-sige\symbols\nodes\permanent_outflow.png"
+   inkscape:export-xdpi="45"
+   inkscape:export-ydpi="45"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1373"
+     id="namedview10"
+     showgrid="true"
+     inkscape:zoom="29.5"
+     inkscape:cx="4.9491525"
+     inkscape:cy="14.322034"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2"
+     inkscape:snap-grids="false"
+     inkscape:snap-object-midpoints="true"
+     inkscape:object-paths="false"
+     inkscape:pagecheckerboard="0"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-to-guides="false">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3839"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#008cff;stop-opacity:1;"
+         offset="0"
+         id="stop3841" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     style="fill:#ffffff;fill-opacity:1;stroke:#008cff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+     id="rect3069"
+     width="20.718857"
+     height="20.718857"
+     x="5.6405716"
+     y="5.6405716"
+     inkscape:export-filename="C:\qgis\qwat-sige\symbols\nodes\permanent_outflow.png"
+     inkscape:export-xdpi="120"
+     inkscape:export-ydpi="120" />
+  <path
+     style="fill:none;stroke:#008cff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 16,5.6405715 V 12.640571"
+     id="path287-9" />
+  <path
+     style="fill:none;stroke:#008cff;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     d="m 16,19.359428 v 7"
+     id="path287-8-2" />
+</svg>
