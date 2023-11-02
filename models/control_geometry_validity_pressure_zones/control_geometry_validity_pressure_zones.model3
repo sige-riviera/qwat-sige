@@ -1,143 +1,144 @@
 <!DOCTYPE model>
 <Option type="Map">
-  <Option type="Map" name="children">
-    <Option type="Map" name="native:loadlayer_1">
-      <Option type="bool" value="true" name="active"/>
+  <Option name="children" type="Map">
+    <Option name="native:loadlayer_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="native:loadlayer" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
-      <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="508" name="component_pos_x"/>
-        <Option type="double" value="263" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option value="native:loadlayer" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="508" name="component_pos_x" type="double"/>
+        <Option value="263" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option type="QString" value="Charger la couche dans le projet - Résultats" name="component_description"/>
-      <Option type="double" value="30" name="component_height"/>
-      <Option type="double" value="257" name="component_pos_x"/>
-      <Option type="double" value="304" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option value="Charger la couche dans le projet - Résultats" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="257" name="component_pos_x" type="double"/>
+      <Option value="304" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="native:loadlayer_1" name="id"/>
+      <Option value="native:loadlayer_1" name="id" type="QString"/>
       <Option name="outputs"/>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option type="QString" value="qgis:checkvalidity_1" name="child_id"/>
-            <Option type="QString" value="ERROR_OUTPUT" name="output_name"/>
-            <Option type="int" value="1" name="source"/>
+            <Option value="qgis:checkvalidity_1" name="child_id" type="QString"/>
+            <Option value="ERROR_OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="NAME">
+        <Option name="NAME" type="List">
           <Option type="Map">
-            <Option type="QString" value="'Control_erreur_geometry_zones_pressions' || '_' || hour(now()) || 'h' || minute(now())" name="expression"/>
-            <Option type="int" value="3" name="source"/>
+            <Option value="'Control_erreur_geometry_zones_pressions' || '_' || hour(now()) || 'h' || minute(now())" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="native:setlayerstyle_1">
-      <Option type="bool" value="true" name="active"/>
+    <Option name="native:setlayerstyle_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="native:setlayerstyle" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
-      <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="487" name="component_pos_x"/>
-        <Option type="double" value="383" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option value="native:setlayerstyle" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="487" name="component_pos_x" type="double"/>
+        <Option value="383" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option type="QString" value="Appliquer le style" name="component_description"/>
-      <Option type="double" value="30" name="component_height"/>
-      <Option type="double" value="256" name="component_pos_x"/>
-      <Option type="double" value="438" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option value="Appliquer le style" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="256" name="component_pos_x" type="double"/>
+      <Option value="438" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="native:setlayerstyle_1" name="id"/>
+      <Option value="native:setlayerstyle_1" name="id" type="QString"/>
       <Option name="outputs"/>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="INPUT">
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option type="QString" value="native:loadlayer_1" name="child_id"/>
-            <Option type="QString" value="OUTPUT" name="output_name"/>
-            <Option type="int" value="1" name="source"/>
+            <Option value="native:loadlayer_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
           </Option>
         </Option>
-        <Option type="List" name="STYLE">
+        <Option name="STYLE" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="C:\qgis\qwat-sige\models\control_geometry_validity_pressure_zones\control_geometry_validity_pressure_zones_result.qml" name="static_value"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="C:\qgis\qwat-sige\models\control_geometry_validity_pressure_zones\control_geometry_validity_pressure_zones_result.qml" name="static_value" type="QString"/>
           </Option>
         </Option>
       </Option>
     </Option>
-    <Option type="Map" name="qgis:checkvalidity_1">
-      <Option type="bool" value="true" name="active"/>
+    <Option name="qgis:checkvalidity_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
-      <Option type="QString" value="qgis:checkvalidity" name="alg_id"/>
-      <Option type="QString" value="" name="color"/>
-      <Option type="Map" name="comment">
-        <Option type="QString" value="" name="color"/>
-        <Option type="QString" value="" name="component_description"/>
-        <Option type="double" value="60" name="component_height"/>
-        <Option type="double" value="633" name="component_pos_x"/>
-        <Option type="double" value="273" name="component_pos_y"/>
-        <Option type="double" value="100" name="component_width"/>
-        <Option type="bool" value="true" name="outputs_collapsed"/>
-        <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option value="qgis:checkvalidity" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="633" name="component_pos_x" type="double"/>
+        <Option value="273" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option type="QString" value="Vérifier la validité des zones de pressions" name="component_description"/>
-      <Option type="double" value="30" name="component_height"/>
-      <Option type="double" value="270" name="component_pos_x"/>
-      <Option type="double" value="165" name="component_pos_y"/>
-      <Option type="double" value="200" name="component_width"/>
+      <Option value="Vérifier la validité des zones de pressions" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="270" name="component_pos_x" type="double"/>
+      <Option value="165" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
-      <Option type="QString" value="qgis:checkvalidity_1" name="id"/>
+      <Option value="qgis:checkvalidity_1" name="id" type="QString"/>
       <Option name="outputs"/>
-      <Option type="bool" value="true" name="outputs_collapsed"/>
-      <Option type="bool" value="true" name="parameters_collapsed"/>
-      <Option type="Map" name="params">
-        <Option type="List" name="IGNORE_RING_SELF_INTERSECTION">
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="IGNORE_RING_SELF_INTERSECTION" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="bool" value="false" name="static_value"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="false" name="static_value" type="bool"/>
           </Option>
         </Option>
-        <Option type="List" name="INPUT_LAYER">
+        <Option name="INPUT_LAYER" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="QString" value="044 Zones de pressions" name="static_value"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="044 Zones de pressions" name="static_value" type="QString"/>
           </Option>
         </Option>
-        <Option type="List" name="METHOD">
+        <Option name="METHOD" type="List">
           <Option type="Map">
-            <Option type="int" value="2" name="source"/>
-            <Option type="int" value="2" name="static_value"/>
+            <Option value="2" name="source" type="int"/>
+            <Option value="2" name="static_value" type="int"/>
           </Option>
         </Option>
       </Option>
     </Option>
   </Option>
-  <Option type="Map" name="designerParameterValues">
-    <Option type="bool" value="true" name="VERBOSE_LOG"/>
+  <Option name="designerParameterValues" type="Map">
+    <Option value="true" name="VERBOSE_LOG" type="bool"/>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
+  <Option value="Version1" name="internal_version" type="QString"/>
   <Option name="modelVariables"/>
-  <Option type="QString" value="" name="model_group"/>
-  <Option type="QString" value="Contrôle zones de pressions - validité des géométries" name="model_name"/>
+  <Option value="" name="model_group" type="QString"/>
+  <Option value="QWAT - Contrôle zones de pressions - validité des géométries" name="model_name" type="QString"/>
   <Option name="parameterDefinitions"/>
   <Option name="parameterOrder"/>
   <Option name="parameters"/>
