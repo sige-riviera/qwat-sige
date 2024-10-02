@@ -36,7 +36,7 @@
         <Option name="INPUT" type="List">
           <Option type="Map">
             <Option name="source" type="int" value="2"/>
-            <Option name="static_value" type="QString" value="Donn_esLausanne_201bf57c_0aff_4902_9b4d_50cef4ea659c"/>
+            <Option name="static_value" type="QString" value="CAM_TraceFinal_SIGE_092024_659dda34_c53f_4e2a_9188_eb2be913b9ff"/>
           </Option>
         </Option>
       </Option>
@@ -113,6 +113,15 @@
             <Option name="source" type="int" value="2"/>
             <Option name="static_value" type="List">
               <Option type="Map">
+                <Option name="expression" type="QString" value="&quot;id&quot;"/>
+                <Option name="length" type="int" value="0"/>
+                <Option name="name" type="QString" value="remark"/>
+                <Option name="precision" type="int" value="0"/>
+                <Option name="sub_type" type="int" value="0"/>
+                <Option name="type" type="int" value="10"/>
+                <Option name="type_name" type="QString" value="text"/>
+              </Option>
+              <Option type="Map">
                 <Option name="expression" type="QString" value="7"/>
                 <Option name="length" type="int" value="0"/>
                 <Option name="name" type="QString" value="type"/>
@@ -122,16 +131,7 @@
                 <Option name="type_name" type="QString" value="integer"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" type="QString" value="&quot;diametre_1&quot;"/>
-                <Option name="length" type="int" value="0"/>
-                <Option name="name" type="QString" value="specifications"/>
-                <Option name="precision" type="int" value="0"/>
-                <Option name="sub_type" type="int" value="0"/>
-                <Option name="type" type="int" value="10"/>
-                <Option name="type_name" type="QString" value="text"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" type="QString" value="'Import Lausanne 2023'"/>
+                <Option name="expression" type="QString" value="'Import Lausanne ' || format_date(to_date(now()),'dd.MM.yyyy')"/>
                 <Option name="length" type="int" value="0"/>
                 <Option name="name" type="QString" value="plan_reference"/>
                 <Option name="precision" type="int" value="0"/>
@@ -140,7 +140,7 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" type="QString" value="'Projet Lausanne'"/>
+                <Option name="expression" type="QString" value="'Projet Lausanne' || coalesce(' - ' || coalesce(&quot;Fonction&quot;,NULL),'')"/>
                 <Option name="length" type="int" value="0"/>
                 <Option name="name" type="QString" value="plan_name"/>
                 <Option name="precision" type="int" value="0"/>
@@ -149,40 +149,13 @@
                 <Option name="type_name" type="QString" value="text"/>
               </Option>
               <Option type="Map">
-                <Option name="expression" type="QString" value="2023"/>
+                <Option name="expression" type="QString" value="2024"/>
                 <Option name="length" type="int" value="0"/>
                 <Option name="name" type="QString" value="plan_year"/>
                 <Option name="precision" type="int" value="0"/>
                 <Option name="sub_type" type="int" value="0"/>
                 <Option name="type" type="int" value="2"/>
                 <Option name="type_name" type="QString" value="integer"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" type="QString" value="true"/>
-                <Option name="length" type="int" value="0"/>
-                <Option name="name" type="QString" value="visibility_qgis"/>
-                <Option name="precision" type="int" value="0"/>
-                <Option name="sub_type" type="int" value="0"/>
-                <Option name="type" type="int" value="1"/>
-                <Option name="type_name" type="QString" value="boolean"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" type="QString" value="true"/>
-                <Option name="length" type="int" value="0"/>
-                <Option name="name" type="QString" value="visibility_carto"/>
-                <Option name="precision" type="int" value="0"/>
-                <Option name="sub_type" type="int" value="0"/>
-                <Option name="type" type="int" value="1"/>
-                <Option name="type_name" type="QString" value="boolean"/>
-              </Option>
-              <Option type="Map">
-                <Option name="expression" type="QString" value="coalesce('tracé : ' || &quot;trace&quot; || ',  ','') || &#xd;&#xa;coalesce('conduite : ' || &quot;conduite&quot;|| ',  ','') || &#xd;&#xa;coalesce('genre : ' || &quot;genre&quot;|| ',  ','') || &#xd;&#xa; '\n' ||  &#xd;&#xa;coalesce('commune : ' || &quot;commune&quot;, '')"/>
-                <Option name="length" type="int" value="0"/>
-                <Option name="name" type="QString" value="remark"/>
-                <Option name="precision" type="int" value="0"/>
-                <Option name="sub_type" type="int" value="0"/>
-                <Option name="type" type="int" value="10"/>
-                <Option name="type_name" type="QString" value="text"/>
               </Option>
             </Option>
           </Option>
@@ -203,7 +176,7 @@
   <Option name="internal_version" type="QString" value="Version1"/>
   <Option name="modelVariables"/>
   <Option name="model_group" type="QString" value=""/>
-  <Option name="model_name" type="QString" value="QWAT - Import données Lausanne"/>
+  <Option name="model_name" type="QString" value="QWAT - Import données Lausanne v2"/>
   <Option name="parameterDefinitions"/>
   <Option name="parameterOrder"/>
   <Option name="parameters"/>
