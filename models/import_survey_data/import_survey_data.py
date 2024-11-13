@@ -182,8 +182,15 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
             os.remove(output_path)
             feedback.pushInfo(f"Existing file '{output_path}' has been removed.")
 
-        # Créer le fichier shapefile
-        writer = QgsVectorFileWriter(output_path, 'UTF-8', source.fields(), QgsWkbTypes.Point, source.sourceCrs(), 'ESRI Shapefile')
+        # Déterminer si la couche source est en 3D (contient des coordonnées Z)
+        geometry_type = source.wkbType()
+        if QgsWkbTypes.hasZ(geometry_type):
+            output_geometry_type = QgsWkbTypes.Point25D  # Pour géométries de points avec Z
+        else:
+            output_geometry_type = QgsWkbTypes.Point  # Reste en 2D si pas de Z
+
+        # Créer le fichier shapefile en spécifiant le type de géométrie (Point ou Point25D)
+        writer = QgsVectorFileWriter(output_path, 'UTF-8', source.fields(), output_geometry_type, source.sourceCrs(), 'ESRI Shapefile')
 
         if writer.hasError() != QgsVectorFileWriter.NoError:
             raise QgsProcessingException("Error when creating shapefile: {}".format(writer.errorMessage()))

@@ -49,8 +49,8 @@
           <Option type="Map">
             <Option value="2" name="source" type="int"/>
             <Option name="static_value" type="List">
-              <Option value="X:/05_CADASTRE/03_RELEVES_AUTRES/FUSION_POINTS_HS-TR/Points.shp" type="QString"/>
-              <Option value="X:/05_CADASTRE/03_RELEVES_AUTRES/FUSION_POINTS_HS-TR/shp_punti_MX_Rue-du-Lac_2024_06_18_16_13_24.shp" type="QString"/>
+              <Option value="X:/05_CADASTRE/03_RELEVES_AUTRES/test_kae/Points.shp" type="QString"/>
+              <Option value="X:/05_CADASTRE/03_RELEVES_AUTRES/test_kae/shp_punti_CX_Cerisier_2024_04_19_10_09_35.shp" type="QString"/>
             </Option>
           </Option>
         </Option>
@@ -73,8 +73,8 @@
       </Option>
       <Option value="Refactoriser les champs" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="554.4000000000001" name="component_pos_x" type="double"/>
-      <Option value="205.8" name="component_pos_y" type="double"/>
+      <Option value="555.2" name="component_pos_x" type="double"/>
+      <Option value="287.40000000000003" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:refactorfields_1" name="id" type="QString"/>
@@ -154,9 +154,56 @@
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
+            <Option value="native:setzvalue_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
+    <Option name="native:setzvalue_1" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:setzvalue" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="1085.6" name="component_pos_x" type="double"/>
+        <Option value="109.4" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Fixer la valeur Z" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="556.0000000000001" name="component_pos_x" type="double"/>
+      <Option value="204" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:setzvalue_1" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="INPUT" type="List">
+          <Option type="Map">
             <Option value="native:mergevectorlayers_1" name="child_id" type="QString"/>
             <Option value="OUTPUT" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+        <Option name="Z_VALUE" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option name="static_value" type="QgsProperty">
+              <Option type="Map">
+                <Option value="true" name="active" type="bool"/>
+                <Option value="CASE&#xd;&#xa;&#x9;WHEN &quot;quota&quot; IS NULL THEN z($geometry)&#xd;&#xa;&#x9;ELSE to_real(&quot;quota&quot;)&#xd;&#xa;END" name="expression" type="QString"/>
+                <Option value="3" name="type" type="int"/>
+              </Option>
+            </Option>
           </Option>
         </Option>
       </Option>
@@ -178,8 +225,8 @@
       </Option>
       <Option value="Export to Shapefile in Folder" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="560.8" name="component_pos_x" type="double"/>
-      <Option value="303.20000000000005" name="component_pos_y" type="double"/>
+      <Option value="556.8" name="component_pos_x" type="double"/>
+      <Option value="380.00000000000006" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="script:exportshapefiletofolder_1" name="id" type="QString"/>
@@ -234,7 +281,8 @@
     </Option>
   </Option>
   <Option name="designerParameterValues" type="Map">
-    <Option value="test_import_data_kae2" name="entrer_un_nom_de_fichier_sans_extension" type="QString"/>
+    <Option value="true" name="ecraser_le_fichier_existant" type="bool"/>
+    <Option value="test_import_data_kae" name="entrer_un_nom_de_fichier_sans_extension" type="QString"/>
   </Option>
   <Option name="groupBoxes"/>
   <Option name="help"/>
