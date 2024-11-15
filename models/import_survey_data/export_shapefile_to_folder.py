@@ -28,7 +28,7 @@ from qgis.core import (QgsProcessing,
                        QgsWkbTypes)
 from qgis import processing
 import os
-import shutil  # Pour le copier-coller de fichiers
+import shutil  # For copying files
 
 
 class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
@@ -37,9 +37,9 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
     PREFIX = 'PREFIX'
     SUFFIX = 'SUFFIX'
     USE_PREFIX = 'USE_PREFIX'
-    OVERWRITE = 'OVERWRITE'  # Nouvelle case à cocher pour l'écrasement
+    OVERWRITE = 'OVERWRITE'  # New checkbox for overwriting
     OUTPUT = 'OUTPUT'
-    QML_SOURCE = 'QML_SOURCE'  # Nouveau paramètre pour le fichier .qml
+    QML_SOURCE = 'QML_SOURCE'  # New parameter for the .qml file
 
     def tr(self, string):
         return QCoreApplication.translate('Processing', string)
@@ -48,171 +48,171 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
         return ExportShapefileToFolderAlgorithm()
 
     def name(self):
-        return 'exportshapefiletofolder'
+        return 'export_shapefile_to_folder'
 
     def displayName(self):
-        return self.tr('Export to Shapefile in Folder')
+        return self.tr('Export en shapefile dans un dossier')
 
     def group(self):
-        return self.tr('Export scripts')
+        return self.tr('Script pour modèle Import relevés')
 
     def groupId(self):
-        return 'exportscripts'
+        return 'exportImportScripts'
 
     def shortHelpString(self):
-        return self.tr("Exports the input layer to a shapefile format in a specified folder with an optional prefix, and copies a QML style file. Allows overwriting if specified.")
+        return self.tr("Exporte la couche en entrée vers une couche au format shapefile dans un dossier spécifié, avec un préfixe optionnel, et y ajoute le fichier de style QML. Permet d'écraser le fichier de destination si spécifié.")
 
     def initAlgorithm(self, config=None):
-        # Paramètre d'entrée pour la couche vecteur
+        # Input parameter for the vector layer
         self.addParameter(
             QgsProcessingParameterFeatureSource(
                 self.INPUT,
-                self.tr('Input layer'),
+                self.tr('Couche en entrée'),
                 [QgsProcessing.TypeVectorAnyGeometry]
             )
         )
 
-        # Paramètre pour le dossier de destination
+        # Parameter for the destination folder
         self.addParameter(
             QgsProcessingParameterFolderDestination(
                 self.FOLDER,
-                self.tr('Destination folder')  # Interface permettant de sélectionner un dossier
+                self.tr('Dossier de destination')  # Interface to select a folder
             )
         )
 
-        # Préfixe en tant qu'expression
+        # Prefix as an expression
         self.addParameter(
             QgsProcessingParameterExpression(
                 self.PREFIX,
-                self.tr('Shapefile prefix expression (Format: AAAAMMDD_)')
+                self.tr('Préfixe du nom du shapefile (Format: AAAAMMDD_)')
             )
         )
 
-        # Suffixe en tant que chaîne de caractères
+        # Suffix as a string
         self.addParameter(
             QgsProcessingParameterString(
                 self.SUFFIX,
-                self.tr('Shapefile suffix (without extension)'),
-                defaultValue='output'  # Valeur par défaut pour le suffixe
+                self.tr('Nom du shapefile (sans extension)'),
+                defaultValue='output'  # Default value for the suffix
             )
         )
 
-        # Case à cocher pour activer ou non le préfixe
+        # Checkbox to enable or disable the prefix
         self.addParameter(
             QgsProcessingParameterBoolean(
                 self.USE_PREFIX,
-                self.tr('Use prefix in the filename?'),
-                defaultValue=True  # Valeur par défaut pour activer le préfixe
+                self.tr('Utiliser le préfixe dans le nom du fichier?'),
+                defaultValue=True  # Default value to enable the prefix
             )
         )
 
-        # Case à cocher pour l'écrasement
+        # Checkbox for overwriting
         self.addParameter(
             QgsProcessingParameterBoolean(
                 self.OVERWRITE,
-                self.tr('Overwrite file if it exists?'),
-                defaultValue=False  # Par défaut, ne pas écraser
+                self.tr('Ecraser le fichier de sortie s\'il existe?'),
+                defaultValue=False  # Default value to disable overwriting
             )
         )
 
-        # Paramètre pour le fichier QML source
+        # Parameter for the source QML file
         self.addParameter(
             QgsProcessingParameterFile(
                 self.QML_SOURCE,
-                self.tr('Source QML file'),
-                extension='qml'  # Limite les fichiers aux .qml
+                self.tr('Chemin du fichier QML source à copier'),
+                extension='qml'  # Limit files to .qml
             )
         )
 
-        # Paramètre de sortie pour la couche finale
+        # Output parameter for the final layer
         self.addParameter(
             QgsProcessingParameterFeatureSink(
                 self.OUTPUT,
-                self.tr('Output layer')
+                self.tr('Couche en sortie')
             )
         )
 
     def processAlgorithm(self, parameters, context, feedback):
-        # Obtenir la source de la couche d'entrée
+        # Get the input layer source
         source = self.parameterAsSource(parameters, self.INPUT, context)
         if source is None:
             raise QgsProcessingException(self.invalidSourceError(parameters, self.INPUT))
 
-        # Obtenir le chemin du dossier choisi par l'utilisateur
+        # Get the folder path selected by the user
         folder_path = self.parameterAsString(parameters, self.FOLDER, context)
         if not folder_path:
-            raise QgsProcessingException("Output folder path is required.")
+            raise QgsProcessingException("Un dossier de destination doit être défini.")
 
-        # Vérifiez si l'utilisateur souhaite utiliser le préfixe
+        # Check if the user wants to use the prefix
         use_prefix = self.parameterAsBoolean(parameters, self.USE_PREFIX, context)
 
-        # Si l'utilisateur a choisi d'utiliser le préfixe, évaluer l'expression
+        # If the user chose to use the prefix, evaluate the expression
         prefix = ''
         if use_prefix:
             prefix_expr = self.parameterAsExpression(parameters, self.PREFIX, context)
             expression = QgsExpression(prefix_expr)
 
-            # Vérifiez que l'expression est valide
+            # Check if the expression is valid
             if expression.hasParserError():
-                raise QgsProcessingException(f"Invalid prefix expression: {expression.parserErrorString()}")
+                raise QgsProcessingException(f"L'expression pour le préfixe est invalide: {expression.parserErrorString()}")
 
-            # Évaluez l'expression pour obtenir le préfixe
+            # Evaluate the expression to get the prefix
             prefix = expression.evaluate()
             if expression.hasEvalError():
-                raise QgsProcessingException(f"Error evaluating prefix expression: {expression.evalErrorString()}")
+                raise QgsProcessingException(f"Erreur dans l'évaluation de l'expression pour le préfixe: {expression.evalErrorString()}")
 
-            # Vérifiez que le résultat de l'expression est une chaîne non vide
+            # Ensure the expression result is a non-empty string
             if not prefix or not isinstance(prefix, str):
-                raise QgsProcessingException("Prefix expression must evaluate to a non-empty string.")
+                raise QgsProcessingException("L'expression du préfixe doit évaluer une chaîne de caractéres non vide.")
 
-        # Obtenir le suffixe spécifié par l'utilisateur
+        # Get the suffix specified by the user
         suffix = self.parameterAsString(parameters, self.SUFFIX, context)
         
-        # Construire le chemin complet du fichier shapefile
+        # Construct the full path for the shapefile
         output_path = os.path.join(folder_path, f"{prefix}{'_' if use_prefix else ''}{suffix}.shp")
 
-        # Vérifier si le fichier existe déjà
+        # Check if the file already exists
         overwrite = self.parameterAsBoolean(parameters, self.OVERWRITE, context)
         if os.path.exists(output_path) and not overwrite:
-            feedback.reportError(f"Le fichier '{output_path}' existe déjà et l'option d'écrasement n'est pas activée. Opération annulée.")
-            return {}  # Ne pas exécuter le script si le fichier existe et écrasement désactivé
+            feedback.reportError(f"Le fichier '{output_path}' existe déjà, et l'écrasement du fichier est désactivé. Operation annulée.")
+            return {}  # Do not execute the script if the file exists and overwriting is disabled
 
-        # Si le fichier existe et que l'écrasement est autorisé, le supprimer avant de créer un nouveau fichier
+        # If the file exists and overwriting is allowed, delete it before creating a new file
         if os.path.exists(output_path) and overwrite:
             os.remove(output_path)
-            feedback.pushInfo(f"Existing file '{output_path}' has been removed.")
+            feedback.pushInfo(f"Le fichier existant '{output_path}' a été supprimé.")
 
-        # Déterminer si la couche source est en 3D (contient des coordonnées Z)
+        # Determine if the source layer is in 3D (contains Z coordinates)
         geometry_type = source.wkbType()
         if QgsWkbTypes.hasZ(geometry_type):
-            output_geometry_type = QgsWkbTypes.Point25D  # Pour géométries de points avec Z
+            output_geometry_type = QgsWkbTypes.Point25D  # For point geometries with Z
         else:
-            output_geometry_type = QgsWkbTypes.Point  # Reste en 2D si pas de Z
+            output_geometry_type = QgsWkbTypes.Point  # Stay in 2D if no Z
 
-        # Créer le fichier shapefile en spécifiant le type de géométrie (Point ou Point25D)
+        # Create the shapefile specifying the geometry type (Point or Point25D)
         writer = QgsVectorFileWriter(output_path, 'UTF-8', source.fields(), output_geometry_type, source.sourceCrs(), 'ESRI Shapefile')
 
         if writer.hasError() != QgsVectorFileWriter.NoError:
-            raise QgsProcessingException("Error when creating shapefile: {}".format(writer.errorMessage()))
+            raise QgsProcessingException("Erreur lors de la création du shapefile: {}".format(writer.errorMessage()))
 
-        # Écrire les entités (features) dans le shapefile
+        # Write the features to the shapefile
         for feature in source.getFeatures():
             writer.addFeature(feature)
 
-        del writer  # Fermer le writer
+        del writer  # Close the writer
 
-        # Copier le fichier QML source dans le dossier de destination et le renommer
+        # Copy the source QML file to the destination folder and rename it
         qml_source_path = self.parameterAsString(parameters, self.QML_SOURCE, context)
         if qml_source_path and os.path.isfile(qml_source_path):
-            # Renommer le fichier QML avec le même nom que le shapefile
+            # Rename the QML file with the same name as the shapefile
             qml_destination_path = os.path.join(folder_path, f"{prefix}{'_' if use_prefix else ''}{suffix}.qml")
-            shutil.copy(qml_source_path, qml_destination_path)  # Copier le fichier QML
-            feedback.pushInfo(f"QML file copied to: {qml_destination_path}")
+            shutil.copy(qml_source_path, qml_destination_path)  # Copy the QML file
+            feedback.pushInfo(f"Le fichier QML a été copié dans: {qml_destination_path}")
         else:
-            feedback.pushInfo("No valid QML file provided or the file does not exist.")
+            feedback.pushInfo("Le QML est invalide ou n'existe pas.")
 
-        # Informer l'utilisateur du fichier de sortie
-        feedback.pushInfo("Shapefile exported to: {}".format(output_path))
+        # Inform the user about the output file
+        feedback.pushInfo("Le shapefile a été exporté vers: {}".format(output_path))
 
-        # Retourner le chemin de sortie comme paramètre de sortie
+        # Return the output path as a result
         return {self.OUTPUT: output_path}
