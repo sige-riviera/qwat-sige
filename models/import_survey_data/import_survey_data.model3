@@ -1,6 +1,91 @@
 <!DOCTYPE model>
 <Option type="Map">
   <Option type="Map" name="children">
+    <Option type="Map" name="native:condition_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option type="Map" name="alg_config">
+        <Option type="List" name="conditions">
+          <Option type="Map">
+            <Option type="QString" value="@charger_la_couche_rsultat_dans_le_projet" name="expression"/>
+            <Option type="QString" value="Charger la couche dans le projet" name="name"/>
+          </Option>
+          <Option type="Map">
+            <Option type="QString" value="NOT @charger_la_couche_rsultat_dans_le_projet" name="expression"/>
+            <Option type="QString" value="Ne pas charger la couche dans le projet" name="name"/>
+          </Option>
+        </Option>
+      </Option>
+      <Option type="QString" value="native:condition" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="976.8000000000001" name="component_pos_x"/>
+        <Option type="double" value="741.4000000000001" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Branche conditionnelle" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="268.7999999999999" name="component_pos_x"/>
+      <Option type="double" value="592.0000000000003" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option name="dependencies"/>
+      <Option type="QString" value="native:condition_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option name="params"/>
+    </Option>
+    <Option type="Map" name="native:loadlayer_1">
+      <Option type="bool" value="true" name="active"/>
+      <Option name="alg_config"/>
+      <Option type="QString" value="native:loadlayer" name="alg_id"/>
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="976.8000000000001" name="component_pos_x"/>
+        <Option type="double" value="645.4000000000001" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="Charger la couche dans le projet" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="556.8000000000001" name="component_pos_x"/>
+      <Option type="double" value="697.6" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="List" name="dependencies">
+        <Option type="Map">
+          <Option type="QString" value="native:condition_1" name="child_id"/>
+          <Option type="QString" value="Charger la couche dans le projet" name="conditional_branch"/>
+        </Option>
+      </Option>
+      <Option type="QString" value="native:loadlayer_1" name="id"/>
+      <Option name="outputs"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+      <Option type="Map" name="params">
+        <Option type="List" name="INPUT">
+          <Option type="Map">
+            <Option type="QString" value="script:export_shapefile_to_folder_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+        <Option type="List" name="NAME">
+          <Option type="Map">
+            <Option type="QString" value="script:export_shapefile_to_folder_1" name="child_id"/>
+            <Option type="QString" value="OUTPUT_FILENAME" name="output_name"/>
+            <Option type="int" value="1" name="source"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option type="Map" name="native:mergevectorlayers_1">
       <Option type="bool" value="true" name="active"/>
       <Option name="alg_config"/>
@@ -346,7 +431,7 @@
       <Option type="Map" name="params">
         <Option type="List" name="FOLDER_PATH">
           <Option type="Map">
-            <Option type="QString" value=" @surveyDataFolderPath " name="expression"/>
+            <Option type="QString" value="@surveyDataFolderPath" name="expression"/>
             <Option type="int" value="3" name="source"/>
           </Option>
         </Option>
@@ -354,6 +439,7 @@
     </Option>
   </Option>
   <Option type="Map" name="designerParameterValues">
+    <Option type="bool" value="true" name="ecraser_le_fichier_existant"/>
     <Option type="QString" value="import_data" name="entrer_un_nom_de_fichier_sans_extension"/>
   </Option>
   <Option name="groupBoxes"/>
@@ -374,6 +460,16 @@
       <Option type="QString" value="" name="help"/>
       <Option name="metadata"/>
       <Option type="QString" value="avec_prfixe_de_date_aaaammjj" name="name"/>
+      <Option type="QString" value="boolean" name="parameter_type"/>
+    </Option>
+    <Option type="Map" name="charger_la_couche_rsultat_dans_le_projet">
+      <Option type="bool" value="true" name="default"/>
+      <Option type="invalid" name="defaultGui"/>
+      <Option type="QString" value="Charger la couche résultat dans le projet" name="description"/>
+      <Option type="int" value="0" name="flags"/>
+      <Option type="QString" value="" name="help"/>
+      <Option name="metadata"/>
+      <Option type="QString" value="charger_la_couche_rsultat_dans_le_projet" name="name"/>
       <Option type="QString" value="boolean" name="parameter_type"/>
     </Option>
     <Option type="Map" name="ecraser_le_fichier_existant">
@@ -436,6 +532,27 @@
       <Option type="double" value="319.20000000000005" name="component_pos_y"/>
       <Option type="double" value="200" name="component_width"/>
       <Option type="QString" value="avec_prfixe_de_date_aaaammjj" name="name"/>
+      <Option type="bool" value="true" name="outputs_collapsed"/>
+      <Option type="bool" value="true" name="parameters_collapsed"/>
+    </Option>
+    <Option type="Map" name="charger_la_couche_rsultat_dans_le_projet">
+      <Option type="QString" value="" name="color"/>
+      <Option type="Map" name="comment">
+        <Option type="QString" value="" name="color"/>
+        <Option type="QString" value="" name="component_description"/>
+        <Option type="double" value="60" name="component_height"/>
+        <Option type="double" value="399.20000000000005" name="component_pos_x"/>
+        <Option type="double" value="429.40000000000003" name="component_pos_y"/>
+        <Option type="double" value="100" name="component_width"/>
+        <Option type="bool" value="true" name="outputs_collapsed"/>
+        <Option type="bool" value="true" name="parameters_collapsed"/>
+      </Option>
+      <Option type="QString" value="charger_la_couche_rsultat_dans_le_projet" name="component_description"/>
+      <Option type="double" value="30" name="component_height"/>
+      <Option type="double" value="258.4000000000001" name="component_pos_x"/>
+      <Option type="double" value="484" name="component_pos_y"/>
+      <Option type="double" value="200" name="component_width"/>
+      <Option type="QString" value="charger_la_couche_rsultat_dans_le_projet" name="name"/>
       <Option type="bool" value="true" name="outputs_collapsed"/>
       <Option type="bool" value="true" name="parameters_collapsed"/>
     </Option>
