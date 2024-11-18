@@ -25,6 +25,7 @@ from qgis.core import (QgsProcessing,
                        QgsProcessingParameterFile,
                        QgsExpression,
                        QgsVectorFileWriter,
+                       QgsProcessingOutputString,
                        QgsWkbTypes)
 from qgis import processing
 import os
@@ -40,6 +41,7 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
     OVERWRITE = 'OVERWRITE'  # New checkbox for overwriting
     OUTPUT = 'OUTPUT'
     QML_SOURCE = 'QML_SOURCE'  # New parameter for the .qml file
+    OUTPUT_FILENAME = 'OUTPUT_FILENAME'
 
     def tr(self, string):
         return QCoreApplication.translate('Processing', string)
@@ -132,6 +134,14 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
             )
         )
 
+        # Output for the filename without extension
+        self.addOutput(
+            QgsProcessingOutputString(
+                self.OUTPUT_FILENAME,
+                self.tr('Nom complet du fichier (sans extension)')
+            )
+        )
+
     def processAlgorithm(self, parameters, context, feedback):
         # Get the input layer source
         source = self.parameterAsSource(parameters, self.INPUT, context)
@@ -169,7 +179,8 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
         suffix = self.parameterAsString(parameters, self.SUFFIX, context)
         
         # Construct the full path for the shapefile
-        output_path = os.path.join(folder_path, f"{prefix}{'_' if use_prefix else ''}{suffix}.shp")
+        filename_without_extension = f"{prefix}{'_' if use_prefix else ''}{suffix}"
+        output_path = os.path.join(folder_path, f"{filename_without_extension}.shp")
 
         # Check if the file already exists
         overwrite = self.parameterAsBoolean(parameters, self.OVERWRITE, context)
@@ -205,8 +216,8 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
         qml_source_path = self.parameterAsString(parameters, self.QML_SOURCE, context)
         if qml_source_path and os.path.isfile(qml_source_path):
             # Rename the QML file with the same name as the shapefile
-            qml_destination_path = os.path.join(folder_path, f"{prefix}{'_' if use_prefix else ''}{suffix}.qml")
-            shutil.copy(qml_source_path, qml_destination_path)  # Copy the QML file
+            qml_destination_path = os.path.join(folder_path, f"{filename_without_extension}.qml")
+            shutil.copy(qml_source_path, qml_destination_path)
             feedback.pushInfo(f"Le fichier QML a été copié dans: {qml_destination_path}")
         else:
             feedback.pushInfo("Le QML est invalide ou n'existe pas.")
@@ -215,4 +226,7 @@ class ExportShapefileToFolderAlgorithm(QgsProcessingAlgorithm):
         feedback.pushInfo("Le shapefile a été exporté vers: {}".format(output_path))
 
         # Return the output path as a result
-        return {self.OUTPUT: output_path}
+        return {
+            self.OUTPUT: output_path,
+            self.OUTPUT_FILENAME: filename_without_extension
+        }
