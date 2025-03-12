@@ -15,7 +15,7 @@ from qgis.PyQt.QtCore import QCoreApplication
 from qgis.core import (
     QgsProcessing,
     QgsProcessingAlgorithm,
-    QgsProcessingParameterString,
+    QgsProcessingParameterFile,
     QgsProcessingOutputVectorLayer,
     QgsProcessingException,
     QgsVectorLayer,
@@ -49,12 +49,12 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
         return self.tr("Cet algorithme génère une liste d'objets couche à partir des shapefiles dans un dossier spécifié pour import_survey_data.model3.")
 
     def initAlgorithm(self, config=None):
-        # Input parameter: folder path
+        # Input parameter: folder path using QgsProcessingParameterFile in Folder mode
         self.addParameter(
-            QgsProcessingParameterString(
+            QgsProcessingParameterFile(
                 self.FOLDER_PATH,
                 self.tr('Dossier contenant les shapefiles'),
-                defaultValue=''
+                behavior=QgsProcessingParameterFile.Folder
             )
         )
 
@@ -70,15 +70,17 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
         # Retrieve the folder path from the parameters
         folder_path = self.parameterAsString(parameters, self.FOLDER_PATH, context)
 
-        # Resolve path (to read environment variables)
-        folder_path = os.path.expandvars(folder_path)
-
-        # Add a debug message
-        feedback.pushInfo(f"Chemin de dossier reçu: {folder_path}")
+        # Force path cleaning and formatting
+        folder_path = os.path.normpath(os.path.expandvars(folder_path.strip()))
+        
+        # Debugging comments
+        #feedback.pushInfo(f"Paramètres: {parameters}")
+        #feedback.pushInfo(f"Chemin brut reçu : {repr(folder_path)}")
+        #feedback.pushInfo(f"Chemin normalisé : {folder_path}")
 
         # Check if the folder exists
-        if not os.path.exists(folder_path):
-            raise QgsProcessingException(self.tr("Le dossier spécifié n'existe pas."))
+        if not folder_path or not os.path.exists(folder_path) or not os.path.isdir(folder_path):
+            raise QgsProcessingException(self.tr("Le dossier spécifié n'existe pas ou n'est pas un dossier valide."))
 
         # List of layer objects
         layers = []
