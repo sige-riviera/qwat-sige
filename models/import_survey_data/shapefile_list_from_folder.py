@@ -15,7 +15,8 @@ from qgis.PyQt.QtCore import QCoreApplication
 from qgis.core import (
     QgsProcessing,
     QgsProcessingAlgorithm,
-    QgsProcessingParameterString,
+    #QgsProcessingParameterString,
+    QgsProcessingParameterFile,
     QgsProcessingOutputVectorLayer,
     QgsProcessingException,
     QgsVectorLayer,
@@ -49,12 +50,12 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
         return self.tr("Cet algorithme génère une liste d'objets couche à partir des shapefiles dans un dossier spécifié pour import_survey_data.model3.")
 
     def initAlgorithm(self, config=None):
-        # Input parameter: folder path
+        # Input parameter: folder path using QgsProcessingParameterFile in Folder mode
         self.addParameter(
-            QgsProcessingParameterString(
+            QgsProcessingParameterFile(
                 self.FOLDER_PATH,
                 self.tr('Dossier contenant les shapefiles'),
-                defaultValue=''
+                behavior=QgsProcessingParameterFile.Folder
             )
         )
 
@@ -69,23 +70,37 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
     def processAlgorithm(self, parameters, context, feedback):
         # Retrieve the folder path from the parameters
         folder_path = self.parameterAsString(parameters, self.FOLDER_PATH, context)
+        print('AAA')
+        print(parameters)
+        #feedback.pushInfo(f"Parameters: {parameters}")
+        #print(self.FOLDER_PATH)
+        #print(folder_path)
+        #print(repr(folder_path))
 
-        # Resolve path (to read environment variables)
-        folder_path = os.path.expandvars(folder_path)
+        # Debugging: Show raw path
+        #feedback.pushInfo(f"Chemin brut reçu : {repr(folder_path)}")
 
-        # Add a debug message
-        feedback.pushInfo(f"Chemin de dossier reçu: {folder_path}")
+        # Force path cleaning and formatting
+        folder_path = os.path.normpath(os.path.expandvars(folder_path.strip()))
+        #feedback.pushInfo(f"Chemin normalisé : {folder_path}")
+        #print('BBB')
+        #print(folder_path)
 
         # Check if the folder exists
-        if not os.path.exists(folder_path):
-            raise QgsProcessingException(self.tr("Le dossier spécifié n'existe pas."))
+        if not folder_path or not os.path.exists(folder_path) or not os.path.isdir(folder_path):
+            raise QgsProcessingException(self.tr("Le dossier spécifié n'existe pas ou n'est pas un dossier valide."))
 
         # List of layer objects
         layers = []
 
         # Traverse the folder to find all .shp files
         for root, dirs, files in os.walk(folder_path):
+            #print('CCC')
+            #print(root)
+            #print(dirs)
             for file in files:
+                print('DDD')
+                print(file)
                 if file.lower().endswith('.shp'):
                     shapefile_path = os.path.join(root, file)
                     try:
