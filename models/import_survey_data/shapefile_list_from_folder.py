@@ -70,6 +70,9 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
         # Retrieve the folder path from the parameters
         folder_path = self.parameterAsString(parameters, self.FOLDER_PATH, context)
 
+        # Resolve path (to read environment variables)
+        folder_path = os.path.expandvars(folder_path)
+
         # Add a debug message
         feedback.pushInfo(f"Chemin de dossier reçu: {folder_path}")
 
