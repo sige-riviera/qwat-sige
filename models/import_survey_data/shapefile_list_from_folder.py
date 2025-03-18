@@ -22,10 +22,13 @@ from qgis.core import (
     QgsProject
 )
 import os
+import processing
 
 class ShapefileListFromFolder(QgsProcessingAlgorithm):
     FOLDER_PATH = 'FOLDER_PATH'  # Input folder containing shapefiles
     OUTPUT = 'OUTPUT'  # List of layer objects
+    FALLBACK_ENCODING = 'ISO-8859-1'  # Fallback default encoding if not set (e.g. for Happy Survey)
+    ENCODING_PRIORITY_ORDER = ['ENCODING', 'CPG_ENCODING', 'LDID_ENCODING']
 
     def tr(self, string):
         return QCoreApplication.translate('Processing', string)
@@ -47,6 +50,17 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
 
     def shortHelpString(self):
         return self.tr("Cet algorithme génère une liste d'objets couche à partir des shapefiles dans un dossier spécifié pour import_survey_data.model3.")
+    
+    def getEncodingHelper(self, encoding_dict):
+        # Loop encoding priority order
+        for key in self.ENCODING_PRIORITY_ORDER:
+            value = encoding_dict.get(key)
+            # Check that value is not None neither en empty string
+            if value not in (None, ''):
+                return value
+        
+        # If no valid value is found, returns NULL
+        return None
 
     def initAlgorithm(self, config=None):
         # Input parameter: folder path using QgsProcessingParameterFile in Folder mode
@@ -90,9 +104,21 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
             for file in files:
                 if file.lower().endswith('.shp'):
                     shapefile_path = os.path.join(root, file)
+                    processing_params = {
+                        'INPUT': shapefile_path
+                    }
+                    encoding_outputs = processing.run('native:shpencodinginfo', processing_params) # Use native QGIS processing to get shapefile encoding information from file and not from QgsLayer
+                    encoding = self.getEncodingHelper(encoding_outputs)
+                    
                     try:
                         # Load the shapefile layer into QGIS
                         layer = QgsVectorLayer(shapefile_path, file, 'ogr')
+                        
+                        # Check and apply encoding if needed
+                        if encoding is None:
+                            layer.dataProvider().setEncoding(self.FALLBACK_ENCODING)
+                            feedback.pushWarning(f"Le shapefile {file} n'a pas d'information d'encodage. L'encodage suivant a été appliqué : {layer.dataProvider().encoding()}")
+                        
                         if layer.isValid():
                             # Add the layer to the project
                             QgsProject.instance().addMapLayer(layer, False)  # Add the layer to the project without making it visible
@@ -110,3 +136,4 @@ class ShapefileListFromFolder(QgsProcessingAlgorithm):
 
         # Return the list of layer objects, or an empty layer if none are valid
         return {self.OUTPUT: layers}
+ 
