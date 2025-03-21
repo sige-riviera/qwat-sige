@@ -114,7 +114,7 @@
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option value="Supprimer les géométries (option 1)" name="component_description" type="QString"/>
+      <Option value="Supprimer les géométries (option 1 - liste incrémentée)" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
       <Option value="431.9999999999997" name="component_pos_x" type="double"/>
       <Option value="690.3999999999997" name="component_pos_y" type="double"/>
@@ -149,7 +149,7 @@
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option value="Supprimer les géométries (option 2)" name="component_description" type="QString"/>
+      <Option value="Supprimer les géométries (option 1)" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
       <Option value="683.2000000000004" name="component_pos_x" type="double"/>
       <Option value="610.3999999999997" name="component_pos_y" type="double"/>
@@ -763,7 +763,7 @@
         <Option value="true" name="outputs_collapsed" type="bool"/>
         <Option value="true" name="parameters_collapsed" type="bool"/>
       </Option>
-      <Option value="Conserver les champs (option 3 - incréments)" name="component_description" type="QString"/>
+      <Option value="Conserver les champs (option 1 - liste incrémentée)" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
       <Option value="428.8000000000001" name="component_pos_x" type="double"/>
       <Option value="848.7999999999998" name="component_pos_y" type="double"/>
@@ -1018,6 +1018,8 @@
   <Option name="modelVariables"/>
   <Option value="" name="model_group" type="QString"/>
   <Option value="QWAT - Contrôles vannes" name="model_name" type="QString"/>
+  <Option value="" name="outputGroup" type="QString"/>
+  <Option name="outputOrder"/>
   <Option name="parameterDefinitions" type="Map">
     <Option name="options" type="Map">
       <Option value="false" name="allow_multiple" type="bool"/>
@@ -1093,8 +1095,8 @@
       </Option>
       <Option value="pour_option_1__numrotation_maximale_des_vannes_rseau" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="178.39999999999955" name="component_pos_x" type="double"/>
-      <Option value="697.6" name="component_pos_y" type="double"/>
+      <Option value="174.39999999999955" name="component_pos_x" type="double"/>
+      <Option value="695.6" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option value="pour_option_1__numrotation_maximale_des_vannes_rseau" name="name" type="QString"/>
       <Option value="true" name="outputs_collapsed" type="bool"/>
