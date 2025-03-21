@@ -6,15 +6,15 @@
       <Option name="alg_config" type="Map">
         <Option name="conditions" type="List">
           <Option type="Map">
-            <Option value=" @options = 0" name="expression" type="QString"/>
+            <Option value=" @options = 0 OR @options = 1" name="expression" type="QString"/>
             <Option value="Numéros libres" name="name" type="QString"/>
           </Option>
           <Option type="Map">
-            <Option value=" @options = 1" name="expression" type="QString"/>
+            <Option value=" @options = 2" name="expression" type="QString"/>
             <Option value="Doublons" name="name" type="QString"/>
           </Option>
           <Option type="Map">
-            <Option value=" @options = 2" name="expression" type="QString"/>
+            <Option value=" @options = 3" name="expression" type="QString"/>
             <Option value="Numéros nuls" name="name" type="QString"/>
           </Option>
         </Option>
@@ -348,6 +348,47 @@
         </Option>
       </Option>
     </Option>
+    <Option name="native:extractbyexpression_5" type="Map">
+      <Option value="true" name="active" type="bool"/>
+      <Option name="alg_config"/>
+      <Option value="native:extractbyexpression" name="alg_id" type="QString"/>
+      <Option value="" name="color" type="QString"/>
+      <Option name="comment" type="Map">
+        <Option value="" name="color" type="QString"/>
+        <Option value="" name="component_description" type="QString"/>
+        <Option value="60" name="component_height" type="double"/>
+        <Option value="1744.0000000000002" name="component_pos_x" type="double"/>
+        <Option value="1237.4" name="component_pos_y" type="double"/>
+        <Option value="100" name="component_width" type="double"/>
+        <Option value="true" name="outputs_collapsed" type="bool"/>
+        <Option value="true" name="parameters_collapsed" type="bool"/>
+      </Option>
+      <Option value="Extraire par expression" name="component_description" type="QString"/>
+      <Option value="30" name="component_height" type="double"/>
+      <Option value="425.0000000000002" name="component_pos_x" type="double"/>
+      <Option value="769.4000000000001" name="component_pos_y" type="double"/>
+      <Option value="200" name="component_width" type="double"/>
+      <Option name="dependencies"/>
+      <Option value="native:extractbyexpression_5" name="id" type="QString"/>
+      <Option name="outputs"/>
+      <Option value="true" name="outputs_collapsed" type="bool"/>
+      <Option value="true" name="parameters_collapsed" type="bool"/>
+      <Option name="params" type="Map">
+        <Option name="EXPRESSION" type="List">
+          <Option type="Map">
+            <Option value="2" name="source" type="int"/>
+            <Option value="CASE&#xd;&#xa;WHEN @options = 0&#xd;&#xa;THEN &quot;id&quot; >= @min_vannes_reseau AND &quot;id&quot; &lt;= @max_vannes_reseau&#xd;&#xa;WHEN @options = 1&#xd;&#xa;THEN &quot;id&quot; >= @min_vannes_ouvrages AND &quot;id&quot; &lt;= @max_vannes_ouvrages&#xd;&#xa;END&#xd;&#xa;" name="static_value" type="QString"/>
+          </Option>
+        </Option>
+        <Option name="INPUT" type="List">
+          <Option type="Map">
+            <Option value="native:dropgeometries_1" name="child_id" type="QString"/>
+            <Option value="OUTPUT" name="output_name" type="QString"/>
+            <Option value="1" name="source" type="int"/>
+          </Option>
+        </Option>
+      </Option>
+    </Option>
     <Option name="native:loadlayer_1" type="Map">
       <Option value="true" name="active" type="bool"/>
       <Option name="alg_config"/>
@@ -447,7 +488,7 @@
       </Option>
       <Option value="Charger les numéros de vannes libres" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="703.1999999999996" name="component_pos_x" type="double"/>
+      <Option value="702.1999999999996" name="component_pos_x" type="double"/>
       <Option value="1175.2" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
@@ -465,7 +506,7 @@
         </Option>
         <Option name="NAME" type="List">
           <Option type="Map">
-            <Option value="'Numéros de vannes libres'" name="expression" type="QString"/>
+            <Option value="CASE&#xd;&#xa;WHEN @options = 0&#xd;&#xa;THEN 'Numéros libres de vannes réseau'&#xd;&#xa;WHEN @options = 1&#xd;&#xa;THEN 'Numéros libres de vannes d''ouvrages (Clayton)'&#xd;&#xa;END" name="expression" type="QString"/>
             <Option value="3" name="source" type="int"/>
           </Option>
         </Option>
@@ -529,8 +570,8 @@
       </Option>
       <Option value="Refactoriser les champs" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="433.6000000000001" name="component_pos_x" type="double"/>
-      <Option value="771.9999999999997" name="component_pos_y" type="double"/>
+      <Option value="427.6000000000001" name="component_pos_x" type="double"/>
+      <Option value="854.9999999999997" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:refactorfields_1" name="id" type="QString"/>
@@ -543,7 +584,9 @@
             <Option value="2" name="source" type="int"/>
             <Option name="static_value" type="List">
               <Option type="Map">
-                <Option value="to_string(&quot;id&quot;+1)" name="expression" type="QString"/>
+                <Option value="" name="alias" type="QString"/>
+                <Option value="" name="comment" type="QString"/>
+                <Option value="to_string(&quot;id&quot;)" name="expression" type="QString"/>
                 <Option value="50" name="length" type="int"/>
                 <Option value="identification" name="name" type="QString"/>
                 <Option value="0" name="precision" type="int"/>
@@ -556,7 +599,7 @@
         </Option>
         <Option name="INPUT" type="List">
           <Option type="Map">
-            <Option value="native:dropgeometries_1" name="child_id" type="QString"/>
+            <Option value="native:extractbyexpression_5" name="child_id" type="QString"/>
             <Option value="OUTPUT" name="output_name" type="QString"/>
             <Option value="1" name="source" type="int"/>
           </Option>
@@ -765,8 +808,8 @@
       </Option>
       <Option value="Conserver les champs (option 1 - liste incrémentée)" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="428.8000000000001" name="component_pos_x" type="double"/>
-      <Option value="848.7999999999998" name="component_pos_y" type="double"/>
+      <Option value="426.8000000000001" name="component_pos_x" type="double"/>
+      <Option value="932.7999999999998" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option name="dependencies"/>
       <Option value="native:retainfields_3" name="id" type="QString"/>
@@ -1002,8 +1045,8 @@
         </Option>
         <Option name="POINTS_NUMBER" type="List">
           <Option type="Map">
-            <Option value="pour_option_1__numrotation_maximale_des_vannes_rseau" name="parameter_name" type="QString"/>
-            <Option value="0" name="source" type="int"/>
+            <Option value="max(@max_vannes_reseau +1 , @max_vannes_ouvrages + 1)" name="expression" type="QString"/>
+            <Option value="3" name="source" type="int"/>
           </Option>
         </Option>
       </Option>
@@ -1015,7 +1058,12 @@
   <Option name="groupBoxes"/>
   <Option name="help"/>
   <Option value="Version1" name="internal_version" type="QString"/>
-  <Option name="modelVariables"/>
+  <Option name="modelVariables" type="Map">
+    <Option value="9999" name="max_vannes_ouvrages" type="QString"/>
+    <Option value="7999" name="max_vannes_reseau" type="QString"/>
+    <Option value="8000" name="min_vannes_ouvrages" type="QString"/>
+    <Option value="1" name="min_vannes_reseau" type="QString"/>
+  </Option>
   <Option value="" name="model_group" type="QString"/>
   <Option value="QWAT - Contrôles vannes" name="model_name" type="QString"/>
   <Option value="" name="outputGroup" type="QString"/>
@@ -1033,25 +1081,13 @@
       <Option name="metadata"/>
       <Option value="options" name="name" type="QString"/>
       <Option name="options" type="StringList">
-        <Option value="Option 1 : Obtenir la liste des numéros libres" type="QString"/>
-        <Option value="Option 2 : Obtenir les doublons de numéros de vannes" type="QString"/>
-        <Option value="Option 3 : Obtenir les vannes réseau sans numéros" type="QString"/>
+        <Option value="Option 1 : Obtenir la liste des numéros libres de vannes réseau" type="QString"/>
+        <Option value="Option 2 : Obtenir la liste des numéros libres de vannes d'ouvrages (Clayton)" type="QString"/>
+        <Option value="Option 3 : Obtenir les doublons de numéros de vannes" type="QString"/>
+        <Option value="Option 4 : Obtenir les vannes réseau sans numéros" type="QString"/>
       </Option>
       <Option value="enum" name="parameter_type" type="QString"/>
       <Option value="false" name="uses_static_strings" type="bool"/>
-    </Option>
-    <Option name="pour_option_1__numrotation_maximale_des_vannes_rseau" type="Map">
-      <Option value="0" name="data_type" type="int"/>
-      <Option value="7999" name="default" type="double"/>
-      <Option name="defaultGui" type="invalid"/>
-      <Option value="Pour option 1 : Numérotation maximale des vannes réseau" name="description" type="QString"/>
-      <Option value="2" name="flags" type="int"/>
-      <Option value="" name="help" type="QString"/>
-      <Option value="9999" name="max" type="double"/>
-      <Option name="metadata"/>
-      <Option value="4000" name="min" type="double"/>
-      <Option value="pour_option_1__numrotation_maximale_des_vannes_rseau" name="name" type="QString"/>
-      <Option value="number" name="parameter_type" type="QString"/>
     </Option>
   </Option>
   <Option name="parameterOrder" type="StringList">
@@ -1074,31 +1110,10 @@
       </Option>
       <Option value="options" name="component_description" type="QString"/>
       <Option value="30" name="component_height" type="double"/>
-      <Option value="419.99999999999994" name="component_pos_x" type="double"/>
-      <Option value="381.60000000000025" name="component_pos_y" type="double"/>
+      <Option value="437.99999999999994" name="component_pos_x" type="double"/>
+      <Option value="378.60000000000036" name="component_pos_y" type="double"/>
       <Option value="200" name="component_width" type="double"/>
       <Option value="options" name="name" type="QString"/>
-      <Option value="true" name="outputs_collapsed" type="bool"/>
-      <Option value="true" name="parameters_collapsed" type="bool"/>
-    </Option>
-    <Option name="pour_option_1__numrotation_maximale_des_vannes_rseau" type="Map">
-      <Option value="" name="color" type="QString"/>
-      <Option name="comment" type="Map">
-        <Option value="" name="color" type="QString"/>
-        <Option value="" name="component_description" type="QString"/>
-        <Option value="60" name="component_height" type="double"/>
-        <Option value="1676" name="component_pos_x" type="double"/>
-        <Option value="15" name="component_pos_y" type="double"/>
-        <Option value="100" name="component_width" type="double"/>
-        <Option value="true" name="outputs_collapsed" type="bool"/>
-        <Option value="true" name="parameters_collapsed" type="bool"/>
-      </Option>
-      <Option value="pour_option_1__numrotation_maximale_des_vannes_rseau" name="component_description" type="QString"/>
-      <Option value="30" name="component_height" type="double"/>
-      <Option value="174.39999999999955" name="component_pos_x" type="double"/>
-      <Option value="695.6" name="component_pos_y" type="double"/>
-      <Option value="200" name="component_width" type="double"/>
-      <Option value="pour_option_1__numrotation_maximale_des_vannes_rseau" name="name" type="QString"/>
       <Option value="true" name="outputs_collapsed" type="bool"/>
       <Option value="true" name="parameters_collapsed" type="bool"/>
     </Option>
