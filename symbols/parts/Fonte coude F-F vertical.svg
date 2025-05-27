@@ -7,7 +7,7 @@
    height="48"
    id="svg2"
    inkscape:version="1.4 (86a8ad7, 2024-10-11)"
-   sodipodi:docname="Fonte coude F-F vertical.svg"
+   sodipodi:docname="Fonte coude M-F vertical.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -103,6 +103,40 @@
        style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 47.5,35.999916 h -1"
        id="path4527"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path4517-2"
+       sodipodi:type="arc"
+       sodipodi:cx="-0.5"
+       sodipodi:cy="-23.999914"
+       sodipodi:rx="14"
+       sodipodi:ry="14"
+       sodipodi:start="1.574287"
+       sodipodi:end="4.712389"
+       d="M -0.54886933,-9.9999995 A 14,14 0 0 1 -14.499979,-24.024349 14,14 0 0 1 -0.5,-37.999914"
+       sodipodi:open="true"
+       sodipodi:arc-type="arc"
+       transform="scale(-1)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 0.5,37.999918 v -2"
+       id="path4521-4"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 0.5,9.9999165 V 11.999918"
+       id="path4523-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.5,11.999918 h -1"
+       id="path4525-5"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 0.5,35.999918 h 1"
+       id="path4527-1"
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px"
