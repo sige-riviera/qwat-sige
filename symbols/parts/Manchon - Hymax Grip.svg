@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   width="64"
+   height="64"
+   id="svg2"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="Manchon - Hymax Grip.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1417"
+     id="namedview10"
+     showgrid="true"
+     inkscape:zoom="11.313709"
+     inkscape:cx="44.591921"
+     inkscape:cy="22.406446"
+     inkscape:window-x="2552"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     inkscape:snap-grids="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:showpageshadow="2"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2987"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true"
+       originx="0"
+       originy="0"
+       spacingy="1"
+       spacingx="1"
+       units="px" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Layer 1">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 44.007831,23.990663 h -24"
+       id="path945"
+       inkscape:connector-curvature="0" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 44.007831,39.990663 h -24"
+       id="path947"
+       inkscape:connector-curvature="0" />
+    <ellipse
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path951"
+       cx="20.49437"
+       cy="-43.506458"
+       rx="2.9800887"
+       ry="2.9831681"
+       transform="rotate(90)" />
+    <ellipse
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path951-8"
+       cx="43.455379"
+       cy="-43.496609"
+       rx="2.9800887"
+       ry="2.9831681"
+       transform="rotate(90)" />
+    <ellipse
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path951-6"
+       cx="43.50563"
+       cy="-20.517296"
+       rx="2.9800887"
+       ry="2.9831681"
+       transform="rotate(90)" />
+    <ellipse
+       style="fill:none;fill-opacity:0;stroke:#000000;stroke-width:param(outline-width) 1px;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path951-2"
+       cx="20.498468"
+       cy="-20.49354"
+       rx="2.9800887"
+       ry="2.9831681"
+       transform="rotate(90)" />
+  </g>
+</svg>
